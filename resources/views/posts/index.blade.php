@@ -12,7 +12,7 @@
             @if($posts->count()->0)
             @foreach($posts as $post)
             <tr>
-                <td><img src="{{$post->featured->img}}" width="80px" height="80px"></td>
+                <td><img src="{{$post->featured_img}}" width="80px" height="80px"></td>
                 <td>
                     {{$post->title}}
                 </td>
@@ -26,7 +26,7 @@
                     <form action=" {{route('posts.destroy',['id'=>$post->id])}}" method="POST">
                         @csrf
                         @method('DELETE')
-                        <button type="submit" class="btn btn-sm btn-danger"></button>
+                        <button type="submit" class="btn btn-sm btn-danger">TRASH</button>
                     </form>
                 </td>
                 @endif
