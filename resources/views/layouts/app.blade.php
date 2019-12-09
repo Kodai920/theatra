@@ -22,7 +22,20 @@
 <body>
     <div id="app">
     @include('inc.navbar')
-    
+    <div class="container py-4">
+        <div class="row justify-content-center">
+            <div class="col-md-3">
+                <ul class="list-group">
+                    <li class="list-group-item">
+                        <a href=" {{route('home')}}">Home</a>
+                    </li>
+                    <li class="list-group-item">
+                        <a href=" {{route('posts.index')}}">Posts</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
         <main class="py-4">
             @yield('content')
         </main>
