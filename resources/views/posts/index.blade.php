@@ -29,8 +29,8 @@
                         <button type="submit" class="btn btn-sm btn-danger">TRASH</button>
                     </form>
                 </td>
-                @endif
             </tr>
+            @endforeach
             @else
             <tr>
                 <th colspan=2 class="text-center">No posts yet!</th>
