@@ -112,7 +112,6 @@ class PostController extends Controller
         $post->save();
 
         Session::flash('success','Post Update Successfully');
-
         return redirect()->route('posts.index');
     }
 
