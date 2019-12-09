@@ -13,11 +13,11 @@
         </ul>
         @endif
 
-        <form action="{{isset($posts) ? route('posts.store') : route('posts.update',['id'=>$post->id])}}" method="POST" enctype="multipart/form-data">
+        <form action="{{isset($post) ? route('posts.store') : route('posts.update',['id'=>$post->id])}}" method="POST" enctype="multipart/form-data">
             @csrf
             <div class="form-group">
                 <label for="title">Title</label>
-                <input type="text" name="title" class="form-control" value="{{isset($posts) ? '' : $post->name}} ">
+                <input type="text" name="title" class="form-control" value="{{isset($posts) ? '' : $post->title}} ">
             </div>
 
             <div class="form-group">
