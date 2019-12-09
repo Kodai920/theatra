@@ -9,7 +9,7 @@
             <th>Title</th>
         </thead>
         <tbody>
-            @if($posts->count()->0)
+            @if($posts->count() > 0)
             @foreach($posts as $post)
             <tr>
                 <td><img src="{{$post->featured_img}}" width="80px" height="80px"></td>
