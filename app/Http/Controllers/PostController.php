@@ -28,7 +28,7 @@ class PostController extends Controller
      */
     public function create()
     {
-        //
+        return view('posts.create');
     }
 
     /**
@@ -39,7 +39,28 @@ class PostController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $this->validate($request,[
+            'title' => 'required',
+            'about' => 'required',
+            'featured' => 'required|image'
+        ]);
+
+        $featured = $request->featured;
+        $featured_new_name = time().$featured->getClientOriginalName();
+        $featured->move('uploads/posts',$featured_new_name);
+
+        //mass assignment
+        $post = Post::create([
+            'title' => $request->title,
+            'about' => $request->about,
+            'featured_img' => asset('uploads/posts/'.$featured_new_name)
+        ]);
+
+        $post->save();
+
+        Session::flash('success','post created successfully');
+
+        return redirect()->route('posts.index');
     }
 
     /**
@@ -59,9 +80,9 @@ class PostController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function edit($id)
+    public function edit(Post $post)
     {
-        //
+        return view('posts.create')->with('post',$post);
     }
 
     /**
@@ -71,9 +92,28 @@ class PostController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, $id)
+    public function update(Request $request, Post $post)
     {
-        //
+        $this->validate($request,[
+            'title' => 'required',
+            'about' => 'required',
+            'featured' => 'nillable|image'
+        ]);
+
+        if($request->hasFile('featured')){
+            $featured = $request->featured;
+            $featured_new_name = time().$featured->getClientOriginalName();
+            $featured->move('uploads/posts',$featured_new_name);
+            $post->featured_img = asset('uploads/posts/'.$featured_new_name);
+        }
+
+        $post->title = $request->title;
+        $post->about = $request->about;
+        $post->save();
+
+        Session::flash('success','Post Update Successfully');
+
+        return redirect()->route('posts.index');
     }
 
     /**
