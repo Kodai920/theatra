@@ -33,7 +33,7 @@
             </tr>
             @else
             <tr>
-                <th colspan=2 class="text-center">No Posts Yet</th>
+                <th colspan=2 class="text-center">No posts yet!</th>
             </tr>
             @endif
         </tbody>
