@@ -2,7 +2,7 @@
 @section('content')
 
 <div class="card">
-    <div class="card-header">{{isset($post) ? 'Create Post' : 'Edit Post'}}</div>
+    <div class="card-header">{{isset($posts) ? 'Create Post' : 'Edit Post'}}</div>
 
     <div class="card-body">
         @if(count($errors) > 0)
