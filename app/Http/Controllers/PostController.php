@@ -102,7 +102,7 @@ class PostController extends Controller
         if($request->hasFile('featured')){
             $featured = $request->featured;
             $featured_new_name = time().$featured->getClientOriginalName();
-            $featured->move('uploads/posts',$featured_new_name);
+            $featured->move('uploads/posts/',$featured_new_name);
             $post->featured_img = asset('uploads/posts/'.$featured_new_name);
         }
 
