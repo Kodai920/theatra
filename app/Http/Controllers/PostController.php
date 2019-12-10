@@ -95,7 +95,7 @@ class PostController extends Controller
         $this->validate($request,[
             'title' => 'required',
             'about' => 'required',
-            'featured' => 'nillable|image'
+            'featured' => 'nullable|image'
         ]);
 
         if($request->hasFile('featured')){
