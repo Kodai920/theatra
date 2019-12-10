@@ -15,6 +15,7 @@
 
         <form action="{{isset($post) ? route('posts.store') : route('posts.update',['id'=>$post->id])}}" method="post" enctype="multipart/form-data">
             @csrf
+            @method('PUT')
             <div class="form-group">
                 <label for="title">Title</label>
                 <input type="text" name="title" class="form-control" value="{{isset($posts) ? '' : $post->title}} ">
