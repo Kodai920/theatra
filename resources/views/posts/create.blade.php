@@ -2,7 +2,7 @@
 @section('content')
 
 <div class="card">
-    <div class="card-header">{{isset($post) ? 'Create Post' : 'Edit Post'}}</div>
+    <div class="card-header">{{isset($posts) ? 'Create Post' : 'Edit Post'}}</div>
 
     <div class="card-body">
         @if(count($errors) > 0)
@@ -31,7 +31,7 @@
             </div>
 
             <div class="form-group">
-                <button class="btn btn-success btn-block" type="submit">{{isset($post) ?'Store Post' : 'Update Post'}} </button>
+                <button class="btn btn-success btn-block" type="submit">{{isset($posts) ?'Store Post' : 'Update Post'}} </button>
             </div>
         </form>
     </div>
