@@ -22,11 +22,11 @@
 
             <div class="form-group">
                 <label for="about">Impression</label>
-                <textarea name="about" cols="30" rows="10">{{isset($posts) ? '' : $post->about}}</textarea>
+                <textarea name="about" cols="30" rows="10" class="form-control">{{isset($posts) ? '' : $post->about}}</textarea>
             </div>
 
             <div class="form-group">
-                <label for="description">Featured image</label>
+                <label for="about">Featured image</label>
                 <input type="file" name="featured" class="form-control-file">
             </div>
 
