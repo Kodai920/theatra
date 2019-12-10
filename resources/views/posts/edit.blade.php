@@ -23,7 +23,7 @@
         <div class="form-group">
             <label for="about" >Impression</label>
             <br>
-            <textarea name="about" class="form-control" rows="5">{{$post->about)}}"</textarea>
+            <textarea name="about" class="form-control" rows="5">{{$post->about)}}</textarea>
         </div>
 
         <div class="form-group">
