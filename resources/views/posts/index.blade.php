@@ -24,7 +24,7 @@
                     <a class="btn btn-info" href="{{route('posts.create',['id'=>$post->id])}}"><i class="fas fa-edit"></i></a>
                 </td>
                 <td>
-                    <form action="#" method="post">
+                    <form action="{{route('posts.destroy',['id'=>$post->id])}} " method="post">
                         @csrf
                         @method('DELETE')
                         <button type="submit" class="btn btn-sm btn-danger">trash</button>
