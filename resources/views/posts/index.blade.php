@@ -26,7 +26,6 @@
                 <td>
                     <form action="{{route('posts.destroy',['id'=>$post->id])}} " method="post">
                         @csrf
-                        @method('DELETE')
                         <button type="submit" class="btn btn-sm btn-danger">trash</button>
                     </form>
                 </td>
