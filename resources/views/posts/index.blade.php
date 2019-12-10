@@ -3,6 +3,7 @@
 
 <div class="card">
     <div class="card-header">Posts</div>
+    <div class="card-body">
     <table class="table table-hover">
         <thead>
             <th>Image</th>
@@ -16,9 +17,9 @@
                 <td>
                     {{$post->title}}
                 </td>
-                {{-- <td>
+                <td>
                     <a class="btn btn-primary" href="{{route('posts.show',['id'=>$post->id])}}"><i class="fas fa-eye"></i></a>
-                </td> --}}
+                </td>
                 <td>
                     <a class="btn btn-info" href="{{route('posts.create',['id'=>$post->id])}}"><i class="fas fa-edit"></i></a>
                 </td>
@@ -38,6 +39,7 @@
             @endif
         </tbody>
     </table>
+</div>
 </div>
 
 @endsection
