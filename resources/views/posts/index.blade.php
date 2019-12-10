@@ -19,13 +19,13 @@
                     {{$post->title}}
                 </td>
                 <td>
-                    <a class="btn btn-primary" href="{{route('posts.show',['id'=>$post->id])}}"><i class="fas fa-eye"></i></a>
+                    <a class="btn btn-primary" href="{{route('posts.show',[$post->id])}}"><i class="fas fa-eye"></i></a>
                 </td>
                 <td>
-                    <a class="btn btn-info" href="{{route('okabes.create',['id'=>$post->id])}}"><i class="fas fa-edit"></i></a>
+                    <a class="btn btn-info" href="{{route('okabes.create',[$post->id])}}"><i class="fas fa-edit"></i></a>
                 </td>
                 <td>
-                    <form action="{{route('posts.destroy',['id'=>$post->id])}}" method="post">
+                    <form action="{{route('posts.destroy',[$post->id])}}" method="post">
                         @csrf
                         @method('DELETE')
                         <button type="submit" class="btn btn-danger"><i class="fas fa-trash-alt"></i></button>
