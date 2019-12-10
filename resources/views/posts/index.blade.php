@@ -17,7 +17,7 @@
                 <td>
                     {{$post->title}}
                 </td>
-                <td>
+                {{-- <td>
                     <a class="btn btn-primary" href="{{route('posts.show',['id'=>$post->id])}}"><i class="fas fa-eye"></i></a>
                 </td>
                 <td>
@@ -29,7 +29,7 @@
                         @method('DELETE')
                         <button type="submit" class="btn btn-sm btn-danger">trash</button>
                     </form>
-                </td>
+                </td> --}}
             </tr>
             @endforeach
             @else

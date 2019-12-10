@@ -57,9 +57,7 @@ class PostController extends Controller
         ]);
 
         $post->save();
-
         Session::flash('success','post created successfully');
-
         return redirect()->route('posts.index');
     }
 
