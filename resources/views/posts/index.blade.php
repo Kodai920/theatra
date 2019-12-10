@@ -21,10 +21,10 @@
                     <a class="btn btn-primary" href="#"><i class="fas fa-eye"></i></a>
                 </td>
                 <td>
-                    <a class="btn btn-info" href=""><i class="fas fa-edit"></i></a>
+                    <a class="btn btn-info" href="#"><i class="fas fa-edit"></i></a>
                 </td>
                 <td>
-                    <form action="" method="post">
+                    <form action="{{route('posts.destroy',['id'=>$post->id])}} " method="post">
                         @csrf
                         @method('DELETE')
                         <button type="submit" class="btn btn-sm btn-danger">trash</button>
