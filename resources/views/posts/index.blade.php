@@ -20,7 +20,7 @@
                     <a class="btn btn-primary" href=" {{route('posts.show',['id'=>$post->id])}}"><i class="fas fa-eye"></i></a>
                 </td>
                 <td>
-                    <a class="btn btn-info" href=" {{route('posts.create',['id'=>$post->id])}}"><i class="fas fa-edit"></i></a>
+                    <a class="btn btn-info" href="{{route('posts.create',['id'=>$post->id])}}"><i class="fas fa-edit"></i></a>
                 </td>
                 <td>
                     <form action=" {{route('posts.destroy',['id'=>$post->id])}}" method="POST">
