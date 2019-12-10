@@ -13,7 +13,7 @@
         </ul>
         @endif
 
-        <form action="{{isset($post) ? route('posts.store') : route('posts.update',['id'=>$post->id])}}" method="post" enctype="multipart/form-data">
+        <form action="{{isset($post) ? route('posts.store') : route('posts.update',[$post->id])}}" method="post" enctype="multipart/form-data">
             @csrf
             <div class="form-group">
                 <label for="title">Title</label>
@@ -22,7 +22,7 @@
 
             <div class="form-group">
                 <label for="about">Impression</label>
-                <textarea name="about" cols="30" rows="10" class="form-control">{{isset($post) ? '' : $post->about}}</textarea>
+                <textarea name="about" cols="30" rows="5" class="form-control">{{isset($post) ? '' : $post->about}}</textarea>
             </div>
 
             <div class="form-group">
