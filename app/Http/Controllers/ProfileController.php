@@ -18,7 +18,7 @@ class ProfileController extends Controller
 
         $user->name = $request->name;
         $user->email = $request->email;
-        $user->about = $request->about;
+        $user->profile->about = $request->about;
 
         $user->save();
         $user->profile->save();
