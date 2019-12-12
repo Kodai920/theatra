@@ -14,7 +14,7 @@ class ProfileController extends Controller
     }
 
     public function update(UpdateProfileRequest $request, $user){
-        // $user = Auth::user();
+        $user = Auth::user();
 
         $user->name = $request->name;
         $user->email = $request->email;
