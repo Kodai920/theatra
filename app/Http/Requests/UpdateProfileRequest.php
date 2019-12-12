@@ -28,7 +28,7 @@ class UpdateProfileRequest extends FormRequest
             'email' => 'required|email',
             'password' => 'nullable',
             'avator' => 'nullable|image',
-            'about' => 'nullable'
+            // 'about' => 'nullable'
         ];
     }
 }
