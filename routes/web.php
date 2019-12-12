@@ -30,9 +30,9 @@ Route::get('/profiles/index',[
     'as' => 'profiles.index',
 ]);
 
-Route::post('/update-profiles',[
+Route::post('/update-profile',[
     'uses' => 'ProfileController@update',
-    'as' => 'profiles.update',
+    'as' => 'profile.update',
 ]);
 
 });

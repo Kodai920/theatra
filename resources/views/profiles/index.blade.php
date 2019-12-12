@@ -12,7 +12,7 @@
         </ul>
         @endif
 
-        <form action="{{route('profiles.update')}}" method="post" enctype="multipart/form-data">
+        <form action="{{route('profile.update')}}" method="post" enctype="multipart/form-data">
             @csrf
             <div class="form-group">
                 <label for="name">アカウント名</label>
