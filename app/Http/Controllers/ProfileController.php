@@ -10,7 +10,7 @@ use App\Http\Requests\UpdateProfileRequest;
 class ProfileController extends Controller
 {
     public function index(){
-        return view('profiles.index')->with('profiles',Auth::user());
+        return view('profiles.index')->with('user',Auth::user());
     }
 
     public function update(UpdateProfileRequest $request){
