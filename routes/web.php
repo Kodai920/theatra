@@ -22,3 +22,13 @@ Route::get('/home', 'HomeController@index')->name('home');
 Route::resource('posts','PostController');
 
 Route::resource('profiles','ProfileController');
+
+Route::get('/profiles/index',[
+    'uses' => 'ProfileController@update',
+    'as' => 'profiles.index',
+]);
+
+Route::post('/update-profile',[
+    'uses' => 'ProfileController@update',
+    'as' => 'profiles.update',
+]);
