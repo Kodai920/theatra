@@ -21,8 +21,6 @@ Route::get('/home', 'HomeController@index')->name('home');
 
 Route::resource('posts','PostController');
 
-
-
 Route::group(['middleware' => 'auth'],function(){
 
     Route::resource('profiles','ProfileController');
