@@ -13,7 +13,7 @@ class ProfileController extends Controller
         return view('profiles.index')->with('user',Auth::user());
     }
 
-    public function update(UpdateProfileRequest $request, $user){
+    public function update(UpdateProfileRequest $request){
         $user = Auth::user();
 
         $user->name = $request->name;
