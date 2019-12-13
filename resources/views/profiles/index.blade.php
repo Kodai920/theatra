@@ -12,9 +12,11 @@
         </ul>
         @endif
 
-        <form action="{{route('profiles.update',[$user->id])}}" method="post" enctype="multipart/form-data">
+        <form action="{{route('profiles.update'
+        // ,[$user->id]
+        )}}" method="post" enctype="multipart/form-data">
             @csrf
-            @method('PUT')
+            {{-- @method('PUT') --}}
             <div class="form-group">
                 <label for="name">アカウント名</label>
                 <input type="text" name="name" value="{{Auth::user()->name}}" class="form-control">
@@ -25,7 +27,7 @@
             </div>
             <div class="form-group">
                 <label for="password">新しいパスワード</label>
-                <input type="password" name="password" class="form-control"　value="{{Auth::user()->password}} ">
+                <input type="password" name="password" class="form-control">
             </div>
             <div class="form-group">
                 <label for="avator">アイコン画像</label>
