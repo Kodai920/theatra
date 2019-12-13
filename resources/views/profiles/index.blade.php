@@ -12,7 +12,7 @@
         </ul>
         @endif
 
-        <form action="{{route('profiles.update',['id'=>$user->id])}}" method="post" enctype="multipart/form-data">
+        <form action="{{route('profiles.update',[$user->id])}}" method="post" enctype="multipart/form-data">
             @csrf
             @method('PUT')
             <div class="form-group">
