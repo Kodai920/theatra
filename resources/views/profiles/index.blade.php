@@ -12,7 +12,7 @@
         </ul>
         @endif
 
-        <form action="{{route('profiles.update',[$user->profile->id])}}" method="post" enctype="multipart/form-data">
+        <form action="{{route('profiles.update',[$user->id])}}" method="post" enctype="multipart/form-data">
             @csrf
             @method('PUT')
             <div class="form-group">
@@ -24,7 +24,7 @@
                 <input type="email" name="email" value="{{Auth::user()->email}}" class="form-control">
             </div>
             <div class="form-group">
-                <label for="password">パスワード</label>
+                <label for="password">新しいパスワード</label>
                 <input type="password" name="password" class="form-control">
             </div>
             <div class="form-group">
