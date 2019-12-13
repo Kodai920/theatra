@@ -16,11 +16,11 @@
             @csrf
             <div class="form-group">
                 <label for="name">アカウント名</label>
-                <input type="text" name="name" value="{{$user->name}}" class="form-control">
+                <input type="text" name="name" value="{{Auth::user()->name}}" class="form-control">
             </div>
             <div class="form-group">
                 <label for="email">メールアドレス</label>
-                <input type="email" name="email" value="{{$user->email}}" class="form-control">
+                <input type="email" name="email" value="{{Auth::user()->email}}" class="form-control">
             </div>
             <div class="form-group">
                 <label for="password">パスワード</label>
