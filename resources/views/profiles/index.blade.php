@@ -12,11 +12,9 @@
         </ul>
         @endif
 
-        <form action="{{route('profiles.update'
-        // ,[$user->id]
-        )}}" method="post" enctype="multipart/form-data">
+        <form action="{{route('profiles.update',[$user->id])}}" method="post" enctype="multipart/form-data">
             @csrf
-            {{-- @method('PUT') --}}
+            @method('PUT')
             <div class="form-group">
                 <label for="name">アカウント名</label>
                 <input type="text" name="name" value="{{Auth::user()->name}}" class="form-control">
