@@ -30,13 +30,13 @@
             <div class="col-md-3">
                 <ul class="list-group">
                     <li class="list-group-item">
-                        <a href=" {{route('home')}}">Home</a>
+                        <a href=" {{route('home')}}">ホーム</a>
                     </li>
                     <li class="list-group-item">
-                        <a href=" {{route('posts.index')}}">Posts</a>
+                        <a href=" {{route('posts.index')}}">投稿</a>
                     </li>
                     <li class="list-group-item">
-                        <a href=" {{route('posts.create')}}">New Post</a>
+                        <a href=" {{route('posts.create')}}">新しい投稿をする</a>
                     </li>
                 </ul>
             </div>
