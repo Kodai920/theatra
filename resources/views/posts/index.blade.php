@@ -21,6 +21,7 @@
                 <td>
                     <a class="btn btn-primary" href="{{route('posts.show',[$post->id])}}"><i class="fas fa-eye"></i></a>
                 </td>
+                @if(Auth::check())
                 <td>
                     <a class="btn btn-info" href="{{route('posts.edit',[$post->id])}}"><i class="fas fa-edit"></i></a>
                 </td>
@@ -31,6 +32,7 @@
                         <button type="submit" class="btn btn-danger"><i class="fas fa-trash-alt"></i></button>
                     </form>
                 </td>
+                @endif
             </tr>
             @endforeach
             @else
