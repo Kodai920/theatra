@@ -53,7 +53,8 @@ class PostController extends Controller
         $post = Post::create([
             'title' => $request->title,
             'about' => $request->about,
-            'featured_img' => asset('uploads/posts/'.$featured_new_name)
+            'featured_img' => asset('uploads/posts/'.$featured_new_name),
+            'user_id' => Auth::id()
         ]);
 
         $post->save();
