@@ -9,7 +9,7 @@
         <h3>レビュー</h3>
         <div>{!! $post->about !!}</div>
         <hr>
-        <a href="{{route('posts.index')}}" class="btn btn-secondary float-right">Back</a>
+        <a href="{{route('posts.index')}}" class="btn btn-secondary float-right">戻る</a>
         </div>
     </div>
 

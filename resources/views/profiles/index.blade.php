@@ -2,7 +2,7 @@
 @section('content')
 
 <div class="card">
-    <div class="card-header">Profile</div>
+    <div class="card-header">プロフィール</div>
     <div class="card-body">
         @if(count($errors) > 0)
         <ul class="list-group">
