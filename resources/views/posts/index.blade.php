@@ -35,7 +35,7 @@
             @endforeach
             @else
             <tr>
-                <th colspan=2 class="text-center">No posts yet!</th>
+                <th colspan=2 class="text-center"><a href="{{route('posts.create')}}">初めての投稿をしましょう！</a></th>
             </tr>
             @endif
         </tbody>
