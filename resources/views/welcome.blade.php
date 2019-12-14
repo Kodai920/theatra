@@ -85,14 +85,14 @@
                 </div>
 
                 <div class="links">
-                    <a href="https://laravel.com/docs">Docs</a>
-                    <a href="https://laracasts.com">Laracasts</a>
-                    <a href="https://laravel-news.com">News</a>
-                    <a href="https://blog.laravel.com">Blog</a>
-                    <a href="https://nova.laravel.com">Nova</a>
-                    <a href="https://forge.laravel.com">Forge</a>
-                    <a href="https://vapor.laravel.com">Vapor</a>
-                    <a href="https://github.com/laravel/laravel">GitHub</a>
+                    <a href="https://www.netflix.com/">Netflix</a>
+                    <a href="https://www.amazon.co.jp/piv/">Prime</a>
+                    <a href="https://www.hulu.jp/">Hulu</a>
+                    <a href="https://video.unext.jp/">U-NEXT</a>
+                    <a href="https://pc.video.dmkt-sp.jp/">dTV</a>
+                    <a href="https://fod.fujitv.co.jp/s/">FOD</a>
+                    <a href="https://www.paravi.jp">Paravi</a>
+                    <a href="https://www.youtube.com">Youtube</a>
                 </div>
             </div>
         </div>
