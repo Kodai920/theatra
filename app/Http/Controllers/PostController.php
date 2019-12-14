@@ -6,7 +6,6 @@ use Illuminate\Http\Request;
 use App\Post;
 use Illuminate\Support\Facades\Session;
 use Auth;
-use App\User;
 
 class PostController extends Controller
 {
@@ -54,7 +53,7 @@ class PostController extends Controller
             'title' => $request->title,
             'about' => $request->about,
             'featured_img' => asset('uploads/posts/'.$featured_new_name),
-            'user_id' => $user->id
+            'user_id' => Auth::id()
         ]);
 
         $post->save();
