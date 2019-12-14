@@ -85,14 +85,14 @@
                 </div>
 
                 <div class="links">
-                    <a href="https://www.netflix.com/">Netflix</a>
-                    <a href="https://www.amazon.co.jp/piv/">Prime</a>
-                    <a href="https://www.hulu.jp/">Hulu</a>
-                    <a href="https://video.unext.jp/">U-NEXT</a>
-                    <a href="https://pc.video.dmkt-sp.jp/">dTV</a>
-                    <a href="https://fod.fujitv.co.jp/s/">FOD</a>
-                    <a href="https://www.paravi.jp">Paravi</a>
-                    <a href="https://www.youtube.com">Youtube</a>
+                    <a href="https://www.netflix.com/" target="_blank">Netflix</a>
+                    <a href="https://www.amazon.co.jp/piv/" target="_blank">Prime</a>
+                    <a href="https://www.hulu.jp/" target="_blank">Hulu</a>
+                    <a href="https://video.unext.jp/" target="_blank">U-NEXT</a>
+                    <a href="https://pc.video.dmkt-sp.jp/" target="_blank">dTV</a>
+                    <a href="https://fod.fujitv.co.jp/s/" target="_blank">FOD</a>
+                    <a href="https://www.paravi.jp" target="_blank">Paravi</a>
+                    <a href="https://www.youtube.com" target="_blank">Youtube</a>
                 </div>
             </div>
         </div>
