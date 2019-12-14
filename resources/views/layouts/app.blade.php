@@ -32,12 +32,14 @@
                     <li class="list-group-item">
                         <a href=" {{route('home')}}">ホーム</a>
                     </li>
+                    @if(Auth::check())
                     <li class="list-group-item">
                         <a href=" {{route('posts.index')}}">投稿</a>
                     </li>
                     <li class="list-group-item">
                         <a href=" {{route('posts.create')}}">新しい投稿をする</a>
                     </li>
+                    @endif
                 </ul>
             </div>
             <div class="col-md-9">
