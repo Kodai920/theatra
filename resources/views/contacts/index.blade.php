@@ -6,9 +6,9 @@
 <div class="container">
     <div class="row">
         <div class="col-md-12">
-            <div class="panel panel-default">
-                <div class="panel-heading">お問い合わせ</div>
-                <div class="panel-body">
+            <div class="card card-default">
+                <div class="card-heading">お問い合わせ</div>
+                <div class="card-body">
                     {{-- エラーの表示 --}}
                     @if ($errors->any())
                         <div class="alert alert-danger">
