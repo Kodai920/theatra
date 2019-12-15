@@ -3,6 +3,8 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Contact;
+use App\Http\Requests\ContactRequest;
 
 class ContactsController extends Controller
 {
@@ -13,72 +15,43 @@ class ContactsController extends Controller
      */
     public function index()
     {
-        //
+        $types = Contact::$types;
+        $genders = Contact::$genders;
+
+        return view('contacts.index',compact('types','gender'));
     }
 
-    /**
-     * Show the form for creating a new resource.
-     *
-     * @return \Illuminate\Http\Response
-     */
-    public function create()
+    public function confirm(ContactRequest $request)
     {
-        //
+        $contact = new Contact($request->all());
+
+        //「お問い合わせの種類(checkbox)」を配列から文字列に
+        $type = '';
+        if(isset($request->type)){
+            $type = implode(', ', $request->type);
+        }
+        return view('contacts.confirm',compact('contact','type'));
     }
 
-    /**
-     * Store a newly created resource in storage.
-     *
-     * @param  \Illuminate\Http\Request  $request
-     * @return \Illuminate\Http\Response
-     */
-    public function store(Request $request)
+    public function complete(ContactRequest $request)
     {
-        //
-    }
+        $input = $request->except('action');
 
-    /**
-     * Display the specified resource.
-     *
-     * @param  int  $id
-     * @return \Illuminate\Http\Response
-     */
-    public function show($id)
-    {
-        //
-    }
+        if($request->action === '戻る'){
+            return redirect()->action('ContactsController@index')->withInput($input);
+        }
 
-    /**
-     * Show the form for editing the specified resource.
-     *
-     * @param  int  $id
-     * @return \Illuminate\Http\Response
-     */
-    public function edit($id)
-    {
-        //
-    }
+        //チェックボックス（配列）を「,」区切りの文字に
+        if(isset($request->type)){
+            $request->merge(['type' => implode(', ', $request->type)]);
+        }
 
-    /**
-     * Update the specified resource in storage.
-     *
-     * @param  \Illuminate\Http\Request  $request
-     * @param  int  $id
-     * @return \Illuminate\Http\Response
-     */
-    public function update(Request $request, $id)
-    {
-        //
-    }
+        //データを保存
+        Contact::create($request->all());
 
-    /**
-     * Remove the specified resource from storage.
-     *
-     * @param  int  $id
-     * @return \Illuminate\Http\Response
-     */
-    public function destroy($id)
-    {
-        //
+        //二重送信防止
+        $request->session()->regenerateToken();
+
+        return view('contacts.complete');
     }
 }
