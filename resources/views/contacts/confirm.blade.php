@@ -4,9 +4,9 @@
 <div class="container">
     <div class="row">
         <div class="col-md-12">
-            <div class="panel panel-default">
-                <div class="panel-heading">お問い合わせ</div>
-                <div class="panel-body">
+            <div class="card">
+                <div class="card-header">お問い合わせ</div>
+                <div class="card-body">
                     <p>誤りがないことを確認のうえ送信ボタンをクリックしてください。</p>
 
                     <table class="table">
