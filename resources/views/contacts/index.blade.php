@@ -1,8 +1,6 @@
 @extends('layouts.app')
- 
 @section('content')
- 
- 
+
 <div class="container">
     <div class="row">
         <div class="col-md-12">
@@ -19,7 +17,7 @@
                             </ul>
                         </div>
                     @endif
- 
+
                     {!! Form::open(['url' => 'contact/confirm',
                                 'class' => 'form-horizontal']) !!}
  
@@ -93,13 +91,13 @@
                             @endif
                         </div>
                     </div>
- 
+
                     <div class="form-group">
                         <div class="col-sm-10 col-sm-offset-2">
                             {!! Form::submit('確認', ['class' => 'btn btn-primary']) !!}
                         </div>
                     </div>
- 
+
                     {!! Form::close() !!}
                 </div>
             </div>
