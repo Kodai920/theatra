@@ -18,7 +18,7 @@
                      </div>
                      @endif
 
-                     {{!! From::open(['url' => 'contact/confirm',
+                     {{!! Form::open(['url' => 'contact/confirm',
                      'class' => 'form-horizontal']) !!}}
 
 <div class="form-group{{ $errors->has('type') ? ' has-error' : '' }}">
