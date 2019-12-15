@@ -6,7 +6,8 @@ use App\User;
 use App\Http\Controllers\Controller;
 use Illuminate\Support\Facades\Hash;
 use Illuminate\Support\Facades\Validator;
-use Illuminate\Foundation\Auth\RegistersUsers;
+// use Illuminate\Foundation\Auth\RegistersUsers;
+use Bestmomo\LaravelEmailConfirmation\Traits\RegistersUsers;
 use App\Profile;
 
 class RegisterController extends Controller
