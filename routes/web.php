@@ -27,7 +27,7 @@ Route::group(['middleware' => 'auth'],function(){
 
 });
 
-Route::get('contact','ContactsController@index');
+Route::get('contact','ContactsController@index')->name('contacts.index');
 
 Route::post('contact/confirm','ContactsController@confirm');
 
