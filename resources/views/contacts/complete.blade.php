@@ -11,6 +11,8 @@
                     お問い合わせいただき、大変ありがとうございます。<br>
                     お客様のご要望を取り入れ、サービスの質の向上に努めてまいります。
                 </div>
+                <hr>
+                <a href="{{route('home')}}" class="btn btn-secondary float-right">戻る</a>
             </div>
         </div>
     </div>
