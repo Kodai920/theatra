@@ -18,8 +18,8 @@
                      </div>
                      @endif
 
-                     {{!! Form::open(['url' => 'contact/confirm',
-                     'class' => 'form-horizontal']) !!}}
+                     {!! Form::open(['url' => 'contact/confirm',
+                     'class' => 'form-horizontal']) !!}
 
 <div class="form-group{{ $errors->has('type') ? ' has-error' : '' }}">
         {!! Form::label('type', 'お問い合わせ種類:', ['class' => 'col-sm-2 control-label']) !!}
