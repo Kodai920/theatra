@@ -18,7 +18,7 @@ class ContactsController extends Controller
         $types = Contact::$types;
         $genders = Contact::$genders;
 
-        return view('contacts.index',compact('types','gender'));
+        return view('contacts.index',compact('types','genders'));
     }
 
     public function confirm(ContactRequest $request)
