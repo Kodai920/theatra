@@ -27,6 +27,7 @@
                     @endif
                 @else
                     <li class="nav-item dropdown">
+                        <a href="{{route('contacts.index')}} ">お問い合わせ</a>
                         <a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
                             <img src="{{isset($user) ? asset($user->profile->avator) : Auth::user()->profile->avator}}"
                             alt="{{Auth::user()->name}}" height="40px" width="40px" style="border-radius:50%"
