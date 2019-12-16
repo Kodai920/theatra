@@ -27,7 +27,7 @@
         <div class="thumb-content"><a href="#.">Event/Tickets</a></div>	
         </li>
         <li>
-        <div class="thumb-content"><a href="#.">News</a></div>	
+        <div class="thumb-content"><a href="#.">News</a></div>
         </li>
         <li>
         <div class="thumb-content"><a href="#.">Lifestyle</a></div>	
@@ -70,7 +70,7 @@
         <div class="container">
         <div class="row">
         <div class="col-md-12 text-center">
-        <p>Copyright Company Name © 2016. All rights reserved.</p>
+        <p>Copyright Okabe Kodai © 2020. All rights reserved.</p>
         </div>
         </div>
         </div>
