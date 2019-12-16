@@ -11473,7 +11473,7 @@ footer h5{
 
 .welcome-image{
   background-image: url(theater.png);
-  background-size: cover;
+  background-size: contain;
 }
 
 .welcome-text{
