@@ -10,7 +10,7 @@
     <div>
         <p>kokokokokokokokokokpo</p>
     </div>
-    <div>コート・ダジュール</div>
+    <div><p>コート・ダジュール</p></div>
     <img src="profile.jpeg" alt="">
 </div>
 
