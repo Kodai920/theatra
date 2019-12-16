@@ -37,12 +37,15 @@
 
                         <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
                             @if(Auth::check())
-                            <a class="dropdown-item" href="#">
-                                マイページ
-                            </a><hr>
                             <a class="dropdown-item" href="{{ route('profiles.index') }}">
-                                プロフィール
+                                プロフィール編集
                             </a><hr>
+                            <a class="dropdown-item" href="#">
+                                アカウント情報
+                            </a>
+                            <a class="dropdown-item" href="{{ route('contacts.index') }}">
+                                お問い合わせ
+                            </a>
                             @endif
                             <a class="dropdown-item" href="{{ route('logout') }}"
                                onclick="event.preventDefault();
