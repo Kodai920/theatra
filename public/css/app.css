@@ -11472,6 +11472,16 @@ footer h5{
 }
 
 .welcome-image{
-  background-image: url("theater1.png");
-  text-align: center;
+  border:  solid 1px;                             /* 枠線指定 */
+  display:  inline-block;                         /* インラインブロックにする */
+  padding: 10px 20px;                             /* 余白指定 */
+  background-color: rgba(255, 255, 255, 0.7);     /* 背景色指定 */
+
+}
+
+.welcome-text{
+  text-align:  center;    /* 文字中央寄せ */
+  padding:  150px;        /* 余白指定 */
+  border: solid 2px;      /* 枠線指定 */
+  background-image: url(theater1.png);
 }

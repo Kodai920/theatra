@@ -28,8 +28,8 @@
     @include('inc.navbar')
     <div class="container py-4">
         <div class="row justify-content-center">
-            <div>
-                <h1 class="welocome-image">さあ、最高のNETFLIXライフを</h1>
+            <div class="welcome-image">
+                <h1 class="welocome-text">さあ、最高のNETFLIXライフを</h1>
             </div>
         </div>
     </div>
