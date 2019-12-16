@@ -11452,6 +11452,7 @@ footer{
   bottom: 0; /*下に固定*/
   height: auto;
   flex: 1;
+  position: absolute;
 }
 
 .para{
