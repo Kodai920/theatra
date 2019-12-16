@@ -11445,3 +11445,7 @@ footer{
   position: absolute;/*←絶対位置*/
   bottom: 0; /*下に固定*/
 }
+
+.para{
+  color: E5E5E5;
+}
