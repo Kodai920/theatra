@@ -45,7 +45,7 @@
         <div class="widget no-box">
         <h5 class="widget-title">Get Started<span></span></h5>
         <p class="para">Get access to your full Training and Marketing Suite.</p>
-        <a class="btn" href="#." target="_blank">Register Now</a>
+        {{-- <a class="btn" href="#." target="_blank">Register Now</a> --}}
         </div>
         </div>
         
