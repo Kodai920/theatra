@@ -7,7 +7,7 @@
         <div class="widget subscribe no-box">
         <h5 class="widget-title">Theatra<span></span></h5>
         <p class="para">
-            
+            TheatraはNetflixに特化した映画レビューサイトです
         </p>
         </div>
         </div>
