@@ -6,6 +6,10 @@
         <div class="col-8">
             <img src="profile.jpeg" alt="">
         </div>
+        <div>
+            <p>kokokokokokokokokokpo</p>
+        </div>
+        <div>コート・ダジュール</div>
     </div>
 </div>
 
