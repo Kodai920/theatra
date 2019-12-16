@@ -11485,3 +11485,9 @@ footer h5{
   color: #131313;
   padding: 140px;
 }
+
+.btn-register{
+  text-align: center;
+  background-color:#131313;
+  color:#E5E5E5;
+}
