@@ -8,10 +8,10 @@
         </div>
     </div>
     <div>
-            <p>kokokokokokokokokokpo</p>
-        </div>
-        <div>コート・ダジュール</div>
-
+        <p>kokokokokokokokokokpo</p>
+    </div>
+    <div>コート・ダジュール</div>
+    <img src="profile.jpeg" alt="">
 </div>
 
 @endsection
