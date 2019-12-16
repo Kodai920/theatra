@@ -28,7 +28,7 @@
     @include('inc.navbar')
     <div class="wrapper">
         <div class="">
-            <h1 class="">さあ、最高のNETFLIXライフを。</h1>
+            <h1 class="welcome-text">さあ、最高のNETFLIXライフを。</h1>
         </div>
     </div>
     @include('inc.footer')
