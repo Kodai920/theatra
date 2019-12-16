@@ -47,8 +47,10 @@
             </div>
         </div>
     </div>
+    <footer>
+        @include('inc.footer')
+    </footer>
     </div>
-    @include('inc.footer')
     <script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js"></script>
     <script>
         @if(Session::has('success'))
