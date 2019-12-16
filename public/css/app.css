@@ -11474,7 +11474,7 @@ footer h5{
 .welcome-image{
   background-image: url(theater.png);
   background-size: cover;
-  filter: opacity(0.8)
+  filter: opacity(0.2)
 }
 
 .welcome-text{
@@ -11482,6 +11482,6 @@ footer h5{
   font-size: 6vw;
   font-weight: bold;
   font-family: 'Bebas Neue', cursive;
-  color: #E5E5E5;
+  color: #131313;
   padding: 140px;
 }
