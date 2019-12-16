@@ -26,7 +26,7 @@
 <body>
     <div id="app">
     @include('inc.navbar')
-    <div class="container">
+    <div class="wrapper">
         <div class="welcome-image">
             <h1 class="welcome-text">さあ、最高のNETFLIXライフを。</h1>
             <a href="{{ route('register') }}" class="btn btn-lg btn-register">いますぐ始める</a>
@@ -36,12 +36,13 @@
             <p>NETFLIXに特化したレビュー投稿サイトです。<br>
             　NETFLIXの映画やドラマを検索したり、記録したりできます。</p>
         </div>
-        <div class="wrapper">
+        <div class="container">
             <div class="row">
                 <div class="col-4">
                     <i class="fas fa-search"></i>
                 </div>
                 <div class="col-4">
+
                 </div>
                 <div class="col-4">
                     <i class="fas fa-dollar-sign"></i>
