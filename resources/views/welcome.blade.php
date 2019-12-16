@@ -2,9 +2,9 @@
 @section('content')
 
 <div class="wrapper">
-        <div class="">
-            <img src="theater1.png" alt="背景画像">
-        </div>
+    <div>
+        <h1 class="welcome-image">さあ、最高のNETFLIXライフを始めましょう</h1>
+    </div>
 </div>
 
 @endsection
