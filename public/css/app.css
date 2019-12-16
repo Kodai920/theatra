@@ -11450,8 +11450,8 @@ footer{
   width: 100%;
   padding: 30px 0 0;
   bottom: 0; /*下に固定*/
-  /* flex: 1; */
-  position: absolute;
+  flex: 1;
+  /* position: absolute; */
 }
 
 .para{
@@ -11489,7 +11489,7 @@ footer h5{
 .btn-register{
   background-color:#131313;
   color:#E5E5E5;
-  margin: 0 10vw 0;
+  margin: 5vw;
   text-align: center;
   font-size: 20px;
 }
