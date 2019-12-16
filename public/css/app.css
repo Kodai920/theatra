@@ -5158,7 +5158,7 @@ input[type=button].btn-block {
 .navbar-light .navbar-nav .active > .nav-link,
 .navbar-light .navbar-nav .nav-link.show,
 .navbar-light .navbar-nav .nav-link.active {
-  color: rgba(0, 0, 0, 0.9);
+  color: #E5E5E5;
 }
 
 .navbar-light .navbar-toggler {
@@ -11395,8 +11395,8 @@ footer.light .footer-copyright{	background: none repeat scroll 0 0 rgba(255, 255
 /* Footer 4 */
 .footer- .logo {    display: inline-block;}
 
-/*==================== 
-	Widgets 
+/*====================
+	Widgets
 ====================== */
 .widget{	padding: 20px;	margin-bottom: 40px;}
 .widget.widget-last{	margin-bottom: 0px;}
