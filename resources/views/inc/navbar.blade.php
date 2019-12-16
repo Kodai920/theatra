@@ -39,12 +39,10 @@
                             @if(Auth::check())
                             <a class="dropdown-item" href="#">
                                 マイページ
-                            </a>
-                            <hr>
+                            </a><hr>
                             <a class="dropdown-item" href="{{ route('profiles.index') }}">
                                 プロフィール
-                            </a>
-                            <hr>
+                            </a><hr>
                             @endif
                             <a class="dropdown-item" href="{{ route('logout') }}"
                                onclick="event.preventDefault();
