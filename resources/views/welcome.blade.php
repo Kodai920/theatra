@@ -31,7 +31,7 @@
             <h1 class="welcome-text">さあ、最高のNETFLIXライフを。</h1>
             <a href="{{ route('register') }}" class="btn btn-lg btn-register">いますぐ始める</a>
         </div>
-        <div>
+        <div class="my-5">
             <h2>THEATRAとは</h2>
             <p>NETFLIXに特化したレビュー投稿サイトです。<br>
             　NETFLIXの映画やドラマを検索したり、記録したりできます。</p>
