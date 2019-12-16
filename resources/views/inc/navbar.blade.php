@@ -37,6 +37,9 @@
 
                         <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
                             @if(Auth::check())
+                            <a class="dropdown-item" href="#">
+                                マイページ
+                            </a>
                             <a class="dropdown-item" href="{{ route('profiles.index') }}">
                                 プロフィール
                             </a>

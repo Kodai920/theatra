@@ -139,7 +139,7 @@ return [
         /*
          * Laravel Framework Service Providers...
          */
-        Bestmomo\LaravelEmailConfirmation\ServiceProvider::class,
+        // Bestmomo\LaravelEmailConfirmation\ServiceProvider::class,
         Illuminate\Auth\AuthServiceProvider::class,
         Illuminate\Broadcasting\BroadcastServiceProvider::class,
         Illuminate\Bus\BusServiceProvider::class,
