@@ -11474,9 +11474,6 @@ footer h5{
 .welcome{
   background-image: url(theater.png);
   background-size: cover;
-}
-
-.welcome-text{
   text-align: center;
-  margin: auto auto;
+  padding: auto auto;
 }
