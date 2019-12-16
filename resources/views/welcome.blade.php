@@ -4,14 +4,9 @@
 <div class="wrapper">
     <div class="row">
         <div class="col-8">
-            <img src="profile.jpeg" alt="">
+            <img src="theater1.png" alt="">
         </div>
     </div>
-    <div>
-        <p>kokokokokokokokokokpo</p>
-    </div>
-    <div><p>コート・ダジュール</p></div>
-    <img src="profile.jpeg" alt="">
 </div>
 
 @endsection
