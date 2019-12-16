@@ -11476,4 +11476,5 @@ footer h5{
   background-size: cover;
   text-align: center;
   padding: auto auto;
+  filter: opacity(50%);
 }
