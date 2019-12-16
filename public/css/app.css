@@ -11331,7 +11331,7 @@ a.text-dark:focus {
 
   .table td,
   .table th {
-    background-color: #fff !important;
+    background-color: #E5E5E5 !important;
   }
 
   .table-bordered th,
@@ -11348,7 +11348,7 @@ a.text-dark:focus {
   .table-dark thead th,
   .table-dark tbody + tbody {
     border-color: #dee2e6;
-  }
+  
 
   .table .thead-dark th {
     color: inherit;
@@ -11389,15 +11389,15 @@ footer.light .footer-copyright{	background: none repeat scroll 0 0 rgba(255, 255
 /* Footer 4 */
 .footer- .logo {    display: inline-block;}
 
-/*==================== 
-	Widgets 
+/*====================
+	Widgets
 ====================== */
 .widget{	padding: 20px;	margin-bottom: 40px;}
 .widget.widget-last{	margin-bottom: 0px;}
 .widget.no-box{	padding: 0;	background-color: transparent;	margin-bottom: 40px;
 	box-shadow: none; -webkit-box-shadow: none; -moz-box-shadow: none; -ms-box-shadow: none; -o-box-shadow: none;}
 .widget.subscribe p{	margin-bottom: 18px;}
-.widget li a{	color: #ff8d1e;}
+.widget li a{	color: #E5E5E5;}
 .widget li a:hover{	color: #4b92dc;}
 .widget-title {margin-bottom: 20px;}
 .widget-title span {background: #839FAD none repeat scroll 0 0;display: block; height: 1px;margin-top: 25px;position: relative;width: 20%;}
@@ -11414,13 +11414,13 @@ footer.light .footer-copyright{	background: none repeat scroll 0 0 rgba(255, 255
 .typo-light p,
 .typo-light div,
 .typo-light span,
-.typo-light small{	color: #fff;}
+.typo-light small{	color: #E40914;}
 
 ul.social-footer2 {	margin: 0;padding: 0;	width: auto;}
 ul.social-footer2 li {display: inline-block;padding: 0;}
 ul.social-footer2 li a:hover
 ul.social-footer2 li a {display: block;	height:30px;width: 30px;text-align: center;}
-.btn:hover, .btn:focus, .btn.active {background: #4b92dc;color: #fff;
+.btn:hover, .btn:focus, .btn.active {background: #4b92dc;color: #E5E5E5;
 -webkit-box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
 -moz-box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
 -ms-box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);

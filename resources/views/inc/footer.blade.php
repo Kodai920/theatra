@@ -5,8 +5,10 @@
           
         <div class="col-xs-12 col-sm-6 col-md-3">
         <div class="widget subscribe no-box">
-        <h5 class="widget-title">COMPANY NAME<span></span></h5>
-        <p>About the company, little discription will goes here.. </p>
+        <h5 class="widget-title">Theatra<span></span></h5>
+        <p>
+            
+        </p>
         </div>
         </div>
         
