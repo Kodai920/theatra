@@ -11448,3 +11448,7 @@ footer{
 .para{
   color: #E5E5E5;
 }
+
+footer .btn{
+  background-color: E40914;
+}
