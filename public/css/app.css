@@ -11473,10 +11473,10 @@ footer h5{
 
 .welcome-image{
   background-image: url(theater.png);
-  background-size: contain;
+  background-size: cover;
 }
 
 .welcome-text{
   text-align: center;
-  margin: auto 0;
+  font-size: 30vw;
 }
