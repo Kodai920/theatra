@@ -29,7 +29,7 @@
     <div class="wrapper">
         <div class="welcome-image">
             <h1 class="welcome-text">さあ、最高のNETFLIXライフを。</h1>
-            <p><a href="{{ route('register') }}" class="btn btn-lg btn-register">今すぐはじめる</a></p>
+            <a href="{{ route('register') }}" class="btn btn-lg btn-register">今すぐはじめる</a>
         </div>
     </div>
     @include('inc.footer')
