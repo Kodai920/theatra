@@ -11471,12 +11471,12 @@ footer h5{
   background-color: #131313;
 }
 
-.welcome-image{
+.welcome{
   background-image: url(theater1.png);
   background-size: cover;
 }
 
-.welcome-text{
+/* .welcome-text{
   text-align: center;
   margin: auto auto;
-}
+} */

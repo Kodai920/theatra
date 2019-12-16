@@ -23,12 +23,12 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.css">
 
 </head>
-<body>
+<body class="welcome">
     <div id="app">
     @include('inc.navbar')
     <div class="wrapper">
-        <div class="welcome-image">
-            <h1 class="welcome-text">さあ、最高のNETFLIXライフを。</h1>
+        <div class="">
+            <h1 class="">さあ、最高のNETFLIXライフを。</h1>
         </div>
     </div>
     @include('inc.footer')
