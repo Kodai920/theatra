@@ -11450,7 +11450,7 @@ footer{
   width: 100%;
   padding: 30px 0 0;
   bottom: 0; /*下に固定*/
-  flex: 1;
+  /* flex: 1; */
   position: absolute;
 }
 
@@ -11478,5 +11478,5 @@ footer h5{
 
 .welcome-text{
   text-align: center;
-  font-size: 30vw;
+  font-size: 10vw;
 }
