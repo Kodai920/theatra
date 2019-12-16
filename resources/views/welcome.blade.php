@@ -23,10 +23,10 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.css">
 
 </head>
-<body class="welcome">
+<body>
     <div id="app">
     @include('inc.navbar')
-    <div class="wrapper">
+    <div class="container">
         <div class="welcome-image">
             <h1 class="welcome-text">さあ、最高のNETFLIXライフを。</h1>
             <a href="{{ route('register') }}" class="btn btn-lg btn-register">いますぐ始める</a>
@@ -36,10 +36,15 @@
             <p>NETFLIXに特化したレビュー投稿サイトです。<br>
             　NETFLIXの映画やドラマを検索したり、記録したりできます。</p>
         </div>
-        <div class="container">
+        <div class="wrapper">
             <div class="row">
                 <div class="col-4">
-
+                    <i class="fas fa-search"></i>
+                </div>
+                <div class="col-4">
+                </div>
+                <div class="col-4">
+                    <i class="fas fa-dollar-sign"></i>
                 </div>
             </div>
         </div>
