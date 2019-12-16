@@ -11472,7 +11472,6 @@ footer h5{
 }
 
 .welcome-image{
-  text-align:  center;    /* 文字中央寄せ */
   background-image: url(theater1.png);
   background-size: cover;
 }
