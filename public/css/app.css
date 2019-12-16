@@ -5139,6 +5139,8 @@ input[type=button].btn-block {
 .navbar-light .navbar-nav .nav-link {
   color: #E5E5E5;
   background-color: #E40914;
+  margin: 0 2px;
+  border-radius: 10%;
 }
 
 .navbar-light .navbar-nav .nav-link:hover,
