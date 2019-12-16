@@ -11472,6 +11472,6 @@ footer h5{
 }
 
 h1{
-  background-image: url(theater1.png);
+  background-image: url("theater1.png");
   text-align: center;
 }
