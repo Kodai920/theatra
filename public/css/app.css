@@ -11479,4 +11479,6 @@ footer h5{
 
 .welcome-text{
   height: 100vw;
+  text-align: center;
+  margin: auto auto;
 }
