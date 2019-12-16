@@ -26,14 +26,12 @@
 <body>
     <div id="app">
     @include('inc.navbar')
-    <div class="container py-4">
-        <div class="row justify-content-center">
-            <div class="welcome-image col-12">
-                <h1 class="welocome-text">さあ、最高のNETFLIXライフを</h1>
-            </div>
+    <div class="wrapper">
+        <div class="welcome-image">
+            <h1 class="welcome-text">さあ、最高のNETFLIXライフを</h1>
         </div>
     </div>
-        @include('inc.footer')
+    @include('inc.footer')
     </div>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js"></script>
     <script>
