@@ -3,7 +3,9 @@
 
 
 <div class="card">
-    <div class="card-header">All Categories</div>
+    <div class="card-header">All Categories
+        <a class="btn btn-info float-right" href="{{route('categories.create')}}">新規カテゴリ</a>
+    </div>
     <div class="card-body">
         <table class="table table-striped">
             <thead>
