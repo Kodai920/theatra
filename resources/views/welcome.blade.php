@@ -33,19 +33,18 @@
         </div>
         <div class="my-5">
             <h2>THEATRAとは</h2>
-            <p>NETFLIXに特化したレビュー投稿サイトです。<br>
-            　NETFLIXの映画やドラマを検索したり、記録したりできます。</p>
+            <p>NETFLIXに特化したレビュー投稿サイトです。NETFLIXの映画やドラマを検索したり、記録したりできます。</p>
         </div>
         <div class="container">
             <div class="row">
                 <div class="col-4">
-                    <i class="fas fa-search"></i>
+                    <img src="サーチアイコン.jpeg" alt="">
                 </div>
                 <div class="col-4">
-
+                    <img src="記事アイコン1.jpeg" alt="">
                 </div>
                 <div class="col-4">
-                    <i class="fas fa-dollar-sign"></i>
+                    <img src="フリーのドル袋アイコン.jpeg" alt="">
                 </div>
             </div>
         </div>
