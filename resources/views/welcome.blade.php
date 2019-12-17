@@ -36,15 +36,15 @@
             <p>NETFLIXに特化したレビュー投稿サイトです。NETFLIXの映画やドラマを検索したり、記録したりできます。</p>
         </div>
         <div class="container">
-            <div class="row icons">
+            <div class="row">
                 <div class="col-4">
-                    <img src="サーチアイコン.jpeg" alt="">
+                    <img class="icons" src="サーチアイコン.jpeg" alt="">
                 </div>
                 <div class="col-4">
-                    <img src="記事アイコン1.jpeg" alt="">
+                    <img class="icons" src="記事アイコン1.jpeg" alt="">
                 </div>
                 <div class="col-4">
-                    <img src="フリーのドル袋アイコン.jpeg" alt="">
+                    <img class="icons" src="フリーのドル袋アイコン.jpeg" alt="">
                 </div>
             </div>
         </div>
