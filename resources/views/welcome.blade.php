@@ -40,15 +40,15 @@
             <div class="row">
                 <div class="col-4 icons">
                     <img src="サーチアイコン.png" alt="">
-                    <p class="function">好きな映画・ドラマが見つかる検索機能</p>
+                    <p class="function my-3">好きな映画・ドラマが見つかる検索機能</p>
                 </div>
                 <div class="col-4 icons">
                     <img src="記事アイコン1.png" alt="">
-                    <p class="function">あなたの感想・評価を記録できる</p>
+                    <p class="function my-3">あなたの感想・評価を記録できる</p>
                 </div>
                 <div class="col-4 icons">
                     <img src="フリーのドル袋アイコン（円）.png" alt="">
-                    <p class="function">どれだけ投稿しても完全無料</p>
+                    <p class="function my-3">どれだけ投稿しても完全無料</p>
                 </div>
             </div>
         </div>
