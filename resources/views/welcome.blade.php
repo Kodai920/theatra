@@ -51,7 +51,7 @@
                 </div>
             </div>
         </div>
-        <hr width="50%%" color="#131313">
+        <hr width="75%" color="#131313">
     </div>
     @include('inc.footer')
     </div>
