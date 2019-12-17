@@ -32,11 +32,12 @@
             <a href="{{ route('register') }}" class="btn btn-lg btn-register">いますぐ始める</a>
         </div>
         <div class="my-5">
-            <h2>THEATRAとは</h2>
+            <h2 class="text-center">THEATRAとは</h2>
             <p>NETFLIXに特化したレビュー投稿サイトです。NETFLIXの映画やドラマを検索したり、記録したりできます。</p>
         </div>
         <div class="container">
             <div class="row">
+                <h2 class="text-center">主な機能</h2>
                 <div class="col-4 icons">
                     <img src="サーチアイコン.jpeg" alt="">
                     <p>好きな映画・ドラマが見つかる検索機能</p>
