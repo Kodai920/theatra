@@ -36,8 +36,8 @@
             <p>NETFLIXに特化したレビュー投稿サイトです。NETFLIXの映画やドラマを検索したり、記録したりできます。</p>
         </div>
         <div class="container">
+            <h2 class="text-center">主な機能</h2>
             <div class="row">
-                <h2 class="text-center">主な機能</h2>
                 <div class="col-4 icons">
                     <img src="サーチアイコン.jpeg" alt="">
                     <p>好きな映画・ドラマが見つかる検索機能</p>
