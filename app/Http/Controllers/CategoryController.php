@@ -7,7 +7,7 @@ use App\Category;
 use Illuminate\Support\Facades\Session;
 use App\Http\Requests\CreateCategoryRequest;
 
-class CateforyController extends Controller
+class CategoryController extends Controller
 {
     /**
      * Display a listing of the resource.
