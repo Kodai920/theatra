@@ -18,10 +18,10 @@
                 <tr>
                 <td>{{$category->name}}</td>
                 <td>
-                    <a href=" {{route('categories.edit',['id' => $category->id])}} " class="btn btn-info">Edit</a>
+                    <a href=" {{route('categories.edit',[$category->id])}} " class="btn btn-info">Edit</a>
                 </td>
                 <td>
-                    <form action="{{route('categories.destroy',['id'=>$category->id])}}" method="POST">
+                    <form action="{{route('categories.destroy',[$category->id])}}" method="POST">
                     @csrf
                     @method('DELETE')
                     <button type="submit" class="btn btn-sm btn-danger">Delete</button>
