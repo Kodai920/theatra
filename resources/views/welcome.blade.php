@@ -37,15 +37,15 @@
         </div>
         <div class="container">
             <div class="row">
-                <div class="col-4">
+                <div class="col-4 icons">
                     <img src="サーチアイコン.jpeg" alt="">
                     <p>好きな映画・ドラマが見つかる検索機能</p>
                 </div>
-                <div class="col-4">
+                <div class="col-4 icons">
                     <img src="記事アイコン1.jpeg" alt="">
                     <p>あなたの感想・評価を記録できる</p>
                 </div>
-                <div class="col-4">
+                <div class="col-4 icons">
                     <img src="フリーのドル袋アイコン.jpeg" alt="">
                     <p>どれだけ投稿しても完全無料</p>
                 </div>
