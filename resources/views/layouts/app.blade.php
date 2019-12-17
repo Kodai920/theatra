@@ -40,6 +40,9 @@
                     <li class="list-group-item">
                         <a href=" {{route('posts.create')}}">新しい投稿をする</a>
                     </li>
+                    <li class="list-group-item">
+                        <a href=" {{route('posts.index')}}">カテゴリ</a>
+                    </li>
                 </ul>
                 @endif
             </div>
