@@ -13,7 +13,7 @@
         </ul>
         @endif
 
-        <form action="{{ route('categories.update',['id' => $category->id])}}" method="post">
+        <form action="{{ route('categories.update',[$category->id])}}" method="post">
             @csrf
             @if(isset($category))
               @method('PUT')
