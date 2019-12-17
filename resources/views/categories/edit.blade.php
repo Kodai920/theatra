@@ -2,7 +2,7 @@
 @section('content')
 
 <div class="card">
-    <div class="card-header">New Category</div>
+    <div class="card-header">Edit Category</div>
 
     <div class="card-body">
         @if(count($errors) > 0)
@@ -13,18 +13,18 @@
         </ul>
         @endif
 
-        <form action="{{route('categories.store')}}" method="post">
+        <form action="{{ route('categories.update',['id' => $category->id])}}" method="post">
             @csrf
             @if(isset($category))
               @method('PUT')
             @endif
             <div class="form-group">
                 <label for="title">Category Name</label>
-                <input type="text" name="name" class="form-control">
+                <input type="text" name="name" class="form-control" value="{{$category->name}}">
             </div>
             <div class="form-group">
                 <button class="btn btn-success btn-block" type="submit">
-                　　追加
+                   更新
                 </button>
             </div>
         </form>

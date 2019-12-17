@@ -3,6 +3,9 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Category;
+use Illuminate\Support\Facades\Session;
+use App\Http\Requests\CreateCategoryRequest;
 
 class CateforyController extends Controller
 {
@@ -13,7 +16,8 @@ class CateforyController extends Controller
      */
     public function index()
     {
-        //
+        $categories = Category::all();
+        return view('categories.index')->with('categories',$categories);
     }
 
     /**
@@ -23,7 +27,7 @@ class CateforyController extends Controller
      */
     public function create()
     {
-        //
+        return view('cateogries.create');
     }
 
     /**
@@ -32,9 +36,14 @@ class CateforyController extends Controller
      * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\Response
      */
-    public function store(Request $request)
+    public function store(CreateCategoryRequest $request)
     {
-        //
+        $category = new Category;
+        $category->name = $request->name;
+        $category->save();
+
+        Session::flash('success','カテゴリ作成完了');
+        return redirect()->route('categories.index');
     }
 
     /**
@@ -54,9 +63,9 @@ class CateforyController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function edit($id)
+    public function edit(Category $category)
     {
-        //
+        return view('categories.edit')->with('categories',$categories);
     }
 
     /**
@@ -66,9 +75,13 @@ class CateforyController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, $id)
+    public function update(CreateCategoryRequest $request, Category $category)
     {
-        //
+        $category->name = $request->name;
+        $category->save();
+
+        Session::flash('success','カテゴリ編集完了');
+        return redirect()->route('categories.index');
     }
 
     /**
@@ -77,8 +90,10 @@ class CateforyController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function destroy($id)
+    public function destroy(Category $category)
     {
-        //
+        $category->delete();
+        Session::flash('success','カテゴリ削除完了');
+        return redirect()->route('categories.index');
     }
 }
