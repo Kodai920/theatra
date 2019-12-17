@@ -58,7 +58,7 @@
                                 </button>
 
                                 @if (Route::has('password.request'))
-                                    <a class="btn btn-link" href="{{ route('password.request') }}">
+                                    <a class="btn btn-link login-foget" href="{{ route('password.request') }}">
                                         {{ __('パスワードを忘れた場合') }}
                                     </a>
                                 @endif
