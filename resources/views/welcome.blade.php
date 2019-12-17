@@ -37,14 +37,14 @@
         </div>
         <div class="container">
             <div class="row">
-                <div class="col-4">
-                    <img class="icons" src="サーチアイコン.jpeg" alt="">
+                <div class="col-4 icons">
+                    <img src="サーチアイコン.jpeg" alt="">
                 </div>
-                <div class="col-4">
-                    <img class="icons" src="記事アイコン1.jpeg" alt="">
+                <div class="col-4 icons">
+                    <img src="記事アイコン1.jpeg" alt="">
                 </div>
-                <div class="col-4">
-                    <img class="icons" src="フリーのドル袋アイコン.jpeg" alt="">
+                <div class="col-4 icons">
+                    <img src="フリーのドル袋アイコン.jpeg" alt="">
                 </div>
             </div>
         </div>
