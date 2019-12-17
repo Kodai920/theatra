@@ -11501,3 +11501,8 @@ footer h5{
 .function{
   font-size: 40px;
 }
+
+h2{
+  font-size: 50px;
+  font-family: 'Bebas Neue', cursive;
+}
