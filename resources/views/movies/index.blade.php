@@ -6,7 +6,9 @@
             @foreach($movies as $movie)
             {{-- <tr>
             <td> --}}
-                <img src="{{$movie->image}}" width="210px" height="300px" alt="{{$movie->title}}">
+                <div>
+                    <img src="{{$movie->image}}" width="210px" height="300px" alt="{{$movie->title}}">
+                </div>
             {{-- </td>
             </tr> --}}
             @endforeach
