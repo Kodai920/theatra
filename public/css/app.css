@@ -11513,4 +11513,11 @@ h2{
 
 #movie-image{
   filter: drop-shadow(10px 10px 10px rgba(0,0,0,0.6));
+  display: block;
+	transition-duration: 0.3s;	/*変化に掛かる時間*/
+}
+
+#movie-image:hover{
+  transform: scale(1.1);	/*画像の拡大率*/
+	transition-duration: 0.3s;	/*変化に掛かる時間*/
 }
