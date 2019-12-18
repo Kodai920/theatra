@@ -11514,3 +11514,7 @@ h2{
 #movie-image{
   filter: drop-shadow(10px 10px 10px rgba(0,0,0,0.6));
 }
+
+#movie-image:hover{
+    opacity: 0.6;	/* 小さくするほど暗くなります */
+}
