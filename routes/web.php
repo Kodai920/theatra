@@ -23,9 +23,9 @@ Route::resource('posts','PostController');
 
 Route::resource('categories','CategoryController');
 
-//Route::resource('movies','MovieController');
+Route::resource('movies','MovieController');
 
-Route::get('/movies','MovieController@index')->name('movies');
+// Route::get('/movies','MovieController@index')->name('movies');
 
 Route::group(['middleware' => 'auth'],function(){
 
