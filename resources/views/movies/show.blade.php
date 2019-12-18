@@ -6,7 +6,7 @@
     <div class="card-body">
         <div class="row">
             <div class="col-5">
-                <a href="http://">
+                <a>
                 <img src="{{$movie->image}}" width="210px" height="300px" alt="{{$movie->title}}">
                 </a>
             </div>
