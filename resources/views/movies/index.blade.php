@@ -7,7 +7,9 @@
             {{-- <tr>
             <td> --}}
                 <div>
+                    <a href="#">
                     <img src="{{$movie->image}}" width="210px" height="300px" alt="{{$movie->title}}">
+                    </a>
                 </div>
             {{-- </td>
             </tr> --}}
