@@ -11519,6 +11519,6 @@ h2{
 }
 
 #movie-image:hover{
-  transform: scale(1.1);	/*画像の拡大率*/
+  transform: scale(1.3);	/*画像の拡大率*/
 	transition-duration: 0.3s;	/*変化に掛かる時間*/
 }
