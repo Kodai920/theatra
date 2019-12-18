@@ -17,6 +17,7 @@
                 <a href="#"></a>
             </div>
         </div>
+
         <div class="row">
         <div class="col-5">
             <h3>あらすじ</h3>
