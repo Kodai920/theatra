@@ -17,6 +17,13 @@
                 <a href="#"></a>
             </div>
         </div>
+        <div>
+            <h2>あらすじ</h2>
+            <p>{{$movie->about}}</p>
+        </div>
+        <div> 監督 : {{$movie->director}} </div>
+        <div> 脚本 : {{$movie->writer}} </div>
+        <div> キャスト : {{$movie->cast}} </div>
     </div>
 </div>
 
