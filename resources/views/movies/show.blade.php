@@ -14,10 +14,9 @@
                     <li>ジャンル : {{$movie->category->name}}</li> --}}
                     <li>上映時間 : {{$movie->time}}分</li>
                 </ul>
-                <a href="#"></a>
-            </div>
-            <div>
-                <a href="#" class="btn btn-success btn-block btn-lg">レビューを書く</a>
+                <div>
+                    <a href="#" class="btn btn-success btn-block btn-lg">レビューを書く</a>
+                </div>
             </div>
         </div>
 
