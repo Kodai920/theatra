@@ -44,7 +44,7 @@
                         <a href="{{route('categories.index')}}">カテゴリ</a>
                     </li>
                     <li class="list-group-item">
-                        <a href="{{route('movies')}}">映画</a>
+                        <a href="{{route('movies.index')}}">映画</a>
                     </li>
                 </ul>
                 @endif
