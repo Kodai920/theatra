@@ -1,14 +1,16 @@
 @extends('layouts.app')
 @section('content')
 
-    <table class="table table-hover">
-        <tbody>
+    {{-- <table class="table table-hover">
+        <tbody> --}}
             @foreach($movies as $movie)
-            <tr>
-            <td><img src="{{$movie->image}}" width="210px" height="300px" alt="{{$movie->title}}"></td>
-            </tr>
+            {{-- <tr>
+            <td> --}}
+                <img src="{{$movie->image}}" width="210px" height="300px" alt="{{$movie->title}}">
+            {{-- </td>
+            </tr> --}}
             @endforeach
-        </tbody>
-    </table>
+        {{-- </tbody>
+    </table> --}}
 
 @endsection
