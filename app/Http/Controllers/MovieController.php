@@ -52,7 +52,9 @@ class MovieController extends Controller
      */
     public function show(Movie $movie)
     {
-        return view('movies.show')->with('movie',$movie);
+        return view('movies.show')->with('movie',$movie)
+                                  ->with('categories',Category::all());
+                                  ->with('country',Country::all());
     }
 
     /**
