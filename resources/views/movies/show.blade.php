@@ -34,7 +34,7 @@
     </div>
 </div>
 
-<div class="card">
+{{-- <div class="card">
     <div class="card-header">レビュー</div>
     <div class="card-body">
         @foreach($movies as $movie)
@@ -45,6 +45,6 @@
         </div>
     @endforeach
     </div>
-</div>
+</div> --}}
 
 @endsection
