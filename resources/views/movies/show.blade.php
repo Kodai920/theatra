@@ -12,7 +12,7 @@
                 <ul>
                     <li>制作国 : {{$movie->country->name}}</li>
                     <li></li>
-                    <li></li>
+                    <li>上映時間 : {{$movie->time}}分</li>
                 </ul>
             </div>
         </div>
