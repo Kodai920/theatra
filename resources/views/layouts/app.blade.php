@@ -54,7 +54,7 @@
             </div>
         </div>
     </div>
-        @include('inc.footer')
+    @include('inc.footer')
     </div>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js"></script>
     <script>
