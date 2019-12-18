@@ -6,15 +6,11 @@
 
         <div class="card-body">
         <table class="table table-hover">
-            <thead>
-                <th></th>
-                <th>タイトル</th>
-            </thead>
             <tbody>
                 @if($movies->count() > 0)
                 @foreach($movies as $movie)
                 <tr>
-                    <td><img src="{{$movie->image}}" width="80px" height="80px"></td>
+                    <td><img src="{{$movie->image}}" width="140px" height="200px"></td>
                 </tr>
                 @endforeach
                 @else
