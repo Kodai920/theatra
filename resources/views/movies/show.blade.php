@@ -10,8 +10,8 @@
             </div>
             <div class="col-7">
                 <ul>
-                    <li>制作国 : {{$country->movie->name}}</li>
-                    <li>ジャンル : {{$category->movie->name}}</li>
+                    {{-- <li>制作国 : {{$movie->country}}</li>
+                    <li>ジャンル : {{$movie->category}}</li> --}}
                     <li>上映時間 : {{$movie->time}}分</li>
                 </ul>
                 <a href="#"></a>
