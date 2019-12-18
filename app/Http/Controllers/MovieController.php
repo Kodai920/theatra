@@ -16,7 +16,7 @@ class MovieController extends Controller
      */
     public function index()
     {
-        $movies = Category::all();
+        $movies = Movie::all();
         return view('movies.index')->with('movies',$movies);
     }
 
