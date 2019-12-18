@@ -11513,9 +11513,6 @@ h2{
 
 #movie-image{
   filter: drop-shadow(10px 10px 10px rgba(0,0,0,0.6));
-  /* display: block; */
-  transition-duration: 0.3s;	/*変化に掛かる時間*/
-  overflow: hidden;	/*拡大時にはみ出た部分を隠す*/
 }
 
 #movie-image:hover{
