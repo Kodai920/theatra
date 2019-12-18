@@ -10,7 +10,7 @@
                 @if($movies->count() > 0)
                 @foreach($movies as $movie)
                 <tr>
-                    <td><img src="{{$movie->image}}" width="140px" height="200px"></td>
+                    <td><img src="{{$movie->image}}" width="140px" height="200px" alt="{{$movie->title}}"></td>
                 </tr>
                 @endforeach
                 @else
