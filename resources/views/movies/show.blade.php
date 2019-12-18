@@ -4,7 +4,7 @@
 <div class="card">
     <div class="card-header">{{$movie->title}}({{$movie->year}}年)</div>
     <div class="card-body">
-        <div class="row">
+        <div class="row my-5">
             <div class="col-5">
                 <img src="{{$movie->image}}" width="210px" height="300px" alt="{{$movie->title}}">
             </div>
@@ -20,7 +20,7 @@
             </div>
         </div>
 
-        <div class="row">
+        <div class="row my-5">
         <div class="col-5">
             <h3>あらすじ</h3>
             <p>{{$movie->about}}</p>
