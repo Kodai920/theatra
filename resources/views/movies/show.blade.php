@@ -16,6 +16,9 @@
                 </ul>
                 <a href="#"></a>
             </div>
+            <div>
+                <a href="#" class="btn btn-success btn-block btn-lg">レビューを書く</a>
+            </div>
         </div>
 
         <div class="row">
