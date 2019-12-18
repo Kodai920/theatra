@@ -56,8 +56,8 @@ class MovieController extends Controller
         $categories = Category::all();
         $countries = Country::all();
         return view('movies.show')->with('movie',$movie)
-                                  ->with('categories',$categories)
-                                  ->with('countries',$counries);
+                                  ->with('category',$category)
+                                  ->with('country',$counry);
     }
 
     /**
