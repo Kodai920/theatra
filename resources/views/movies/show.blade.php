@@ -17,13 +17,17 @@
                 <a href="#"></a>
             </div>
         </div>
-        <div>
+        <div class="row">
+        <div class="col-5">
             <h3>あらすじ</h3>
             <p>{{$movie->about}}</p>
         </div>
-        <div> 監督 : {{$movie->director}} </div>
-        <div> 脚本 : {{$movie->writer}} </div>
-        <div> キャスト : {{$movie->cast}} </div>
+        <div class="col-7">
+            <div> 監督 : {{$movie->director}} </div>
+            <div> 脚本 : {{$movie->writer}} </div>
+            <div> キャスト : {{$movie->cast}} </div>
+        </div>
+        </div>
     </div>
 </div>
 
