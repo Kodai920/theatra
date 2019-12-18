@@ -11513,9 +11513,17 @@ h2{
 
 #movie-image{
   filter: drop-shadow(10px 10px 10px rgba(0,0,0,0.6));
+  overflow: hidden;	/*拡大時にはみ出た部分を隠す*/
+	width: 210px;	/*画像の幅*/
+	height: 300px;	/*画像の高さ*/
 }
 
-#movie-image:hover{
-  transform: scale(1.3);	/*画像の拡大率*/
+#movie-img img{
+  display: block;
 	transition-duration: 0.3s;	/*変化に掛かる時間*/
+}
+
+#movie-image img:hover{
+  transform: scale(1.3);	/*画像の拡大率*/
+	transition-duration: 0.3s;	/*変化に掛る時間*/
 }
