@@ -5,6 +5,9 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\Movie;
 use Illuminate\Support\Facades\Session;
+use App\Country;
+use App\Category;
+use App\Genre;
 
 
 class MovieController extends Controller

@@ -14,6 +14,7 @@
                     <li>ジャンル : {{$movie->category->name}}</li>
                     <li>上映時間 : {{$movie->time}}分</li>
                 </ul>
+                <a href="#"></a>
             </div>
         </div>
     </div>
