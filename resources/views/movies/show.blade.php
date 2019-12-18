@@ -18,7 +18,7 @@
             </div>
         </div>
         <div>
-            <h2>あらすじ</h2>
+            <h3>あらすじ</h3>
             <p>{{$movie->about}}</p>
         </div>
         <div> 監督 : {{$movie->director}} </div>
