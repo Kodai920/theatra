@@ -29,7 +29,7 @@ class CommentController extends Controller
     {
         $movies = Movie::all();
 
-        return view('comments.create')->with('movies',$movies);
+        return view('comments.create')->with('movie',$movie);
     }
 
     /**
