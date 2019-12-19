@@ -10,15 +10,15 @@
             </div>
             <div class="col-7">
                 <ul class="mt-3 pl-0 movie-detail-info">
-                    <li class="mb-2">制作国 : <a href="#">{{$movie->country->name}}</a></li>
-                    <li class="mb-2">ジャンル : 
+                    <li class="mb-2"><strong>制作国 : </strong><a href="#">{{$movie->country->name}}</a></li>
+                    <li class="mb-2"><strong>ジャンル : </strong>
                         @foreach($movie->categories as $category)
                         <a href="#">
-                        {{$category->name}} 
+                        {{$category->name}}
                         </a>
                         @endforeach
                     </li>
-                    <li>上映時間 : {{$movie->time}}分</li>
+                    <li><strong>上映時間 : </strong>{{$movie->time}}分</li>
                 </ul>
                 <div class="my-5">
                 <h3>あらすじ</h3>
