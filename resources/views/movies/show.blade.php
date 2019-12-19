@@ -33,9 +33,9 @@
         <div class="row my-5">
         <div class="col-5">
             <h3>制作</h3>
-            <div> 監督 : {{$movie->director}} </div>
-            <div> 脚本 : {{$movie->writer}} </div>
-            <div> キャスト : {{$movie->cast}} </div>
+            <div><strong>監督 : {{$movie->director}} </strong></div>
+            <div><strong>脚本 : {{$movie->writer}} </strong></div>
+            <div><strong>キャスト : {{$movie->cast}} </strong></div>
         </div>
         </div>
     </div>
