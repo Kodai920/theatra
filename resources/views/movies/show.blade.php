@@ -2,7 +2,7 @@
 @section('content')
 
 <div class="card">
-    <div class="card-header"><h2>{{$movie->title}}({{$movie->year}}年)</h2></div>
+    <div class="card-header"><h4>{{$movie->title}}({{$movie->year}}年)</h4></div>
     <div class="card-body">
         <div class="row">
             <div class="col-5">
