@@ -2,7 +2,7 @@
 @section('content')
 
 <div class="card">
-<div class="card-header">新しい投稿</div>
+<div class="card-header">{{$movie->title}}のレビュー</div>
 
 <div class="card-body">
     @if(count($errors) > 0)
