@@ -11522,3 +11522,7 @@ h2{
 .movie-detail-info{
   list-style: none;
 }
+
+.movie-detail-image{
+  filter: drop-shadow(10px 10px 10px rgba(0,0,0,0.6));
+}

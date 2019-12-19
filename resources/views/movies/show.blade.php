@@ -6,7 +6,7 @@
     <div class="card-body">
         <div class="row">
             <div class="col-5">
-            <img src="{{asset("uploads/movies/".$movie->image)}}" width="100%" height="100%" alt="{{$movie->title}}">
+            <img class="movie-detail-image" src="{{asset("uploads/movies/".$movie->image)}}" width="100%" height="100%" alt="{{$movie->title}}">
             </div>
             <div class="col-7">
                 <ul class="mt-3 pl-0 movie-detail-info">
