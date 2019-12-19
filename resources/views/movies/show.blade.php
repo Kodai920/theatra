@@ -20,8 +20,10 @@
                     </li>
                     <li>上映時間 : {{$movie->time}}分</li>
                 </ul>
+                <div class="my-5">
                 <h3>あらすじ</h3>
                 <p>{{$movie->about}}</p>
+                </div>
                 <div>
                     <a href="#" class="btn btn-success btn-block btn-lg">レビューを書く</a>
                 </div>
