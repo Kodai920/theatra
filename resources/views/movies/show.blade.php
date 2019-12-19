@@ -13,7 +13,7 @@
                     <li>制作国 : {{$movie->country->name}}</li>
                     <li>ジャンル :
                         @foreach($movie->categories as $category)
-                        {{$category->name}}
+                        {{$category->name}} <br>
                         @endforeach
                     </li>
                     <li>上映時間 : {{$movie->time}}分</li>
