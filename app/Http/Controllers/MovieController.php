@@ -52,9 +52,15 @@ class MovieController extends Controller
      */
     public function show(Movie $movie)
     {
+        $category = optional(Movie::find($movie_id), function ($post) {
+            return Category::find($movie->id);
+        });
+        $country = Country::all();
+        $category_id = optional($movie->category)->id;
+        $country_id = optional($movie->country)->id;
         return view('movies.show')->with('movie',$movie)
-                                  ->with('categories',Category::all())
-                                  ->with('countries',Country::all());
+                                  ->with('category',$category)
+                                  ->with('country',$country);
     }
 
     /**
