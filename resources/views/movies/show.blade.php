@@ -20,6 +20,8 @@
                     </li>
                     <li>上映時間 : {{$movie->time}}分</li>
                 </ul>
+                <h3>あらすじ</h3>
+                <p>{{$movie->about}}</p>
                 <div>
                     <a href="#" class="btn btn-success btn-block btn-lg">レビューを書く</a>
                 </div>
@@ -28,10 +30,6 @@
 
         <div class="row my-5">
         <div class="col-5">
-            <h3>あらすじ</h3>
-            <p>{{$movie->about}}</p>
-        </div>
-        <div class="col-7">
             <h3>制作</h3>
             <div> 監督 : {{$movie->director}} </div>
             <div> 脚本 : {{$movie->writer}} </div>
