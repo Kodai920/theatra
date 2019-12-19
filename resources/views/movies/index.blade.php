@@ -1,7 +1,7 @@
 @extends('layouts.app')
 @section('content')
 
-<a href="{{route('movies.edit',[$movie->id])}} ">編集</a>
+ {{-- <a href="{{route('movies.edit',[$movie->id])}} ">編集</a> --}}
 
     @foreach($movies as $movie)
         <div id="movie-image">
