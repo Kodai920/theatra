@@ -4,7 +4,7 @@
 <div class="card">
     <div class="card-header">{{$movie->title}}({{$movie->year}}年)</div>
     <div class="card-body">
-        <div class="row my-5">
+        <div class="row">
             <div class="col-5">
             <img src="{{asset("uploads/movies/".$movie->image)}}" width="100%" height="100%" alt="{{$movie->title}}">
             </div>
