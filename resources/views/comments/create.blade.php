@@ -22,7 +22,7 @@
         </div>
 
         <div class="range-group form-group">
-            <input type="range" min="1" max="5" value="" class="input-range" />
+            <input type="range" min="1" max="5" value="" class="input-range">
         </div>
 
         <div class="form-group">
