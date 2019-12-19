@@ -13,7 +13,7 @@
                     <li class="mb-2"><strong>制作国 : </strong><a href="#">{{$movie->country->name}}</a></li>
                     <li class="mb-2"><strong>ジャンル : </strong>
                         @foreach($movie->categories as $category)
-                        <a href="{{route('comments.create')}}">
+                        <a href="#">
                         {{$category->name}}
                         </a>
                         @endforeach
@@ -25,7 +25,7 @@
                 <p>{{$movie->about}}</p>
                 </div>
                 <div>
-                    <a href="#" class="btn btn-success btn-block btn-lg">レビューを書く</a>
+                    <a href="{{route('comments.create')}}" class="btn btn-success btn-block btn-lg">レビューを書く</a>
                 </div>
             </div>
         </div>
