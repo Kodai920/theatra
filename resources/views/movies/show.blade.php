@@ -9,7 +9,7 @@
             <img src="{{asset("uploads/movies/".$movie->image)}}" width="100%" height="100%" alt="{{$movie->title}}">
             </div>
             <div class="col-7">
-                <ul class="mt-3 movie-detail-info">
+                <ul class="mt-3 pl-0 movie-detail-info">
                     <li>制作国 : <a href="#">{{$movie->country->name}}</a></li>
                     <li>ジャンル : 
                         @foreach($movie->categories as $category)
