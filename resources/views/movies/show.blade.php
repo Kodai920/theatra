@@ -10,8 +10,8 @@
             </div>
             <div class="col-7">
                 <ul class="mt-3 pl-0 movie-detail-info">
-                    <li>制作国 : <a href="#">{{$movie->country->name}}</a></li>
-                    <li>ジャンル : 
+                    <li class="mb-2">制作国 : <a href="#">{{$movie->country->name}}</a></li>
+                    <li class="mb-2">ジャンル : 
                         @foreach($movie->categories as $category)
                         <a href="#">
                         {{$category->name}} 
