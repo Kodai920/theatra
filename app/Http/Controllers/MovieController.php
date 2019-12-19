@@ -65,9 +65,9 @@ class MovieController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function edit($id)
+    public function edit(Movie $movie)
     {
-        //
+        return view('movies.edit')->with('movie',$movie);
     }
 
     /**
@@ -77,9 +77,18 @@ class MovieController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, $id)
+    public function update(Request $request, Movie $movie)
     {
-        //
+        if($request->hasFile('image')){
+            $image = $request->image;
+            $image_new_name = time().$image->getClientOriginalName();
+            $image->move('uploads/posts',$image_new_name);
+            $movie->image_img = asset($image_new_name);
+        }
+
+        Session::flash('success','Post Updated Successfully');
+
+        return redirect()->route('movies.index');
     }
 
     /**
