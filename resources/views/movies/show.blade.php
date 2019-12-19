@@ -10,7 +10,7 @@
             </div>
             <div class="col-7">
                 <ul>
-                    <li>制作国 : <a href="#">{$movie->country->name}</a></li>
+                    <li>制作国 : <a href="#">{{$movie->country->name}}</a></li>
                     <li>ジャンル : 
                         @foreach($movie->categories as $category)
                         <a href="http://">
