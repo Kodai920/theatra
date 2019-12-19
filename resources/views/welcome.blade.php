@@ -40,7 +40,7 @@
             <div class="row">
                 <div class="col-4 tect-center icons">
                     <img src="サーチアイコン.png" alt="">
-                    <p class="function my-3">好きな映画・ドラマが見つかる検索機能</p>
+                    <p class="function my-3">好きな作品が見つかる検索機能</p>
                 </div>
                 <div class="col-4 text-center icons">
                     <img src="記事アイコン1.png" alt="">
