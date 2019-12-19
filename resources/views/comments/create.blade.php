@@ -21,10 +21,6 @@
             <textarea name="about" class="form-control" rows="5"></textarea>
         </div>
 
-        <div class="range-group">
-            <input type="range" min="1" max="5" value="" class="input-range" />
-        </div>
-
         <div class="form-group">
             <button type="submit" class="btn btn-success btn-block">投稿</button>
         </div>

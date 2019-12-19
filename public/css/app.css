@@ -11526,25 +11526,3 @@ h2{
 .movie-detail-image{
   filter: drop-shadow(10px 10px 10px rgba(0,0,0,0.6));
 }
-
-.input-range {
-  display: none;
-}
-.range-group {
-  position: relative;
-}
-.range-group > a {
-  display: inline-block;
-  width: 20px;
-  height: 20px;
-}
-.range-group > a:before {
-  content: "\f3ae";
-  font-family: "Ionicons";
-  font-size: 20px;
-  color: #aaa;
-}
-.range-group > a.on:before {
-  content: "\f2fc";
-  color: #fc3;
-}
