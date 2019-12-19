@@ -54,8 +54,6 @@ class MovieController extends Controller
     {
         $category = Category::all();
         $country = Country::all();
-        $category_id = optional($movie->category)->id;
-        $country_id = optional($movie->country)->id;
         return view('movies.show')->with('movie',$movie)
                                   ->with('category',$category)
                                   ->with('country',$country);
