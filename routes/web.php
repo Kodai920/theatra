@@ -25,7 +25,7 @@ Route::resource('categories','CategoryController');
 
 Route::resource('movies','MovieController');
 
-// Route::get('/movies','MovieController@index')->name('movies');
+Route::resource('comments','CommentController');
 
 Route::group(['middleware' => 'auth'],function(){
 
