@@ -2,7 +2,7 @@
 @section('content')
 
 <div class="card">
-<div class="card-header">のレビュー</div>
+<div class="card-header">{{$comment->movie->title}}({{$comment->movie->year}}年)のレビュー</div>
 
 <div class="card-body">
     @if(count($errors) > 0)

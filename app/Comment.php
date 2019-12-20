@@ -11,4 +11,8 @@ class Comment extends Model
     public function movie(){
         return $this->belongsTo('App\Movie');
     }
+
+    public function uesr(){
+        return $this->belongsTo('App\User');
+    }
 }
