@@ -39,7 +39,7 @@
         <div>
             @include('inc.disqus')
         </div>
-</div>
+    </div>
 </div>
 
 @endsection
