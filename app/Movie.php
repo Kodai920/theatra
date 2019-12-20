@@ -6,7 +6,7 @@ use Illuminate\Database\Eloquent\Model;
 
 class Movie extends Model
 {
-    protected $fillable = ['image'];
+    protected $fillable = ['title','year','about','image'];
 
     public function categories(){
         return $this->belongsToMany('App\Category','movie_category','movie_id','category_id');
