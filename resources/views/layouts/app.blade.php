@@ -21,9 +21,9 @@
     <!-- Styles -->
     <link href="{{ secure_asset('css/app.css') }}" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.css">
-    {{-- <link rel="stylesheet"  href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet"  href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="css/bootstrap-star-rating/star-rating.css" media="all" rel="stylesheet" type="text/css"/> --}}
+    <link rel="stylesheet" href="css/bootstrap-star-rating/star-rating.css" media="all" rel="stylesheet" type="text/css"/>
 
 </head>
 <body>
@@ -60,8 +60,8 @@
     @include('inc.footer')
     </div>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
-    {{-- <script src="js/bootstrap-star-rating/star-rating.js" type="text/javascript"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js"></script> --}}
+    <script src="js/bootstrap-star-rating/star-rating.js" type="text/javascript"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js"></script>
     <script>
         @if(Session::has('success'))
         toastr.success(" {{Session::get('success')}} ")
