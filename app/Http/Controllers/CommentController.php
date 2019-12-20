@@ -6,6 +6,7 @@ use Illuminate\Http\Request;
 use App\Comment;
 use Illuminate\Support\Facades\Session;
 use App\Movie;
+use App\User;
 
 
 class CommentController extends Controller
@@ -27,9 +28,10 @@ class CommentController extends Controller
      */
     public function create()
     {
-        $movie = Movie::all();
+        $movies = Movie::all();
         $comment = Comment::all();
-        return view('comments.create')->with('movie',$movie)
+
+        return view('comments.create')->with('movies',$movies)
                                       ->with('comment',$comment);
     }
 
