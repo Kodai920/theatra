@@ -24,7 +24,7 @@
                 <h3>あらすじ</h3>
                 <p>{{$movie->about}}</p>
                 </div>
-                <a href="{{route('reviews.create')}}" class="btn btn-success btn-block btn-lg">レビューを書く</a>
+                <a href="{{route('reviewes.create')}}" class="btn btn-success btn-block btn-lg">レビューを書く</a>
             </div>
         </div>
 
@@ -39,13 +39,12 @@
         <div>
             @include('inc.disqus')
         </div>
+        <div class="container">
+                <div class="page-header">
+                <h2>A demo of star rating plug-in</h2>
+                </div>
+                <input id="star-rating-demo" value="4" type="number" class="rating" min=0 max=5 step=0.1 data-size="lg">
     </div>
 </div>
-
-<div class="container">
-        <div class="page-header">
-        <h2>A demo of star rating plug-in</h2>
-        </div>
-            <input id="star-rating-demo" value="4" type="number" class="rating" min=0 max=5 step=0.1 data-size="lg">
 
 @endsection
