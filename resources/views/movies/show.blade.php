@@ -24,10 +24,6 @@
                 <h3>あらすじ</h3>
                 <p>{{$movie->about}}</p>
                 </div>
-                <div>
-                    {{-- <a href="{{route('comments.create')}}" class="btn btn-success btn-block btn-lg">レビューを書く</a> --}}
-                    @include('inc.disqus')
-                </div>
             </div>
         </div>
 
@@ -38,6 +34,10 @@
             <div><strong>脚本 : </strong>{{$movie->writer}} </div>
             <div><strong>キャスト : </strong>{{$movie->cast}} </div>
         </div>
+        </div>
+        <div>
+            {{-- <a href="{{route('comments.create')}}" class="btn btn-success btn-block btn-lg">レビューを書く</a> --}}
+            @include('inc.disqus')
         </div>
     </div>
 </div>
