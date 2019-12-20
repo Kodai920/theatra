@@ -25,7 +25,8 @@
                 <p>{{$movie->about}}</p>
                 </div>
                 <div>
-                    <a href="{{route('comments.create')}}" class="btn btn-success btn-block btn-lg">レビューを書く</a>
+                    {{-- <a href="{{route('comments.create')}}" class="btn btn-success btn-block btn-lg">レビューを書く</a> --}}
+                    @include('inc.disqus')
                 </div>
             </div>
         </div>
