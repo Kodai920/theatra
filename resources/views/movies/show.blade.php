@@ -24,6 +24,7 @@
                 <h3>あらすじ</h3>
                 <p>{{$movie->about}}</p>
                 </div>
+                <a href="{{route('reviews.create')}}" class="btn btn-success btn-block btn-lg">レビューを書く</a>
             </div>
         </div>
 
@@ -36,23 +37,15 @@
         </div>
         </div>
         <div>
-            {{-- <a href="{{route('comments.create')}}" class="btn btn-success btn-block btn-lg">レビューを書く</a> --}}
             @include('inc.disqus')
         </div>
     </div>
 </div>
 
-{{-- <div class="card">
-    <div class="card-header">レビュー</div>
-    <div class="card-body">
-        @foreach($movies as $movie)
-        <div id="movie-image">
-            <a href="{{route('movies.show',[$movie->id])}}" class="float-left m-4">
-            <img src="{{$movie->image}}" width="210px" height="300px" alt="{{$movie->title}}">
-            </a>
+<div class="container">
+        <div class="page-header">
+        <h2>A demo of star rating plug-in</h2>
         </div>
-    @endforeach
-    </div>
-</div> --}}
+            <input id="star-rating-demo" value="4" type="number" class="rating" min=0 max=5 step=0.1 data-size="lg">
 
 @endsection

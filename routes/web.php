@@ -25,7 +25,7 @@ Route::resource('categories','CategoryController');
 
 Route::resource('movies','MovieController');
 
-Route::resource('comments','CommentController');
+Route::resource('reviews','ReviewController');
 
 Route::group(['middleware' => 'auth'],function(){
 
