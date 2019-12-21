@@ -11486,6 +11486,21 @@ footer h5{
   padding: 140px;
 }
 
+.home-image{
+  background-image: url(home.jpeg);
+  background-size: cover;
+  filter: opacity(0.8)
+}
+
+.home-text{
+  text-align: center;
+  font-size: 6vw;
+  font-weight: bold;
+  font-family: 'Bebas Neue', cursive;
+  color: #131313;
+  padding: 140px;
+}
+
 .btn-register{
   background-color:#E40914;
   color:#E5E5E5;
