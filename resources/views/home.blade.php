@@ -29,7 +29,7 @@
     @include('inc.navbar')
     <div class="wrapper">
         <div class="home-image">
-            <h1 class="home-text">お気に入りの映画をみつけよう</h1>
+            <h1 class="home-text">人生を変える映画に出会おう</h1>
         </div>
         <div class="my-5">
             <h2 class="text-center">最近の投稿</h2>
