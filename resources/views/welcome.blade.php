@@ -62,12 +62,12 @@
                     <p class="function my-3">Netflixに特化</p>
                 </div>
                 <div class="col-4 text-center icons">
-                    <img src="記事アイコン1 (1).png" alt="">
-                    <p class="function my-3">あなたの感想・評価を記録できる</p>
+                    <img src="本棚アイコン (1).png" alt="">
+                    <p class="function my-3">多様なカテゴリから検索</p>
                 </div>
                 <div class="col-4 text-center icons">
-                    <img src="お金を握り締める手のアイコン.png" alt="">
-                    <p class="function my-3">どれだけ投稿しても完全無料</p>
+                    <img src="ゴージャスな王冠の無料アイコン.png" alt="">
+                    <p class="function my-3">ここだけの人気作品ランキング</p>
                 </div>
             </div>
         </div>
