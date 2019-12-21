@@ -21,6 +21,10 @@
         </div>
 
         <div class="form-group">
+            <label for="">評価</label>
+        </div>
+
+        <div class="form-group">
             <button type="submit" class="btn btn-success btn-block">投稿</button>
         </div>
     </form>
