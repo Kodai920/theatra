@@ -32,7 +32,7 @@
             <h1 class="home-text">人生を変える映画に出会おう</h1>
         </div>
         <div class="my-5">
-            <h2 class="text-center">{{$user->name}}最近の投稿</h2>
+            <h2 class="text-center">最近の投稿</h2>
         </div>
         <hr width="80%" color="#131313">
         <div class="my-5">
