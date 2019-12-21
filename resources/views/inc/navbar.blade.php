@@ -10,7 +10,25 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <!-- Left Side Of Navbar -->
             <ul class="navbar-nav mr-auto">
-
+                    @if(Auth::check())
+                    <ul class="list-group">
+                        <li class="list-group-item">
+                            <a href="{{route('home')}}">ホーム</a>
+                        </li>
+                        {{-- <li class="list-group-item">
+                            <a href="{{route('posts.index')}}">投稿</a>
+                        </li>
+                        <li class="list-group-item">
+                            <a href="{{route('posts.create')}}">新しい投稿をする</a>
+                        </li>
+                        <li class="list-group-item">
+                            <a href="{{route('categories.index')}}">カテゴリ</a>
+                        </li> --}}
+                        <li class="list-group-item">
+                            <a href="{{route('movies.index')}}">映画</a>
+                        </li>
+                    </ul>
+                    @endif
             </ul>
 
             <!-- Right Side Of Navbar -->

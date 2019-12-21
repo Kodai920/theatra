@@ -34,7 +34,7 @@
                     <li class="list-group-item">
                         <a href="{{route('home')}}">ホーム</a>
                     </li>
-                    <li class="list-group-item">
+                    {{-- <li class="list-group-item">
                         <a href="{{route('posts.index')}}">投稿</a>
                     </li>
                     <li class="list-group-item">
@@ -42,7 +42,7 @@
                     </li>
                     <li class="list-group-item">
                         <a href="{{route('categories.index')}}">カテゴリ</a>
-                    </li>
+                    </li> --}}
                     <li class="list-group-item">
                         <a href="{{route('movies.index')}}">映画</a>
                     </li>
