@@ -27,8 +27,10 @@
     <div id="app">
     @include('inc.navbar')
     <div class="container py-4">
-        <div class="justify-content-center">
+        <div class="row justify-content-center">
+            <div class="col-md-12">
                 @yield('content')
+            </div>
         </div>
     </div>
     @include('inc.footer')
