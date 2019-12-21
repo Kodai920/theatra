@@ -24,7 +24,7 @@ class ReviewController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function create()
+    public function create(Review $review)
     {
         $reviews = Review::all();
         $movies = Movie::all();
