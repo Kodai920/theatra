@@ -34,15 +34,15 @@
         <div class="my-5">
             <h2 class="text-center">最近の投稿</h2>
         </div>
-        <hr width="75%" color="#131313">
+        <hr width="80%" color="#131313">
         <div class="my-5">
             <h2 class="text-center">映画・ドラマが2000本以上</h2>
         </div>
-        <hr width="75%" color="#131313">
+        <hr width="80%" color="#131313">
         <div class="my-5">
             <h2 class="text-center">ジャンルから検索する</h2>
         </div>
-        <hr width="75%" color="#131313">
+        <hr width="80%" color="#131313">
     </div>
     @include('inc.footer')
     </div>
