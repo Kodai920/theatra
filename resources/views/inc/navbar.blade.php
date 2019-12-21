@@ -11,21 +11,12 @@
             <!-- Left Side Of Navbar -->
             <ul class="navbar-nav mr-auto">
                     @if(Auth::check())
-                    <ul class="list-group">
-                        <li class="list-group-item">
-                            <a href="{{route('home')}}">ホーム</a>
+                    <ul class="navber-nav ml-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="{{route('home')}}">ホーム</a>
                         </li>
-                        {{-- <li class="list-group-item">
-                            <a href="{{route('posts.index')}}">投稿</a>
-                        </li>
-                        <li class="list-group-item">
-                            <a href="{{route('posts.create')}}">新しい投稿をする</a>
-                        </li>
-                        <li class="list-group-item">
-                            <a href="{{route('categories.index')}}">カテゴリ</a>
-                        </li> --}}
-                        <li class="list-group-item">
-                            <a href="{{route('movies.index')}}">映画</a>
+                        <li class="nav-item">
+                            <a class="nav-link" href="{{route('movies.index')}}">映画</a>
                         </li>
                     </ul>
                     @endif
