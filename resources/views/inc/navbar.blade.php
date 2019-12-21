@@ -9,14 +9,14 @@
 
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <!-- Left Side Of Navbar -->
-            <ul class="navbar-nav mr-auto">
+            <ul class="navbar-nav ml-auto">
                     @if(Auth::check())
                     <ul class="navber-nav ml-auto">
                         <li class="nav-item">
-                            <a class="nav-link" href="{{route('home')}}">ホーム</a>
+                            <a class="nav-link float-left" href="{{route('home')}}">ホーム</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="{{route('movies.index')}}">映画</a>
+                            <a class="nav-link float-left" href="{{route('movies.index')}}">映画</a>
                         </li>
                     </ul>
                     @endif
