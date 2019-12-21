@@ -36,7 +36,7 @@
             <p class="text-center my-3 explain">NETFLIXに特化したレビュー投稿サイトです。NETFLIXの映画やドラマを検索したり、記録したりできます。</p>
         </div>
         <div class="container">
-            <h2 class="text-center my-3">主な機能</h2>
+            <h2 class="text-center my-3">THEATRAにできること</h2>
             <div class="row">
                 <div class="col-4 text-center icons">
                     <img src="サーチアイコン (2).png" alt="">
@@ -53,8 +53,9 @@
             </div>
         </div>
         <hr width="75%" color="#131313">
-        <div class="container">
-            <h2 class="text-center my-3">主な機能</h2>
+
+        <div class="container my-5">
+            <h2 class="text-center my-3">特徴</h2>
             <div class="row">
                 <div class="col-4 text-center icons">
                     <img src="サーチアイコン (2).png" alt="">
