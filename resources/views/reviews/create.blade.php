@@ -12,7 +12,7 @@
         </ul>
     @endif
 
-    <form action="#" method="post" enctype="multipart/form-data">
+    <form action="{{route('reviews.store')}}" method="post" enctype="multipart/form-data">
         @csrf
         <div class="form-group">
             <label for="about">感想</label>
