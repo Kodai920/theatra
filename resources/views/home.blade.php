@@ -38,6 +38,10 @@
             <h2>映画・ドラマが2000本以上</h2>
         </div>
         <hr width="75%" color="#131313">
+        <div class="my-5">
+            <h2>ジャンルから検索する</h2>
+        </div>
+        <hr width="75%" color="#131313">
     </div>
     @include('inc.footer')
     </div>
