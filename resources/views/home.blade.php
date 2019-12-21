@@ -30,11 +30,11 @@
         <div class="home-image">
             <h1 class="home-text">お気に入りの映画をみつけよう</h1>
         </div>
-        <div class="my-5">
+        <div class="my-5 ml-5">
             <h2 class="">最近の投稿</h2>
         </div>
         <hr width="75%" color="#131313">
-        <div class="my-5">
+        <div class="my-5 ml-5">
             <h2>映画・ドラマが2000本以上</h2>
             @foreach($movies as $movie)
             <div id="movie-image">
@@ -45,7 +45,7 @@
         @endforeach
         </div>
         <hr width="75%" color="#131313">
-        <div class="my-5">
+        <div class="my-5 ml-5">
             <h2>ジャンルから検索する</h2>
         </div>
         <hr width="75%" color="#131313">
