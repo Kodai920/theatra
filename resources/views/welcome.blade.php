@@ -59,7 +59,7 @@
             <div class="row">
                 <div class="col-4 text-center icons">
                     <img src="サーチアイコン (2).png" alt="">
-                    <p class="function my-3">好きな作品が見つかる検索機能</p>
+                    <p class="function my-3">Netflixに特化</p>
                 </div>
                 <div class="col-4 text-center icons">
                     <img src="記事アイコン1 (1).png" alt="">
