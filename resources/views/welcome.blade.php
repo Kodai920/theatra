@@ -58,7 +58,7 @@
             <h2 class="text-center my-3">特徴</h2>
             <div class="row">
                 <div class="col-4 text-center icons">
-                    <img src="サーチアイコン (2).png" alt="">
+                    <img src="PCでのNETFLIX 無料アイコン素材 3.png" alt="">
                     <p class="function my-3">Netflixに特化</p>
                 </div>
                 <div class="col-4 text-center icons">
