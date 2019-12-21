@@ -11,14 +11,12 @@
             <!-- Left Side Of Navbar -->
             <ul class="navbar-nav mr-auto">
                     @if(Auth::check())
-                    {{-- <ul class="navber-nav ml-auto"> --}}
                         <li class="nav-item">
                             <a class="nav-link" href="{{route('home')}}">ホーム</a>
                         </li>
                         <li class="nav-item float-left">
                             <a class="nav-link" href="{{route('movies.index')}}">映画</a>
                         </li>
-                    {{-- </ul> --}}
                     @endif
             </ul>
 
