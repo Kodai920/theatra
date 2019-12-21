@@ -38,12 +38,11 @@ class ReviewController extends Controller
     public function store(Request $request)
     {
         $review = new Review;
-        $review->impression = $review->impression;
+        $review->impression = $request->impression;
         $tag->save();
 
         Session::flash('success','投稿完了');
-        return redirect()->route('movies.show')->with('reviews',Review::all());
-
+        return redirect()->route('movies.show');
     }
 
     /**
