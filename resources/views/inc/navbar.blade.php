@@ -9,7 +9,7 @@
 
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <!-- Left Side Of Navbar -->
-            <ul class="navbar-nav ml-auto">
+            <ul class="navbar-nav mr-auto">
                     @if(Auth::check())
                     <ul class="navber-nav ml-auto">
                         <li class="nav-item">
