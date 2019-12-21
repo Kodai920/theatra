@@ -27,31 +27,8 @@
     <div id="app">
     @include('inc.navbar')
     <div class="container py-4">
-        <div class="row justify-content-center">
-            <div class="col-md-3">
-                @if(Auth::check())
-                <ul class="list-group">
-                    <li class="list-group-item">
-                        <a href="{{route('home')}}">ホーム</a>
-                    </li>
-                    {{-- <li class="list-group-item">
-                        <a href="{{route('posts.index')}}">投稿</a>
-                    </li>
-                    <li class="list-group-item">
-                        <a href="{{route('posts.create')}}">新しい投稿をする</a>
-                    </li>
-                    <li class="list-group-item">
-                        <a href="{{route('categories.index')}}">カテゴリ</a>
-                    </li> --}}
-                    <li class="list-group-item">
-                        <a href="{{route('movies.index')}}">映画</a>
-                    </li>
-                </ul>
-                @endif
-            </div>
-            <div class="col-md-9">
+        <div class="justify-content-center">
                 @yield('content')
-            </div>
         </div>
     </div>
     @include('inc.footer')
