@@ -11495,7 +11495,7 @@ footer h5{
 .home-text{
   text-align: center;
   font-size: 5vw;
-  font-weight: bold;
+  /* font-weight: bold; */
   font-family: 'Sawarabi Mincho', sans-serif;
   color: #E5E5E5;
   padding: 140px;
