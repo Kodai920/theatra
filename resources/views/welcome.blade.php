@@ -59,7 +59,7 @@
             <div class="row">
                 <div class="col-4 text-center icons">
                     <img src="PCでのNETFLIX 無料アイコン素材 3.png" alt="">
-                    <p class="function my-3">Netflixに特化したレビューサイト</p>
+                    <p class="function my-3">Netflix専用のレビューサイト</p>
                 </div>
                 <div class="col-4 text-center icons">
                     <img src="本棚アイコン (1).png" alt="">
