@@ -38,7 +38,7 @@
         <div class="container">
             <h2 class="text-center my-3">主な機能</h2>
             <div class="row">
-                <div class="col-4 tect-center icons">
+                <div class="col-4 text-center icons">
                     <img src="サーチアイコン (2).png" alt="">
                     <p class="function my-3">好きな作品が見つかる検索機能</p>
                 </div>
