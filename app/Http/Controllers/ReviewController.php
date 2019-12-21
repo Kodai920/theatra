@@ -41,6 +41,7 @@ class ReviewController extends Controller
     {
         $review = new Review;
         $review->impression = $request->impression;
+        $review->movie_id = $movie->id;
         $review->save();
 
         Session::flash('success','投稿完了');
