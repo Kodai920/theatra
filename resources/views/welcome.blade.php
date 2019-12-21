@@ -29,7 +29,7 @@
     <div class="wrapper">
         <div class="welcome-image">
             <h1 class="welcome-text">さあ、最高のNETFLIXライフを。</h1>
-            <a href="{{ route('register') }}" class="btn btn-lg btn-register">いますぐ始める <i class="fas fa-sign-out-alt"></i></a>
+            <a href="{{ route('register') }}" class="btn btn-lg btn-register justify-content-center">いますぐ始める <i class="fas fa-sign-out-alt"></i></a>
         </div>
         <div class="my-5">
             <h2 class="text-center">THEATRAとは</h2>
