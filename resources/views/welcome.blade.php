@@ -39,15 +39,15 @@
             <h2 class="text-center my-3">主な機能</h2>
             <div class="row">
                 <div class="col-4 tect-center icons">
-                    <img src="サーチアイコン.png" alt="">
+                    <img src="サーチアイコン (2).png" alt="">
                     <p class="function my-3">好きな作品が見つかる検索機能</p>
                 </div>
                 <div class="col-4 text-center icons">
-                    <img src="記事アイコン1.png" alt="">
+                    <img src="記事アイコン1 (1).png" alt="">
                     <p class="function my-3">あなたの感想・評価を記録できる</p>
                 </div>
                 <div class="col-4 text-center icons">
-                    <img src="フリーのドル袋アイコン（円）.png" alt="">
+                    <img src="お金を握り締める手のアイコン.png" alt="">
                     <p class="function my-3">どれだけ投稿しても完全無料</p>
                 </div>
             </div>
