@@ -26,7 +26,8 @@ class ReviewController extends Controller
      */
     public function create()
     {
-        return view('reviews.create')->with('reviews',Review::all());
+        return view('reviews.create')->with('reviews',Review::all())
+                                     ->with('movies',Movie::all());
     }
 
     /**
