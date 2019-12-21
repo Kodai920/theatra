@@ -42,7 +42,7 @@ class ReviewController extends Controller
         $tag->save();
 
         Session::flash('success','投稿完了');
-        return redirect()->route('movies.show');
+        return redirect()->route('movies.show')->with('reviews',Review::all());
 
     }
 
