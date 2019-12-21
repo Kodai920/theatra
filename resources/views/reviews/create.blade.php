@@ -2,7 +2,7 @@
 @section('content')
 
 <div class="card">
-<div class="card-header">{{$review->movie->title}}({{$review->movie->year}}年)のレビュー</div>
+<div class="card-header">{{$movie->title}}({{$movie->year}}年)のレビュー</div>
 <div class="card-body">
     @if(count($errors) > 0)
         <ul class="list-group">
@@ -21,7 +21,7 @@
         </div>
 
         <div class="form-group">
-            <label for="">評価</label>
+            <label for="star">評価</label>
             <input id="star-rating-demo" value="4" type="number" class="rating" min=0 max=5 step=0.1 data-size="lg">
         </div>
 
