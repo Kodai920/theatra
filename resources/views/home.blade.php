@@ -31,16 +31,16 @@
         <div class="home-image">
             <h1 class="home-text">お気に入りの映画をみつけよう</h1>
         </div>
-        <div class="my-5 text-center">
-            <h2 class="">最近の投稿</h2>
+        <div class="my-5">
+            <h2 class="text-center">最近の投稿</h2>
         </div>
         <hr width="75%" color="#131313">
-        <div class="my-5 text-center">
-            <h2>映画・ドラマが2000本以上</h2>
+        <div class="my-5">
+            <h2 class="text-center">映画・ドラマが2000本以上</h2>
         </div>
         <hr width="75%" color="#131313">
-        <div class="my-5 text-center">
-            <h2>ジャンルから検索する</h2>
+        <div class="my-5">
+            <h2 class="text-center">ジャンルから検索する</h2>
         </div>
         <hr width="75%" color="#131313">
     </div>
