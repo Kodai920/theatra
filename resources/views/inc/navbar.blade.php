@@ -15,8 +15,8 @@
                         <li class="nav-item">
                             <a class="nav-link" href="{{route('home')}}">ホーム</a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link float-left" href="{{route('movies.index')}}">映画</a>
+                        <li class="nav-item float-left">
+                            <a class="nav-link" href="{{route('movies.index')}}">映画</a>
                         </li>
                     </ul>
                     @endif
