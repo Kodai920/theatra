@@ -11,7 +11,7 @@
             <br>
             NETFLIXに関する記事も更新しています。<i class="fas fa-angle-double-down"></i>
             <li>
-            　<div class="thumb-content"><a href="#.">記事一覧</a></div>
+            　<div class="thumb-content"><a href="#">記事一覧</a></div>
             </li>
         </p>
         </div>
