@@ -6,7 +6,7 @@
         <div class="col-xs-12 col-sm-6 col-md-3">
         <div class="widget subscribe no-box">
         <h5 class="widget-title">Theatra<span></span></h5>
-        <p class="">
+        <p class="para">
             TheatraはNetflixに特化した<br>映画レビューサイトです。
             <br>
             NETFLIXに関する記事も更新<br>しております。<i class="fas fa-angle-double-down"></i>
