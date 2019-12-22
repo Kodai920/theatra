@@ -49,7 +49,7 @@
         <div class="col-xs-12 col-sm-6 col-md-3">
 
         <div class="widget no-box">
-        <h5 class="widget-title">Contact Us<span></span></h5>
+        <h5 class="widget-title">Contact<span></span></h5>
 
         <p><a href="mailto:info@domain.com" title="glorythemes">theatra@gmail.com</a></p>
         <p class="para">〒123-4567<br>
