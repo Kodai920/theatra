@@ -9,7 +9,6 @@
         <p class="para">
             TheatraはNetflixに特化した<br>映画レビューサイトです。
         </p>
-        <br>
         <p class="para">
             NETFLIXに関する記事も更新<br>しております。<i class="fas fa-angle-double-down"></i><br>
             <a class="btn" href="#">記事一覧</a>
