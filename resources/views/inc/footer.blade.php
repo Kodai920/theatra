@@ -7,17 +7,13 @@
         <div class="widget subscribe no-box">
         <h5 class="widget-title">Theatra<span></span></h5>
         <p class="para">
-            <div>
-                TheatraはNetflixに特化した<br>映画レビューサイトです。
-            </div>
-            <div>
-            </div>
-            <div>
-                NETFLIXに関する記事も更新<br>しております。<i class="fas fa-angle-double-down"></i>
-                <li>
-                　<div class="thumb-content"><a href="#">記事一覧</a></div>
-                </li>
-            </div>
+            TheatraはNetflixに特化した<br>映画レビューサイトです。
+            <br>
+            <br>
+            NETFLIXに関する記事も更新<br>しております。<i class="fas fa-angle-double-down"></i>
+            <li>
+            　<div class="thumb-content"><a href="#">記事一覧</a></div>
+            </li>
         </p>
         </div>
         </div>
