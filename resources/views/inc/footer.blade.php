@@ -33,10 +33,10 @@
         <div class="thumb-content"><a href="#.">記事一覧</a></div>
         </li>
         <li>
-        <div class="thumb-content"><a href="#.">マイページ</a></div>	
+        <div class="thumb-content"><a href="#.">マイページ</a></div>
         </li>
         <li>
-        <div class="thumb-content"><a href="#.">お問い合わせ</a></div>	
+        <div class="thumb-content"><a href="#.">お問い合わせ</a></div>
         </li>
         </ul>
         </div>
