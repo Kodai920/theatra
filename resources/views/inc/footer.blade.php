@@ -7,7 +7,12 @@
         <div class="widget subscribe no-box">
         <h5 class="widget-title">Theatra<span></span></h5>
         <p class="para">
-            TheatraはNetflixに特化した映画レビューサイトです
+            TheatraはNetflixに特化した映画レビューサイトです。
+            <br>
+            NETFLIXに関する記事も更新しています。<i class="fas fa-angle-double-down"></i>
+            <li>
+            　<div class="thumb-content"><a href="#.">記事一覧</a></div>
+            </li>
         </p>
         </div>
         </div>
@@ -17,13 +22,13 @@
         <h5 class="widget-title">Quick Links<span></span></h5>
         <ul class="thumbnail-widget">
         <li>
-        <div class="thumb-content"><a href="#.">ホーム</a></div>	
+        <div class="thumb-content"><a href="#.">ホーム</a></div>
         </li>
         <li>
-        <div class="thumb-content"><a href="#.">タイムライン</a></div>	
+        <div class="thumb-content"><a href="#.">タイムライン</a></div>
         </li>
         <li>
-        <div class="thumb-content"><a href="#.">カテゴリ一覧</a></div>	
+        <div class="thumb-content"><a href="#.">カテゴリ一覧</a></div>
         </li>
         <li>
         <div class="thumb-content"><a href="#.">記事一覧</a></div>
