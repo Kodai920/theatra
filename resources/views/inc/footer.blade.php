@@ -2,7 +2,7 @@
         <div class="main-footer widgets-dark typo-light">
         <div class="container">
         <div class="row">
-          
+
         <div class="col-xs-12 col-sm-6 col-md-3">
         <div class="widget subscribe no-box">
         <h5 class="widget-title">Theatra<span></span></h5>
@@ -11,31 +11,28 @@
         </p>
         </div>
         </div>
-        
+
         <div class="col-xs-12 col-sm-6 col-md-3">
         <div class="widget no-box">
         <h5 class="widget-title">Quick Links<span></span></h5>
         <ul class="thumbnail-widget">
         <li>
-        <div class="thumb-content"><a href="#.">Get Started</a></div>	
+        <div class="thumb-content"><a href="#.">ホーム</a></div>	
         </li>
         <li>
-        <div class="thumb-content"><a href="#.">Top Leaders</a></div>	
+        <div class="thumb-content"><a href="#.">タイムライン</a></div>	
         </li>
         <li>
-        <div class="thumb-content"><a href="#.">Success Stories</a></div>	
+        <div class="thumb-content"><a href="#.">カテゴリ一覧/a></div>	
         </li>
         <li>
-        <div class="thumb-content"><a href="#.">Event/Tickets</a></div>	
+        <div class="thumb-content"><a href="#.">記事一覧</a></div>
         </li>
         <li>
-        <div class="thumb-content"><a href="#.">News</a></div>
+        <div class="thumb-content"><a href="#.">マイページ</a></div>	
         </li>
         <li>
-        <div class="thumb-content"><a href="#.">Lifestyle</a></div>	
-        </li>
-        <li>
-        <div class="thumb-content"><a href="#.">About</a></div>	
+        <div class="thumb-content"><a href="#.">お問い合わせ</a></div>	
         </li>
         </ul>
         </div>
