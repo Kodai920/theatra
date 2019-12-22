@@ -23,7 +23,7 @@
         <div class="thumb-content"><a href="#.">タイムライン</a></div>	
         </li>
         <li>
-        <div class="thumb-content"><a href="#.">カテゴリ一覧/a></div>	
+        <div class="thumb-content"><a href="#.">カテゴリ一覧</a></div>	
         </li>
         <li>
         <div class="thumb-content"><a href="#.">記事一覧</a></div>
