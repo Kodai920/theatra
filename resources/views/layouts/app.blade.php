@@ -39,7 +39,6 @@
     @include('inc.footer')
     </div>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
-    <script href="{{ secure_asset('js/star-rating.min.js') }}"></script>
      <script>
         @if(Session::has('success'))
         toastr.success(" {{Session::get('success')}} ")
