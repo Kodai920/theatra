@@ -36,6 +36,7 @@
     @include('inc.footer')
     </div>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
      <script>
         @if(Session::has('success'))
         toastr.success(" {{Session::get('success')}} ")
