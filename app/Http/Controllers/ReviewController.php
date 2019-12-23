@@ -17,13 +17,12 @@ class ReviewController extends Controller
      */
     public function index()
     {
-        $user = User::find($id);
+        Auth::user();
         $profile = Profile::find($id);
 
         return view('reviews.index')->with('reviews',Review::all())
-                                    ->with('user',$user)
                                     ->with('profile',$profile);
-}
+    }
 
     /**
      * Show the form for creating a new resource.
