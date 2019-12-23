@@ -10,6 +10,7 @@
             <div class="col-6">
                 <div></div>
                 <div>{{Auth::user()->name}}</div>
+                <div>登録日 : {{Auth::user()->created_at}}</div>
             </div>
             <div class="col-6">
                 <div>
