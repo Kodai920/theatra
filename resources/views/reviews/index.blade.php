@@ -11,7 +11,11 @@
                 <div></div>
                 <div></div>
             </div>
-            <div class="5"></div>
+            <div class="5">
+                <div>
+                    <a href="{{route('profiles.index')}}" class="btn btn-secondary btn-block">プロフィール編集</a>
+                </div>
+            </div>
         </div>
     </div>
 
