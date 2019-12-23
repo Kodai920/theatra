@@ -7,11 +7,11 @@
 
     <div class="wrapper">
         <div class="row">
-            <div class="col-5">
+            <div class="col-6">
                 <div>genre</div>
                 <div></div>
             </div>
-            <div class="col-5">
+            <div class="col-6">
                 <div>
                     <a href="{{route('profiles.index')}}" class="btn btn-secondary btn-block">プロフィール編集</a>
                 </div>
