@@ -19,7 +19,7 @@ class ReviewController extends Controller
     public function index()
     {
         Auth::user();
-        $profile = Profile::find($id);
+        $profile = Profile::find();
 
         return view('reviews.index')->with('reviews',Review::all())
                                     ->with('profile',$profile);
