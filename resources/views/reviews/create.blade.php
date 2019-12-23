@@ -56,6 +56,12 @@
                                         <input name="star" id="star-rating-demo" value="0" type="number" class="rating" min=0 max=5 step=0.1 data-size="lg">
                                     </div>
 
+                                    <div class="twitter">
+                                    　  <a href="//twitter.com/share" class="twitter-share-button" data-text="{{$review->impression}}" data-url="<!-- ここにTweetしたときに入れたいURLを入れる -->" data-lang="ja">
+                                        Tweet
+                                        </a>
+                                    </div>
+
                                     <div class="form-group">
                                         <button type="submit" class="btn btn-success btn-block">投稿</button>
                                     </div>
@@ -67,6 +73,8 @@
     </div>
     @include('inc.footer')
     </div>
+    <a href="https://twitter.com/share?ref_src=twsrc%5Etfw" class="twitter-share-button" data-show-count="false">Tweet</a>
+    <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-star-rating/4.0.6/js/star-rating.min.js" type="text/javascript"></script>
     <script>
