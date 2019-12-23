@@ -17,6 +17,7 @@ class ReviewController extends Controller
      */
     public function index()
     {
+        
         return view('reviews.index')->with('reviews',Review::all());
     }
 
@@ -28,7 +29,11 @@ class ReviewController extends Controller
     public function create($id)
     {
         $movie = Movie::find($id);
-        return view('reviews.create')->with('movie',$movie);
+        $user = Name::find($id);
+        $profile = Avator::find($id);
+        return view('reviews.create')->with('movie',$movie)
+                                     ->with('user',$user)
+                                     ->with('profile',$profile);
     }
 
     /**
