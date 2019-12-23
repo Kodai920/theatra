@@ -37,7 +37,7 @@
         </div>
         <div class="container my-5">
             <h2 class="text-center my-3">THEATRAにできること</h2>
-            <div class="row">
+            <div class="row my-5">
                 <div class="col-4 text-center icons">
                     <img src="サーチアイコン (2).png" alt="">
                     <p class="function my-3">好きな作品が見つかる検索機能</p>
@@ -56,7 +56,7 @@
 
         <div class="container my-5">
             <h2 class="text-center my-3"></h2>
-            <div class="row">
+            <div class="row my-5">
                 <div class="col-4 text-center icons">
                     <img src="PCでのNETFLIX 無料アイコン素材 3.png" alt="">
                     <p class="function my-3">Netflix専用のレビューサイト</p>
@@ -75,7 +75,7 @@
 
         <div class="container my-5">
             <h2 class="text-center my-3">充実の情報量</h2>
-            <div class="row">
+            <div class="row my-5">
                 <div class="col-6 text-center icons">
                     <img src="BLOGアイコン.png" alt="">
                     <p class="function my-3">Netflix関連の記事更新中</p>
