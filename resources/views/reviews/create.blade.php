@@ -53,7 +53,7 @@
 
                                     <div class="form-group">
                                         <label for="star">評価</label>
-                                        <input id="star-rating-demo" value="4" type="number" class="rating" min=0 max=5 step=0.1 data-size="lg">
+                                        <input id="star-rating-demo" value="0" type="number" class="rating" min=0 max=5 step=0.1 data-size="lg">
                                     </div>
 
                                     <div class="form-group">
