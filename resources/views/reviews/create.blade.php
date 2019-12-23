@@ -62,7 +62,7 @@
                                         </a>
                                     </div>
 
-                                    <div class="fb-share-button"
+                                    <div class="fb-share-button float-left"
                                     data-href="https://www.your-domain.com/your-page.html"
                                     data-layout="button_count">
                                     </div>
