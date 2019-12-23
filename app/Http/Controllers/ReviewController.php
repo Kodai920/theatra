@@ -16,7 +16,7 @@ class ReviewController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function index()
+    public function index($id)
     {
         Auth::user();
         $profile = Profile::find();
