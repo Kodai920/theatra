@@ -13,7 +13,7 @@
     @endif
     <form action="{{route('review.store',['id' => $movie->id])}}" method="post" enctype="multipart/form-data">
         @csrf
-        @method('PUT')
+        @method('GET')
         <div class="form-group">
             <label for="about">感想</label>
             <br>
