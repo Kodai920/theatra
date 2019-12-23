@@ -6,6 +6,7 @@ use Illuminate\Http\Request;
 use App\Review;
 use Illuminate\Support\Facades\Session;
 use App\Movie;
+use Auth;
 
 class ReviewController extends Controller
 {
@@ -38,9 +39,15 @@ class ReviewController extends Controller
      */
     public function store(Request $request,$id)
     {
+        $this->validate($request,[
+            'impression' => 'required',
+        ]);
+
+        $movie = Movie::find($id);
         $review = new Review;
         $review->impression = $request->impression;
         $review->movie_id = $movie->id;
+        $review->user_id = Auth::id();
         $review->save();
 
         Session::flash('success','投稿完了');
