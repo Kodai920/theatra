@@ -78,7 +78,7 @@
             <div class="row">
                 <div class="col-6 text-center icons">
                     <img src="BLOGアイコン.png" alt="">
-                    <p class="function my-3">Netflixの最新の情報がわかる記事更新中</p>
+                    <p class="function my-3">Netflix関連の記事更新中</p>
                 </div>
                 <div class="col-6 text-center icons">
                     <img src="記事アイコン1 (1).png" alt="">
