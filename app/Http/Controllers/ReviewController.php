@@ -29,8 +29,8 @@ class ReviewController extends Controller
     public function create($id)
     {
         $movie = Movie::find($id);
-        $user = Name::find($id);
-        $profile = Avator::find($id);
+        $user = User::find($id);
+        $profile = Profile::find($id);
         return view('reviews.create')->with('movie',$movie)
                                      ->with('user',$user)
                                      ->with('profile',$profile);
