@@ -8,8 +8,8 @@
     <div class="wrapper">
         <div class="row">
             <div class="5">
-                <div>{{$profile->avator}}</div>
-                <div>{{$user->name}}</div>
+                <div></div>
+                <div></div>
             </div>
             <div class="5"></div>
         </div>
