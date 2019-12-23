@@ -57,10 +57,12 @@
                                     </div>
 
                                     <div class="twitter my-4">
-                                    　  <a href="//twitter.com/share" class="twitter-share-button btn-lg" data-text="" data-url="<!-- ここにTweetしたときに入れたいURLを入れる -->" data-lang="ja">
+                                    　  <a href="//twitter.com/share" class="twitter-share-button" data-text="" data-url="<!-- ここにTweetしたときに入れたいURLを入れる -->" data-lang="ja">
                                         Tweet
                                         </a>
                                     </div>
+
+                                    <a href="https://www.facebook.com/sharer/sharer.php?u=http://qiita.com/katsuma">Facebook</a>
 
                                     <div class="form-group">
                                         <button type="submit" class="btn btn-success btn-block">投稿</button>
