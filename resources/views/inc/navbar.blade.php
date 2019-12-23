@@ -15,7 +15,7 @@
                             <a class="nav-link" href="{{route('home')}}">ホーム</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="{{route('reviews.index')}}">マイページ</a>
+                            <a class="nav-link" href="{{route('review.index')}}">マイページ</a>
                         </li>
                         <li class="nav-item float-left">
                             <a class="nav-link" href="{{route('movies.index')}}">映画</a>
