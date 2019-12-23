@@ -11522,9 +11522,9 @@ h2{
   font-family: 'Bebas Neue', cursive;
 }
 
-.explain{
+/* .explain{
   font-size: 30px;
-}
+} */
 
 #movie-image{
   filter: drop-shadow(10px 10px 10px rgba(0,0,0,0.6));
