@@ -11,7 +11,6 @@
             @endforeach
         </ul>
     @endif
-    <img src="{{asset("uploads/movies/".$movie->image)}}" width="210px" height="300px" alt="{{$movie->title}}">
     <form action="{{route('reviews.store')}}" method="post" enctype="multipart/form-data">
         @csrf
         <div class="form-group">
