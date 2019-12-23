@@ -36,6 +36,9 @@
         <div class="thumb-content"><a href="#.">マイページ</a></div>
         </li>
         <li>
+        <div class="thumb-content"><a href="#.">よくある質問</a></div>
+        </li>
+        <li>
         <div class="thumb-content"><a href="#.">お問い合わせ</a></div>
         </li>
         </ul>
