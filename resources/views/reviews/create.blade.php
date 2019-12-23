@@ -56,7 +56,7 @@
                                         <input name="star" id="star-rating-demo" value="0" type="number" class="rating" min=0 max=5 step=0.1 data-size="lg">
                                     </div>
 
-                                    <div class="twitter">
+                                    <div class="twitter my-4">
                                     　  <a href="//twitter.com/share" class="twitter-share-button btn-lg" data-text="" data-url="<!-- ここにTweetしたときに入れたいURLを入れる -->" data-lang="ja">
                                         Tweet
                                         </a>
