@@ -61,8 +61,8 @@
                                     </div>
                                 </form>
                             </div>
-                            </div>
-                        </div>
+                    </div>
+            </div>
         </div>
     </div>
     @include('inc.footer')
