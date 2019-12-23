@@ -41,7 +41,7 @@ class ReviewController extends Controller
     {
         $this->validate($request,[
             'impression' => 'nullable',
-            'star' => 'nullable',
+            'star' => 'required',
         ]);
 
         $movie = Movie::find($id);
