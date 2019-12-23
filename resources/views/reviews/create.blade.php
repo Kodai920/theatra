@@ -19,11 +19,11 @@
             <br>
             <textarea name="impression" class="form-control" rows="5"></textarea>
         </div>
-{{--
+
         <div class="form-group">
             <label for="star">評価</label>
             <input id="star-rating-demo" value="4" type="number" class="rating" min=0 max=5 step=0.1 data-size="lg">
-        </div> --}}
+        </div>
 
         <div class="form-group">
             <button type="submit" class="btn btn-success btn-block">投稿</button>
