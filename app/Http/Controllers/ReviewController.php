@@ -8,7 +8,6 @@ use Illuminate\Support\Facades\Session;
 use App\Movie;
 use Auth;
 use App\Profile;
-use App\Http\Controllers\User;
 
 class ReviewController extends Controller
 {
@@ -19,7 +18,7 @@ class ReviewController extends Controller
      */
     public function index()
     {
-        $user = User::all();
+        Auth::all();
         $profile = Profile::all();
 
         return view('reviews.index')->with('reviews',Review::all())
