@@ -18,11 +18,7 @@ class ReviewController extends Controller
      */
     public function index()
     {
-        Auth::all();
-        $profile = Profile::all();
-
-        return view('reviews.index')->with('reviews',Review::all())
-                                    ->with('profile',$profile);
+        return view('reviews.index')->with('reviews',Review::all());
     }
 
     /**
