@@ -62,7 +62,10 @@
                                         </a>
                                     </div>
 
-                                    <a href="https://www.facebook.com/sharer/sharer.php?u=http://qiita.com/katsuma">Facebook</a>
+                                    <div class="fb-share-button"
+                                    data-href="https://www.your-domain.com/your-page.html"
+                                    data-layout="button_count">
+                                    </div>
 
                                     <div class="form-group">
                                         <button type="submit" class="btn btn-success btn-block">投稿</button>
@@ -75,6 +78,14 @@
     </div>
     @include('inc.footer')
     </div>
+    <div id="fb-root"></div>
+    <script>(function(d, s, id) {
+      var js, fjs = d.getElementsByTagName(s)[0];
+      if (d.getElementById(id)) return;
+      js = d.createElement(s); js.id = id;
+      js.src = "https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v3.0";
+      fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));</script>
     <a href="https://twitter.com/share?ref_src=twsrc%5Etfw" class="twitter-share-button" data-show-count="false">Tweet</a>
     <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
