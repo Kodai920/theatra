@@ -28,8 +28,8 @@ Route::resource('movies','MovieController');
 Route::resource('reviews','ReviewController');
 
 Route::get('review/create/{id}','ReviewController@create')->name('review.create');
-Route::get('review/store/{id}','ReviewController@store')->name('review.store');
 
+Route::get('review/store/{id}','ReviewController@store')->name('review.store');
 
 Route::group(['middleware' => 'auth'],function(){
 

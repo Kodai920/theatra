@@ -41,11 +41,13 @@ class ReviewController extends Controller
     {
         $this->validate($request,[
             'impression' => 'nullable',
+            'star' => 'required',
         ]);
 
         $movie = Movie::find($id);
         $review = new Review;
         $review->impression = $request->impression;
+        $review->star = $request->star;
         $review->movie_id = $movie->id;
         $review->user_id = Auth::id();
         $review->save();
