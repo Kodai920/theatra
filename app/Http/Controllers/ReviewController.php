@@ -40,7 +40,7 @@ class ReviewController extends Controller
     public function store(Request $request,$id)
     {
         $this->validate($request,[
-            'impression' => 'required',
+            'impression' => 'nullable',
         ]);
 
         $movie = Movie::find($id);
