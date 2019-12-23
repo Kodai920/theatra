@@ -8,7 +8,7 @@
     <div class="wrapper">
         <div class="row">
             <div class="5">
-                <div></div>
+                <div>genre</div>
                 <div></div>
             </div>
             <div class="5">
