@@ -57,7 +57,7 @@
                                     </div>
 
                                     <div class="twitter my-4">
-                                    　  <a href="//twitter.com/share" class="twitter-share-button btn-lg" data-text="" data-url="<!-- ここにTweetしたときに入れたいURLを入れる -->" data-lang="ja">
+                                    　  <a href="//twitter.com/share" class="twitter-share-button btn-md" data-text="" data-url="<!-- ここにTweetしたときに入れたいURLを入れる -->" data-lang="ja">
                                         Tweet
                                         </a>
                                     </div>
