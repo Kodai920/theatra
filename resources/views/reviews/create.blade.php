@@ -57,7 +57,7 @@
                                     </div>
 
                                     <div class="twitter">
-                                    　  <a href="//twitter.com/share" class="twitter-share-button" data-text="{{$review->impression}}" data-url="<!-- ここにTweetしたときに入れたいURLを入れる -->" data-lang="ja">
+                                    　  <a href="//twitter.com/share" class="twitter-share-button" data-text="" data-url="<!-- ここにTweetしたときに入れたいURLを入れる -->" data-lang="ja">
                                         Tweet
                                         </a>
                                     </div>
