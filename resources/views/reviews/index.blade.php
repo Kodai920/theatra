@@ -17,6 +17,11 @@
                 </div>
             </div>
         </div>
+
+        <div>
+            @foreach($reviews as $review)
+            @endforeach
+        </div>
     </div>
 
 </div>
