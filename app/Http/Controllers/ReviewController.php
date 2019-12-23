@@ -24,11 +24,10 @@ class ReviewController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function create(Movie $movie)
+    public function create($id)
     {
-        $reviews = Review::all();
-        $movies = Movie::all();
-        return view('reviews.create')->with(compact('reviews','movies'));
+        $movie = Movie::find($id);
+        return view('reviews.create')->with('movie',$movie);
     }
 
     /**

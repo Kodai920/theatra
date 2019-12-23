@@ -24,7 +24,7 @@
                 <h3>あらすじ</h3>
                 <p>{{$movie->about}}</p>
                 </div>
-                <a href="{{route('reviews.create',[$movie->id])}}" class="btn btn-success btn-block btn-lg">レビューを書く</a>
+                <a href="{{route('review.create',['id' => $movie->id])}}" class="btn btn-success btn-block btn-lg">レビューを書く</a>
             </div>
         </div>
 

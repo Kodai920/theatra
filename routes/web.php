@@ -27,6 +27,8 @@ Route::resource('movies','MovieController');
 
 Route::resource('reviews','ReviewController');
 
+Route::get('review/create/{id}','ReviewController@create')->name('review.create');
+
 Route::group(['middleware' => 'auth'],function(){
 
     Route::resource('profiles','ProfileController');
