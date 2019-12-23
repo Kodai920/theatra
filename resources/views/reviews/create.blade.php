@@ -17,7 +17,7 @@
         <div class="form-group">
             <label for="impression">感想</label>
             <br>
-            <textarea name="about" class="form-control" rows="5"></textarea>
+            <textarea name="impression" class="form-control" rows="5"></textarea>
         </div>
 {{--
         <div class="form-group">
