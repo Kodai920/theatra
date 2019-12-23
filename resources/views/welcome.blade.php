@@ -81,7 +81,7 @@
                     <p class="function my-3">Netflix関連の記事更新中</p>
                 </div>
                 <div class="col-6 text-center icons">
-                    <img src="記事アイコン1 (1).png" alt="">
+                    <img src="twitterのフリーアイコン素材.png" alt="">
                     <p class="function my-3">各種SNSでも情報発信</p>
                 </div>
             </div>
