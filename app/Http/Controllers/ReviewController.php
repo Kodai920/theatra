@@ -7,6 +7,7 @@ use App\Review;
 use Illuminate\Support\Facades\Session;
 use App\Movie;
 use Auth;
+use Profile;
 
 class ReviewController extends Controller
 {
