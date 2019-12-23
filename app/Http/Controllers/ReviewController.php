@@ -16,11 +16,9 @@ class ReviewController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function index($id)
+    public function index()
     {
-        $profile = Profile::find($id);
-        return view('reviews.index')->with('reviews',Review::all())
-                                    ->with('profile',$profile);
+        return view('reviews.index')->with('reviews',Review::all());
     }
 
     /**
