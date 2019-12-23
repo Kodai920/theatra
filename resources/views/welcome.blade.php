@@ -35,7 +35,7 @@
             <h2 class="text-center">THEATRAとは</h2>
             <p class="text-center my-3 explain">NETFLIXに特化したレビュー投稿サイトです。NETFLIXの映画やドラマを検索したり、記録したりできます。</p>
         </div>
-        <div class="container">
+        <div class="container my-5">
             <h2 class="text-center my-3">THEATRAにできること</h2>
             <div class="row">
                 <div class="col-4 text-center icons">
@@ -55,7 +55,7 @@
         <hr width="75%" color="#131313">
 
         <div class="container my-5">
-            <h2 class="text-center my-3">特徴</h2>
+            <h2 class="text-center my-3"></h2>
             <div class="row">
                 <div class="col-4 text-center icons">
                     <img src="PCでのNETFLIX 無料アイコン素材 3.png" alt="">
@@ -63,11 +63,26 @@
                 </div>
                 <div class="col-4 text-center icons">
                     <img src="本棚アイコン (1).png" alt="">
-                    <p class="function my-3">多様なカテゴリから検索</p>
+                    <p class="function my-3">多彩なカテゴリから検索</p>
                 </div>
                 <div class="col-4 text-center icons">
                     <img src="ゴージャスな王冠の無料アイコン.png" alt="">
                     <p class="function my-3">ここだけの人気作品ランキング</p>
+                </div>
+            </div>
+        </div>
+        <hr width="75%" color="#131313">
+
+        <div class="container my-5">
+            <h2 class="text-center my-3">充実の情報量</h2>
+            <div class="row">
+                <div class="col-6 text-center icons">
+                    <img src="PCでのNETFLIX 無料アイコン素材 3.png" alt="">
+                    <p class="function my-3">Netflixの最新の情報がわかる記事更新中</p>
+                </div>
+                <div class="col-6 text-center icons">
+                    <img src="本棚アイコン (1).png" alt="">
+                    <p class="function my-3">各種SNSでも情報発信</p>
                 </div>
             </div>
         </div>
