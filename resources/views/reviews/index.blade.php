@@ -8,7 +8,7 @@
     <div class="wrapper">
         <div class="row">
             <div class="col-6">
-                <div>{{}}</div>
+                <div>{{$profile->avator}}</div>
                 <div>{{Auth::user()->name}}</div>
             </div>
             <div class="col-6">
