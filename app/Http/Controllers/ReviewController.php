@@ -36,7 +36,7 @@ class ReviewController extends Controller
      * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\Response
      */
-    public function store(Request $request,Review $review)
+    public function store(Request $request,$id)
     {
         $review = new Review;
         $review->impression = $request->impression;
@@ -44,7 +44,7 @@ class ReviewController extends Controller
         $review->save();
 
         Session::flash('success','投稿完了');
-        return redirect()->route('movies.show')->with('movies',$movies);
+        return redirect()->route('movies.show')->with('movie',$movie);
     }
 
     /**
