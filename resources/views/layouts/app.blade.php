@@ -23,7 +23,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.css">
     <link rel="stylesheet"  href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
-    <link href="{{ secure_asset('css/star-rating.min.css') }}" rel="stylesheet" />
+    <link href="{{ secure_asset('css/custom.css') }}" rel="stylesheet" />
     
 </head>
 <body>
@@ -39,7 +39,6 @@
     @include('inc.footer')
     </div>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
-    <script src="{{ secure_asset('js/star-rating.min.js') }}" type="text/javascript"></script>   
      <script>
         @if(Session::has('success'))
         toastr.success(" {{Session::get('success')}} ")
