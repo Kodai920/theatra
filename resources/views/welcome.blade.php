@@ -55,7 +55,7 @@
         <hr width="75%" color="#131313">
 
         <div class="container my-5">
-            <h2 class="text-center my-3"></h2>
+            <h2 class="text-center my-3">THEATRAの特徴</h2>
             <div class="row my-5">
                 <div class="col-4 text-center icons">
                     <img src="PCでのNETFLIX 無料アイコン素材 3.png" alt="">
