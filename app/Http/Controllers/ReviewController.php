@@ -23,7 +23,6 @@ class ReviewController extends Controller
 
         return view('reviews.index')->with('reviews',Review::all())
                                     ->with('profile',$profile)
-                                    ->with('user',$user);
     }
 
     /**
