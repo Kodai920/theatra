@@ -58,7 +58,6 @@
 
                                     <div class="twitter my-4">
                                     　  <a href="//twitter.com/share" class="twitter-share-button" data-text="" data-url="<!-- ここにTweetしたときに入れたいURLを入れる -->" data-lang="ja">
-                                        <a href="https://twitter.com/share?ref_src=twsrc%5Etfw" class="twitter-share-button" data-size="large" data-lang="ja" data-show-count="false">Tweet</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
                                         Tweet
                                         </a>
                                     </div>
