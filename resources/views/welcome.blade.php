@@ -77,11 +77,11 @@
             <h2 class="text-center my-3">充実の情報量</h2>
             <div class="row">
                 <div class="col-6 text-center icons">
-                    <img src="PCでのNETFLIX 無料アイコン素材 3.png" alt="">
+                    <img src="BLOGアイコン.png" alt="">
                     <p class="function my-3">Netflixの最新の情報がわかる記事更新中</p>
                 </div>
                 <div class="col-6 text-center icons">
-                    <img src="本棚アイコン (1).png" alt="">
+                    <img src="記事アイコン1 (1).png" alt="">
                     <p class="function my-3">各種SNSでも情報発信</p>
                 </div>
             </div>
