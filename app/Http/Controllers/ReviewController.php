@@ -15,15 +15,15 @@ class ReviewController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function index($id)
+    public function index()
     {
-        $movie = Movie::find($id);
         $user = User::find($id);
+        $profile = Profile::find($id);
 
         return view('reviews.index')->with('reviews',Review::all())
                                     ->with('user',$user)
                                     ->with('profile',$profile);
-    }
+}
 
     /**
      * Show the form for creating a new resource.
@@ -32,7 +32,7 @@ class ReviewController extends Controller
      */
     public function create($id)
     {
-        $profile = Profile::find($id);
+        $movie = Movie::find($id);
         return view('reviews.create')->with('movie',$movie);
     }
 
