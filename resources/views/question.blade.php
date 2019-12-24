@@ -31,10 +31,23 @@
       </div>
 
       <div class="qablock">
-        <p class="question_txt" data-hoge="q2"><span class="qicon">Q</span>質問内容をここに記述</p>
+        <p class="question_txt" data-hoge="q2"><span class="qicon">Q</span>アカウント情報（生年月日）を変更したい
+        </p>
         <div class="show_button closebutton"></div>
         <div id="toggle_q2" class="answer_txt" style="display:none;">
-          <p>回答内容をここに記述</p>
+          <p>
+                お客様より以前から多数の要望を頂きアカウント情報（生年月日）の変更のご対応をさせていただくことになりました。<br>
+<p></p>
+                また新規登録時に、誤って登録された場合のみご対応させていただきます。<br>
+<p></p>
+                変更希望のお客様は、必要事項を記載し下記までご連絡ください。<br>
+<p></p>
+                必要事項：Filmarks ID ／ 登録時誤って登録された生年月日 ／ 新規登録希望の生年月日<br>
+<p></p>
+                問い合わせ先：contact@filmarks.combr <br>
+<p></p>
+                なお、変更の対応は１度のみとさせていただきます。あらかじめご理解ご了承ください。<br>
+          </p>
         </div>
       </div>
 
