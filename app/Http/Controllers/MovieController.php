@@ -61,7 +61,8 @@ class MovieController extends Controller
         return view('movies.show')->with('movie',$movie)
                                   ->with('category',$category)
                                   ->with('country',$country)
-                                  ->with('user',$user);
+                                  ->with('user',$user)
+                                  ->with('review',Review::all());
     }
 
     /**
