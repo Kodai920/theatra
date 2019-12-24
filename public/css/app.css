@@ -11541,3 +11541,57 @@ h2{
 .movie-detail-image{
   filter: drop-shadow(10px 10px 10px rgba(0,0,0,0.6));
 }
+
+.qablock{
+  position: relative;
+  margin-bottom: 20px;
+  background: #eee9e6;
+  border:1px solid #eee9e6;
+}
+.question_txt{
+  padding:5px 15px;
+  margin: 0px !important;
+}
+.qicon{
+  color: #6f5436;
+  font-weight: bold;
+  margin-right:15px;
+}
+.answer_txt{
+  background: #fff;
+  margin: 0px !important;
+  padding: 10px 15px;
+}
+.show_button{
+  position: absolute;
+  bottom:0px;
+  right:0px;
+  width:43px;
+  height:43px;
+}
+.show_button:after{
+  content: '▲'!important;
+  display: block;
+  text-align: center;
+  width: 43px;
+  height: 43px;
+  line-height: 43px;
+  top: 0;
+  left: 0;
+  margin-left: 0px;
+  margin-top: 0px;
+  color:#b4ada9;
+}
+.show_button.closebutton:after{
+  content: '▼'!important;
+  display: block;
+  text-align: center;
+  width: 43px;
+  height: 43px;
+  line-height: 43px;
+  top: 0;
+  left: 0;
+  margin-left: 0px;
+  margin-top: 0px;
+  color:#b4ada9;
+}
