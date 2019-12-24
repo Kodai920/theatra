@@ -65,7 +65,7 @@
 <div class="card">
     <div class="card-header">この映画にはレビューがまだありません</div>
     <div class="card-body">
-       最初のレビューを書こう
+       最初のレビューを書こう！
     </div>
 </div>
 @endif
