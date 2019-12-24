@@ -3,7 +3,7 @@
 
 <h2>よくある質問</h2>
 <p></p>
-<h3>最近よくある質問</h3>
+<h4>最近よくある質問</h4>
 
       <div class="qablock">
         <p class="question_txt" data-hoge="q1"><span class="qicon">Q</span>ドラマ作品が見つからない</p>
@@ -61,7 +61,7 @@
         </div>
       </div>
 <p></p>
-      <h3>基本操作について</h3>
+      <h4>各種問題の解決方法</h4>
 
       <div class="qablock">
         <p class="question_txt" data-hoge="q1"><span class="qicon">Q</span>質問内容をここに記述</p>
@@ -87,7 +87,7 @@
         </div>
       </div>
 <p></p>
-      <h3></h3>
+      <h4>ご要望・ご意見について</h4>
 
       <div class="qablock">
         <p class="question_txt" data-hoge="q1"><span class="qicon">Q</span>質問内容をここに記述</p>
