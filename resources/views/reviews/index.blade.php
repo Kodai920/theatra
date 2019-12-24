@@ -31,7 +31,7 @@
         @if($user->reviews->count() > 0)
         @foreach($user->reviews as $review)
         <div class="card mb-2">
-                <div class="card-header">{{$review->movie->title}}の感想・評価</div>
+                <div class="card-header">{{$review->movie->title}}のレビュー</div>
                 <div class="card-body pt-0">
                     <div class="row mt-2">
                     <div class="col-2">
