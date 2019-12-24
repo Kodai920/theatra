@@ -35,7 +35,7 @@
                 <div class="card-body pt-0">
                 　 <div class="row">
                     <div class="col-3">
-                        <img src="{{asset("uploads/movies/".$review->movie->image)}}" width="210px" height="300px" alt="{{$review->movie->title}}">
+                        <img src="{{asset("uploads/movies/".$review->movie->image)}}" width="105px" height="150px" alt="{{$review->movie->title}}">
                     </div>
                     <div class="col-9 mt-2">
                         <strong>投稿日 : </strong>{{$review->created_at->format('Y年m月d日')}}<br>
