@@ -33,11 +33,11 @@
         <div class="card mb-2">
                 <div class="card-header">{{$review->movie->title}}の感想・評価</div>
                 <div class="card-body pt-0">
-                    <div class="row">
+                    <div class="row mt-2">
                     <div class="col-2">
                         <img src="{{asset("uploads/movies/".$review->movie->image)}}" width="105px" height="150px" alt="{{$review->movie->title}}">
                     </div>
-                    <div class="col-9 mt-10">
+                    <div class="col-10">
                         <strong>投稿日 : </strong>{{$review->created_at->format('Y年m月d日')}}<br>
                         <strong>評価 : </strong><i class="fas fa-star"></i> {{$review->star}} <br>
                         <div class="mt-2">
