@@ -40,7 +40,7 @@
 </div>
 
 @foreach($movie->reviews as $review)
-<div class="card">
+<div class="card mt-5">
     <div class="card-header">
         {{$review->user->name}}
         の感想・評価</div>
