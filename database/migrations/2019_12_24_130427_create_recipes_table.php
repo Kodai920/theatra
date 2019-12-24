@@ -15,7 +15,7 @@ class CreateRecipesTable extends Migration
     {
         Schema::create('recipes', function (Blueprint $table) {
             $table->bigIncrements('id');
-            $integer('movie_id')->unsigned()->index();
+            $table->integer('movie_id')->unsigned()->index();
             $table->string('name');
             $table->timestamps();
 
