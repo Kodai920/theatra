@@ -46,7 +46,7 @@
     <div class="card-body pt-0">
     　 <div class="row">
         <div class="col-2">
-            <img src="{{$review->user->profile->avator}}" style="height:80px; width:80px;">
+            <img src="{{asset($review->user->profile->avator)}}" style="height:80px; width:80px;">
         </div>
         <div class="col-4 mt-2">
             <strong>投稿日 : </strong>{{$review->created_at->format('Y年m月d日')}}<br>
