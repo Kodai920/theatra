@@ -11,8 +11,8 @@ class AppController extends Controller
 {
     public function search(){
         $movies = Movie::where('title','like','%'.request('query').'%')->get();
-        $countries = Country::take(5)->gat();
-        $categories = Category::take(5)->gat();
+        $countries = Country::take(5)->get();
+        $categories = Category::take(5)->get();
 
         return view('results')->with('movies',$movies)
                               ->with('title','Search results : '.request('query'))
