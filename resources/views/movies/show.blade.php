@@ -45,11 +45,11 @@
         {{$review->user->name}}
         の感想・評価</div>
     <div class="card-body">
-        <div>
-        <div class="float-left">
+        <div class="row">
+        <div class="col-2">
             <img src="{{$review->user->profile->avator}}" style="height:80px; width:80px; border-radious:10%;">
         </div>
-        <div class="float-left">
+        <div class="col-2">
             {{$review->created_at->format('Y年m月d日')}}<br>
             {{$review->star}}
         </div>
