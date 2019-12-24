@@ -39,6 +39,7 @@
     </div>
 </div>
 
+@foreach($movie->reviews as $review)
 <div class="card">
     <div class="card-header">
         {{-- {{$review->user->name}} --}}
@@ -56,5 +57,6 @@
         </div>
     </div>
 </div>
+@endforeach
 
 @endsection
