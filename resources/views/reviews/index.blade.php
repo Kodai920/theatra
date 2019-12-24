@@ -33,6 +33,7 @@
         <div class="card mb-2">
                 <div class="card-header">{{$review->movie->title}}の感想・評価</div>
                 <div class="card-body pt-0">
+                    <div class="row">
                     <div class="col-2">
                         <img src="{{asset("uploads/movies/".$review->movie->image)}}" width="105px" height="150px" alt="{{$review->movie->title}}">
                     </div>
@@ -42,6 +43,8 @@
                         <div class="mt-2">
                             {{$review->impression}}
                         </div>
+                    </div>
+                    </div>
                 </div>
                 </div>
             </div>
