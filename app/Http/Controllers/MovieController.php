@@ -58,12 +58,10 @@ class MovieController extends Controller
         $user = Auth::user();
         $category = Category::all();
         $country = Country::all();
-        $review = Review::all();
         return view('movies.show')->with('movie',$movie)
                                   ->with('category',$category)
                                   ->with('country',$country)
                                   ->with('user',$user)
-                                  ->review('review',$review);
     }
 
     /**
