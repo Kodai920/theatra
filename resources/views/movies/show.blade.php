@@ -63,6 +63,7 @@
 @endforeach
 @else
 <div class="card">
+    <div class="card-header">この映画にはレビューがまだありません</div>
     <div class="card-body">
        この映画に最初のレビューを書こう
     </div>
