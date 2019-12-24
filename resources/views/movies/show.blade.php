@@ -43,7 +43,7 @@
 @foreach($movie->reviews as $review)
 <div class="card mb-2">
     <div class="card-header">{{$review->user->name}}の感想・評価</div>
-    <div class="card-body" style="padding-top:0;">
+    <div class="card-body pt-0">
     　 <div class="row">
         <div class="col-2">
             <img src="{{$review->user->profile->avator}}" style="height:80px; width:80px;">
