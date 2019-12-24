@@ -1,7 +1,7 @@
 @extends('layouts.app')
 @section('content')
 
-<h2>よくある質問</h2>
+<h3>よくある質問</h3>
 <p></p>
 <h4>最近よくある質問</h4>
 
@@ -59,7 +59,7 @@
         <div id="toggle_q3" class="answer_txt" style="display:none;">
           <p>回答内容をここに記述</p>
         </div>
-      </div>
+      </div><br>
 <p></p>
       <h4>各種問題の解決方法</h4>
 
@@ -85,7 +85,7 @@
         <div id="toggle_q3" class="answer_txt" style="display:none;">
           <p>回答内容をここに記述</p>
         </div>
-      </div>
+      </div><br>
 <p></p>
       <h4>ご要望・ご意見について</h4>
 
