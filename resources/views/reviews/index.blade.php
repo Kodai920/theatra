@@ -1,7 +1,7 @@
 @extends('layouts.app')
 @section('content')
 
-<div class="card">
+<div class="card mb-3">
 <div class="card-header">マイページ</div>
 <div class="card-body">
 
@@ -34,13 +34,16 @@
                 <div class="card-header">{{$review->movie->title}}の感想・評価</div>
                 <div class="card-body pt-0">
                 　 <div class="row">
-                    <div class="col-4 mt-2">
-                        <strong>投稿日 : </strong>{{$review->created_at->format('Y年m月d日')}}<br>
-                        <strong>評価 : </strong><i class="fas fa-star"></i> {{$review->star}}
+                    <div class="col-3">
+                        <img src="{{asset("uploads/movies/".$review->movie->image)}}" width="210px" height="300px" alt="{{$review->movie->title}}">
                     </div>
-                </div>
-                <div class="mt-2">
-                    {{$review->impression}}
+                    <div class="col-9 mt-2">
+                        <strong>投稿日 : </strong>{{$review->created_at->format('Y年m月d日')}}<br>
+                        <strong>評価 : </strong><i class="fas fa-star"></i> {{$review->star}} <br>
+                        <div class="mt-2">
+                            {{$review->impression}}
+                        </div>
+                    </div>
                 </div>
                 </div>
             </div>
