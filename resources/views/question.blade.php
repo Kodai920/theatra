@@ -1,6 +1,8 @@
 @extends('layouts.app')
 @section('content')
 
+<h2>よくある質問</h2>
+<p></p>
 <h3>最近よくある質問</h3>
 
       <div class="qablock">
