@@ -48,11 +48,11 @@
             {{-- {{$review->user->profile->avator}} --}}
         </div>
         <div class="float-left">
-            {{$review->created_at->format('Y年m月d日')}}
-            {{$review->star}}
+            {{$movie->review->created_at->format('Y年m月d日')}}
+            {{$movie->review->star}}
         </div>
         <div>
-            {{$review->impression}}
+            {{$movie->review->impression}}
         </div>
     </div>
 </div>
