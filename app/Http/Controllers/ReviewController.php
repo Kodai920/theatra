@@ -18,8 +18,9 @@ class ReviewController extends Controller
      */
     public function index()
     {
+        $user = Auth::user();
         return view('reviews.index')->with('reviews',Review::all())
-                                    ->with('profiles',Profile::all());
+                                    ->with('user',$user);
     }
 
     /**
