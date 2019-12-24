@@ -1,6 +1,8 @@
 @extends('layouts.app')
 @section('content')
 
+<h3>最近よくある質問</h3>
+
       <div class="qablock">
         <p class="question_txt" data-hoge="q1"><span class="qicon">Q</span>ドラマ作品が見つからない</p>
         <div class="show_button closebutton"></div>
