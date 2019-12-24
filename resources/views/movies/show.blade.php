@@ -50,7 +50,7 @@
         </div>
         <div class="col-4 mt-2">
             <strong>投稿日 : </strong>{{$review->created_at->format('Y年m月d日')}}<br>
-            <strong>評価 : </strong><i class="fas fa-star"></i>{{$review->star}}
+            <strong>評価 : </strong><i class="fas fa-star"></i> {{$review->star}}
         </div>
     </div>
     <div class="mt-2">
