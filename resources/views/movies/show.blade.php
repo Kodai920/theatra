@@ -39,6 +39,7 @@
     </div>
 </div>
 
+@if($movie->reviews->count() > 0)
 @foreach($movie->reviews as $review)
 <div class="card mb-2">
     <div class="card-header">
@@ -60,5 +61,11 @@
     </div>
 </div>
 @endforeach
+@else
+<div class="card">
+    <div class="card-body">
+       この映画に最初のレビューを書こう
+    </div>
+</div>
 
 @endsection
