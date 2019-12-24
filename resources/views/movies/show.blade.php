@@ -40,10 +40,12 @@
 </div>
 
 <div class="card">
-    <div class="card-header">{{$review->user->name}}の感想・評価</div>
+    <div class="card-header">
+        {{-- {{$review->user->name}} --}}
+        の感想・評価</div>
     <div class="card-body">
         <div class="float-left">
-            {{$review->user->profile->avator}}
+            {{-- {{$review->user->profile->avator}} --}}
         </div>
         <div class="float-left">
             {{$review->created_at->format('Y年m月d日')}}
