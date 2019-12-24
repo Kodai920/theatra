@@ -36,9 +36,6 @@
             <div><strong>キャスト : </strong>{{$movie->cast}} </div>
         </div>
         </div>
-        <div>
-            @include('inc.disqus')
-        </div>
     </div>
 </div>
 
