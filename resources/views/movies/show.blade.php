@@ -46,7 +46,7 @@
         の感想・評価</div>
     <div class="card-body">
         <div class="row">
-        <div class="col-1">
+        <div class="col-2">
             <img src="{{$review->user->profile->avator}}" style="height:80px; width:80px; border-radious:10%;">
         </div>
         <div class="col-2">
