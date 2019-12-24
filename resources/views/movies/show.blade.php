@@ -46,7 +46,7 @@
         の感想・評価</div>
     <div class="card-body">
         <div class="float-left">
-            {{$review->user->profile->avator}}
+           <img src="{{$review->user->profile->avator}}" alt="" style="height:80px; width:80px;">
         </div>
         <div class="float-left">
             {{$review->created_at->format('Y年m月d日')}}
