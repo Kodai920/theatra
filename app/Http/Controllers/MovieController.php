@@ -8,6 +8,9 @@ use Illuminate\Support\Facades\Session;
 use App\Country;
 use App\Category;
 use App\Genre;
+use App\Review;
+use App\profile;
+use Auth;
 
 
 class MovieController extends Controller
@@ -52,11 +55,15 @@ class MovieController extends Controller
      */
     public function show(Movie $movie)
     {
+        $user = Auth::user();
         $category = Category::all();
         $country = Country::all();
+        $review = Review::all();
         return view('movies.show')->with('movie',$movie)
                                   ->with('category',$category)
-                                  ->with('country',$country);
+                                  ->with('country',$country)
+                                  ->with('user',$user)
+                                  ->review('review',$review);
     }
 
     /**

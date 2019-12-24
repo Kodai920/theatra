@@ -49,6 +49,9 @@
             {{$review->created_at->format('Y年m月d日')}}
             {{$review->star}}
         </div>
+        <div>
+            {{$review->impression}}
+        </div>
     </div>
 </div>
 
