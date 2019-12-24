@@ -18,6 +18,9 @@ class CreateRecipesTable extends Migration
             $table->integer('movie_id')->unsigned()->index();
             $table->string('name');
             $table->timestamps();
+
+            //外部キー制約
+            $table->foreign('movie_id')->references('id')->on('movies')->onDelete('cascade');
         });
     }
 
