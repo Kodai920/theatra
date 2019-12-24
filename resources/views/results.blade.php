@@ -5,7 +5,7 @@
 
 <div class="stunning-header stunning-header-bg-lightviolet">
     <div class="stunning-header-content">
-        <h1 class="stunning-header-title">検索条件: {{$query}} </h1>
+        <h1 class="stunning-header-title">検索条件 : {{$query}} </h1>
     </div>
 </div>
 
