@@ -1,7 +1,7 @@
 @extends('layouts.app')
 @section('content')
 
-<div class="card">
+<div class="card mb-3">
     <div class="card-header">{{$movie->title}}({{$movie->year}}年)</div>
     <div class="card-body">
         <div class="row">
@@ -40,7 +40,7 @@
 </div>
 
 @foreach($movie->reviews as $review)
-<div class="card mt-5">
+<div class="card mb-2">
     <div class="card-header">
         {{$review->user->name}}
         の感想・評価</div>
@@ -49,7 +49,7 @@
            <img src="{{$review->user->profile->avator}}" alt="" style="height:80px; width:80px;">
         </div>
         <div class="float-left">
-            {{$review->created_at->format('Y年m月d日')}}
+            {{$review->created_at->format('Y年m月d日')}}<br>
             {{$review->star}}
         </div><br>
         <div>
