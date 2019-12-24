@@ -23,39 +23,36 @@
                 </div>
             </div>
         </div>
+</div>
+</div>
 
-        <div>
-            @if($user->reviews->count() > 0)
-            @foreach($user->reviews as $review)
-            <div class="card mb-2">
-                    <div class="card-header">{{$review->user->name}}の感想・評価</div>
-                    <div class="card-body pt-0">
-                    　 <div class="row">
-                        <div class="col-2">
-                            <img src="{{asset($review->user->profile->avator)}}" style="height:80px; width:80px;">
-                        </div>
-                        <div class="col-4 mt-2">
-                            <strong>投稿日 : </strong>{{$review->created_at->format('Y年m月d日')}}<br>
-                            <strong>評価 : </strong><i class="fas fa-star"></i> {{$review->star}}
-                        </div>
-                    </div>
-                    <div class="mt-2">
-                        {{$review->impression}}
-                    </div>
+<div>
+        @if($user->reviews->count() > 0)
+        @foreach($user->reviews as $review)
+        <div class="card mb-2">
+                <div class="card-header">{{$review->movie->title}}の感想・評価</div>
+                <div class="card-body pt-0">
+                　 <div class="row">
+                    <div class="col-4 mt-2">
+                        <strong>投稿日 : </strong>{{$review->created_at->format('Y年m月d日')}}<br>
+                        <strong>評価 : </strong><i class="fas fa-star"></i> {{$review->star}}
                     </div>
                 </div>
-            @endforeach
-            @else
-                <div class="card">
-                    <div class="card-header">THEATRAにご登録いただきありがとうございます</div>
-                    <div class="card-body">
-                    最初のレビューを書こう！
-                    </div>
+                <div class="mt-2">
+                    {{$review->impression}}
                 </div>
-            @endif
-        </div>
+                </div>
+            </div>
+        @endforeach
+        @else
+            <div class="card">
+                <div class="card-header">THEATRAにご登録いただきありがとうございます</div>
+                <div class="card-body">
+                最初のレビューを書こう！
+                </div>
+            </div>
+        @endif
     </div>
+</div>
 
-</div>
-</div>
 @endsection
