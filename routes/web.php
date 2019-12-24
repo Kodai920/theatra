@@ -45,3 +45,6 @@ Route::get('contact','ContactsController@index')->name('contacts.index');
 Route::post('contact/confirm','ContactsController@confirm');
 
 Route::post('contact/complete','ContactsController@complete');
+
+//検索機能
+Route::get('paginate', 'SearchController@index')->name('inc.search');
