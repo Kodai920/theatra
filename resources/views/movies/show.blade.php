@@ -42,15 +42,13 @@
 @if($movie->reviews->count() > 0)
 @foreach($movie->reviews as $review)
 <div class="card mb-2">
-    <div class="card-header">
-        {{$review->user->name}}
-        の感想・評価</div>
+    <div class="card-header">{{$review->user->name}}の感想・評価</div>
     <div class="card-body">
-        <div class="row">
+    　 <div class="row">
         <div class="col-2">
-            <img src="{{$review->user->profile->avator}}" style="height:80px; width:80px; border-radious:10%;">
+            <img src="{{$review->user->profile->avator}}" style="height:80px; width:80px;">
         </div>
-        <div class="col-2 mt-4">
+        <div class="col-4 mt-2">
             <strong>投稿日 : </strong>{{$review->created_at->format('Y年m月d日')}}<br>
             <strong>評価 : </strong>{{$review->star}}
         </div>
