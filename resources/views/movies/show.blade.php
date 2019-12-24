@@ -52,7 +52,7 @@
             {{$review->created_at->format('Y年m月d日')}}<br>
             {{$review->star}}
         </div><br>
-        <div>
+        <div class="mt-2">
             {{$review->impression}}
         </div>
     </div>
