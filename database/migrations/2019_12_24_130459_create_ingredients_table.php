@@ -18,9 +18,6 @@ class CreateIngredientsTable extends Migration
             $table->integer('recipe_id')->unsigned()->index();
             $table->string('ingredient',255);
             $table->timestamps();
-
-            //外部キー制約
-            $table->foreign('recipe_id')->references('id')->on('recipes')->onDelete('cascade');
         });
     }
 
