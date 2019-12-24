@@ -67,5 +67,6 @@
        この映画に最初のレビューを書こう
     </div>
 </div>
+@endif
 
 @endsection
