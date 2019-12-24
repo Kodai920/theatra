@@ -46,12 +46,12 @@
         margin-right: 8px;
         margin-left: -21px;
     }
-    
+
     </style>
-    
-    
+
+
     <div id="QandA-2">
-    
+
         <h3>◯◯について</h3>
         <dl>
             <dt>質問タイトル</dt>
@@ -61,7 +61,7 @@
             <dt>質問タイトル</dt>
             <dd>回答内<br>回答内容</dd>
         </dl>
-    
+
         <h3>◯◯について</h3>
         <dl>
             <dt>質問タイトル</dt>
