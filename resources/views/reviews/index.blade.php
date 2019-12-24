@@ -8,7 +8,7 @@
     <div class="wrapper">
         <div class="row">
             <div class="col-6">
-                <div></div>
+                <div><img src="{{Auth::user()->profile->avator}}" alt=""></div>
                 <div>{{Auth::user()->name}}</div>
                 <div>登録日 : {{Auth::user()->created_at->format('Y年m月d日')}}</div>
             </div>
