@@ -1,4 +1,3 @@
-<!-- Overlay Search -->
 
 <div class="overlay_search">
         <div class="container">
@@ -16,4 +15,7 @@
         </div>
     </div>
 
-    <!-- End Overlay Search -->
+    <nav class="navbar navbar-expand-md navbar-light bg-white shadow-sm">
+        <div class="container">
+        </div>
+    </nav>
