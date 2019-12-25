@@ -14,7 +14,7 @@
 
     <form action="{{route('reviews.update',[$review->id])}}" method="post" enctype="multipart/form-data">
         @csrf
-        @methoid('PUT')
+        @method('PUT')
         <div class="form-group">
             <label for="about">感想</label>
             <br>
