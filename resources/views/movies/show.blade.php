@@ -49,12 +49,11 @@
                 <a class="dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
                     <i class="fas fa-cog"></i>
                 </a>
-
                 <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
                     <a class="dropdown-item" href="{{route('reviews.edit',[$review->id])}}">
                         編集
                     </a>
-                    <a class="dropdown-item" href="{{route('reviews.delete',[$review->id])}}">
+                    <a class="dropdown-item" href="#">
                         投稿を削除する
                     </a>
                 </div>

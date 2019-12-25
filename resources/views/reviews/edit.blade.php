@@ -57,7 +57,7 @@
 
         <div class="form-group">
             <label for="star">評価</label>
-            <input name="star" id="star-rating-demo" value="{{$review->star}}" type="number" class="rating" min=0 max=5 step=0.1 data-size="lg">
+            <input name="star" id="star-rating-demo" value="{{$review->star}}" type="number" class="rating" min=0 max=5.0 step=0.1 data-size="lg">
         </div>
 
         <div class="form-group">

@@ -34,8 +34,6 @@ Route::get('review/create/{id}','ReviewController@create')->name('review.create'
 
 Route::get('review/store/{id}','ReviewController@store')->name('review.store');
 
-Route::get('review/delete/{id}','ReviewController@delete')->name('reviews.delete');
-
 Route::group(['middleware' => 'auth'],function(){
 
     Route::resource('profiles','ProfileController');
