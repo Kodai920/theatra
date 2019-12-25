@@ -45,7 +45,20 @@
 @foreach($movie->reviews as $review)
 <div class="card mb-2">
     <div class="card-header">{{$review->user->name}}の感想・評価
-        <a href="{{route('reviews.edit',[$review->id])}}" class="btn btn-secondary btn-sm float-right">edit</a>
+            <li class="nav-item dropdown float-right">
+                <a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
+                    <i class="fal fa-cog"></i>
+                </a>
+
+                <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
+                    <a class="dropdown-item" href="{{route('reviews.edit',[$review->id])}}">
+                        編集
+                    </a>
+                    <a class="dropdown-item" href="#">
+                        投稿を削除
+                    </a>
+                </div>
+            </li>
     </div>
     <div class="card-body pt-0">
     　 <div class="row">
