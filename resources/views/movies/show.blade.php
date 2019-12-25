@@ -24,7 +24,9 @@
                 <h3>あらすじ</h3>
                 <p>{{$movie->about}}</p>
                 </div>
+                @if(Auth::check())
                 <a href="{{route('review.create',['id' => $movie->id])}}" class="btn btn-success btn-block btn-lg">レビューを書く</a>
+                @endif
             </div>
         </div>
 
