@@ -53,7 +53,7 @@
                     <a class="dropdown-item" href="{{route('reviews.edit',[$review->id])}}">
                         編集
                     </a>
-                    <a class="dropdown-item" href="#">
+                    <a class="dropdown-item" href="{{route('reviews.destroy',[$review->id])}}">
                         投稿を削除する
                     </a>
                 </div>

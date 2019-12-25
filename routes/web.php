@@ -50,3 +50,4 @@ Route::get('/results',[
     'uses' => 'AppController@search',
     'as' => 'search.results'
 ]);
+

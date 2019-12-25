@@ -44,7 +44,7 @@
                                         @endforeach
                                     </ul>
                                 @endif
-                                <form action="{{route('review.store',['id' => $movie->id])}}" method="post" enctype="multipart/form-data">
+                                <form action="{{route('review.store',['id'=>$movie->id])}}" method="post" enctype="multipart/form-data">
                                     @csrf
                                     @method('GET')
                                     <div class="form-group">
@@ -55,7 +55,7 @@
 
                                     <div class="form-group">
                                         <label for="star">評価</label>
-                                        <input name="star" id="star-rating-demo" value="0" type="number" class="rating" min=0 max=5 step=0.1 data-size="lg">
+                                        <input name="star" id="star-rating-demo" value="0" type="number" class="rating" min=0 max=5.0 step=0.1 data-size="lg">
                                     </div>
 
                                     <div class="twitter my-4">
