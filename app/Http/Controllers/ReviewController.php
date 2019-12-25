@@ -78,6 +78,7 @@ class ReviewController extends Controller
      */
     public function edit(Review $review)
     {
+        $movie = Movie::first();
         return view('reviews.edit')->with('movie',$movie);
     }
 
