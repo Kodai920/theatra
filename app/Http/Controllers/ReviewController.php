@@ -96,8 +96,6 @@ class ReviewController extends Controller
             'star' => 'required|integer',
         ]);
 
-        $review->fill($request->imput())->save();
-
         $review->impression = $request->impression;
         $review->star = $request->star;
         $review->save();
