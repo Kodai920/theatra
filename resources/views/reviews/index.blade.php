@@ -8,7 +8,7 @@
     <div class="wrapper">
         <div class="row">
             <div class="col-6">
-                <div class="float-left"><img src="{{$user->profile->avator}}" alt="" style="height:80px; width:80px; border-radious:10%;"></div>
+                <div class="float-left"><img src="{{asset("uploads/avator/".$user->profile->avator)}}" alt="" style="height:80px; width:80px; border-radious:10%;"></div>
                 <div class="float-left mx-3">
                     <div style="font-size:30px;">{{$user->name}}</div>
                     <div>登録日 : {{$user->created_at->format('Y年m月d日')}}</div>
@@ -34,7 +34,7 @@
                 <div class="card-header">{{$review->movie->title}}({{$review->movie->year}}年)のレビュー</div>
                 <div class="card-body pt-0">
                     <div class="row mt-2">
-                    <div class="col-2">
+                    <div class="col-2" id="movie-image">
                         <img src="{{asset("uploads/movies/".$review->movie->image)}}" width="105px" height="150px" alt="{{$review->movie->title}}">
                     </div>
                     <div class="col-10">
