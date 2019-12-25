@@ -19,8 +19,8 @@ class AppController extends Controller
         return view('results')->with('movies',$movies)
                               ->with('title','Search results : '.request('query'))
                               ->with('name','Search results : '.request('query'))
-                              ->with('query',request('query'));
+                              ->with('query',request('query'))
                             //   ->with('cateogries',$categories)
-                            //   ->with('countries',$countries);
+                              ->with('countries',$countries);
     }
 }
