@@ -55,7 +55,12 @@
                         編集
                     </a>
                     <a class="dropdown-item" href="#">
-                        投稿を削除
+                        <form action="{{route('reviews.destroy',[$review->id])}}" method="post">
+                            @csrf
+                            @method('DELETE')
+                            投稿を削除
+                        </form>
+        
                     </a>
                 </div>
             </li>
