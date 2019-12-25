@@ -30,48 +30,48 @@
 </div>
 
 <div>
-        @if($user->reviews->count() > 0)
-        @foreach($user->reviews as $review)
-        <div class="card mb-2">
-                <div class="card-header">{{$review->movie->title}}({{$review->movie->year}}年)のレビュー
-                        <li class="nav-item dropdown float-right" style="list-style:none;">
-                            <a class="dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
-                                <i class="fas fa-cog"></i>
-                            </a>
-                            <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
-                                <a class="dropdown-item" href="{{route('reviews.edit',[$review->id])}}">
-                                    編集
-                                </a>
-                            </div>
-                        </li>
-                </div>
-                <div class="card-body pt-0">
-                    <div class="row mt-2">
-                    <div class="col-2" id="movie-image">
-                        <a href="{{route('movies.show',[$review->movie->id])}}">
-                        <img src="{{asset("uploads/movies/".$review->movie->image)}}" width="105px" height="150px" alt="{{$review->movie->title}}">
+    @if($user->reviews->count() > 0)
+    @foreach($user->reviews->sortBy('created_at') as $review)
+    <div class="card mb-2">
+            <div class="card-header">{{$review->movie->title}}({{$review->movie->year}}年)のレビュー
+                    <li class="nav-item dropdown float-right" style="list-style:none;">
+                        <a class="dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
+                            <i class="fas fa-cog"></i>
                         </a>
-                    </div>
-                    <div class="col-10">
-                        <strong>投稿日 : </strong>{{$review->created_at->format('Y年m月d日')}}<br>
-                        <strong>評価 : </strong><i class="fas fa-star"></i>{{$review->star}}<br>
-                        <div class="mt-2">
-                            {{$review->impression}}
+                        <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="{{route('reviews.edit',[$review->id])}}">
+                                編集
+                            </a>
                         </div>
-                    </div>
+                    </li>
+            </div>
+            <div class="card-body pt-0">
+                <div class="row mt-2">
+                <div class="col-2" id="movie-image">
+                    <a href="{{route('movies.show',[$review->movie->id])}}">
+                    <img src="{{asset("uploads/movies/".$review->movie->image)}}" width="105px" height="150px" alt="{{$review->movie->title}}">
+                    </a>
+                </div>
+                <div class="col-10">
+                    <strong>投稿日 : </strong>{{$review->created_at->format('Y年m月d日')}}<br>
+                    <strong>評価 : </strong><i class="fas fa-star"></i>{{$review->star}}<br>
+                    <div class="mt-2">
+                        {{$review->impression}}
                     </div>
                 </div>
                 </div>
             </div>
-        @endforeach
-        @else
-            <div class="card">
-                <div class="card-header">まだレビューがありません</div>
-                <div class="card-body">
-                最初のレビューを書こう！
-                </div>
             </div>
-        @endif
+        </div>
+    @endforeach
+    @else
+        <div class="card">
+            <div class="card-header">まだレビューがありません</div>
+            <div class="card-body">
+            最初のレビューを書こう！
+            </div>
+        </div>
+    @endif
     </div>
 </div>
 
