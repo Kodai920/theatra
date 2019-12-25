@@ -57,7 +57,6 @@
                     <a class="dropdown-item" href="{{route('reviews.delete',[$review->id])}}">
                         投稿を削除する
                     </a>
-                    </form>
                 </div>
             </li>
     </div>
