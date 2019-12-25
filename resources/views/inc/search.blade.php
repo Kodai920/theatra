@@ -1,4 +1,4 @@
-<nav class="navbar navbar-expand-md navbar-light bg-white shadow-sm">
+<nav class="navbar navbar-expand-md navbar-light bg-white shadow-sm search-bar">
     <form method="GET" action=" {{route('search.results')}} ">
         @csrf
         <input class="overlay_search-input" name='query' placeholder="タイトル、カテゴリまたは製作国を入力してください" type="text">
