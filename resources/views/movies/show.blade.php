@@ -56,7 +56,7 @@
                     <form action="{{route('reviews.destroy',[$review->id])}}" method="post">
                         @csrf
                         @method('DELETE')
-                        <button type="submit">投稿を削除する</button>
+                        <a type="submit">投稿を削除する</a>
                     </form>
                 </div>
             </li>
