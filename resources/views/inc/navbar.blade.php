@@ -20,6 +20,9 @@
                         <li class="nav-item float-left">
                             <a class="nav-link" href="{{route('movies.index')}}">映画</a>
                         </li>
+                        <li class="nav-item float-left">
+                            <a class="nav-link" href="{{route('categories.index')}}">カテゴリ</a>
+                        </li>
                     @endif
             </ul>
 
