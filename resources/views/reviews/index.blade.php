@@ -33,7 +33,18 @@
         @if($user->reviews->count() > 0)
         @foreach($user->reviews as $review)
         <div class="card mb-2">
-                <div class="card-header">{{$review->movie->title}}({{$review->movie->year}}年)のレビュー</div>
+                <div class="card-header">{{$review->movie->title}}({{$review->movie->year}}年)のレビュー
+                        <li class="nav-item dropdown float-right" style="list-style:none;">
+                            <a class="dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
+                                <i class="fas fa-cog"></i>
+                            </a>
+                            <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
+                                <a class="dropdown-item" href="{{route('reviews.edit',[$review->id])}}">
+                                    編集
+                                </a>
+                            </div>
+                        </li>
+                </div>
                 <div class="card-body pt-0">
                     <div class="row mt-2">
                     <div class="col-2" id="movie-image">
