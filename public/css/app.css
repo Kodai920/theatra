@@ -11603,6 +11603,7 @@ h2{
   height: 2.3em;
   width: 260px;
   overflow: hidden;
+  background-color: #E5E5E5;
 }
 .search_container input[type="text"]{
   border: none;
