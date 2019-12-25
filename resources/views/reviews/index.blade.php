@@ -12,6 +12,7 @@
                 <div class="float-left mx-3">
                     <div style="font-size:30px;">{{$user->name}}</div>
                     <div>登録日 : {{$user->created_at->format('Y年m月d日')}}</div>
+                    <div>{{$user->about)}}</div>
                 </div>
             </div>
             <div class="col-6">
@@ -35,7 +36,9 @@
                 <div class="card-body pt-0">
                     <div class="row mt-2">
                     <div class="col-2" id="movie-image">
+                        <a href="{{route('movies.show',[$review->movie->id])}}">
                         <img src="{{asset("uploads/movies/".$review->movie->image)}}" width="105px" height="150px" alt="{{$review->movie->title}}">
+                        </a>
                     </div>
                     <div class="col-10">
                         <strong>投稿日 : </strong>{{$review->created_at->format('Y年m月d日')}}<br>
