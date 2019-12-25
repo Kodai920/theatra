@@ -26,6 +26,7 @@
 <body>
     <div id="app">
     @include('inc.navbar')
+    @include('inc.search')
     <div class="wrapper">
         <div class="welcome-image">
             <h1 class="welcome-text">さあ、最高のNETFLIXライフを。</h1>
