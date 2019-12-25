@@ -13,8 +13,8 @@
                     <div style="font-size:30px;">{{$user->name}}</div>
                     <div>登録日 : {{$user->created_at->format('Y年m月d日')}}</div>
                 </div>
+                <div style="color:gray;">{{$user->profile->about}}</div>
             </div>
-            <div style="color:gray;">{{$user->profile->about}}</div>
             <div class="col-6">
                 <div>
                   <a href="{{route('profiles.index')}}" class="btn btn-secondary btn-block">プロフィール編集</a>
