@@ -54,10 +54,9 @@
                     <a class="dropdown-item" href="{{route('reviews.edit',[$review->id])}}">
                         編集
                     </a>
-                    <form class="dropdown-item" action="{{route('reviews.destroy',[$review->id])}}" method="post">
-                        @csrf
-                        @method('DELETE')
-                        <p>投稿を削除</p>
+                    <a class="dropdown-item" href="{{route('reviews.delete',[$review->id])}}">
+                        投稿を削除する
+                    </a>
                     </form>
                 </div>
             </li>
