@@ -31,7 +31,7 @@
     @include('inc.search')
     <div class="wrapper">
         <div class="home-image">
-            <h1 class="home-text"></h1>
+            <h1 class="home-text">Yogee New Waves</h1>
         </div>
         <div class="my-5">
             <h2 class="text-center">最近の投稿</h2>

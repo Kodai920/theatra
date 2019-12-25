@@ -13,6 +13,7 @@
                     <div style="font-size:30px;">{{$user->name}}</div>
                     <div>登録日 : {{$user->created_at->format('Y年m月d日')}}</div>
                 </div>
+                <p></p>
                 <div class="mt-2" style="color:gray;">{{$user->profile->about}}</div>
             </div>
             <div class="col-6">
