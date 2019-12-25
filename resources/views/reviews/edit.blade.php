@@ -36,7 +36,15 @@
             <div class="col-md-10">
 
 <div class="card">
-<div class="card-header">レビューの編集</div>
+<div class="card-header">レビューの編集
+    <div class="float-right">
+            <form action="{{route('reviews.destroy',[$review->id])}}" method="POST">
+                    @csrf
+                    @method('DELETE')
+                    <button type="submit" class="btn btn-sm btn-secondary" onclick="return confirm('本当に削除しますか？')"><i class="fas fa-trash-alt"></i></button>
+            </form>
+    </div>
+</div>
 <div class="card-body">
     @if(count($errors) > 0)
         <ul class="list-group">
