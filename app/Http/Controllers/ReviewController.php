@@ -93,7 +93,7 @@ class ReviewController extends Controller
     {
         $this->validate($request,[
             'impression' => 'nullable',
-            'star' => 'required|integer',
+            'star' => 'required',
         ]);
 
         $review->impression = $request->impression;
