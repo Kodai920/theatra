@@ -45,7 +45,7 @@
 @foreach($movie->reviews as $review)
 <div class="card mb-2">
     <div class="card-header">{{$review->user->name}}の感想・評価
-            <li class="nav-item dropdown float-right">
+            <li class="nav-item dropdown float-right" style="list-style:none;">
                 <a class="dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
                     <i class="fal fa-cog"></i>
                 </a>
