@@ -92,7 +92,6 @@ class ReviewController extends Controller
     public function update(Request $request, Review $review)
     {
         $this->validate($request,[
-            'impression' => 'nullable',
             'star' => 'required',
         ]);
 
