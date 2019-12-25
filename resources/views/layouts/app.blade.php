@@ -26,6 +26,7 @@
 <body>
     <div id="app">
     @include('inc.navbar')
+    @include('inc.navbar')
     @include('inc.search')
     <div class="container py-4">
         <div class="row justify-content-center">
