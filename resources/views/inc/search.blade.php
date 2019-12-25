@@ -1,5 +1,5 @@
-
-<div class="overlay_search">
+<nav class="navbar navbar-expand-md navbar-light bg-white shadow-sm">
+    <div class="overlay_search">
         <div class="container">
             <div class="row">
                 <div class="form_search-wrap">
@@ -14,8 +14,4 @@
             </div>
         </div>
     </div>
-
-    <nav class="navbar navbar-expand-md navbar-light bg-white shadow-sm">
-        <div class="container">
-        </div>
-    </nav>
+</nav>
