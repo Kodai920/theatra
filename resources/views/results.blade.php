@@ -18,7 +18,7 @@
                 </div>
             @endforeach
             @else
-                <h3 class="text-center">該当する項目はありません。</h3>
+            　<h3 class="text-center my-5">該当する作品はありません。</h3>
             @endif
             <!-- End Post Details -->
         </main>
