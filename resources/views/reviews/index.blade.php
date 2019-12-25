@@ -51,7 +51,7 @@
         @endforeach
         @else
             <div class="card">
-                <div class="card-header">THEATRAにご登録いただきありがとうございます</div>
+                <div class="card-header">まだレビューがありません</div>
                 <div class="card-body">
                 最初のレビューを書こう！
                 </div>
