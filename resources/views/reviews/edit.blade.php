@@ -12,21 +12,22 @@
         </ul>
     @endif
 
-    <form action="{{route('reviews.store')}}" method="post" enctype="multipart/form-data">
+    <form action="{{route('reviews.update',[$review->id])}}" method="post" enctype="multipart/form-data">
         @csrf
+        @methoid('PUT')
         <div class="form-group">
             <label for="about">感想</label>
             <br>
-            <textarea name="about" class="form-control" rows="5"></textarea>
+            <textarea name="about" class="form-control" rows="5">{{$review->impression}}</textarea>
         </div>
 
         <div class="form-group">
             <label for="star">評価</label>
-            <input id="star-rating-demo" value="4" type="number" class="rating" min=0 max=5 step=0.1 data-size="lg">
+            <input id="star-rating-demo" value="{{$review->star}}" type="number" class="rating" min=0 max=5 step=0.1 data-size="lg">
         </div>
 
         <div class="form-group">
-            <button type="submit" class="btn btn-success btn-block">投稿</button>
+            <button type="submit" class="btn btn-success btn-block">更新</button>
         </div>
     </form>
 </div>

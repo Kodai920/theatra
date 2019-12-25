@@ -76,9 +76,9 @@ class ReviewController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function edit($id)
+    public function edit(Review $review)
     {
-        //
+        return view('reviews.edit')->with('movie',$movie);
     }
 
     /**
@@ -88,9 +88,12 @@ class ReviewController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, $id)
+    public function update(Request $request, Review $review)
     {
-        //
+        $review->fill($request->imput())->save();
+
+        Session::flash('success','更新完了');
+        return redirect()->route('reviews.index');
     }
 
     /**
