@@ -51,12 +51,13 @@
                 </a>
                 <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
                     <a class="dropdown-item" href="{{route('reviews.edit',[$review->id])}}">
-                        @method('DELETE')
                         編集
                     </a>
-                    <a class="dropdown-item" href="{{route('reviews.destroy',[$review->id])}}">
-                        投稿を削除する
-                    </a>
+                    <form action="{{route('reviews.destroy',[$review->id])}}" method="post">
+                        @csrf
+                        @method('DELETE')
+                        <button type="submit">投稿を削除する</button>
+                    </form>
                 </div>
             </li>
     </div>
