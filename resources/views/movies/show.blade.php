@@ -43,7 +43,7 @@
 @foreach($movie->reviews as $review)
 <div class="card mb-2">
     <div class="card-header">{{$review->user->name}}の感想・評価
-        <a href="{{route('reviews.edit')}}" class="btn btn-secondary">edit</a>
+        <a href="{{route('reviews.edit'),[$review->id]}}" class="btn btn-secondary">edit</a>
     </div>
     <div class="card-body pt-0">
     　 <div class="row">
