@@ -91,7 +91,16 @@ class ReviewController extends Controller
      */
     public function update(Request $request, Review $review)
     {
+        $this->validate($request,[
+            'impression' => 'nullable',
+            'star' => 'required|integer',
+        ]);
+
         $review->fill($request->imput())->save();
+
+        $review->impression = $request->impression;
+        $review->star = $request->star;
+        $review->save();
 
         Session::flash('success','更新完了');
         return redirect()->route('reviews.index');
