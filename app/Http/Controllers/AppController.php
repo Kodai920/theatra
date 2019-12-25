@@ -12,7 +12,7 @@ class AppController extends Controller
     public function search(){
         $movies = Movie::where('title','like','%'.request('query').'%')->get();
 
-        $countries = Movie::whereHas('countries',function($query){
+        $movies = Movie::whereHas('country',function($query){
             $query->where('name','like','%'.request('query').'%')->get();
         });
 
