@@ -47,7 +47,7 @@
     <div class="card-header">{{$review->user->name}}の感想・評価
             <li class="nav-item dropdown float-right" style="list-style:none;">
                 <a class="dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
-                    <i class="fal fa-cog"></i>
+                    <i class="fas fa-cog"></i>
                 </a>
 
                 <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
