@@ -42,7 +42,7 @@
 </div>
 
 @if($movie->reviews->count() > 0)
-@foreach($movie->reviews as $review)
+@foreach($movie->reviews->sortByDesc('created_at') as $review)
 <div class="card mb-2">
     <div class="card-header">{{$review->user->name}}の感想・評価
             <li class="nav-item dropdown float-right" style="list-style:none;">
