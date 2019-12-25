@@ -31,7 +31,7 @@
 
 <div>
     @if($user->reviews->count() > 0)
-    @foreach($user->reviews->sortBy('created_at') as $review)
+    @foreach($user->reviews->sortByDesc('created_at') as $review)
     <div class="card mb-2">
             <div class="card-header">{{$review->movie->title}}({{$review->movie->year}}年)のレビュー
                     <li class="nav-item dropdown float-right" style="list-style:none;">
