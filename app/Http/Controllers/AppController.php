@@ -9,20 +9,34 @@ use App\Country;
 
 class AppController extends Controller
 {
-    public function search(){
-        $movies = Movie::where('title','like','%'.request('query').'%')->get();
+    public function search(Request $request){
 
-        $movies = Movie::whereHas('country',function($query){
-                          $query->where('name','like','%'.request('query').'%');
-                        })->get();
+        $movie = $request->get('title');
+        $category = $request->get('name');
+        $country = $request->get('name');
 
-        $movies = Movie::whereHas('categories',function($query){
-                           $query->where('name','like','%'.request('query').'%');
-                         })->get();
+        if($movie||$category||$country){
+            $movies = Movie::query();
+            if($movie){
+                $movies = Movie::where('title','like','%'.request('query').'%')->get();
+            }
 
-        return view('results')->with('movies',$movies)
-                              ->with('title','Search results : '.request('query'))
-                              ->with('name','Search results : '.request('query'))
-                              ->with('query',request('query'));
+            if($category){
+                $movies = Movie::whereHas('categories',function($query){
+                    $query->where('name','like','%'.request('query').'%');
+                  })->get();
+            }
+
+            if($country){
+                $movies = Movie::whereHas('country',function($query){
+                    $query->where('name','like','%'.request('query').'%');
+                  })->get();
+            }
+            return view('results')->with('movies',$movies)
+            ->with('title','Search results : '.request('query'))
+            ->with('name','Search results : '.request('query'))
+            ->with('query',request('query'));
+        }
+
     }
 }
