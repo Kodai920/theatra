@@ -11,7 +11,7 @@ class AppController extends Controller
 {
     public function search(Request $request){
 
-        $movie = $request->get('title');
+        $movie = $request->get('query');
         $category = $request->get('category_id');
         $country = $request->get('country_id');
 
