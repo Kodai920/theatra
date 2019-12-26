@@ -32,7 +32,7 @@ class AppController extends Controller
         // if($keyword){
         //   $movies = Movie::where('title','like','%'.$keyword.'%');
         // }
-        $movies = Movie::where('title','like','%'.$query.'%')
+        $movies = Movie::where('title','like','%'.$keyword.'%')
                   ->orWhere('country_id',$country);
         //$movies = Movie::orderBy('year','desc')->get();
         return view('results')->with('movies',$movies)
