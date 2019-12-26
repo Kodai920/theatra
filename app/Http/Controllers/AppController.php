@@ -11,23 +11,30 @@ class AppController extends Controller
 {
     public function search(Request $request){
 
-      $query = $request->query;
+      //$query = $request->query;
 
       //radio - movie
-      $movie_radio = $request->get('mr');
+      $keyword = $request->get('query');
 
       //radio - movie based on category
-      $category_radio = $request->get('cr');
+      $category = $request->get('cr');
 
       //radio - movie based on country
       $country = $request->get('country_id');
 
 
-      if( $movie_radio || $category_radio || $country){
+      if( $keyword || $category || $country){
 
-        $movies = Movie::where('title','like','%'.$query.'%')
-                  ->orWhere('name', $category)
-                  ->orWhere('country_id',$country_id);
+        if($country){
+          $movies = Movie::where('country_id',$country);
+        }
+
+        if($keyword){
+          $movies = Movie::where('title','like','%'.$keyword.'%');
+        }
+        // $movies = Movie::where('title','like','%'.$query.'%')
+        //           ->orWhere('name', $category)
+        //           ->orWhere('country_id',$country);
 
         return view('results')->with('movies',$movies)
                   ->with('title','Search results : '.request('query'));
