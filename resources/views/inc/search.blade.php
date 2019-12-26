@@ -2,7 +2,7 @@
     <div class="container">
     <form method="GET" action="{{route('search.results')}}" class="ml-auto">
         @csrf
-        <div class="float-left mt-2 mr-2">
+        <div class="float-left mt-1 mr-2">
             <select>
                 <option name="movie" value="movie" selected>タイトル</option>
                 <option name="category" value="category">カテゴリ</option>
