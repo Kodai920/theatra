@@ -20,34 +20,25 @@ class AppController extends Controller
 
             if($movie){
                 $movies = $movies->where('title','like','%'.request('query').'%')->get();
-
-                return view('results')->with('movies',$movies)
-                ->with('title','Search results : '.request('query'))
-                ->with('name','Search results : '.request('query'))
-                ->with('query',request('query'));
             }
 
             if($category){
                 $movies = $movies->whereHas('categories',function($query){
                     $query->where('name','like','%'.request('query').'%');
                   })->get();
-
-                  return view('results')->with('movies',$movies)
-                  ->with('title','Search results : '.request('query'))
-                  ->with('name','Search results : '.request('query'))
-                  ->with('query',request('query'));
             }
 
             if($country){
                 $movies = $movies->whereHas('country',function($query){
                     $query->where('name','like','%'.request('query').'%');
                   })->get();
-
-                  return view('results')->with('movies',$movies)
-                  ->with('title','Search results : '.request('query'))
-                  ->with('name','Search results : '.request('query'))
-                  ->with('query',request('query'));
             }
+
+            return view('results')->with('movies',$movies)
+            ->with('title','Search results : '.request('query'))
+            ->with('name','Search results : '.request('query'))
+            ->with('query',request('query'));
+
         }
     }
 }
