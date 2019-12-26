@@ -16,7 +16,7 @@ class AppController extends Controller
                               ->with('title','Search results : '.request('query'))
                               ->with('name','Search results : '.request('query'))
                               ->with('query',request('query'))
-                            //   ->with('cateogries',$categories)
+                              ->with('cateogries',$categories)
                               ->with('country',$country);
     }
 }
