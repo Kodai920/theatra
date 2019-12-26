@@ -19,7 +19,7 @@ class AppController extends Controller
             $movies = Movie::query();
 
             if($movie){
-                $movies = Movie::where('title','like','%'.request('query').'%')->get();
+                $movies = $movies->where('title','like','%'.request('query').'%')->get();
 
                 return view('results')->with('movies',$movies)
                 ->with('title','Search results : '.request('query'))
@@ -28,7 +28,7 @@ class AppController extends Controller
             }
 
             if($category){
-                $movies = Movie::whereHas('categories',function($query){
+                $movies = $movies->whereHas('categories',function($query){
                     $query->where('name','like','%'.request('query').'%');
                   })->get();
 
@@ -39,7 +39,7 @@ class AppController extends Controller
             }
 
             if($country){
-                $movies = Movie::whereHas('country',function($query){
+                $movies = $movies->whereHas('country',function($query){
                     $query->where('name','like','%'.request('query').'%');
                   })->get();
 
