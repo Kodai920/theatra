@@ -3,13 +3,13 @@
 
 <!-- Stunning Header -->
 
-    <h1 class="stunning-header-title">検索条件 : {{$title}} </h1>
+    <h1 class="stunning-header-title">検索条件 : {{$query}} </h1>
 
 <!-- End Stunning Header -->
 <!-- Post Details -->
 
         <main class="main">
-            @if(count($movies) != 0)
+            @if(count($movies) > 0)
             @foreach($movies as $movie)
                 <div id="movie-image">
                     <a href="{{route('movies.show',[$movie->id])}}" class="float-left m-4">
