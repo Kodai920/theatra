@@ -9,7 +9,7 @@ use App\Country;
 
 class AppController extends Controller
 {
-    public function search(Request $request){
+    public function search(){
 
       // $movie = $request->get('title');
       // $category = $request->get('name');
