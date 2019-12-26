@@ -27,12 +27,11 @@ class AppController extends Controller
       //$movie_by_country = Country::find($country->id)->movies;
 
 
-
       if( $movie_radio || $category_radio || $country_radio){
 
         $movies = Movie::where('title','like','%'.$query.'%')
-                  ->orWhere('category', $category->id)
-                  ->orWhere('country',$country->id);
+                  ->orWhere('category', $category->name)
+                  ->orWhere('country',$country->name);
 
         return view('results')->with('movies',$movies)
                   ->with('title','Search results : '.request('query'));
