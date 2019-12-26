@@ -6,7 +6,7 @@
                 <div class="col-md-6 mt-2">
                     <input class="mx-1" type="radio" name="mr" checked>タイトル
                     <input class="mx-1" type="radio" name="cr">カテゴリ
-                    <input class="mx-1" type="radio" name="conr" value="{{ $country->id }}">作成国
+                    <input class="mx-1" type="radio" name="conr">作成国
                 </div>
                 <div class="col-md-6 search_container">
                     <input name='query' style="background-color:#E5E5E5" placeholder="キーワードを入力"　size="25" type="text">
