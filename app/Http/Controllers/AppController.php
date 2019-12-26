@@ -10,7 +10,13 @@ use App\Country;
 class AppController extends Controller
 {
     public function search(){
-        $movies = Movie::where('title','like','%'.request('query').'%')->get();
+        $movies = Movie::where('title','like','%'.request('query').'%')
+                        ->whereHas('country',function($query){
+                          $query->where('name','$query');
+                        })
+                        ->whereHas('categories',function($query){
+                           $query->where('name','$query');
+                         })->get();
 
         return view('results')->with('movies',$movies)
                               ->with('title','Search results : '.request('query'))
