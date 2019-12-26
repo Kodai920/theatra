@@ -1,5 +1,5 @@
 <nav class="navbar navbar-expand-md navbar-light" style="background-color:#616161;">
-    <div class="container ml-auto">
+    <div class="container">
     <form action="" method="POST" class="float-right">
         <input class="mx-1" type="radio" name="search-box" id=""> タイトル
         <input class="mx-1" type="radio" name="search-box" id=""> カテゴリ
