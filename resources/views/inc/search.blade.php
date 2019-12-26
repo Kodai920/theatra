@@ -4,12 +4,12 @@
             @csrf
             <div class="row">
                 <div class="col-md-6 mt-2">
-                    <input class="mx-1" type="radio" name="search-box">タイトル
-                    <input class="mx-1" type="radio" name="search-box">カテゴリ
-                    <input class="mx-1" type="radio" name="search-box">作成国
+                    <input class="mx-1" type="radio" name="mr" checked>タイトル
+                    <input class="mx-1" type="radio" name="cr">カテゴリ
+                    <input class="mx-1" type="radio" name="conr">作成国
                 </div>
                 <div class="col-md-6 search_container">
-                    <input name='title' style="background-color:#E5E5E5" placeholder="キーワードを入力"　size="25" type="text">
+                    <input name='query' style="background-color:#E5E5E5" placeholder="キーワードを入力"　size="25" type="text">
                     <input type="submit" value="&#xf002">
                 </div>
             </div>

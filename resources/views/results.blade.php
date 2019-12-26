@@ -3,7 +3,7 @@
 
 <!-- Stunning Header -->
 
-    <h1 class="stunning-header-title">検索条件 : {{$query}} </h1>
+    <h1 class="stunning-header-title">検索条件 : {{$title}} </h1>
 
 <!-- End Stunning Header -->
 <!-- Post Details -->
