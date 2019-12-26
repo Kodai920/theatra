@@ -20,17 +20,17 @@ class AppController extends Controller
       //   $movies = Movie::query();
 
       //   if($movie){
-          $movies = Movie::where('title','like','%'.request('query').'%')->get();
+          $movies = Movie::where('title','like','%'.request('query').'%')
         // }
 
         // if($category){
-          $movies = Movie::whereHas('categories',function($query){
+          ->whereHas('categories',function($query){
             $query->where('name','like','%'.request('query').'%');
-          })->get();
+          })
         // }
 
         // if($country){
-          $movies = Movie::whereHas('country',function($query){
+          ('country',function($query){
             $query->where('name','like','%'.request('query').'%');
           })->get();
     //     }
