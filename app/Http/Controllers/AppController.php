@@ -16,15 +16,13 @@ class AppController extends Controller
                           $query->where('name','like','%'.request('query').'%');
                         });
 
-        $movies = Movie::whereHas('categories',function($query){
-                           $query->where('name','like','%'.request('query').'%');
-                         })->get();
+        // $movies = Movie::whereHas('categories',function($query){
+        //                    $query->where('name','like','%'.request('query').'%');
+        //                  })->get();
 
         return view('results')->with('movies',$movies)
                               ->with('title','Search results : '.request('query'))
                               ->with('name','Search results : '.request('query'))
                               ->with('query',request('query'));
-                              // ->with('cateogries',$categories)
-                              // ->with('country',$country);
     }
 }
