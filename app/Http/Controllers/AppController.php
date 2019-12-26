@@ -35,10 +35,10 @@ class AppController extends Controller
           })->get();
     //     }
 
-    //     return view('results')->with('movies',$movies)
-    //     ->with('title','Search results : '.request('query'))
-    //     ->with('name','Search results : '.request('query'))
-    //     ->with('query',request('query'));
+        return view('results')->with('movies',$movies)
+        ->with('title','Search results : '.request('query'))
+        ->with('name','Search results : '.request('query'))
+        ->with('query',request('query'));
     //   }
     }
 }
