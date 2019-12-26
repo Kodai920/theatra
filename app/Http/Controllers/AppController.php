@@ -30,7 +30,7 @@ class AppController extends Controller
         // }
 
         // if($country){
-          ('country',function($query){
+          ->whereHas('country',function($query){
             $query->where('name','like','%'.request('query').'%');
           })->get();
     //     }
