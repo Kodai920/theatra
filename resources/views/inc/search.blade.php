@@ -2,7 +2,7 @@
     <div class="container">
     <form method="GET" action="{{route('search.results')}}" class="ml-auto">
         @csrf
-        <div class="">
+        <div class="float-left">
             <input class="mx-1" type="radio" name="search-box" >タイトル
             <input class="mx-1" type="radio" name="search-box" >カテゴリ
             <input class="mx-1" type="radio" name="search-box" >作成国
