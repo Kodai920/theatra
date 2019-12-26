@@ -11,25 +11,25 @@ class AppController extends Controller
 {
     public function search(Request $request){
 
-        $movie = $request->get('query');
-        $category = $request->get('category');
-        $country = $request->get('country');
+        // $movie = $request->get('query');
+        // $category = $request->get('category');
+        // $country = $request->get('country');
 
-        if($movie||$category||$country){
+        // if($movie||$category||$country){
             $movies = Movie::query();
 
-            if($movie){
-                $movies = $movies->where('title','like','%'.request('query').'%')->get();
+            if($request->has('movie')){
+                $movies = Movie::where('title','like','%'.request('query').'%')->get();
             }
 
-            if($category){
-                $movies = $movies->whereHas('categories',function($query){
+            if($request->has('category')){
+                $movies = Movie::whereHas('categories',function($query){
                     $query->where('name','like','%'.request('query').'%');
                   })->get();
             }
 
-            if($country){
-                $movies = $movies->whereHas('country',function($query){
+            if($request->has('country')){
+                $movies = Movie::whereHas('country',function($query){
                     $query->where('name','like','%'.request('query').'%');
                   })->get();
             }
@@ -38,7 +38,6 @@ class AppController extends Controller
             ->with('title','Search results : '.request('query'))
             ->with('name','Search results : '.request('query'))
             ->with('query',request('query'));
-
-        }
+        // }
     }
 }
