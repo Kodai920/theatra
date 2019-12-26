@@ -9,7 +9,7 @@
 <!-- Post Details -->
 
         <main class="main">
-            @if(count($movies) > 0)
+            @if(count($movies) != 0)
             @foreach($movies as $movie)
                 <div id="movie-image">
                     <a href="{{route('movies.show',[$movie->id])}}" class="float-left m-4">
