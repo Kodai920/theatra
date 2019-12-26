@@ -11,9 +11,9 @@ class AppController extends Controller
 {
     public function search(Request $request){
 
-        $movie = $request->get('query');
-        $category = $request->get('query');
-        $country = $request->get('query');
+        $movie = $request->get('title');
+        $category = $request->get('category_id');
+        $country = $request->get('country_id');
 
         if($movie||$category||$country){
             $movies = Movie::query();
@@ -49,6 +49,5 @@ class AppController extends Controller
                   ->with('query',request('query'));
             }
         }
-
     }
 }
