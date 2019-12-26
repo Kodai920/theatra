@@ -37,8 +37,6 @@ class AppController extends Controller
         ->with('title','Search results : '.request('query'))
         ->with('name','Search results : '.request('query'))
         ->with('query',request('query'));
-      }else{
-        return view('movies.index');
       }
     }
 }
