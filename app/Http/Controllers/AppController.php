@@ -13,11 +13,11 @@ class AppController extends Controller
 
           $movies = Movie::where('title','like','%'.request('query').'%')->get();
 
-          $movie = Movie::whereHas('categories',function($query){
+          $movies = Movie::whereHas('categories',function($query){
             $query->where('name','like','%'.request('query').'%');
           })->get();
 
-          $movie = Movie::whereHas('country',function($query){
+          $movies = Movie::whereHas('country',function($query){
             $query->where('name','like','%'.request('query').'%');
           })->get();
 
