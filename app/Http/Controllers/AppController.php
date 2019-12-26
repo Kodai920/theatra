@@ -24,22 +24,20 @@ class AppController extends Controller
 
 
       if( $keyword || $category || $country){
-        // $movies = Movie::query();
-        // if($country){
-        //   $movies = Movie::where('country_id',$country);
-        // }
+        $movies = Movie::query();
 
-        // if($keyword){
-        //   $movies = Movie::where('title','like','%'.$keyword.'%');
-        // }
-        $movies = Movie::where('title','like','%'.$keyword.'%')
-                  ->orWhere('country_id',$country);
-        //$movies = Movie::orderBy('year','desc')->get();
+        if($keyword){
+          $movies = Movie::where('title','like','%'.$keyword.'%');
+        }
+
+        if($country){
+          $movies = Movie::where('country_id',$country);
+        }
+        // $movies = Movie::where('title','like','%'.$keyword.'%')
+        //           ->orWhere('country_id',$country);
+        $movies = Movie::paginate(5);
         return view('results')->with('movies',$movies)
                   ->with('title','Search results : '.$keyword);
-      }
-      else{
-        return view('movies.index')->with('movies',Movie::all());
       }
 
 
