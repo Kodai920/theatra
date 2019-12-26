@@ -4,7 +4,7 @@
         @csrf
         <div class="float-left mt-2 mr-2">
             <select>
-                <option name="movie" value="movie">タイトル</option>
+                <option name="movie" value="movie" selected>タイトル</option>
                 <option name="category" value="category">カテゴリ</option>
                 <option name="country" value="country">製作国</option>
             </select>
