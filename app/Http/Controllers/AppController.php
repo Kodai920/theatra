@@ -18,12 +18,9 @@ class AppController extends Controller
 
       //radio - movie based on category
       $category_radio = $request->get('cr');
-     // $category = Category::where('name','like','%'.$query.'%');
-     // $movie_by_category = Category::find($category->id)->movies;
 
       //radio - movie based on country
-      $country_radio = $request->get('conr');
-      //$movie_by_country = Country::find($country->id)->movies;
+      $country = $request->get('country_id');
 
 
       if( $movie_radio || $category_radio || $country_radio){

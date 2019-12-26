@@ -5,7 +5,6 @@
             <div class="row">
                 <div class="col-md-6 mt-2">
                     <div class="form-group">
-                        <label for="type">country</label>
                         <select name="country_id" class="form-control">
                             <option value="">-Select-</option>
                             @foreach(App\Country::all() as $country)
