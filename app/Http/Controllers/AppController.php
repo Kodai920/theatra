@@ -27,7 +27,7 @@ class AppController extends Controller
 
         $movies = Movie::where('title','like','%'.$query.'%')
                   ->orWhere('name', $category)
-                  ->orWhere('country_id',$country);
+                  ->orWhere('country_id',$country_id);
 
         return view('results')->with('movies',$movies)
                   ->with('title','Search results : '.request('query'));
