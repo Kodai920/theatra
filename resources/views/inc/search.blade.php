@@ -3,9 +3,9 @@
     <form method="GET" action="{{route('search.results')}}" class="ml-auto">
         @csrf
         <div class="float-left mt-2">
-            <input class="mx-1" type="radio" name="search-box" >タイトル
-            <input class="mx-1" type="radio" name="search-box" >カテゴリ
-            <input class="mx-1" type="radio" name="search-box" >作成国
+            <label><input class="mx-1" type="radio" name="search" value="movie" checked>タイトル</label>
+            <label><input class="mx-1" type="radio" name="search" value="category">カテゴリ</label>
+            <label><input class="mx-1" type="radio" name="search" value="country">製作国</label>
         </div>
         <div class="ml-3 float-left search_container">
             <input name='title' style="background-color:#E5E5E5;" placeholder="キーワードを入力"　size="25" type="text">
