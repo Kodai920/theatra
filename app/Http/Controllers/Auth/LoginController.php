@@ -5,6 +5,10 @@ namespace App\Http\Controllers\Auth;
 use App\Http\Controllers\Controller;
 use Illuminate\Foundation\Auth\AuthenticatesUsers;
 // use Bestmomo\LaravelEmailConfirmation\Traits\AuthenticatesUsers;
+use Auth;
+use Socialite;
+use App\User;
+use App\SocialIdentity;
 
 class LoginController extends Controller
 {
@@ -38,39 +42,50 @@ class LoginController extends Controller
         $this->middleware('guest')->except('logout');
     }
 
-        //ログインボタンからリンク
-        public function socialLogin($social)
-        {
-            return Socialite::driver($social)->redirect();
+    public function redirectToProvider($provider)
+    {
+        return Socialite::driver($provider)->redirect();
+    }
+
+    public function handleProviderCallback($provider)
+    {
+        try {
+            $user = Socialite::driver($provider)->user();
+        } catch (Exception $e) {
+            return redirect('/login');
         }
 
-        //Callback処理
-        public function handleProviderCallback($social)
-        {
-            //ソーシャルサービス（情報）を取得
-            $userSocial = Socialite::driver($social)->stateless()->user();
-            //emailで登録を調べる
-            $user = User::where(['email' => $userSocial->getEmail()])->first();
+        $authUser = $this->findOrCreateUser($user, $provider);
+        Auth::login($authUser, true);
+        return redirect($this->redirectTo);
+    }
 
-            //登録（email）の有無で分岐
-            if($user){
+    public function findOrCreateUser($providerUser, $provider)
+    {
+        $account = SocialIdentity::whereProviderName($provider)
+                   ->whereProviderId($providerUser->getId())
+                   ->first();
 
-                //登録あればそのままログイン（2回目以降）
-                Auth::login($user);
-                return redirect('/home');
+        if ($account) {
+            return $account->user;
+        } else {
+            $user = User::whereEmail($providerUser->getEmail())->first();
 
-            }else{
-
-                //なければ登録（初回）
-                $newuser = new User;
-                $newuser->name = $userSocial->getName();
-                $newuser->email = $userSocial->getEmail();
-                $newuser->save();
-
-                //そのままログイン
-                Auth::login($newuser);
-                return redirect('/home');
-
+            if (! $user) {
+                $user = User::create([
+                    'email' => $providerUser->getEmail(),
+                    'name'  => $providerUser->getName(),
+                ]);
             }
+
+            $user->identities()->create([
+                'provider_id'   => $providerUser->getId(),
+                'provider_name' => $provider,
+            ]);
+
+            return $user;
         }
+    }
+
+
 }

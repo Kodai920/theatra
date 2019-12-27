@@ -31,15 +31,21 @@ return [
     ],
 
     'facebook' => [
-        'client_id' => env('FACEBOOK_API_ID'),
-        'client_secret' => env('FACEBOOK_API_SECRET'),
+        'client_id' => env('FACEBOOK_API_ID'),//your facebook app id
+        'client_secret' => env('FACEBOOK_API_SECRET'),//your facebook app secret
         'redirect' => env('FACEBOOK_CALLBACKURL'),
     ],
 
     'twitter' => [
-        'client_id' => env('TWITTER_API_ID'),
-        'client_secret' => env('TWITTER_API_SECRET'),
-        'redirect' => env('TWITTER_CALLBACKURL'),
+        'client_id' => env('TWITTER_CLIENT_ID'),  // Your Twitter Client ID
+        'client_secret' => env('TWITTER_CLIENT_SECRET'), // Your Twitter Client Secret
+        'redirect' => env('TWITTER_CALLBACK_URL'),
+    ],
+
+    'github' => [
+        'client_id' => env('GITHUB_CLIENT_ID'), // Your GitHub Client ID
+        'client_secret' => env('GITHUB_CLIENT_SECRET'), // Your GitHub Client Secret
+        'redirect' => env('GITHUB_CALLBACK_URL'),
     ],
 
 ];
