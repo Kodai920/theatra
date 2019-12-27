@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class CreateLinkedSocilAccountsTable extends Migration
+class CreateLinkedSocialAccountsTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,7 +13,7 @@ class CreateLinkedSocilAccountsTable extends Migration
      */
     public function up()
     {
-        Schema::create('linked_socil_accounts', function (Blueprint $table) {
+        Schema::create('linked_social_accounts', function (Blueprint $table) {
             $table->bigIncrements('id');
             $table->bigInteger('user_id');
             $table->string('provider_name')->nullable();
@@ -29,6 +29,6 @@ class CreateLinkedSocilAccountsTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('linked_socil_accounts');
+        Schema::dropIfExists('linked_social_accounts');
     }
 }
