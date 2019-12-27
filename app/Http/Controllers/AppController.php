@@ -25,7 +25,7 @@ class AppController extends Controller
         }
 
         if($select == 'category'){
-            $movies = Movie::hereHas('categories',function($query){
+            $movies = Movie::whereHas('categories',function($query){
                 $query->where('name','like','%'.request('query').'%');
               })->get();
         }
