@@ -71,7 +71,7 @@
                     </form>
                         <hr>
                     <form class="form-horizontal" method="POST" action="{{ route('register') }}">
-                        <div class="form-group justify-content-center">
+                        <div class="form-group mx-auto">
                             <a href="{{ url('/login/twitter') }}" class="btn btn-twitter float-left"><i class="fa fa-twitter"></i> Twitter</a>
                             <a href="{{ url('/login/facebook') }}" class="btn btn-facebook float-left"><i class="fa fa-facebook"></i> Facebook</a>
                             <a href="{{ url('/login/github') }}" class="btn btn-github"><i class="fa fa-github"></i> Github</a>
