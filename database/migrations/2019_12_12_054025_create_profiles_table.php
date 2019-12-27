@@ -16,8 +16,8 @@ class CreateProfilesTable extends Migration
         Schema::create('profiles', function (Blueprint $table) {
             $table->bigIncrements('id');
             $table->integer('user_id');
-            $table->string('avator')->nullable();
-            $table->text('about');
+            $table->string('avator')->default('profile.jpeg');
+            $table->text('about')->nullable();
             $table->timestamps();
         });
     }
