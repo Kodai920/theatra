@@ -49,4 +49,7 @@ class User extends Authenticatable
         return $this->hasMany('App\Review');
     }
 
+    public function identities(){
+        return $this->hasMany('App\SocialIdentity');
+    }
 }
