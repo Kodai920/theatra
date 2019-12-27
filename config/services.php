@@ -33,7 +33,7 @@ return [
     'facebook' => [
         'client_id' => env('FACEBOOK_API_ID'),//your facebook app id
         'client_secret' => env('FACEBOOK_API_SECRET'),//your facebook app secret
-        'redirect' => env('FACEBOOK_CALLBACKURL'),
+        'redirect' => env('FACEBOOK_CALLBACK_URL'),
     ],
 
     'twitter' => [
