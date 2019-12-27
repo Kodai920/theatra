@@ -72,7 +72,7 @@
                     <form class="form-horizontal" method="POST" action="{{ route('register') }}">
                         <hr>
                         <div class="form-group">
-                            <div class="col-md-6 col-md-offset-4">
+                            <div class="">
                                 <a href="{{ url('/login/twitter') }}" class="btn btn-twitter float-left"><i class="fa fa-twitter"></i> Twitter</a>
                                 <a href="{{ url('/login/facebook') }}" class="btn btn-facebook float-left"><i class="fa fa-facebook"></i> Facebook</a>
                                 <a href="{{ url('/login/github') }}" class="btn btn-github float-left"><i class="fa fa-github"></i> Github</a>
