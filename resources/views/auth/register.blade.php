@@ -6,7 +6,6 @@
         <div class="col-md-8">
             <div class="card">
                 <div class="card-header">{{ __('新規登録') }}</div>
-
                 <div class="card-body">
                     <form method="POST" action="{{ route('register') }}">
                         @csrf
@@ -69,9 +68,9 @@
                             </div>
                         </div>
                     </form>
-                        <hr>
+                    <hr>
                     <form class="form-horizontal" method="POST" action="{{ route('register') }}">
-                        <div class="form-group mx-auto mb-0">
+                        <div class="mx-auto mb-0">
                             <a href="{{ url('/login/twitter') }}" class="btn btn-twitter float-left"><i class="fa fa-twitter"></i> Twitter</a>
                             <a href="{{ url('/login/facebook') }}" class="btn btn-facebook float-left"><i class="fa fa-facebook"></i> Facebook</a>
                             <a href="{{ url('/login/github') }}" class="btn btn-github"><i class="fa fa-github"></i> Github</a>
