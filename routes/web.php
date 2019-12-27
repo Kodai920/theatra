@@ -51,3 +51,7 @@ Route::get('/results',[
     'as' => 'search.results'
 ]);
 
+//ログインボタンからのリンク
+Route::get('/login/{social}', 'Auth\LoginController@socialLogin')->where('social', 'facebook|twitter');
+//コールバック用
+Route::get('/login/{social}/callback', 'Auth\LoginController@handleProviderCallback')->where('social', 'facebook|twitter');

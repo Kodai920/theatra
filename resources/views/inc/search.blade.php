@@ -3,7 +3,7 @@
     <form method="GET" action="{{route('search.results')}}" class="ml-auto">
         @csrf
         <div class="float-left mt-1 mr-2">
-            <select>
+            <select name="searchby">
                 <option value="movie" selected>タイトル</option>
                 <option value="category">カテゴリ</option>
                 <option value="country">製作国</option>
