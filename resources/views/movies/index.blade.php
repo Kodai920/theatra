@@ -39,7 +39,7 @@
                         </a>
                     </div>
                 @endforeach
-                {{$movies->links();}}
+                {{$movies->links()}}
             </div>
         </div>
     </div>
