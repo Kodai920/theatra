@@ -26,13 +26,13 @@ Route::resource('posts','PostController');
 
 Route::resource('categories','CategoryController');
 
+Route::resource('movies','MovieController');
 
+Route::resource('reviews','ReviewController');
 
 Route::group(['middleware' => 'auth'],function(){
 
     Route::resource('profiles','ProfileController');
-
-    Route::resource('movies','MovieController');
 
     Route::resource('reviews','ReviewController');
 
