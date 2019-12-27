@@ -27,8 +27,8 @@ class MovieController extends Controller
      */
     public function index()
     {
-        $movies = Movie::all();
-        return view('movies.index')->with('movies',$movies)->paginate(20);
+        $movies = Movie::all()->paginate(20);
+        return view('movies.index')->with('movies',$movies);
     }
 
     /**
