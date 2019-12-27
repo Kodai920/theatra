@@ -69,10 +69,12 @@
                         </div>
 
                         <hr>
-                        <div class="form-group mx-auto mb-0">
-                            <a href="{{ url('/login/twitter') }}" class="btn btn-twitter float-left"><i class="fa fa-twitter"></i> Twitter</a>
-                            <a href="{{ url('/login/facebook') }}" class="btn btn-facebook float-left"><i class="fa fa-facebook"></i> Facebook</a>
-                            <a href="{{ url('/login/github') }}" class="btn btn-github"><i class="fa fa-github"></i> Github</a>
+                        <div class="form-group row mb-0">
+                            <div class="col-8">
+                                <a href="{{ url('/login/twitter') }}" class="btn btn-twitter float-left"><i class="fa fa-twitter"></i> Twitter</a>
+                                <a href="{{ url('/login/facebook') }}" class="btn btn-facebook float-left"><i class="fa fa-facebook"></i> Facebook</a>
+                                <a href="{{ url('/login/github') }}" class="btn btn-github"><i class="fa fa-github"></i> Github</a>
+                            </div>
                         </div>
 
                     </form>
