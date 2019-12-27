@@ -71,9 +71,9 @@
                         <hr>
                         <div class="form-group row mb-0 justify-content-center">
                             <div class="col-8">
-                                <a href="{{ url('/login/twitter') }}" class="btn btn-twitter col-md-3"><i class="fa fa-twitter"></i> Twitter</a>
-                                <a href="{{ url('/login/facebook') }}" class="btn btn-facebook col-md-3"><i class="fa fa-facebook"></i> Facebook</a>
-                                <a href="{{ url('/login/github') }}" class="btn btn-github col-md-3"><i class="fa fa-github"></i> Github</a>
+                                <a href="{{ url('/login/twitter') }}" class="btn btn-twitter cla col-md-4"><i class="fa fa-twitter"></i> Twitter</a>
+                                <a href="{{ url('/login/facebook') }}" class="btn btn-facebook col-md-4"><i class="fa fa-facebook"></i> Facebook</a>
+                                <a href="{{ url('/login/github') }}" class="btn btn-github col-md-4"><i class="fa fa-github"></i> Github</a>
                             </div>
                         </div>
 
