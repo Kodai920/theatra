@@ -39,8 +39,8 @@
                         </a>
                     </div>
                 @endforeach
-                {{$movies->links()}}
             </div>
+            {{$movies->links()}}
         </div>
     </div>
     @include('inc.footer')
