@@ -14,7 +14,7 @@
             </thead>
             <tbody>
                 @if($categories->count() > 0)
-                @foreach ($categories as $category)
+                @foreach ($categories->sortBy('name') as $category)
                 <tr>
                 <td>{{$category->name}}</td>
                 <td>
