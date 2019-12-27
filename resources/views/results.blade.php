@@ -38,7 +38,7 @@
 
     <!-- End Stunning Header -->
     <!-- Post Details -->
-    
+
             <main class="main">
                 @if(count($movies) > 0)
                 @foreach($movies as $movie)
