@@ -8,9 +8,9 @@
                 <option value="category">カテゴリ</option>
                 <option value="country">製作国</option>
             </select> --}}
-            <input type="radio" name="searchby" id="" value="movie" class="mr-1" checked>タイトル
+            <input type="radio" name="searchby" id="" value="movie" class="mr-1 ml-2" checked>タイトル
             <input type="radio" name="searchby" id="" value="category" class="mr-1 ml-2">カテゴリ
-            <input type="radio" name="searchby" id="" value="country" class="mr-1">製作国
+            <input type="radio" name="searchby" id="" value="country" class="mr-1 ml-2">製作国
         </div>
         <div class="search_container">
             <input name='query' style="background-color:#E5E5E5;" placeholder="キーワードを入力"　size="25" type="text">
