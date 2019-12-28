@@ -45,15 +45,15 @@
         <div class="my-5">
             <h2 class="text-center">ジャンルで作品を探す</h2><br>
             <div class="row">
-                <div class="col-4 m-2">
+                <div class="col-4">
                     <img src="uploads/homes/netflix.jpg" width="300px" height="210px" alt="netflix">
                     <h5 class="text-center">NETFLIXオリジナル</h5>
                 </div>
-                <div class="col-4 m-2">
+                <div class="col-4">
                     <img src="uploads/homes/netflix.jpg" width="300px" height="210px" alt="netflix">
                     <h5 class="text-center">NETFLIXオリジナル</h5>
                 </div>
-                <div class="col-4 m-2">
+                <div class="col-4">
                     <img src="uploads/homes/netflix.jpg" width="300px" height="210px" alt="netflix">
                     <h5 class="text-center">NETFLIXオリジナル</h5>
                 </div>
