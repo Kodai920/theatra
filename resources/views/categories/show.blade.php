@@ -33,7 +33,7 @@
         <div class="row justify-content-center">
         <h1>カテゴリ : {{$category->name}} </h1>
             <div class="col-md-12 mb-3">
-                {{-- @foreach($categories as $category) --}}
+                @foreach($categories as $category)
                 @foreach($category->movies->sortByDesc('year') as $movie)
                     <div id="movie-image">
                         <a href="{{route('movies.show',[$movie->id])}}" class="float-left m-4">
@@ -41,7 +41,7 @@
                         </a>
                     </div>
                 @endforeach
-                {{-- @endforeach --}}
+                @endforeach
             </div>
         </div>
     </div>
