@@ -58,7 +58,6 @@
                     <h5 class="text-center">NETFLIXオリジナル</h5>
                 </div>
             </div>
-            </div>
         </div>
         <hr width="80%" color="#131313">
         <div class="my-5">
