@@ -56,7 +56,8 @@ class CategoryController extends Controller
     {
         $categories = Category::all();
 
-        return view('categories.show')->with('categories',$categories);
+        return view('categories.show')->with('categories',$categories)
+                                      ->with('category',Category::all());
     }
 
     /**
