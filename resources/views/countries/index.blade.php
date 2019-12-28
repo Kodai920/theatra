@@ -13,7 +13,7 @@
             </thead>
             <tbody>
                 @if($countries->count() > 0)
-                @foreach ($countires->sortBy('name') as $country)
+                @foreach ($countries->sortBy('name') as $country)
                 <tr>
                 <td>
                     <a href="{{route('countries.show',[$country->id])}}">
