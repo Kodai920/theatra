@@ -16,7 +16,7 @@
                 @if($categories->count() > 0)
                 @foreach ($categories->sortBy('name') as $category)
                 <tr>
-                <td>{{$category->name}}</td>
+                <td><a href="{{route('categories,show',[$category->id])}}">{{$category->name}}</a></td>
                 <td>
                     <a href=" {{route('categories.edit',[$category->id])}} " class="btn btn-info">Edit</a>
                 </td>
