@@ -17,7 +17,9 @@
                 @foreach ($categories->sortBy('name') as $category)
                 <tr>
                 <td>
-                    <a href="{{route('categories.show',[$category->id])}}">{{$category->name}}</a>
+                    <a href="{{route('categories.show',[$category->id])}}">
+                        {{$category->name}}
+                    </a>
                 </td>
                 {{-- <td>
                     <a href=" {{route('categories.edit',[$category->id])}} " class="btn btn-info">Edit</a>

@@ -42,7 +42,11 @@
         </div>
         <hr width="80%" color="#131313">
         <div class="my-5">
-            <h2 class="text-center">ジャンルから検索する</h2>
+            <h2 class="text-center">ジャンルで作品を探す</h2>
+        </div>
+        <hr width="80%" color="#131313">
+        <div class="my-5">
+            <h2 class="text-center">製作国から作品を探す</h2>
         </div>
         <hr width="80%" color="#131313">
     </div>
