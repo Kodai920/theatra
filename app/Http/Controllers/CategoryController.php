@@ -6,6 +6,7 @@ use Illuminate\Http\Request;
 use App\Category;
 use Illuminate\Support\Facades\Session;
 use App\Http\Requests\CreateCategoryRequest;
+use App\Movie;
 
 class CategoryController extends Controller
 {
@@ -52,9 +53,11 @@ class CategoryController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function show($id)
+    public function show(Category $category)
     {
-        //
+        $movies = Movie::all();
+        return view('categories.show')->with('category',$category)
+                                      ->with('movies',$movies);
     }
 
     /**
