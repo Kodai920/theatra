@@ -17,7 +17,7 @@ class CountryController extends Controller
      */
     public function index()
     {
-        $categories = Country::all();
+        $countries = Country::all();
         return view('countries.index')->with('countries',$countries);
     }
 
