@@ -10,18 +10,18 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <!-- Left Side Of Navbar -->
             <ul class="navbar-nav mr-auto">
-                    @if(Auth::check())
                         <li class="nav-item">
                             <a class="nav-link" href="{{route('home')}}">ホーム</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="{{route('reviews.index')}}">マイページ</a>
                         </li>
                         <li class="nav-item float-left">
                             <a class="nav-link" href="{{route('movies.index')}}">映画</a>
                         </li>
                         <li class="nav-item float-left">
                             <a class="nav-link" href="{{route('categories.index')}}">カテゴリ</a>
+                        </li>
+                    @if(Auth::check())
+                        <li class="nav-item">
+                            <a class="nav-link" href="{{route('reviews.index')}}">マイページ</a>
                         </li>
                     @endif
             </ul>
