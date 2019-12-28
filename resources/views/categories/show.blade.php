@@ -41,7 +41,6 @@
                     </div>
                 @endforeach
             </div>
-            {{$movies->links()}}
         </div>
     </div>
     @include('inc.footer')
