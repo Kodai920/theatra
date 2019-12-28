@@ -53,9 +53,9 @@ class CategoryController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function show(Category $category, $id)
+    public function show(Category $category)
     {
-        $movies = Movie::all($id);
+        $movies = Movie::all();
         return view('categories.show')->with('category',$category)
                                       ->with('movies',$movies);
     }
