@@ -35,7 +35,7 @@
                 @endforeach
                 @else
                 <tr>
-                    <td colspan=2>カテゴリがありません</td>
+                  <td colspan=2>カテゴリがありません</td>
                 </tr>
                 @endif
             </tbody>
