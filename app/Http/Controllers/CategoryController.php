@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Category;
+use App\Categories;
 use Illuminate\Support\Facades\Session;
 use App\Http\Requests\CreateCategoryRequest;
 use App\Movie;
