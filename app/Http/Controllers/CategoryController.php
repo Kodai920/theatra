@@ -56,9 +56,7 @@ class CategoryController extends Controller
     public function show(Category $category)
     {
         $movies = Movie::all();
-        $cateogries = Category::all();
         return view('categories.show')->with('category',$category)
-                                      ->with('categories',$categories)
                                       ->with('movies',$movies);
     }
 
