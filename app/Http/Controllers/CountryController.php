@@ -5,7 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\Country;
 use Illuminate\Support\Facades\Session;
-use App\Movie;
+// use App\Movie;
 
 
 class CountryController extends Controller
@@ -29,9 +29,9 @@ class CountryController extends Controller
      */
     public function show(Country $country)
     {
-        $movies = Movie::all();
-        return view('countries.show')->with('country',$country)
-                                      ->with('movies',$movies);
+        // $movies = Movie::all();
+        return view('countries.show')->with('country',$country);
+                                    //   ->with('movies',$movies);
     }
 
 }
