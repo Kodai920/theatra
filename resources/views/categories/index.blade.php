@@ -3,13 +3,13 @@
 
 
 <div class="card">
-    <div class="card-header">All Categories
+    <div class="card-header">カテゴリ一覧
         <a class="btn btn-info float-right" href="{{route('categories.create')}}">新規カテゴリ</a>
     </div>
     <div class="card-body">
         <table class="table table-striped">
             <thead>
-                <th>Name</th>
+                <th>カテゴリ名</th>
                 <th></th>
             </thead>
             <tbody>
@@ -17,7 +17,7 @@
                 @foreach ($categories->sortBy('name') as $category)
                 <tr>
                 <td><a href="{{route('categories.show',[$category->id])}}">{{$category->name}}</a></td>
-                <td>
+                {{-- <td>
                     <a href=" {{route('categories.edit',[$category->id])}} " class="btn btn-info">Edit</a>
                 </td>
                 <td>
@@ -26,7 +26,7 @@
                     @method('DELETE')
                     <button type="submit" class="btn btn-sm btn-danger">Delete</button>
                     </form>
-                </td>
+                </td> --}}
                 </tr>
                 @endforeach
                 @else
