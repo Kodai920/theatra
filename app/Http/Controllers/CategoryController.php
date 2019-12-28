@@ -58,6 +58,8 @@ class CategoryController extends Controller
         $movies = Movie::all();
         foreach($categories as $category){
 
+            $categories = Category::all();
+
             $movies = $categories->movies()->orderby('movie_id')->get();//中間テーブル経由でタグのrecordを取得
 
             $tagName = [];
