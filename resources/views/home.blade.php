@@ -33,6 +33,7 @@
         <div class="home-image">
             <h1 class="home-text">Yogee New Waves</h1>
         </div>
+        <div class="container">
         <div class="my-5">
             <h2 class="text-center">最近の投稿</h2>
         </div>
@@ -62,6 +63,7 @@
             <h2 class="text-center">製作国から作品を探す</h2>
         </div>
         <hr width="80%" color="#131313">
+    </div>
     </div>
     @include('inc.footer')
     </div>
