@@ -42,17 +42,17 @@
         </div>
         <hr width="80%" color="#131313">
         <div class="my-5">
-            <h2 class="text-center">ジャンルで作品を探す</h2>
+            <h2 class="text-center">ジャンルで作品を探す</h2><br>
             <div class="justify-content-center">
-                <div class="float-left">
+                <div class="float-left m-3">
                     <img src="uploads/homes/netflix.jpg" width="300px" height="210px" alt="netflix">
                     <h5 class="text-center">NETFLIXオリジナル</h5>
                 </div>
-                <div class="float-left">
+                <div class="float-left m-3">
                     <img src="uploads/homes/netflix.jpg" width="300px" height="210px" alt="netflix">
                     <h5 class="text-center">NETFLIXオリジナル</h5>
                 </div>
-                <div class="float-left">
+                <div class="float-left m-3">
                     <img src="uploads/homes/netflix.jpg" width="300px" height="210px" alt="netflix">
                     <h5 class="text-center">NETFLIXオリジナル</h5>
                 </div>
