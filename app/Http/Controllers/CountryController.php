@@ -30,7 +30,7 @@ class CountryController extends Controller
     public function show(Country $country)
     {
         $movies = Movie::all();
-        return view('country.show')->with('country',$country)
+        return view('countries.show')->with('country',$country)
                                       ->with('movies',$movies);
     }
 
