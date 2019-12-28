@@ -14,7 +14,7 @@
                     <li class="mb-2"><strong>ジャンル : </strong>
                         @foreach($movie->categories as $category)
                         <a href="#">
-                        {{$category->name}}
+                        　{{$category->name}}
                         </a>
                         @endforeach
                     </li>
