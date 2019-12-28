@@ -49,6 +49,14 @@
                     <h5 class="text-center">NETFLIXオリジナル</h5>
                 </div>
                 <div class="col-3">
+                    <img src="uploads/homes/netflix.jpg" width="300px" height="210px" alt="netflix">
+                    <h5 class="text-center">NETFLIXオリジナル</h5>
+                </div>
+                <div class="col-3">
+                    <img src="uploads/homes/netflix.jpg" width="300px" height="210px" alt="netflix">
+                    <h5 class="text-center">NETFLIXオリジナル</h5>
+                </div>
+                <div class="col-3">
 
                 </div>
                 <div class="col-3">
