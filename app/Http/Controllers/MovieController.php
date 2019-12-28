@@ -60,6 +60,7 @@ class MovieController extends Controller
      */
     public function show(Movie $movie)
     {
+        $userId = Auth::id();//ログイン中のid
         $category = Category::all();
         $country = Country::all();
         return view('movies.show')->with('movie',$movie)
