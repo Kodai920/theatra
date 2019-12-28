@@ -31,7 +31,7 @@
     @include('inc.search')
     <div class="container py-4">
         <div class="row justify-content-center">
-        <h1>カテゴリ : {{$categories->name}} </h1>
+        <h1>カテゴリ : {{$category->name}} </h1>
             <div class="col-md-12 mb-3">
                 @foreach($categories as $category)
                 @foreach($category->movies->sortByDesc('year') as $movie)
