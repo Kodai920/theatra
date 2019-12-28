@@ -4,7 +4,6 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Category;
-use App\Categories;
 use Illuminate\Support\Facades\Session;
 use App\Http\Requests\CreateCategoryRequest;
 use App\Movie;
@@ -58,7 +57,6 @@ class CategoryController extends Controller
     {
         $movies = Movie::all();
         return view('categories.show')->with('category',$category)
-                                      ->with('categories',Categories::all())
                                       ->with('movies',$movies);
     }
 
