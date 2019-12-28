@@ -47,15 +47,15 @@
             <div class="row">
                 <div class="col-4">
                     <img src="uploads/homes/netflix.jpg" width="300px" height="210px" alt="netflix">
-                    <h5 class="text-center">NETFLIXオリジナル</h5>
+                    <h5 class="text-center mt-2">NETFLIXオリジナル</h5>
                 </div>
                 <div class="col-4">
                     <img src="uploads/homes/netflix.jpg" width="300px" height="210px" alt="netflix">
-                    <h5 class="text-center">NETFLIXオリジナル</h5>
+                    <h5 class="text-center mt-2">NETFLIXオリジナル</h5>
                 </div>
                 <div class="col-4">
                     <img src="uploads/homes/netflix.jpg" width="300px" height="210px" alt="netflix">
-                    <h5 class="text-center">NETFLIXオリジナル</h5>
+                    <h5 class="text-center mt-2">NETFLIXオリジナル</h5>
                 </div>
             </div>
         </div>
