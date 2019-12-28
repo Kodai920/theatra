@@ -56,20 +56,7 @@ class CategoryController extends Controller
     public function show(Category $category)
     {
         $movies = Movie::all();
-        foreach($categories as $category){
-
-            $categories = Category::all();
-
-            $movies = $categories->movies()->orderby('movie_id')->get();//中間テーブル経由でタグのrecordを取得
-
-            $tagName = [];
-            foreach($movies as $movie){//タグも複数あるので、繰り返す。
-            $movieTitle[] = $movie->title;//取得してきたレコードのid
-            }
-            $categoreis['movies'] = $movieTitle;//送るデータに追加（同foreachで回すため）
-        }
         return view('categories.show')->with('category',$category)
-                                      ->with('categories',$categories)
                                       ->with('movies',$movies);
     }
 
