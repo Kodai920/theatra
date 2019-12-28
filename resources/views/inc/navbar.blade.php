@@ -19,6 +19,9 @@
                         <li class="nav-item float-left">
                             <a class="nav-link" href="{{route('categories.index')}}">カテゴリ</a>
                         </li>
+                        <li class="nav-item float-left">
+                            <a class="nav-link" href="{{route('countries.index')}}">製作国</a>
+                        </li>
                     @if(Auth::check())
                         <li class="nav-item">
                             <a class="nav-link" href="{{route('reviews.index')}}">マイページ</a>
