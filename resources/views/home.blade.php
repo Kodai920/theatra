@@ -43,7 +43,7 @@
         <hr width="80%" color="#131313">
         <div class="my-5">
             <h2 class="text-center">ジャンルで作品を探す</h2>
-            <div class="row">
+            <div class="rowjustify-content-center">
                 <div class="col-3">
                     <img src="uploads/homes/netflix.jpg" width="300px" height="210px" alt="netflix">
                     <h5 class="text-center">NETFLIXオリジナル</h5>
