@@ -33,7 +33,7 @@
         <div class="row justify-content-center">
         <h1>カテゴリ : {{$category->name}} </h1>
             <div class="col-md-12 mb-3">
-                @foreach($category->movies as $movie)
+                @foreach($category->id->movies as $movie)
                     <div id="movie-image">
                         <a href="{{route('movies.show',[$movie->id])}}" class="float-left m-4">
                         <img src="{{asset("uploads/movies/".$movie->image)}}" width="210px" height="300px" alt="{{$movie->title}}">
