@@ -65,6 +65,8 @@ class CategoryController extends Controller
      */
     public function edit(Category $category)
     {
+        $categories = Category::all();
+
         return view('categories.edit')->with('category',$category);
     }
 
