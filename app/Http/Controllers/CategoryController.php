@@ -69,6 +69,7 @@ class CategoryController extends Controller
             $categoreis['movies'] = $movieTitle;//送るデータに追加（同foreachで回すため）
         }
         return view('categories.show')->with('category',$category)
+                                      ->with('categories',$categories)
                                       ->with('movies',$movies);
     }
 
