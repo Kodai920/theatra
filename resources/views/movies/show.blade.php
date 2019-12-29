@@ -25,7 +25,13 @@
                 <p>{{$movie->about}}</p>
                 </div>
                 @if(Auth::check())
-                <a href="{{route('review.create',['id' => $movie->id])}}" class="btn btn-success btn-block btn-lg">レビューを書く</a>
+                <a href="
+                @if(User::has('review',['id' => $movie->id]))
+                {{route('review.create',['id' => $movie->id])}}
+                @else
+                {{route('reviews.edit',[$review->id])}}
+                @endif
+                " class="btn btn-success btn-block btn-lg">レビューを書く</a>
                 @endif
             </div>
         </div>
