@@ -39,7 +39,7 @@
         </div>
         <hr color="#131313">
 
-        <div class="my-5">
+        <div class="my-5 float-left">
             <h2 class="text-center">最新の映画が200本以上</h2><br>
             @foreach($movies->sortByDesc('year') as $movie)
             @if($loop->index <= 4)
