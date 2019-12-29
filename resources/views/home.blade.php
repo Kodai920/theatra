@@ -47,7 +47,7 @@
             <div class="row">
                 <div class="col-4">
                     <div id="movie-image">
-                    <a href="{{route('categories.show',['categories'=>61])}}">
+                    <a href="{{route('categories.show',['category'=>61])}}">
                     <img class="d-block mx-auto" src="uploads/homes/netflix.jpg" width="300px" height="210px" alt="netflix">
                     </a>
                     </div>
