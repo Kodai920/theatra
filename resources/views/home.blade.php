@@ -34,9 +34,19 @@
             <h1 class="home-text">Yogee New Waves</h1>
         </div>
         <div class="container">
-        <div class="my-5">
-            <h2 class="text-center">最近見た映画</h2>
-        </div>
+
+        <div class="mt-5 overflow-auto">
+            <h2 class="text-center">最近見た映画</h2><br>
+            @foreach($movies->sortByDesc('year') as $movie)
+            @if($loop->index <= 4)
+                <div id="movie-image">
+                    <a href="{{route('movies.show',[$movie->id])}}" class="float-left m-2">
+                    <img src="{{asset("uploads/movies/".$movie->image)}}" width="200px" height="285px" alt="{{$movie->title}}">
+                    </a>
+                </div>
+            @endif
+            @endforeach
+        </div><br>
         <hr color="#131313">
 
         <div class="mt-5 overflow-auto">
