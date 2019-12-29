@@ -52,7 +52,7 @@
             @endif
             @endforeach
             </div>
-        </div><br>
+        </div>
         <hr color="#131313"><br>
 
         <div class="my-5">
