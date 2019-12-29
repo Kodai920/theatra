@@ -39,7 +39,7 @@
         </div>
         <hr color="#131313">
 
-        <div class="my-5 overflow-auto">
+        <div class="mt-5 overflow-auto">
             <h2 class="text-center">最新の映画が200本以上</h2><br>
             @foreach($movies->sortByDesc('year') as $movie)
             @if($loop->index <= 4)
@@ -50,8 +50,8 @@
                 </div>
             @endif
             @endforeach
-            <a href="{{route('movies.index')}}" class="btn btn-block btn-outline-dark" style="background-color:#E40914;">すべての映画を見る</a>
         </div><br>
+        <a href="{{route('movies.index')}}" class="btn btn-block btn-outline-dark mb-5" style="background-color:#E40914;">すべての映画を見る</a><br>
         <hr color="#131313">
 
         <div class="my-5">
