@@ -101,7 +101,7 @@
         </div>
         <hr color="#131313">
         <div class="my-5">
-            <h2 class="text-center">製作国から作品を探す</h2>
+            <h2 class="text-center">製作国から作品を探す</h2><br>
             <div class="row">
                     <div class="col-4">
                         <div id="movie-image">
