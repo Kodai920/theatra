@@ -45,7 +45,7 @@
 @foreach($movie->reviews->sortByDesc('created_at') as $review)
 <div class="card mb-2">
     <div class="card-header">{{$review->user->name}}の感想・評価
-        @if(Auth::check())
+        {{-- @if(Auth::check())
             <li class="nav-item dropdown float-right" style="list-style:none;">
                 <a class="dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
                     <i class="fas fa-cog"></i>
@@ -56,7 +56,7 @@
                     </a>
                 </div>
             </li>
-        @endif
+        @endif --}}
     </div>
     <div class="card-body pt-0">
     　 <div class="row">
