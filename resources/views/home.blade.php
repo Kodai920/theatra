@@ -55,7 +55,7 @@
                 </div>
                 <div class="col-4">
                     <div id="movie-image">
-                    <a href="">
+                    <a href="{{route('categories.show',['category'=>41])}}">
                     <img class="d-block mx-auto" src="uploads/homes/action.jpg" width="300px" height="210px" alt="netflix">
                     </a>
                     </div>
@@ -63,7 +63,7 @@
                 </div>
                 <div class="col-4">
                     <div id="movie-image">
-                    <a href="">
+                    <a href="{{route('categories.show',['category'=>251])}}">
                     <img class="d-block mx-auto" src="uploads/homes/love.jpg" width="300px" height="210px" alt="netflix">
                     </a>
                     </div>
@@ -74,7 +74,7 @@
             <div class="row">
                 <div class="col-4">
                     <div id="movie-image">
-                    <a href="">
+                    <a href="{{route('categories.show',['category'=>361])}}">
                     <img class="d-block mx-auto" src="uploads/homes/horror.jpg" width="300px" height="210px" alt="netflix">
                     </a>
                     </div>
@@ -82,7 +82,7 @@
                 </div>
                 <div class="col-4">
                     <div id="movie-image">
-                    <a href="">
+                    <a href="{{route('categories.show',['category'=>51])}}">
                     <img class="d-block mx-auto" src="uploads/homes/humandrama.jpg" width="300px" height="210px" alt="netflix">
                     </a>
                     </div>
@@ -90,7 +90,7 @@
                 </div>
                 <div class="col-4">
                     <div id="movie-image">
-                    <a href="">
+                    <a href="{{route('categories.show',['category'=>241])}}">
                     <img class="d-block mx-auto" src="uploads/homes/comedy.jpg" width="300px" height="210px" alt="netflix">
                     </a>
                     </div>
@@ -105,7 +105,7 @@
             <div class="row">
                     <div class="col-4">
                         <div id="movie-image">
-                        <a href="">
+                        <a href="{{route('country.show',['country'=>21])}}">
                         <img class="d-block mx-auto" src="uploads/homes/japan.jpg" width="300px" height="210px" alt="netflix">
                         </a>
                         </div>
@@ -113,7 +113,7 @@
                     </div>
                     <div class="col-4">
                         <div id="movie-image">
-                        <a href="">
+                        <a href="{{route('country.show',['country'=>1])}}">
                         <img class="d-block mx-auto" src="uploads/homes/us.jpg" width="300px" height="210px" alt="netflix">
                         </a>
                         </div>
@@ -121,7 +121,7 @@
                     </div>
                     <div class="col-4">
                         <div id="movie-image">
-                        <a href="">
+                        <a href="{{route('country.show',['country'=>11])}}">
                         <img class="d-block mx-auto" src="uploads/homes/uk.jpg" width="300px" height="210px" alt="netflix">
                         </a>
                         </div>
@@ -132,7 +132,7 @@
                 <div class="row">
                     <div class="col-4">
                         <div id="movie-image">
-                        <a href="">
+                        <a href="{{route('country.show',['country'=>41])}}">
                         <img class="d-block mx-auto" src="uploads/homes/france.jpg" width="300px" height="210px" alt="netflix">
                         </a>
                         </div>
@@ -140,7 +140,7 @@
                     </div>
                     <div class="col-4">
                         <div id="movie-image">
-                        <a href="">
+                        <a href="{{route('country.show',['country'=>31])}}">
                         <img class="d-block mx-auto" src="uploads/homes/india.jpg" width="300px" height="210px" alt="netflix">
                         </a>
                         </div>
@@ -148,7 +148,7 @@
                     </div>
                     <div class="col-4">
                         <div id="movie-image">
-                        <a href="">
+                        <a href="{{route('country.show',['country'=>51])}}">
                         <img class="d-block mx-auto" src="uploads/homes/korea.jpg" width="300px" height="210px" alt="netflix">
                         </a>
                         </div>
