@@ -43,7 +43,7 @@
         </div>
         <hr color="#131313">
         <div class="my-5">
-            <h2 class="text-center">ジャンルで作品を探す</h2><br>
+            <h2 class="text-center">ジャンルから作品を探す</h2><br>
             <div class="row">
                 <div class="col-4">
                     <a href="" id="movie-image">
