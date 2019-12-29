@@ -29,11 +29,12 @@ class HomeController extends Controller
      */
     public function index()
     {
-        $posts = User::find(Auth::id())->reviews;
+        $user = Auth::user();
         $movies = Movie::all();
         $reviews = Review::all();
         return view('home')->with('posts',$posts)
                            ->with('movies',$movies)
+                           ->with('user',$user)
                            ->with('reviews',$reviews);
     }
 }

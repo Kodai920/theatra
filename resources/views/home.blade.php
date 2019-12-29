@@ -37,15 +37,24 @@
 
         <div class="mt-5 overflow-auto">
             <h2 class="text-center">最近見た映画</h2><br>
-            @foreach($user->review->movies->sortByDesc('year') as $movie)
+            @if($user->reviews->count() > 0)
+            @foreach($user->review->sortByDesc('created_at') as $review)
             @if($loop->index <= 4)
                 <div id="movie-image">
-                    <a href="{{route('movies.show',[$movie->id])}}" class="float-left m-2">
-                    <img src="{{asset("uploads/movies/".$movie->image)}}" width="200px" height="285px" alt="{{$movie->title}}">
+                    <a href="{{route('movies.show',[$review->movie->id])}}" class="float-left m-2">
+                    <img src="{{asset("uploads/movies/".$review->movie->image)}}" width="200px" height="285px" alt="{{$movie->title}}">
                     </a>
                 </div>
             @endif
             @endforeach
+            @else
+            <div class="card">
+                <div class="card-header">まだレビューがありません</div>
+                <div class="card-body">
+                最初のレビューを書こう！
+                </div>
+            </div>
+        @endif
         </div><br>
         <hr color="#131313">
 
