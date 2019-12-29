@@ -41,8 +41,8 @@
             @foreach($user->reviews->sortByDesc('created_at') as $review)
             @if($loop->index <= 4)
                 <div id="movie-image">
-                    <a href="{{route('movies.show',[$movie->id])}}" class="float-left m-2">
-                    <img src="{{asset("uploads/movies/".$movie->image)}}" width="200px" height="285px" alt="{{$movie->title}}">
+                    <a href="{{route('movies.show',[$review->movie->id])}}" class="float-left m-2">
+                    <img src="{{asset("uploads/movies/".$review->movie->image)}}" width="200px" height="285px" alt="{{$review->movie->title}}">
                     </a>
                 </div>
             @endif
