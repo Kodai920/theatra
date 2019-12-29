@@ -73,7 +73,7 @@
                     <h5 class="text-center mt-2">コメディ</h5>
                 </div>
             </div>
-            <a href="" class="btn btn-seccess btn-block">すべてのカテゴリを見る</a>
+            <a href="{{route('categories.index')}}" class="btn btn-seccess btn-block">すべてのカテゴリを見る</a>
         </div>
         <hr color="#131313">
         <div class="my-5">
