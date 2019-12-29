@@ -35,9 +35,9 @@
         </div>
         <div class="container">
 
+        @if($user->reviews->count() > 0)
         <div class="mt-5 overflow-auto">
             <h2 class="text-center">最近見た映画</h2><br>
-            @if($user->reviews->count() > 0)
             @foreach($user->reviews->sortByDesc('created_at') as $review)
             @if($loop->index <= 4)
                 <div id="movie-image">
@@ -47,14 +47,10 @@
                 </div>
             @endif
             @endforeach
-            @else
-            <div>
-                <h4 class="text-center">まだレビューがありません</h4>
-            </div>
-        @endif
         </div><br>
         <a href="{{route('reviews.index')}}" class="btn btn-block btn-outline-dark mb-2" style="background-color:#E40914;">マイページへ</a><br>
         <hr color="#131313">
+        @endif
 
         <div class="mt-5 overflow-auto text-center">
             <h2 class="text-center">最新の映画が200本以上</h2><br>
