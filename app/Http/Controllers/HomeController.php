@@ -6,6 +6,7 @@ use Illuminate\Http\Request;
 use App\Post;
 use App\User;
 use Auth;
+use App\Movie;
 
 
 class HomeController extends Controller
@@ -28,6 +29,8 @@ class HomeController extends Controller
     public function index()
     {
         $posts = User::find(Auth::id())->posts;
-        return view('home')->with('posts',$posts);
+        $movies = Movie::all();
+        return view('home')->with('posts',$posts)
+                           ->with('movies',$movies);
     }
 }
