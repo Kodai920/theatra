@@ -51,9 +51,8 @@
                 </div>
             @endif
             @endforeach
-            </div><br>
-            <a href="" height="100%" width="100%"></a>
-        </div><br>
+            </div>
+        </div>
         <hr color="#131313">
 
         <div class="my-5">
