@@ -105,7 +105,7 @@
             <div class="row">
                     <div class="col-4">
                         <div id="movie-image">
-                        <a href="{{route('countries.show',['ies'=>21])}}">
+                        <a href="{{route('countries.show',['country'=>21])}}">
                         <img class="d-block mx-auto" src="uploads/homes/japan.jpg" width="300px" height="210px" alt="netflix">
                         </a>
                         </div>
