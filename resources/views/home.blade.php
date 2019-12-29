@@ -35,11 +35,20 @@
         </div>
         <div class="container">
         <div class="my-5">
-            <h2 class="text-center">最近の投稿</h2>
+            <h2 class="text-center">最近見た映画</h2>
         </div>
         <hr color="#131313">
         <div class="my-5">
-            <h2 class="text-center">映画・ドラマが2000本以上</h2>
+            <h2 class="text-center">最新の映画が200本以上</h2>
+            @foreach($movies->sortByDesc('year') as $movie)
+            @if($loop->index == 4)
+                <div id="movie-image">
+                    <a href="{{route('movies.show',[$movie->id])}}" class="float-left m-4">
+                    <img src="{{asset("uploads/movies/".$movie->image)}}" width="210px" height="300px" alt="{{$movie->title}}">
+                    </a>
+                </div>
+            @endif
+            @endforeach
         </div>
         <hr color="#131313">
         <div class="my-5">
