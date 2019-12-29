@@ -41,8 +41,9 @@
 
         <div class="my-5">
             <h2 class="text-center">最新の映画が200本以上</h2><br>
+            <div>
             @foreach($movies->sortByDesc('year') as $movie)
-            @if($loop->index < 3)
+            @if($loop->index <= 3)
                 <div id="movie-image">
                     <a href="{{route('movies.show',[$movie->id])}}" class="float-left m-4">
                     <img src="{{asset("uploads/movies/".$movie->image)}}" width="210px" height="300px" alt="{{$movie->title}}">
@@ -50,6 +51,7 @@
                 </div>
             @endif
             @endforeach
+            </div>
         </div><br>
         <hr color="#131313"><br>
 
