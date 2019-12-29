@@ -50,8 +50,9 @@
                 </div>
             @endif
             @endforeach
-        </div>
+        </div><br>
 
+        <div></div>
         <hr color="#131313"><br>
         <div class="my-5">
             <h2 class="text-center">ジャンルから作品を探す</h2><br>
