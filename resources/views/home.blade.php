@@ -36,7 +36,7 @@
         <div class="container">
 
         @if($user->reviews->count() > 0)
-        <div class="mt-5 overflow-auto">
+        <div class="mt-5 overflow-auto text-center">
             <h2 class="text-center">最近見た映画</h2><br>
             @foreach($user->reviews->sortByDesc('created_at') as $review)
             @if($loop->index <= 4)
