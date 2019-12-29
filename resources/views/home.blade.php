@@ -49,7 +49,7 @@
             @endforeach
             @else
             <div>
-                <h4>まだレビューがありません</h4>
+                <h4 class="text-center">まだレビューがありません</h4>
             </div>
         @endif
         </div><br>
