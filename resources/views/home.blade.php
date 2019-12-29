@@ -39,7 +39,6 @@
             <h2 class="text-center">最近見た映画</h2><br>
             @if($user->reviews->count() > 0)
             @foreach($user->reviews->sortByDesc('created_at') as $review)
-            @foreach($review->movies as $movie)
             @if($loop->index <= 4)
                 <div id="movie-image">
                     <a href="{{route('movies.show',[$movie->id])}}" class="float-left m-2">
@@ -47,7 +46,6 @@
                     </a>
                 </div>
             @endif
-            @endforeach
             @endforeach
             @else
             <div class="card">
