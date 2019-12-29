@@ -51,13 +51,29 @@
                 </div>
                 <div class="col-4">
                     <img class="d-block mx-auto" src="uploads/homes/netflix.jpg" width="300px" height="210px" alt="netflix">
-                    <h5 class="text-center mt-2">NETFLIXオリジナル</h5>
+                    <h5 class="text-center mt-2">アクション</h5>
                 </div>
                 <div class="col-4">
                     <img class="d-block mx-auto" src="uploads/homes/netflix.jpg" width="300px" height="210px" alt="netflix">
-                    <h5 class="text-center mt-2">NETFLIXオリジナル</h5>
+                    <h5 class="text-center mt-2">ラブコメディ</h5>
                 </div>
             </div>
+
+            <div class="row">
+                <div class="col-4">
+                    <img class="d-block mx-auto" src="uploads/homes/netflix.jpg" width="300px" height="210px" alt="netflix">
+                    <h5 class="text-center mt-2">ホラー</h5>
+                </div>
+                <div class="col-4">
+                    <img class="d-block mx-auto" src="uploads/homes/netflix.jpg" width="300px" height="210px" alt="netflix">
+                    <h5 class="text-center mt-2">ヒューマンドラマ</h5>
+                </div>
+                <div class="col-4">
+                    <img class="d-block mx-auto" src="uploads/homes/netflix.jpg" width="300px" height="210px" alt="netflix">
+                    <h5 class="text-center mt-2">コメディ</h5>
+                </div>
+            </div>
+            <a href="" class="btn btn-seccess btn-block">すべてのカテゴリを見る</a>
         </div>
         <hr color="#131313">
         <div class="my-5">
