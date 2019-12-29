@@ -38,6 +38,7 @@
             <h2 class="text-center">最近見た映画</h2>
         </div>
         <hr color="#131313">
+
         <div class="my-5">
             <h2 class="text-center">最新の映画が200本以上</h2><br>
             @foreach($movies->sortByDesc('year') as $movie)
@@ -50,7 +51,8 @@
             @endif
             @endforeach
         </div><br>
-        <hr color="#131313">
+        <hr color="#131313"><br>
+
         <div class="my-5">
             <h2 class="text-center">ジャンルから作品を探す</h2><br>
             <div class="row">
@@ -109,6 +111,7 @@
             <a href="{{route('categories.index')}}" class="btn btn-block btn-outline-dark" style="background-color:#E40914;">すべてのカテゴリを見る</a>
         </div>
         <hr color="#131313">
+
         <div class="my-5">
             <h2 class="text-center">製作国から作品を探す</h2><br>
             <div class="row">
