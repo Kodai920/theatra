@@ -48,11 +48,8 @@
             @endif
             @endforeach
             @else
-            <div class="card">
-                <div class="card-header">まだレビューがありません</div>
-                <div class="card-body">
-                最初のレビューを書こう！
-                </div>
+            <div>
+                <h4>まだレビューがありません</h4>
             </div>
         @endif
         </div><br>
