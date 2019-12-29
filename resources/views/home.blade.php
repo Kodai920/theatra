@@ -96,7 +96,7 @@
                     </div>
                     <h5 class="text-center mt-2">コメディ</h5>
                 </div>
-            </div>
+            </div><br>
             <a href="{{route('categories.index')}}" class="btn btn-block btn-outline-dark" style="background-color:#E40914;">すべてのカテゴリを見る</a>
         </div>
         <hr color="#131313">
@@ -154,7 +154,7 @@
                         </div>
                         <h5 class="text-center mt-2">韓国</h5>
                     </div>
-                </div>
+                </div><br>
                 <a href="{{route('countries.index')}}" class="btn btn-block btn-outline-dark" style="background-color:#E40914;">すべての製作国を見る</a>
         </div>
         <hr color="#131313">
