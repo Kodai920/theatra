@@ -7,6 +7,7 @@ use App\Post;
 use App\User;
 use Auth;
 use App\Movie;
+use App\Review;
 
 
 class HomeController extends Controller
@@ -28,9 +29,11 @@ class HomeController extends Controller
      */
     public function index()
     {
-        $posts = User::find(Auth::id())->posts;
+        $posts = User::find(Auth::id())->reviews;
         $movies = Movie::all();
+        $reviews = Review::all();
         return view('home')->with('posts',$posts)
-                           ->with('movies',$movies);
+                           ->with('movies',$movies)
+                           ->with('reviews',$reviews);
     }
 }

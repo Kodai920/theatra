@@ -37,7 +37,7 @@
 
         <div class="mt-5 overflow-auto">
             <h2 class="text-center">最近見た映画</h2><br>
-            @foreach($movies->sortByDesc('year') as $movie)
+            @foreach($user->review->movies->sortByDesc('year') as $movie)
             @if($loop->index <= 4)
                 <div id="movie-image">
                     <a href="{{route('movies.show',[$movie->id])}}" class="float-left m-2">
