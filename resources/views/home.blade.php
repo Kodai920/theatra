@@ -41,10 +41,10 @@
 
         <div class="my-5">
             <h2 class="text-center">最新の映画が200本以上</h2><br>
-            <div class="">
+            <div class="float-left">
             @foreach($movies->sortByDesc('year') as $movie)
             @if($loop->index <= 4)
-                <div id="movie-image float-left">
+                <div id="movie-image">
                     <a href="{{route('movies.show',[$movie->id])}}" class="float-left m-2">
                     <img src="{{asset("uploads/movies/".$movie->image)}}" width="200px" height="285px" alt="{{$movie->title}}">
                     </a>
