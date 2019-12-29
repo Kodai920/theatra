@@ -53,6 +53,7 @@
             </div>
         @endif
         </div><br>
+        <a href="{{route('reviews.index')}}" class="btn btn-block btn-outline-dark mb-2" style="background-color:#E40914;">マイページへ</a><br>
         <hr color="#131313">
 
         <div class="mt-5 overflow-auto text-center">
