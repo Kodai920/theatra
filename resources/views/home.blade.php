@@ -51,7 +51,7 @@
             @endif
             @endforeach
         </div><br>
-        <a href="{{route('movies.index')}}" class="btn btn-block btn-outline-dark mb-5" style="background-color:#E40914;">すべての映画を見る</a><br>
+        <a href="{{route('movies.index')}}" class="btn btn-block btn-outline-dark mb-2" style="background-color:#E40914;">すべての映画を見る</a><br>
         <hr color="#131313">
 
         <div class="my-5">
