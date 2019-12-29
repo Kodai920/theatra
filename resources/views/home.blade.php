@@ -46,42 +46,54 @@
             <h2 class="text-center">ジャンルから作品を探す</h2><br>
             <div class="row">
                 <div class="col-4">
-                    <a href="" id="movie-image">
+                    <div id="movie-image">
+                    <a href="">
                     <img class="d-block mx-auto" src="uploads/homes/netflix.jpg" width="300px" height="210px" alt="netflix">
                     </a>
+                    </div>
                     <h5 class="text-center mt-2">NETFLIXオリジナル</h5>
                 </div>
                 <div class="col-4">
-                    <a href="" id="movie-image">
+                    <div id="movie-image">
+                    <a href="">
                     <img class="d-block mx-auto" src="uploads/homes/action.jpg" width="300px" height="210px" alt="netflix">
                     </a>
+                    </div>
                     <h5 class="text-center mt-2">アクション</h5>
                 </div>
                 <div class="col-4">
-                    <a href="" id="movie-image">
+                    <div id="movie-image">
+                    <a href="">
                     <img class="d-block mx-auto" src="uploads/homes/love.jpg" width="300px" height="210px" alt="netflix">
                     </a>
+                    </div>
                     <h5 class="text-center mt-2">ラブコメディ</h5>
                 </div>
             </div>
 
             <div class="row">
                 <div class="col-4">
-                    <a href="" id="movie-image">
+                    <div id="movie-image">
+                    <a href="">
                     <img class="d-block mx-auto" src="uploads/homes/horror.jpg" width="300px" height="210px" alt="netflix">
                     </a>
+                    </div>
                     <h5 class="text-center mt-2">ホラー</h5>
                 </div>
                 <div class="col-4">
-                    <a href="" id="movie-image">
+                    <div id="movie-image">
+                    <a href="">
                     <img class="d-block mx-auto" src="uploads/homes/humandrama.jpg" width="300px" height="210px" alt="netflix">
                     </a>
+                    </div>
                     <h5 class="text-center mt-2">ヒューマンドラマ</h5>
                 </div>
                 <div class="col-4">
-                    <a href="" id="movie-image">
+                    <div id="movie-image">
+                    <a href="">
                     <img class="d-block mx-auto" src="uploads/homes/comedy.jpg" width="300px" height="210px" alt="netflix">
                     </a>
+                    </div>
                     <h5 class="text-center mt-2">コメディ</h5>
                 </div>
             </div>
