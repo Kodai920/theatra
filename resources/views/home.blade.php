@@ -49,7 +49,7 @@
         </div><br>
         <hr color="#131313">
 
-        <div class="mt-5 overflow-auto">
+        <div class="mt-5 overflow-auto text-center">
             <h2 class="text-center">最新の映画が200本以上</h2><br>
             @foreach($movies->sortByDesc('year') as $movie)
             @if($loop->index <= 4)
