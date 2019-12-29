@@ -102,6 +102,60 @@
         <hr color="#131313">
         <div class="my-5">
             <h2 class="text-center">製作国から作品を探す</h2>
+            <div class="row">
+                    <div class="col-4">
+                        <div id="movie-image">
+                        <a href="">
+                        <img class="d-block mx-auto" src="uploads/homes/japan.jpg" width="300px" height="210px" alt="netflix">
+                        </a>
+                        </div>
+                        <h5 class="text-center mt-2">日本</h5>
+                    </div>
+                    <div class="col-4">
+                        <div id="movie-image">
+                        <a href="">
+                        <img class="d-block mx-auto" src="uploads/homes/us.jpg" width="300px" height="210px" alt="netflix">
+                        </a>
+                        </div>
+                        <h5 class="text-center mt-2">アメリカ</h5>
+                    </div>
+                    <div class="col-4">
+                        <div id="movie-image">
+                        <a href="">
+                        <img class="d-block mx-auto" src="uploads/homes/uk.jpg" width="300px" height="210px" alt="netflix">
+                        </a>
+                        </div>
+                        <h5 class="text-center mt-2">イギリス</h5>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-4">
+                        <div id="movie-image">
+                        <a href="">
+                        <img class="d-block mx-auto" src="uploads/homes/france.jpg" width="300px" height="210px" alt="netflix">
+                        </a>
+                        </div>
+                        <h5 class="text-center mt-2">フランス</h5>
+                    </div>
+                    <div class="col-4">
+                        <div id="movie-image">
+                        <a href="">
+                        <img class="d-block mx-auto" src="uploads/homes/india.jpg" width="300px" height="210px" alt="netflix">
+                        </a>
+                        </div>
+                        <h5 class="text-center mt-2">インド</h5>
+                    </div>
+                    <div class="col-4">
+                        <div id="movie-image">
+                        <a href="">
+                        <img class="d-block mx-auto" src="uploads/homes/korea.jpg" width="300px" height="210px" alt="netflix">
+                        </a>
+                        </div>
+                        <h5 class="text-center mt-2">韓国</h5>
+                    </div>
+                </div>
+                <a href="{{route('countries.index')}}" class="btn btn-block" style="background-color:#E40914;">すべての製作国を見る</a>
         </div>
         <hr color="#131313">
     </div>
