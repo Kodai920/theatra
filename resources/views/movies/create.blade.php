@@ -24,7 +24,7 @@
             </div>
             <div class="form-group">
                 <label for="about">あらすじ</label>
-                <input type="text" name="about" class="form-control">
+                <textarea name="about" cols="30" rows="10" placeholder="あらすじを記入" class="form-control"></textarea>
             </div>
             <div class="form-group">
                 <label for="year">製作年</label>
