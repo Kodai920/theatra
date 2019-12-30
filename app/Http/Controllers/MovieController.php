@@ -38,7 +38,7 @@ class MovieController extends Controller
      */
     public function create()
     {
-        return view('movies.create')->with('country',Country::all());
+        return view('movies.create')->with('countries',Country::all());
     }
 
     /**
