@@ -49,7 +49,7 @@
             <h3>制作</h3>
             <div><strong>監督 : </strong>{{$movie->director}} </div>
             <div><strong>脚本 : </strong>{{$movie->writer}} </div>
-            <div><strong>キャスト : </strong>{{$movie->cast}} </div>
+            <div><strong>主演 : </strong>{{$movie->cast}} </div>
         </div>
         </div>
     </div>
