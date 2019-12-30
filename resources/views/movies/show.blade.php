@@ -30,9 +30,9 @@
                 {{route('reviews.edit',[$review->id])}}
                 @else --}}
                 {{route('review.create',['id' => $movie->id])}}
-                {{-- @endif
+                {{-- @endif --}}
                 " class="btn btn-success btn-block btn-lg">レビューを書く</a>
-                @endif --}}
+                @endif
             </div>
         </div>
 
