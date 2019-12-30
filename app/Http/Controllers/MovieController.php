@@ -7,10 +7,11 @@ use App\Movie;
 use Illuminate\Support\Facades\Session;
 use App\Country;
 use App\Category;
-use App\Genre;
 use App\Review;
 use App\profile;
 use Auth;
+use App\User;
+
 
 
 class MovieController extends Controller
