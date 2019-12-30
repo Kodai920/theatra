@@ -51,18 +51,20 @@
 @foreach($movie->reviews->sortByDesc('created_at') as $review)
 <div class="card mb-2">
     <div class="card-header">{{$review->user->name}}の感想・評価
-        {{-- @if(Auth::check())
+        @if(Auth::user()->admin)
             <li class="nav-item dropdown float-right" style="list-style:none;">
                 <a class="dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
                     <i class="fas fa-cog"></i>
                 </a>
                 <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
-                    <a class="dropdown-item" href="{{route('reviews.edit',[$review->id])}}">
-                        編集
-                    </a>
+                        <form action="{{route('reviews.destroy',[$review->id])}}" method="POST">
+                                @csrf
+                                @method('DELETE')
+                                <button type="submit" class="dropdown-toggle btn btn-sm btn-secondary" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" onclick="return confirm('本当に削除しますか？')"><i class="fas fa-trash-alt"></i></button>
+                        </form>
                 </div>
             </li>
-        @endif --}}
+        @endif
     </div>
     <div class="card-body pt-0">
     　 <div class="row">

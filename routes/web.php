@@ -24,15 +24,16 @@ Route::get('/question', 'QuestionController@index')->name('question');
 
 Route::resource('posts','PostController');
 
-Route::resource('categories','CategoryController');
-
-Route::resource('countries','CountryController');
-
-Route::resource('movies','MovieController');
 
 Route::resource('reviews','ReviewController');
 
 Route::group(['middleware' => 'auth'],function(){
+
+    Route::resource('movies','MovieController');
+
+    Route::resource('categories','CategoryController');
+
+    Route::resource('countries','CountryController');
 
     Route::resource('profiles','ProfileController');
 
@@ -42,13 +43,15 @@ Route::group(['middleware' => 'auth'],function(){
 
     Route::get('review/store/{id}','ReviewController@store')->name('review.store');
 
-});
-
-Route::get('contact','ContactsController@index')->name('contacts.index');
+    Route::get('contact','ContactsController@index')->name('contacts.index');
 
 Route::post('contact/confirm','ContactsController@confirm');
 
 Route::post('contact/complete','ContactsController@complete');
+
+});
+
+
 
 Route::get('/results',[
     'uses' => 'AppController@search',
@@ -58,3 +61,4 @@ Route::get('/results',[
 Route::get('login/{provider}', 'Auth\LoginController@redirectToProvider');
 
 Route::get('login/{provider}/callback','Auth\LoginController@handleProviderCallback');
+
