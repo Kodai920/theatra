@@ -60,7 +60,7 @@
                         <form action="{{route('reviews.destroy',[$review->id])}}" method="POST">
                                 @csrf
                                 @method('DELETE')
-                                <button type="submit" class="dropdown-toggle btn btn-sm btn-secondary" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" onclick="return confirm('本当に削除しますか？')"><i class="fas fa-trash-alt"></i></button>
+                                <button type="submit" class="dropdown-toggle btn btn-sm btn-secondary" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" onclick="return confirm('本当に削除しますか？')">削除</button>
                         </form>
                 </div>
             </li>
