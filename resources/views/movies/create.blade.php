@@ -49,7 +49,7 @@
             <div class="form-group">
                 <label for="country_id">製作国</label>
                 <select name="country_id" id="">
-                    @foreach ($counties as $country)
+                    @foreach ($countries as $country)
                         <option value="{{$country->name}}">{{$country->name}}</option>
                     @endforeach
                 </select>
