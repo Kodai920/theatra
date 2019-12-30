@@ -15,9 +15,6 @@
 
         <form action="{{route('movies.store')}}" method="post">
             @csrf
-            @if(isset($category))
-              @method('PUT')
-            @endif
             <div class="form-group">
                 <label for="title">タイトル</label>
                 <input type="text" name="title" class="form-control">
