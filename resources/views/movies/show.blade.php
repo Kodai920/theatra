@@ -10,10 +10,14 @@
             </div>
             <div class="col-7">
                 <ul class="mt-3 pl-0 movie-detail-info">
-                    <li class="mb-2"><strong>制作国 : </strong><a href="/countries.show/{$country->id}">{{$movie->country->name}}</a></li>
+                    <li class="mb-2"><strong>制作国 : </strong><a href="{{route('countreies.show',[$country->id])}}
+                        {{-- /countries/{$country->id} --}}
+                        ">{{$movie->country->name}}</a></li>
                     <li class="mb-2"><strong>カテゴリ : </strong>
                         @foreach($movie->categories as $category)
-                        <a href="/categories.show/{$cateogry->id}">
+                        <a href="
+                        {{-- /categories/{$cateogry->id} --}}
+                        ">
                         　{{$category->name}}
                         </a>
                         @endforeach
