@@ -25,12 +25,12 @@
                 <p>{{$movie->about}}</p>
                 </div>
 
-                {{-- <div class="my-5">
+                <div class="my-5">
                     <h3>みんなの評価</h3>
                     <input name="star" id="star-rating-demo" value="
-                    {{Review::avg('star',[$movie->id])}}
+                    {{Review::avg('star',['id'=>$movie->id])}}
                     " type="number" class="rating" min=0 max=5.0 step=0.1 data-size="lg">
-                </div> --}}
+                </div>
 
                 @if(Auth::check())
                 <a href="
