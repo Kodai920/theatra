@@ -50,7 +50,7 @@
                 <label for="country_id">製作国</label>
                 <select name="country_id" id="">
                     @foreach ($counties as $country)
-                        {{$country->name}}
+                        <option value="{{$country->name}}">{{$country->name}}</option>
                     @endforeach
                 </select>
             </div>
