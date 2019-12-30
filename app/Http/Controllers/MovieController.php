@@ -18,7 +18,7 @@ class MovieController extends Controller
 
     public function __construct()
     {
-        $this->middleware('admin')->except(['index','show','create','update']);
+        $this->middleware('admin')->except(['index','show','create','store']);
     }
     /**
      * Display a listing of the resource.
