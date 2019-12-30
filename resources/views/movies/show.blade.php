@@ -28,7 +28,7 @@
                 <div class="my-5">
                     <h3>みんなの評価</h3>
                     <input name="star" id="star-rating-demo" value="
-                    {{$average('star',[$movie->id])}}
+                    {{Review::avg('star',[$movie->id])}}
                     " type="number" class="rating" min=0 max=5.0 step=0.1 data-size="lg">
                 </div>
 
