@@ -38,7 +38,7 @@ class MovieController extends Controller
      */
     public function create()
     {
-        //
+        return view('movies.create');
     }
 
     /**
@@ -49,7 +49,33 @@ class MovieController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $this->validate($request,[
+            'title' => 'required',
+            'about' => 'required',
+            'year' => 'required',
+            'time' => 'required',
+            'director' => 'required',
+            'writer' => 'required',
+            'cast' => 'required',
+            'country_id' => 'required'
+        ]);
+
+        //mass assignment
+        $movie = Movie::create([
+            'title' => $request->title,
+            'about' => $request->about,
+            'year' => $request->year,
+            'time' => $request->time,
+            'director' => $request->director,
+            'writer' => $request->writer,
+            'cast' => $request->cast,
+            'country_id' => $request->country_id,
+        ]);
+
+        $movie->save();
+        Session::flash('success','登録完了');
+        return redirect()->route('movies.create');
+
     }
 
     /**
@@ -62,11 +88,9 @@ class MovieController extends Controller
     {
         $category = Category::all();
         $country = Country::all();
-        // $user = Auth::user();
         return view('movies.show')->with('movie',$movie)
                                   ->with('category',$category)
                                   ->with('country',$country)
-                                //   ->with('user',$user)
                                   ->with('review',Review::all());
     }
 
