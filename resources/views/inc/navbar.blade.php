@@ -61,6 +61,9 @@
                             <a class="dropdown-item" href="{{ route('contacts.index') }}">
                                 お問い合わせ
                             </a>
+                            <a class="dropdown-item" href="{{ route('movies.create') }}">
+                                映画登録
+                            </a>
                             @endif
                             <a class="dropdown-item" href="{{ route('logout') }}"
                                onclick="event.preventDefault();
