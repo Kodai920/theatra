@@ -32,7 +32,7 @@
             </div>
             <div class="form-group">
                 <label for="time">上映時間</label>
-                <input type="image" name="time" class="form-control">
+                <input type="number" name="time" class="form-control">
             </div>
             <div class="form-group">
                 <label for="director">監督</label>
