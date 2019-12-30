@@ -34,11 +34,11 @@
 
                 @if(Auth::check())
                 <a href="
-                {{-- @if(!empty($user->review))
+                @if(!empty($user->review))
                 {{route('reviews.edit')}}
-                @else --}}
+                @else
                 {{route('review.create',['id' => $movie->id])}}
-                {{-- @endif --}}
+                @endif
                 " class="btn btn-success btn-block btn-lg">レビューを書く</a>
                 @endif
             </div>
