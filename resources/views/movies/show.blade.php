@@ -34,8 +34,8 @@
 
                 @if(Auth::check())
                 <a href="
-                @if(!empty($user->review))
-                {{route('reviews.edit',['id'=>$review->id])}}
+                @if(!empty($user->review,['id' => $movie->id]))
+                {{route('reviews.edit',[$review->id])}}
                 @else
                 {{route('review.create',['id' => $movie->id])}}
                 @endif
