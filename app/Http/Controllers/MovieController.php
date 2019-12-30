@@ -69,7 +69,7 @@ class MovieController extends Controller
             'director' => $request->director,
             'writer' => $request->writer,
             'cast' => $request->cast,
-            'country_id' => $request->country_id,
+            'country_id' => $request->country_id
         ]);
 
         $movie->save();
