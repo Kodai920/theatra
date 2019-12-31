@@ -6,6 +6,7 @@ use Illuminate\Http\Request;
 use App\Category;
 use Illuminate\Support\Facades\Session;
 use App\Http\Requests\CreateCategoryRequest;
+use App\Movie;
 
 class CategoryController extends Controller
 {
@@ -21,9 +22,9 @@ class CategoryController extends Controller
     public function index()
     {
         $categories = Category::all();
-        $count = $categories->movie->count();
+        $movie = Movie::all();
         return view('categories.index')->with('categories',$categories)
-                                       ->with('count',$count);
+                                       ->with('movie',$movie);
     }
 
     /**
