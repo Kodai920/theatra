@@ -20,7 +20,7 @@
                     <a href="{{route('categories.show',[$category->id])}}">
                         {{$category->name}}
                     </a>
-                    <p class="float-right">({{$category->movie,[$category->id]}})</p>
+                    <p class="float-right">({{$category->movie,['id'=>$category->id]}})</p>
                 </td>
                 {{-- <td>
                     <a href=" {{route('categories.edit',[$category->id])}} " class="btn btn-info">Edit</a>
