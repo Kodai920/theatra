@@ -21,9 +21,8 @@ class CategoryController extends Controller
     public function index()
     {
         $categories = Category::all();
-        $count = $category->movie()->count();
+        $count = $categories->movie->count();
         return view('categories.index')->with('categories',$categories)
-                                       ->with('category',$category)
                                        ->with('count',$count);
     }
 
