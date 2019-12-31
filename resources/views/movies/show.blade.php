@@ -33,7 +33,8 @@
                 </div> --}}
 
                 @if(Auth::check())
-                    <a href="{{isset($user->reviews)?route('reviews.edit',['id' => $review->id]):route('review.create',['id' => $movie->id])}}"
+                {{-- @foreach($reviews as $review) --}}
+                    <a href="{{isset($user->reviews)?route('reviews.edit',['id' => $review_id]):route('review.create',['id' => $movie->id])}}"
                     class="btn btn-success btn-block btn-lg">レビューを書く</a>
                 @endif
             </div>

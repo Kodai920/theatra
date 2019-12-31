@@ -8,13 +8,13 @@ class Review extends Model
 {
     protected $fillable = ['impression','movie_id','user_id','star'];
 
-    // public function movie(){
-    //     return $this->belongsTo('App\Movie');
-    // }
+    public function movie(){
+        return $this->belongsTo('App\Movie');
+    }
 
-    // public function user(){
-    //     return $this->belongsTo('App\User');
-    // }
+    public function user(){
+        return $this->belongsTo('App\User');
+    }
 
     public function reviewable(){
         return $this->morphTo();
