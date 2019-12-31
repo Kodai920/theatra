@@ -33,7 +33,7 @@
                 </div> --}}
 
                 @if(Auth::check())
-                    <a href="@isset($user->reviews)?{{route('reviews.edit',['id' => $movie->id])}}:{{route('review.create',['id' => $movie->id])}}" 
+                    <a href="{{isset($user->reviews)?route('reviews.edit',['id' => $movie->id]):route('review.create',['id' => $movie->id])}}"
                     class="btn btn-success btn-block btn-lg">レビューを書く</a>
                 @endif
             </div>
