@@ -34,15 +34,15 @@
 
                 @if(Auth::check())
                 {{-- @foreach($reviews as $review) --}}
-                    <a href="{{isset($user_reviews)?
+                    {{-- <a href="{{isset($user_reviews)?
                     @foreach($movie_reviews as $review)
                         @foreach($user_reviews as $u_review)
                             @if($review->id == $u_review->id)
                                 route('reviews.edit',['id' => $review_id])
                             @endif
                         @endforeach
-                    @endforeach
-                    :route('review.create',['id' => $movie->id])}}"
+                    @endforeach --}}
+                    <a href="{{route('review.create',['id' => $movie->id])}}"
                     class="btn btn-success btn-block btn-lg">レビューを書く</a>
                 @endif
             </div>
