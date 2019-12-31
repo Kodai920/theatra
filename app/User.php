@@ -46,7 +46,7 @@ class User extends Authenticatable
     }
 
     public function reviews(){
-        return $this->hasManyThrough('App\Review','App\Movie');
+        return $this->morphMany('App\Review','reviewable');
     }
 
     public function identities(){
