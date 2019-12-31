@@ -19,6 +19,7 @@
                     <a href="{{route('countries.show',[$country->id])}}">
                         {{$country->name}}
                     </a>
+                    <p class="float-right">({{$country->movie}})</p>
                 </td>
                 </tr>
                 @endforeach

@@ -5,7 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\Country;
 use Illuminate\Support\Facades\Session;
-
+use App\Movie;
 
 class CountryController extends Controller
 {
@@ -17,7 +17,9 @@ class CountryController extends Controller
     public function index()
     {
         $countries = Country::all();
-        return view('countries.index')->with('countries',$countries);
+        $movie = Movie::get()->count();
+        return view('countries.index')->with('countries',$countries)
+                                      ->with('movie',$movie);
     }
 
         /**
