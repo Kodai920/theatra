@@ -91,12 +91,12 @@ class MovieController extends Controller
         $country = Country::all();
         $user = Auth::user();
         //$user_reviews = User::find($user->id)->reviews;
-        //$movie_reviews = Movie::find($movie->id)->reviews;
-        
+       // $movie_reviews = Movie::find($movie->id)->reviews;
+        $review = Review::where('movie_id','=',$movie->id)->get();
         return view('movies.show')->with('movie',$movie)
                                   ->with('category',$category)
                                   ->with('country',$country)
-                                  ->with('review',Review::all())
+                                  ->with('review',$review)
                                   ->with('user',$user);
     }
 
