@@ -22,7 +22,7 @@ class CategoryController extends Controller
     public function index()
     {
         $categories = Category::all();
-        $movie = Movie::get()->count();
+        $movie = Movie::where('category_id',$movie->category_id)->get()->count();
         return view('categories.index')->with('categories',$categories)
                                        ->with('movie',$movie);
     }
