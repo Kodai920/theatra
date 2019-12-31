@@ -8,6 +8,7 @@ use Illuminate\Support\Facades\Session;
 use App\Movie;
 use Auth;
 use App\Profile;
+use App\User;
 
 class ReviewController extends Controller
 {
@@ -56,8 +57,8 @@ class ReviewController extends Controller
         $review = new Review;
         $review->impression = $request->impression;
         $review->star = $request->star;
-       // $review->movie_id = $movie->id;
-        //$review->user_id = Auth::id();
+        $review->movie_id = $movie->id;
+        $review->user_id = Auth::id();
         $review->save();
 
         $movie->reviews->save($review);
