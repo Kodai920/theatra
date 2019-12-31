@@ -24,7 +24,6 @@ class CategoryController extends Controller
         $categories = Category::all();
         Movie::count();
         return view('categories.index')->with('categories',$categories)
-                                       ->with('movie',$movie);
     }
 
     /**
