@@ -16,7 +16,7 @@ class Review extends Model
         return $this->belongsTo('App\User');
     }
 
-    public function reviewable(){
-        return $this->morphTo();
-    }
+    // public function reviewable(){
+    //     return $this->morphTo();
+    // }
 }

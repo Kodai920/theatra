@@ -46,8 +46,12 @@ class User extends Authenticatable
     }
 
     public function reviews(){
-        return $this->morphMany('App\Review','reviewable');
+        return $this->hasMany('App\Review');
     }
+
+    // public function reviews(){
+    //     return $this->morphMany('App\Review','reviewable');
+    // }
 
     public function identities(){
         return $this->hasMany('App\SocialIdentity');

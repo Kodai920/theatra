@@ -53,7 +53,7 @@ class ReviewController extends Controller
         ]);
 
         $movie = Movie::find($id);
-        $user =  User::find(Auth::id());
+        //$user =  User::find(Auth::id());
         $review = new Review;
         $review->impression = $request->impression;
         $review->star = $request->star;
@@ -61,8 +61,8 @@ class ReviewController extends Controller
         $review->user_id = Auth::id();
         $review->save();
 
-        $movie->reviews->save($review);
-        $user->reviews->save($review);
+        // $movie->reviews->save($review);
+        // $user->reviews->save($review);
 
 
 

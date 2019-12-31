@@ -16,7 +16,11 @@ class Movie extends Model
         return $this->belongsTo('App\Country');
     }
 
+    // public function reviews(){
+    //     return $this->morphMany('App\Review','reviewable');
+    // }
+
     public function reviews(){
-        return $this->morphMany('App\Review','reviewable');
+        return $this->hasMany('App\Review');
     }
 }
