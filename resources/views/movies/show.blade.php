@@ -34,11 +34,11 @@
 
                 @if(Auth::check())
                 {{-- @foreach($reviews as $review) --}}
-                    <a href="{{isset($user->reviews)?
-                    @foreach($movie->reviews as $review)
-                        @foreach($user->reviews as $u_review)
+                    <a href="{{isset($user_reviews)?
+                    @foreach($movie_reviews as $review)
+                        @foreach($user_reviews as $u_review)
                             @if($review->id == $u_review->id)
-                            route('reviews.edit',['id' => $review_id])
+                                route('reviews.edit',['id' => $review_id])
                             @endif
                         @endforeach
                     @endforeach
