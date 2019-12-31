@@ -27,8 +27,7 @@ class AddReviewableToReviewsTable extends Migration
     public function down()
     {
         Schema::table('reviews', function (Blueprint $table) {
-            $table->dropColumn('reviewable_id');
-            $table->dropColumn('reviewable_type');
+            $table->dropColumn('reviewable_id','reviewable_type');
         });
     }
 }
