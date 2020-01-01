@@ -35,7 +35,7 @@
                 @foreach($movies->sortByDesc('year') as $movie)
                     <div id="movie-image">
                         <a href="{{route('movies.show',[$movie->id])}}" class="float-left m-4">
-                        <img src="{{asset("uploads/movies/".$movie->image)}}" width="240px" height="330px" alt="{{$movie->title}}">
+                        <img src="{{asset("uploads/movies/".$movie->image)}}" width="230px" height="320px" alt="{{$movie->title}}">
                         </a>
                     </div>
                 @endforeach
