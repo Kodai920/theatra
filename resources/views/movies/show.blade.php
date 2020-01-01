@@ -87,6 +87,25 @@
             <strong>投稿日 : </strong>{{$review->created_at->format('Y年m月d日')}}<br>
             <strong>評価 : </strong><i class="fas fa-star"></i> {{$review->star}}
         </div>
+        <div class="col-6 ml-auto">
+                @if (Auth::id() != $user->id)
+
+                @if (Auth::user()->is_favorite($review->id))
+
+                    {!! Form::open(['route' => ['favorites.unfavorite', $review->id], 'method' => 'delete']) !!}
+                        {!! Form::submit('いいね！を外す', ['class' => "button btn btn-warning"]) !!}
+                    {!! Form::close() !!}
+
+                @else
+
+                    {!! Form::open(['route' => ['favorites.favorite', $review->id]]) !!}
+                        {!! Form::submit('いいね！を付ける', ['class' => "button btn btn-success"]) !!}
+                    {!! Form::close() !!}
+
+                @endif
+
+            @endif
+        </div>
     </div>
     <div class="mt-2">
         {{$review->impression}}

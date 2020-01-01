@@ -62,3 +62,9 @@ Route::get('login/{provider}', 'Auth\LoginController@redirectToProvider');
 
 Route::get('login/{provider}/callback','Auth\LoginController@handleProviderCallback');
 
+Route::group(['middleware'=>'auth'],function(){
+    Route::group(['prefix'=>'reviews/{id}'],function(){
+       Route::post('favorite','FavoriteController@store')->name('favorites.favorite');
+       Route::delete('unfavorite','FavoriteController@destroy')->name('favorites.unfavorite');
+    });
+});

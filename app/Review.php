@@ -19,4 +19,9 @@ class Review extends Model
     // public function reviewable(){
     //     return $this->morphTo();
     // }
+
+    public function favorite_users()
+    {
+            return $this->belongsToMany(User::class,'favorites','review_id','user_id')->withTimestamps();
+    }
 }
