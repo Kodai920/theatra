@@ -48,7 +48,7 @@
             @endif
             @endforeach
         </div><br>
-        <a href="{{route('reviews.index')}}" class="btn btn-block btn-outline-dark mb-2" style="background-color:#131313;">マイページへ</a><br>
+        <a href="{{route('reviews.index')}}" class="btn btn-block btn-outline-dark mb-2" style="background-color:#131313; color:#E5E5E5;">マイページへ</a><br>
         <hr color="#131313">
         @endif
 
