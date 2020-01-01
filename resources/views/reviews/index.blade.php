@@ -7,9 +7,9 @@
 
     <div class="wrapper">
         <div class="row">
-            <div class="col-6">
-                <div class="float-left"><img src="{{$user->profile->avator}}" alt="" style="height:80px; width:80px;"></div>
-                <div class="mx-3">
+            <div class="col-6 row">
+                <div class="float-left col-3"><img src="{{$user->profile->avator}}" alt="" style="height:80px; width:80px;"></div>
+                <div class="mx-3 col-9">
                     <div style="font-size:30px;">{{$user->name}}</div>
                     <div>登録日 : {{$user->created_at->format('Y年m月d日')}}</div>
                 </div>
