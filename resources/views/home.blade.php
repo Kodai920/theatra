@@ -48,7 +48,7 @@
             @endif
             @endforeach
         </div><br>
-        <a href="{{route('reviews.index')}}" class="btn btn-block btn-outline-dark mb-2" style="background-color:#E40914;">マイページへ</a><br>
+        <a href="{{route('reviews.index')}}" class="btn btn-block btn-outline-dark mb-2" style="background-color:#131313;">マイページへ</a><br>
         <hr color="#131313">
         @endif
 
@@ -64,7 +64,7 @@
             @endif
             @endforeach
         </div><br>
-        <a href="{{route('movies.index')}}" class="btn btn-block btn-outline-dark mb-2" style="background-color:#E40914;">すべての映画を見る</a><br>
+        <a href="{{route('movies.index')}}" class="btn btn-block btn-outline-dark mb-2" style="background-color:#131313;">すべての映画を見る</a><br>
         <hr color="#131313">
 
         <div class="my-5">
@@ -122,7 +122,7 @@
                     <h5 class="text-center mt-2">コメディ</h5>
                 </div>
             </div><br>
-            <a href="{{route('categories.index')}}" class="btn btn-block btn-outline-dark" style="background-color:#E40914;">すべてのカテゴリを見る</a>
+            <a href="{{route('categories.index')}}" class="btn btn-block btn-outline-dark" style="background-color:#131313;">すべてのカテゴリを見る</a>
         </div>
         <hr color="#131313">
 
@@ -181,7 +181,7 @@
                         <h5 class="text-center mt-2">韓国</h5>
                     </div>
                 </div><br>
-                <a href="{{route('countries.index')}}" class="btn btn-block btn-outline-dark" style="background-color:#E40914;">すべての製作国を見る</a>
+                <a href="{{route('countries.index')}}" class="btn btn-block btn-outline-dark" style="background-color:#131313;">すべての製作国を見る</a>
         </div>
         <hr color="#131313">
     </div>
