@@ -32,15 +32,13 @@
     <div class="container py-4">
         <div class="row justify-content-center">
             <div class="col-md-12 mb-3">
-                <div class="mx-auto">
                 @foreach($movies->sortByDesc('year') as $movie)
                     <div id="movie-image">
                         <a href="{{route('movies.show',[$movie->id])}}" class="float-left m-4">
-                        <img src="{{asset("uploads/movies/".$movie->image)}}" width="210px" height="300px" alt="{{$movie->title}}">
+                        <img src="{{asset("uploads/movies/".$movie->image)}}" width="240px" height="330px" alt="{{$movie->title}}">
                         </a>
                     </div>
                 @endforeach
-                </div>
             </div>
             {{$movies->links()}}
         </div>
