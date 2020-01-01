@@ -54,7 +54,7 @@
                     <img src="{{asset("uploads/movies/".$review->movie->image)}}" width="105px" height="150px" alt="{{$review->movie->title}}">
                     </a>
                 </div>
-                <div class="col-md-9">
+                <div class="col-9">
                     <strong>投稿日 : </strong>{{$review->created_at->format('Y年m月d日')}}<br>
                     <strong>評価 : </strong><i class="fas fa-star"></i>{{$review->star}}<br>
                     <div class="mt-2">
