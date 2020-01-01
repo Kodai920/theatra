@@ -7,7 +7,7 @@
 
     <div class="wrapper">
         <div class="row">
-            <div class="col-6 row">
+            <div class="col-md-6 row">
                 <div class="float-left col-3"><img src="{{$user->profile->avator}}" alt="" style="height:80px; width:80px;"></div>
                 <div class="mx-3 col-9">
                     <div style="font-size:30px;">{{$user->name}}</div>
@@ -16,7 +16,7 @@
                 <p></p>
                 <div class="mt-2" style="color:gray;">{{$user->profile->about}}</div>
             </div>
-            <div class="col-6">
+            <div class="col-md-6">
                 <div>
                   <a href="{{route('profiles.index')}}" class="btn btn-secondary btn-block">プロフィール編集</a>
                   <div class="twitter my-4">
