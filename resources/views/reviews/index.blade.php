@@ -14,7 +14,7 @@
                     <div>登録日 : {{$user->created_at->format('Y年m月d日')}}</div>
                 </div>
                 <p></p>
-                <div class="mt-2" style="color:gray;">{{$user->profile->about}}</div>
+                <div class="mt-2 ml-2" style="color:gray;">{{$user->profile->about}}</div>
             </div>
             <div class="col-md-6">
                 <div>
