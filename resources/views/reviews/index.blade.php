@@ -49,8 +49,8 @@
             </div>
             <div class="card-body pt-0">
                 <div class="row mt-2">
-                <div class="col-3 d-block mx-auto" id="movie-image">
-                    <a href="{{route('movies.show',[$review->movie->id])}}">
+                <div class="col-3" id="movie-image">
+                    <a href="{{route('movies.show',[$review->movie->id])}}" class="d-block mx-auto">
                     <img src="{{asset("uploads/movies/".$review->movie->image)}}" width="105px" height="150px" alt="{{$review->movie->title}}">
                     </a>
                 </div>
