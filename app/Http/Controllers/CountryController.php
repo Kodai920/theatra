@@ -18,9 +18,7 @@ class CountryController extends Controller
     {
         $countries = Country::all();
         $movie = Movie::all();
-        $count = Movie::where('country_id',$countries->movie->country_id)->count();
         return view('countries.index')->with('countries',$countries)
-                                      ->with('count',$count)
                                       ->with('movie',$movie);
     }
 
