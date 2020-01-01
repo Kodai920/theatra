@@ -87,8 +87,8 @@
             <strong>投稿日 : </strong>{{$review->created_at->format('Y年m月d日')}}<br>
             <strong>評価 : </strong><i class="fas fa-star"></i> {{$review->star}}
         </div>
-        <div class="col-6 ml-auto">
-                @if (Auth::id() != $user->id)
+        <div>
+            @if (Auth::id() != $user->id)
 
                 @if (Auth::user()->is_favorite($review->id))
 
