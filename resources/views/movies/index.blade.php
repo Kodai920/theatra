@@ -31,7 +31,8 @@
     @include('inc.search')
     <div class="container py-4">
         <div class="row justify-content-center">
-            <div class="col-md-12 mb-3 mx-auto">
+            <div class="col-md-12 mb-3">
+                <div class="mx-auto">
                 @foreach($movies->sortByDesc('year') as $movie)
                     <div id="movie-image">
                         <a href="{{route('movies.show',[$movie->id])}}" class="float-left m-4">
@@ -39,6 +40,7 @@
                         </a>
                     </div>
                 @endforeach
+                </div>
             </div>
             {{$movies->links()}}
         </div>
