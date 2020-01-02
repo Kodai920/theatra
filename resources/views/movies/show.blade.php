@@ -62,20 +62,23 @@
 @if($movie->reviews->count() > 0)
 @foreach($movie->reviews->sortByDesc('created_at') as $review)
 <div class="card mb-2">
-    <div class="card-header">{{$review->user->name}}の感想・評価
+    <div class="card-header">
+        <div class="float-left">{{$review->user->name}}の感想・評価</div>
+        <div>
             @if (Auth::user()->is_favorite($review->id))
 
                 {!! Form::open(['route' => ['favorites.unfavorite', $review->id], 'method' => 'delete']) !!}
-                    {!! Form::submit('いいね！を外す', ['class' => "button btn btn-warning"]) !!}
+                    {!! Form::submit('いいね！', ['class' => "button btn-sm btn-success"]) !!}
                 {!! Form::close() !!}
 
             @else
 
                 {!! Form::open(['route' => ['favorites.favorite', $review->id]]) !!}
-                    {!! Form::submit('いいね！を付ける', ['class' => "button btn btn-success"]) !!}
+                    {!! Form::submit('いいね！', ['class' => "button btn-sm btn-info"]) !!}
                 {!! Form::close() !!}
 
             @endif
+        </div>
         @if(Auth::user()->admin)
             <li class="nav-item dropdown float-right" style="list-style:none;">
                 <a class="dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
