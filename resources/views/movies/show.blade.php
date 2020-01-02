@@ -30,7 +30,11 @@
 
                 <div class="my-5 avg-ovral-rtng">
                     <h3>みんなの評価</h3>
-                    <p><strong> 星 : </strong><i class="fas fa-star"></i></p>
+                    <p><strong> レーティング : </strong><i class="fas fa-star"></i>
+                    @foreach($movie_reviews as $review)
+                    {{ $review }}
+                    @endforeach
+                    </p>
                 </div>
 
                 @if(Auth::check())

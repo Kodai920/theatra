@@ -92,7 +92,7 @@ class MovieController extends Controller
         $user = Auth::user();
         $user_reviews = User::find($user->id)->reviews;
         $movie_reviews = Movie::find($movie->id)->reviews;
-       $review = Review::all();
+        $review = Review::all();
 
         $movie_country = Movie::find($movie->id)->country;
 
@@ -146,22 +146,5 @@ class MovieController extends Controller
     public function destroy($id)
     {
         //
-    }
-
-    public function movieMovie(Request $request){
-        request()->validate(['rate' => 'required']);
-
-        $movie = Movie::find($request->id);
-
-        $rating = new \willvincent\Rateable\Rating;
-
-        $rating->rating = $request->rate;
-
-        $rating->user_id = auth()->user()->id;
-
-        $movie->ratings()->save($rating);
-
-        return redirect()->route("movies");
-
     }
 }
