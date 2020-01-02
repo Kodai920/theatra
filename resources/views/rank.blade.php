@@ -25,10 +25,9 @@
                             <th>タイトル</th>
                             <th>投稿数</th>
                         </tr>
-                        @foreach($movies->sortBy('') as $movie)
+                        @foreach($movies->sortBy($revies->count()) as $movie)
                         <tr>
-                            <td>
-                            </td>
+                            <td></td>
                             <td>
                             <img src="{{asset("uploads/movies/".$movie->image)}}" height="100px" width="75px" alt="{{$movie->title}}">
                             </td>
