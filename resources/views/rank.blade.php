@@ -31,7 +31,7 @@
                               {{$i}}
                             </td>
                             <td>
-                                <img src="{{asset("uploads/movies/".$movie->image)}}" alt="">
+                            <img src="{{asset("uploads/movies/".$movie->image)}}" height="200px" width="150px" alt="{{$movie->title}}">
                             </td>
                             <td>{{$movie->title}}</td>
                             <td>{{$movie->reviews->count()}}</td>
