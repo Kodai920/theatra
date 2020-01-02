@@ -12,7 +12,7 @@ class RankController extends Controller
     public function index(){
 
         $movies = Movie::all();
-        $reviews = Reviews::all();
+        $reviews = Review::all();
 
         return view('rank')->with('movie',$movie)
                            ->with('reviews',$reviews);
