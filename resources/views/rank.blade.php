@@ -50,7 +50,7 @@
                             <img src="{{asset("uploads/movies/".$movie->image)}}" height="100px" width="75px" alt="{{$movie->title}}">
                             </td>
                             <td>{{$movie->title}}</td>
-                            <td>{{$movie->reviews->count()->sortBy()}}</td>
+                            <td>{{$movie->reviews->count()}}</td>
                         </tr>
                         @endforeach
                     </table>
