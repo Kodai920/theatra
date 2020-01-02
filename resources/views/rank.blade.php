@@ -21,12 +21,11 @@
                         <tr>
                             <th>No.</th> <th></th> <th>タイトル</th> <th>投稿数</th>
                         </tr>
+                        @for($i=1; $i<=11; $i++)
                         @foreach($movies as $movie)
                         <tr>
                             <td>
-                                @for($i=1; $i<=10; $i++)
-                                {{$i}}
-                                @endfor
+                              {{$i}}
                             </td>
                             <td>
                                 <img src="{{$movie->image}}" alt="">
@@ -35,6 +34,7 @@
                             <td>{{$movie->reviews->count()}}</td>
                         </tr>
                         @endforeach
+                        @endfor
                     </table>
                 </div>
             </div>
