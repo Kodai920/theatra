@@ -29,7 +29,7 @@
                 </div>
 
                 <div class="my-5 avg-ovral-rtng">
-                    <h3>みんなの評価 : <i class="fas fa-star"></i> {{ $movie->reviews->avg('star',3)}}</h3>
+                    <h3>みんなの評価 : <i class="fas fa-star"></i> {{ $movie->reviews->avg('star')->round(3)}}</h3>
                 </div>
 
                 @if(Auth::check())
