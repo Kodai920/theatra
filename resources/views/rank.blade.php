@@ -49,7 +49,7 @@
                         @endif
                         <tr>
                             <td>
-                                @if($i=1, $++)
+                                @if($i=1; $++)
                                 {{$i}}
                                 @endif
                             </td>
