@@ -147,4 +147,21 @@ class MovieController extends Controller
     {
         //
     }
+
+    public function movieMovie(Request $request){
+        request()->validate(['rate' => 'required']);
+
+        $movie = Movie::find($request->id);
+
+        $rating = new \willvincent\Rateable\Rating;
+
+        $rating->rating = $request->rate;
+
+        $rating->user_id = auth()->user()->id;
+
+        $movie->ratings()->save($rating);
+
+        return redirect()->route("movies");
+
+    }
 }

@@ -8,6 +8,8 @@ class Movie extends Model
 {
     protected $fillable = ['title','year','about','image'];
 
+    use Rateable;
+
     public function categories(){
         return $this->belongsToMany('App\Category');
     }

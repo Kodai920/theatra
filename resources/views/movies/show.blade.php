@@ -36,6 +36,18 @@
                 @if(Auth::check())
                     <a href="{{route('review.create',['id' => $movie->id])}}"
                     class="btn btn-success btn-block btn-lg">レビューを書く</a>
+                    <form action="{{ route('movies.movie') }}" method="POST">
+                    {{ csrf_field() }}
+                    <div class="rating">
+
+                        <input id="input-1" name="rate" class="rating rating-loading" data-min="0" data-max="5" data-step="1" value="{{ $movie->userAverageRating }}" data-size="xs">
+
+                        <input type="hidden" name="id" required="" value="{{ $movie->id }}">
+
+                        <button class="btn btn-success">Submit Review</button>
+
+                    </div>
+                    </form>
                 @endif
             </div>
         </div>
@@ -109,7 +121,11 @@
     </div>
 </div>
 @endif
+<script type="text/javascript">
 
+    $("#input-id").rating();
+
+</script>
 @endsection
 
 @section('scripts')
@@ -117,7 +133,7 @@
 <script type="text/javascript">
     $(function(){
         $('.cal-rating').each(function() {
-                    
+
             $(this).on('change', function() {
                 calcavg();
             })
@@ -125,7 +141,7 @@
         function calcavg() {
                     var total = 0;
                     var avg = 0;
-                    
+
                     $('.cal-rating').each(function() {
                         if (!isNaN(this.value) && this.value.lenght !=0) {
                             total +=parseFloat(this.value);

@@ -32,6 +32,8 @@ Route::group(['middleware' => 'auth'],function(){
 
     Route::resource('movies','MovieController');
 
+    Route::post('movies/movie', 'MovieController@movieMovie')->name('movies.movie');
+
     Route::resource('categories','CategoryController');
 
     Route::resource('countries','CountryController');
@@ -67,3 +69,5 @@ Route::group(['prefix'=>'reviews/{id}','middleware'=>'auth'],function(){
        Route::post('favorite','FavoriteController@store')->name('favorites.favorite');
        Route::delete('unfavorite','FavoriteController@destroy')->name('favorites.unfavorite');
 });
+
+
