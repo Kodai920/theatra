@@ -108,7 +108,7 @@ class MovieController extends Controller
                                   ->with('country',$country)
                                   ->with('user_reviews',$user_reviews)
                                   ->with('movie_reviews',$movie_reviews)
-                                  ->with('user',$user)
+                                  ->with('user',$user);
                                 //   ->with('movies.show',$data);
     }
 
