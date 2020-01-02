@@ -63,8 +63,6 @@
 @foreach($movie->reviews->sortByDesc('created_at') as $review)
 <div class="card mb-2">
     <div class="card-header">{{$review->user->name}}の感想・評価
-            @if (Auth::id() != $user->id)
-
             @if (Auth::user()->is_favorite($review->id))
 
                 {!! Form::open(['route' => ['favorites.unfavorite', $review->id], 'method' => 'delete']) !!}
@@ -78,9 +76,6 @@
                 {!! Form::close() !!}
 
             @endif
-
-        @endif
-
         @if(Auth::user()->admin)
             <li class="nav-item dropdown float-right" style="list-style:none;">
                 <a class="dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
