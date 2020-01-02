@@ -10,7 +10,7 @@
                 <div class="card-body"></div>
             </div>
         </div>
-        <div class="cp_tabpanels card-header">
+        <div class="cp_tabpanels">
             <label for="tab5_2">投稿数が多い作品</label>
             <input id="tab5_2" name="cp_tab" type="radio">
             <div class="cp_tabpanel">
