@@ -94,7 +94,7 @@
                 @if (Auth::user()->is_favorite($review->id))
 
                     {!! Form::open(['route' => ['favorites.unfavorite', $review->id], 'method' => 'delete']) !!}
-                        {!! Form::submit(<i class="far fa-thumbs-up"></i>.'いいね', ['class' => "button btn-sm btn-success"]) !!}
+                        {!! Form::submit(<i class="far fa-thumbs-up"></i>'いいね', ['class' => "button btn-sm btn-success"]) !!}
                     {!! Form::close() !!}
 
                 @else
