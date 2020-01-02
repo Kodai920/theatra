@@ -43,7 +43,7 @@
                             <th>タイトル</th>
                             <th>投稿数</th>
                         </tr>
-                        @foreach($movies->sortBy($movie->reviews->count()) as $movie)
+                        @foreach($movies->sortBy($reviews->count()) as $movie)
                         <tr>
                             <td></td>
                             <td>
