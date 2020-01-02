@@ -3,7 +3,7 @@
 namespace App;
 
 use Illuminate\Database\Eloquent\Model;
-use Rateable;
+use willvincent\Rateable\Rateable;
 
 class Movie extends Model
 {
