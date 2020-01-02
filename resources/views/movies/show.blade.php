@@ -95,7 +95,7 @@
                     <form action="{{route('favorites.unfavorite', ['id' => $review->id])}}" method="post">
                         @csrf
                         @method('DELETE')
-                        <button type="submit" class="button btn-sm btn-success"><i class="far fa-thumbs-up"></I>いいね</button>
+                    <button type="submit" class="button btn-sm btn-success"><i class="far fa-thumbs-up"></I>いいね {{$review->count()}}</button>
                     </form>
                 @else
                     <form action="{{route('favorites.favorite', ['id' => $review->id])}}" method="post">
