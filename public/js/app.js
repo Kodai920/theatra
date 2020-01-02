@@ -49600,24 +49600,3 @@ module.exports = __webpack_require__(/*! /Users/okabekodai/Desktop/theatra/resou
 
 /******/ });
 
-$(function() {
-  $('.question_txt').on("click", function() {
-      var id = $(this).data('hoge');
-      $("#toggle_" + id).slideToggle(); 
-      $("#toggle_" + id).toggleClass("active");
-      if($(this).next('.show_button').hasClass("closebutton")){
-         $(this).next('.show_button').removeClass("closebutton");
-      }else{
-         $(this).next('.show_button').addClass("closebutton");
-      }
-  });
-});
-
-1
-$(".tab_label").on("click",function(){
-	var $th = $(this).index()+1;
-	$(".tab_label").removeClass("active");
-	$(".tab_panel").removeClass("active");
-	$(this).addClass("active");
-	$("#panel"+$th).addClass("active").appendTo($("#cj_panelarea"));
-});
