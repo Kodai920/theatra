@@ -92,9 +92,9 @@
                     <span class="badge badge-pill badge-success">{{ $count_favorite_users }}</span>
                 </div> --}}
                 @if (Auth::user()->is_favorite($review->id))
-                    <form action="{{route('favorites.unfavorite', ['id' => $review->id])}}" method="get">
+                    <form action="{{route('favorites.unfavorite', ['id' => $review->id])}}" method="post">
                         @csrf
-                        @method('delete')
+                        @method('DELETE')
                         <button type="submit" class="button btn-sm btn-success"><i class="far fa-thumbs-up"></I>いいね</button>
                     </form>
                 @else
