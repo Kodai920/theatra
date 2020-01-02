@@ -43,14 +43,14 @@
                             <th>タイトル</th>
                             <th>投稿数</th>
                         </tr>
-                        @foreach($movies->sortBy("{{$movie->reviews->count()}}") as $movie)
+                        @foreach($movies as $movie)
                         <tr>
                             <td></td>
                             <td>
                             <img src="{{asset("uploads/movies/".$movie->image)}}" height="100px" width="75px" alt="{{$movie->title}}">
                             </td>
                             <td>{{$movie->title}}</td>
-                            <td>{{$movie->reviews->count()}}</td>
+                            <td>{{$movie->reviews->count()->sort()}}</td>
                         </tr>
                         @endforeach
                     </table>
