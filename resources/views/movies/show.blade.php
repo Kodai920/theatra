@@ -88,9 +88,9 @@
             <strong>投稿日 : </strong>{{$review->created_at->format('Y年m月d日')}}<br>
             <strong>評価 : </strong><i class="fas fa-star"></i> {{$review->star}}
             <div>
-                <div class="text-right mb-2">いいね！
+                {{-- <div class="text-right mb-2">いいね！
                     <span class="badge badge-pill badge-success">{{ $count_favorite_users }}</span>
-                </div>
+                </div> --}}
                 @if (Auth::user()->is_favorite($review->id))
 
                     {!! Form::open(['route' => ['favorites.unfavorite', $review->id], 'method' => 'delete']) !!}
