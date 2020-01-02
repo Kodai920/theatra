@@ -95,12 +95,12 @@
                     <form action="{{route('favorites.unfavorite', ['id' => $review->id])}}" method="post">
                         @csrf
                         @method('DELETE')
-                    <button type="submit" class="button btn-sm btn-success"><i class="far fa-thumbs-up"></I>いいね {{$review->favorites->count()}}</button>
+                    <button type="submit" class="button btn-sm btn-success"><i class="far fa-thumbs-up"></I>いいね {{$review->favorite_users->count()}}</button>
                     </form>
                 @else
                     <form action="{{route('favorites.favorite', ['id' => $review->id])}}" method="post">
                         @csrf
-                        <button type="submit" class="button btn-sm btn-info"><i class="far fa-thumbs-up"></I>いいね {{$review->favorites->count()}}</button>
+                        <button type="submit" class="button btn-sm btn-info"><i class="far fa-thumbs-up"></I>いいね {{$review->favorite_users->count()}}</button>
                     </form>
                 @endif
             </div>
