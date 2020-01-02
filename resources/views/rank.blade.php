@@ -20,7 +20,7 @@
                         @foreach($movies as $movie)
                         <?php $i++; ?>
                         <tr>
-                            <td>{{$i}}</td>
+                            <td><strong>{{$i}}</strong></td>
                             <td>
                             <img src="{{asset("uploads/movies/".$movie->image)}}" height="100px" width="75px" alt="{{$movie->title}}">
                             </td>
@@ -49,7 +49,7 @@
                         @foreach($movies as $movie)
                         <?php $i++; ?>
                         <tr>
-                            <td>{{$i}}</td>
+                            <td><strong>{{$i}}</strong></td>
                             <td>
                             <img src="{{asset("uploads/movies/".$movie->image)}}" height="100px" width="75px" alt="{{$movie->title}}">
                             </td>
