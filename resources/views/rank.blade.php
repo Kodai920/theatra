@@ -45,10 +45,13 @@
                         </tr>
                         @foreach($movies as $movie)
                         @if($moive > 20)
-                        @break
+                        <?php break; ?>
                         @endif
                         <tr>
-                            <td></td>
+                            <td>
+                                @if($i = )
+                                {{$i}}
+                            </td>
                             <td>
                             <img src="{{asset("uploads/movies/".$movie->image)}}" height="100px" width="75px" alt="{{$movie->title}}">
                             </td>
