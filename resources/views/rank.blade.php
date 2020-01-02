@@ -8,6 +8,15 @@
             <div class="cp_tabpanel card pt-0">
                 <h4 class="card-header">評価ランキング</h4>
                 <div class="card-body">
+                </div>
+            </div>
+        </div>
+        <div class="cp_tabpanels">
+            <label for="tab5_2">投稿数が多い作品</label>
+            <input id="tab5_2" name="cp_tab" type="radio">
+            <div class="cp_tabpanel card pt-0">
+                <h4 class="card-header">投稿数ランキング</h4>
+                <div class="card-body">
                     <table>
                         <tr>
                             <th>No.</th> <th></th> <th>タイトル</th> <th>投稿数</th>
@@ -19,21 +28,15 @@
                                 {{$i}}
                                 @endfor
                             </td>
-                            <td>{{$movie->image}}</td>
+                            <td>
+                                <img src="{{$movie->image}}" alt="">
+                            </td>
                             <td>{{$movie->title}}</td>
                             <td>{{$movie->reviews->count()}}</td>
                         </tr>
                         @endforeach
                     </table>
                 </div>
-            </div>
-        </div>
-        <div class="cp_tabpanels">
-            <label for="tab5_2">投稿数が多い作品</label>
-            <input id="tab5_2" name="cp_tab" type="radio">
-            <div class="cp_tabpanel card pt-0">
-                <h4 class="card-header">投稿数ランキング</h4>
-                <div class="card-body"></div>
             </div>
         </div>
     </div>
