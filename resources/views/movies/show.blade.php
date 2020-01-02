@@ -1,4 +1,7 @@
 @extends('layouts.app')
+@section('styles')
+<link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-star-rating/4.0.6/css/star-rating.min.css" media="all" rel="stylesheet" type="text/css" />
+@endsection
 @section('content')
 
 <div class="card mb-3">
