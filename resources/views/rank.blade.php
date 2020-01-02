@@ -22,8 +22,10 @@
                         <tr>
                             <th>No.</th> <th></th> <th>タイトル</th> <th>投稿数</th>
                         </tr>
-                        @for($i=1; $i<=11; $i++)
                         @foreach($movies as $movie)
+                        @if($i=1; $i>=10; $i++)
+                          break
+                        @endif
                         <tr>
                             <td>
                               {{$i}}
@@ -35,7 +37,6 @@
                             <td>{{$movie->reviews->count()}}</td>
                         </tr>
                         @endforeach
-                        @endfor
                     </table>
                 </div>
             </div>
