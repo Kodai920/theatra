@@ -20,9 +20,9 @@
                         @foreach($movies as $movie)
                         <?php $i++; ?>
                         <tr>
-                            <td><strong>{{$i}}</strong></td>
+                            <td class="text-center"><strong>{{$i}}</strong></td>
                             <td>
-                            <img src="{{asset("uploads/movies/".$movie->image)}}" height="100px" width="75px" alt="{{$movie->title}}">
+                            <img class="d-block mx-auto" src="{{asset("uploads/movies/".$movie->image)}}" height="100px" width="75px" alt="{{$movie->title}}">
                             </td>
                             <td>{{$movie->title}}</td>
                             <td>{{ $movie->reviews->avg('star')}}</td>
@@ -49,9 +49,9 @@
                         @foreach($movies as $movie)
                         <?php $i++; ?>
                         <tr>
-                            <td><strong>{{$i}}</strong></td>
+                            <td class="text-center"><strong>{{$i}}</strong></td>
                             <td>
-                            <img src="{{asset("uploads/movies/".$movie->image)}}" height="100px" width="75px" alt="{{$movie->title}}">
+                            <img class="d-block mx-auto" src="{{asset("uploads/movies/".$movie->image)}}" height="100px" width="75px" alt="{{$movie->title}}">
                             </td>
                             <td>{{$movie->title}}</td>
                             <td>{{$movie->reviews->count()}}</td>
