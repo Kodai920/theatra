@@ -9,6 +9,24 @@
             <div class="cp_tabpanel card pt-0">
                 <h4 class="card-header">評価ランキング</h4>
                 <div class="card-body">
+                    <table class="rank-color mx-auto" width="100%">
+                        <tr class="rank-header">
+                            <th>No.</th>
+                            <th></th>
+                            <th>タイトル</th>
+                            <th>投稿数</th>
+                        </tr>
+                        @foreach($movies as $movie)
+                        <tr>
+                            <td></td>
+                            <td>
+                            <img src="{{asset("uploads/movies/".$movie->image)}}" height="100px" width="75px" alt="{{$movie->title}}">
+                            </td>
+                            <td>{{$movie->title}}</td>
+                            <td>{{ $movie->reviews->avg('star')}}</td>
+                        </tr>
+                        @endforeach
+                    </table>
                 </div>
             </div>
         </div>
