@@ -49612,3 +49612,12 @@ $(function() {
       }
   });
 });
+
+
+$(".tab_label").on("click",function(){
+	var $th = $(this).index()+1;
+	$(".tab_label").removeClass("active");
+	$(".tab_panel").removeClass("active");
+	$(this).addClass("active");
+	$("#panel"+$th).addClass("active").appendTo($("#cj_panelarea"));
+});
