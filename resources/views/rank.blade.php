@@ -3,19 +3,17 @@
 
 <div class="cp_tab">
         <div class="cp_tabpanels">
-            <label for="tab5_1">First Tab</label>
+            <label for="tab5_1">Theatraで評価が高い作品</label>
             <input id="tab5_1" name="cp_tab" type="radio" checked="checked">
             <div class="cp_tabpanel">
-                <h4>First Tab</h4>
-                <p>First Tab text</p>
+                <h4>評価ランキング</h4>
             </div>
         </div>
         <div class="cp_tabpanels">
-            <label for="tab5_2">Second Tab</label>
+            <label for="tab5_2">投稿数が多い作品</label>
             <input id="tab5_2" name="cp_tab" type="radio">
             <div class="cp_tabpanel">
-                <h4>Second Tab</h4>
-                <p>Second Tab text</p>
+                <h4>投稿数ランキング</h4>
             </div>
         </div>
     </div>
