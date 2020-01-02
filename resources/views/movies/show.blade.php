@@ -64,7 +64,7 @@
 <div class="card mb-2">
     <div class="card-header">
         <div class="float-left">{{$review->user->name}}の感想・評価</div>
-        <div>
+        <div class="ml-2">
             @if (Auth::user()->is_favorite($review->id))
 
                 {!! Form::open(['route' => ['favorites.unfavorite', $review->id], 'method' => 'delete']) !!}
