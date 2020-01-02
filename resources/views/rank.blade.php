@@ -9,7 +9,7 @@
             <div class="cp_tabpanel card pt-0">
                 <h4 class="card-header">評価ランキング</h4>
                 <div class="card-body">
-                    <table class="rank-color mx-auto" width="100%">
+                    <table class="rank-color mx-auto" width="90%">
                         <tr class="rank-header">
                             <th>No.</th>
                             <th></th>
