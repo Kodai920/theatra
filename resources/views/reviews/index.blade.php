@@ -12,7 +12,7 @@
                 <div class="mx-3 col-6">
                     <div style="font-size:30px;">{{$user->name}}</div>
                     <div>登録日 : {{$user->created_at->format('Y年m月d日')}}</div>
-                    <p>投稿数 : {{$user->reviews->count()}}</p>
+                    <div>投稿数 : {{$user->reviews->count()}}</div>
                 </div>
                 <p></p>
                 <div class="mt-2 ml-3" style="color:gray;">{{$user->profile->about}}</div>
