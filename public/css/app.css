@@ -11692,3 +11692,11 @@ h2{
 .cp_tab .cp_tabpanels:last-child [type='radio']:checked + .cp_tabpanel {
 	margin-left: -100%;
 }
+
+.rank-color tr:nth-child(even) {
+  background: #F9F9F9;
+  }
+
+.rank-color tr:nth-child(odd) {
+  background: #F0FAE2;
+  }
