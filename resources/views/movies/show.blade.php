@@ -94,12 +94,12 @@
                 @if (Auth::user()->is_favorite($review->id))
 
                     {!! Form::open(['route' => ['favorites.unfavorite', $review->id], 'method' => 'delete']) !!}
-                        {!! Form::submit('いいね！', ['class' => "button btn-sm btn-success"]) !!}
+                        {!! Form::submit('<i class="far fa-thumbs-up"></i>いいね', ['class' => "button btn-sm btn-success"]) !!}
                     {!! Form::close() !!}
 
                 @else
                     {!! Form::open(['route' => ['favorites.favorite', $review->id]]) !!}
-                        {!! Form::submit('いいね！', ['class' => "button btn-sm btn-info"]) !!}
+                        {!! Form::submit('<i class="far fa-thumbs-up"></i>いいね', ['class' => "button btn-sm btn-info"]) !!}
                     {!! Form::close() !!}
                 @endif
             </div>
