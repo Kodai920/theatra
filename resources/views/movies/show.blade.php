@@ -27,7 +27,7 @@
 
                 <div class="my-5">
                     <h3>みんなの評価</h3>
-                    <input id="avg-ovral-field" value="0" type="number" class="rating" min=0 max=5 step=0.5 data-size="xs" data-stars="5" data-show-clear="false" data-show-caption="false">
+                    <input id="avg-ovral-field" value="0" type="number" class="rating" min=0 max=5.0 step=0.1 data-size="xs" data-stars="5" data-show-clear="false" data-show-caption="false">
                     {{-- <input name="star" id="star-rating-demo" value="{{$review->star}}" type="number" class="rating" min=0 max=5.0 step=0.1 data-size="lg"> --}}
                 </div>
 
@@ -110,5 +110,47 @@
     </div>
 </div>
 @endif
+
+@endsection
+
+@section('scripts')
+
+<script type="text/javascript">
+    $(function(){
+        $('.cal-rating').each(function() {
+                    
+            $(this).on('change', function() {
+                calcavg();
+            })
+        });
+        function calcavg() {
+                    var total = 0;
+                    var avg = 0;
+                    
+                    $('.cal-rating').each(function() {
+                        if (!isNaN(this.value) && this.value.lenght !=0) {
+                            total +=parseFloat(this.value);
+                            // alert(total);
+                        }
+                    });
+                    if (!isNaN(total) && total !=0) {
+                        // var txtboxes = $('.cal-rating').length;
+                        var txtboxes = 6;
+                        Average = parseFloat(total) / 6;
+                    }
+                    $('#totalMarks').html(total);
+                      // Show Average upto 2 decimal places using .toFixed() method.
+                    var star = parseFloat(Average.toFixed(2)) * 20;
+                    $('.avg-ovral-rtng .rating-stars').css("width", star + "%");
+                }
+            $(".cal-rating, .rating").rating({
+                showClear: false,
+                showCaption: false
+            });
+            // $("#avg-ovral-field").rating({
+            // 	showCaption: false
+            // });
+    })
+    </script>
 
 @endsection
