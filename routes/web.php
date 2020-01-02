@@ -22,8 +22,9 @@ Route::get('/home', 'HomeController@index')->name('home');
 
 Route::get('/question', 'QuestionController@index')->name('question');
 
-Route::resource('posts','PostController');
+Route::get('/rank', 'RankController@index')->name('rank');
 
+Route::resource('posts','PostController');
 
 Route::resource('reviews','ReviewController');
 

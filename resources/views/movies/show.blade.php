@@ -92,11 +92,10 @@
                     <span class="badge badge-pill badge-success">{{ $count_favorite_users }}</span>
                 </div> --}}
                 @if (Auth::user()->is_favorite($review->id))
-
-                    {!! Form::open(['route' => ['favorites.unfavorite', $review->id], 'method' => 'delete']) !!}
-                        {!! Form::submit('いいね', ['class' => "button btn-sm btn-success"]) !!}
-                    {!! Form::close() !!}
-
+                    <form action="{{route('favorites.unfavorite', [$review->id])}}" method="delete">
+                        <button type="submit" class="button btn-sm btn-success"><i class="far fa-thumbs-up"></I></button>
+                    </form>
+                   
                 @else
                     {!! Form::open(['route' => ['favorites.favorite', $review->id]]) !!}
                         {!! Form::submit('いいね', ['class' => "button btn-sm btn-info"]) !!}
