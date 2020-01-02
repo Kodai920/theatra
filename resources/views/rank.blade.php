@@ -18,9 +18,12 @@
             <div class="cp_tabpanel card pt-0">
                 <h4 class="card-header">投稿数ランキング</h4>
                 <div class="card-body">
-                    <table class="rank-color">
-                        <tr class="rank-header">
-                            <th>No.</th> <th></th> <th>タイトル</th> <th>投稿数</th>
+                    <table class="rank-color mr-0">
+                        <tr class="rank-header row">
+                            <th class="row-2">No.</th>
+                            <th class="row-3"></th>
+                            <th class="row-5">タイトル</th>
+                            <th class="row-2">投稿数</th>
                         </tr>
                         @foreach($movies->sortBy('') as $movie)
                         <tr class="row">
