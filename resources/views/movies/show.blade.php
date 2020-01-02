@@ -93,10 +93,12 @@
                 </div> --}}
                 @if (Auth::user()->is_favorite($review->id))
                     <form action="{{route('favorites.unfavorite', ['id' => $review->id])}}" method="delete">
+                        @csrf
                         <button type="submit" class="button btn-sm btn-success"><i class="far fa-thumbs-up"></I>いいね</button>
                     </form>
                 @else
-                <form action="{{route('favorites.favorite', ['id' => $review->id])}}" method="post">
+                    <form action="{{route('favorites.favorite', ['id' => $review->id])}}" method="post">
+                        @csrf
                         <button type="submit" class="button btn-sm btn-info"><i class="far fa-thumbs-up"></I>いいね</button>
                     </form>
                 @endif
