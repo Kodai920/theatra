@@ -40,8 +40,11 @@
     </div>
     @include('inc.footer')
     </div>
+    
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
     <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-star-rating/4.0.6/js/star-rating.min.js" type="text/javascript"></script>
+
      <script>
         @if(Session::has('success'))
         toastr.success(" {{Session::get('success')}} ")
@@ -50,5 +53,42 @@
         toastr.info(" {{Session::get('info')}} ")
         @endif
     </script>
+    	<script type="text/javascript">
+            $(function(){
+                $('.cal-rating').each(function() {
+                            
+                    $(this).on('change', function() {
+                        calcavg();
+                    })
+                });
+                function calcavg() {
+                            var total = 0;
+                            var avg = 0;
+                            
+                            $('.cal-rating').each(function() {
+                                if (!isNaN(this.value) && this.value.lenght !=0) {
+                                    total +=parseFloat(this.value);
+                                    // alert(total);
+                                }
+                            });
+                            if (!isNaN(total) && total !=0) {
+                                // var txtboxes = $('.cal-rating').length;
+                                var txtboxes = 6;
+                                Average = parseFloat(total) / 6;
+                            }
+                            $('#totalMarks').html(total);
+                              // Show Average upto 2 decimal places using .toFixed() method.
+                            var star = parseFloat(Average.toFixed(2)) * 20;
+                            $('.avg-ovral-rtng .rating-stars').css("width", star + "%");
+                        }
+                    $(".cal-rating, .rating").rating({
+                        showClear: false,
+                        showCaption: false
+                    });
+                    // $("#avg-ovral-field").rating({
+                    // 	showCaption: false
+                    // });
+            })
+            </script>
 </body>
 </html>
