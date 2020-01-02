@@ -25,11 +25,11 @@
                 <p>{{$movie->about}}</p>
                 </div>
 
-                <div class="my-5">
+                {{-- <div class="my-5">
                     <h3>みんなの評価</h3>
                     <input name="star" id="star-rating-demo" value="{{$review->star}}" type="number" class="rating" min=0 max=5.0 step=0.1 data-size="lg">
                 </div>
-
+ --}}
                 @if(Auth::check())
                     <a href="{{route('review.create',['id' => $movie->id])}}"
                     class="btn btn-success btn-block btn-lg">レビューを書く</a>
