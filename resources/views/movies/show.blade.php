@@ -63,22 +63,7 @@
 @foreach($movie->reviews->sortByDesc('created_at') as $review)
 <div class="card mb-2">
     <div class="card-header">
-        <div class="float-left">{{$review->user->name}}の感想・評価</div>
-        <div class="ml-2">
-            @if (Auth::user()->is_favorite($review->id))
-
-                {!! Form::open(['route' => ['favorites.unfavorite', $review->id], 'method' => 'delete']) !!}
-                    {!! Form::submit('いいね！', ['class' => "button btn-sm btn-success"]) !!}
-                {!! Form::close() !!}
-
-            @else
-
-                {!! Form::open(['route' => ['favorites.favorite', $review->id]]) !!}
-                    {!! Form::submit('いいね！', ['class' => "button btn-sm btn-info"]) !!}
-                {!! Form::close() !!}
-
-            @endif
-        </div>
+        {{$review->user->name}}の感想・評価
         @if(Auth::user()->admin)
             <li class="nav-item dropdown float-right" style="list-style:none;">
                 <a class="dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
@@ -102,6 +87,19 @@
         <div class="col-4 mt-2">
             <strong>投稿日 : </strong>{{$review->created_at->format('Y年m月d日')}}<br>
             <strong>評価 : </strong><i class="fas fa-star"></i> {{$review->star}}
+            <div>
+                    @if (Auth::user()->is_favorite($review->id))
+
+                        {!! Form::open(['route' => ['favorites.unfavorite', $review->id], 'method' => 'delete']) !!}
+                            {!! Form::submit('いいね！', ['class' => "button btn-sm btn-success"]) !!}
+                        {!! Form::close() !!}
+
+                    @else
+                        {!! Form::open(['route' => ['favorites.favorite', $review->id]]) !!}
+                            {!! Form::submit('いいね！', ['class' => "button btn-sm btn-info"]) !!}
+                        {!! Form::close() !!}
+                    @endif
+                </div>
         </div>
     </div>
     <div class="mt-2">
