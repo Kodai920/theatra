@@ -49,9 +49,6 @@
                         @endif
                         <tr>
                             <td>
-                                @if($i=1; $++)
-                                {{$i}}
-                                @endif
                             </td>
                             <td>
                             <img src="{{asset("uploads/movies/".$movie->image)}}" height="100px" width="75px" alt="{{$movie->title}}">
