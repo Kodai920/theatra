@@ -23,14 +23,14 @@
                             <th>No.</th> <th></th> <th>タイトル</th> <th>投稿数</th>
                         </tr>
                         @foreach($movies->sortBy('') as $movie)
-                        <tr>
-                            <td>
+                        <tr class="row">
+                            <td class="col-2">
                             </td>
-                            <td>
+                            <td class="col-3">
                             <img src="{{asset("uploads/movies/".$movie->image)}}" height="100px" width="75px" alt="{{$movie->title}}">
                             </td>
-                            <td>{{$movie->title}}</td>
-                            <td>{{$movie->reviews->count()}}</td>
+                            <td class="col-5">{{$movie->title}}</td>
+                            <td class="col-2">{{$movie->reviews->count()}}</td>
                         </tr>
                         @endforeach
                     </table>
