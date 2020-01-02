@@ -22,7 +22,7 @@ Route::get('/home', 'HomeController@index')->name('home');
 
 Route::get('/question', 'QuestionController@index')->name('question');
 
-// Route::get('/rank', 'RankController@index')->name('rank');
+Route::get('/rank', 'RankController@index')->name('rank');
 
 Route::resource('posts','PostController');
 
