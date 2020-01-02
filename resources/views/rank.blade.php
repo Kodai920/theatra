@@ -16,7 +16,7 @@
                             <th>タイトル</th>
                             <th>みんなの評価</th>
                         </tr>
-                        <?php $i=1; ?>
+                        <?php $i=0; ?>
                         @foreach($movies as $movie)
                         <?php $i++; ?>
                         <tr>
@@ -45,10 +45,11 @@
                             <th>タイトル</th>
                             <th>投稿数</th>
                         </tr>
+                        <?php $i=0; ?>
                         @foreach($movies as $movie)
+                        <?php $i++; ?>
                         <tr>
-                            <td>
-                            </td>
+                            <td>{{$i}}</td>
                             <td>
                             <img src="{{asset("uploads/movies/".$movie->image)}}" height="100px" width="75px" alt="{{$movie->title}}">
                             </td>
