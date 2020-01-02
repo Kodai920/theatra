@@ -88,18 +88,21 @@
             <strong>投稿日 : </strong>{{$review->created_at->format('Y年m月d日')}}<br>
             <strong>評価 : </strong><i class="fas fa-star"></i> {{$review->star}}
             <div>
-                    @if (Auth::user()->is_favorite($review->id))
-
-                        {!! Form::open(['route' => ['favorites.unfavorite', $review->id], 'method' => 'delete']) !!}
-                            {!! Form::submit('いいね！', ['class' => "button btn-sm btn-success"]) !!}
-                        {!! Form::close() !!}
-
-                    @else
-                        {!! Form::open(['route' => ['favorites.favorite', $review->id]]) !!}
-                            {!! Form::submit('いいね！', ['class' => "button btn-sm btn-info"]) !!}
-                        {!! Form::close() !!}
-                    @endif
+                <div class="text-right mb-2">いいね！
+                    <span class="badge badge-pill badge-success">{{ $count_favorite_users }}</span>
                 </div>
+                @if (Auth::user()->is_favorite($review->id))
+
+                    {!! Form::open(['route' => ['favorites.unfavorite', $review->id], 'method' => 'delete']) !!}
+                        {!! Form::submit('いいね！', ['class' => "button btn-sm btn-success"]) !!}
+                    {!! Form::close() !!}
+
+                @else
+                    {!! Form::open(['route' => ['favorites.favorite', $review->id]]) !!}
+                        {!! Form::submit('いいね！', ['class' => "button btn-sm btn-info"]) !!}
+                    {!! Form::close() !!}
+                @endif
+            </div>
         </div>
     </div>
     <div class="mt-2">

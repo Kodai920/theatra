@@ -101,6 +101,14 @@ class MovieController extends Controller
                                   ->with('user_reviews',$user_reviews)
                                   ->with('movie_reviews',$movie_reviews)
                                   ->with('user',$user);
+
+        $count_favorite_users = $review->favorite_users()->count();
+
+        $data=[
+                'count_favorite_users'=>$count_favorite_users,
+            ];
+
+        return view('movies.show',$data);
     }
 
     /**
