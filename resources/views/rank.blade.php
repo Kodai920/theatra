@@ -44,6 +44,9 @@
                             <th>投稿数</th>
                         </tr>
                         @foreach($movies as $movie)
+                        @if($moive > 20)
+                        @break
+                        @endif
                         <tr>
                             <td></td>
                             <td>
