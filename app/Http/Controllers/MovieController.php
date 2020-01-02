@@ -95,7 +95,7 @@ class MovieController extends Controller
         $user_reviews = User::find($user->id)->reviews;
         $movie_reviews = Movie::find($movie->id)->reviews;
        // $review = Review::where('movie_id','==',$movie->id)->get();
-
+       $review = Review::all();
        $count_favorite_users = $review->favorite_users()->count();
 
        $data=[
