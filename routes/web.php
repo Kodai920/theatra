@@ -22,7 +22,7 @@ Route::get('/home', 'HomeController@index')->name('home');
 
 Route::get('/question', 'QuestionController@index')->name('question');
 
-Route::get('/rank', 'RankController@index')->name('rank');
+// Route::get('/rank', 'RankController@index')->name('rank');
 
 Route::resource('posts','PostController');
 
@@ -63,9 +63,7 @@ Route::get('login/{provider}', 'Auth\LoginController@redirectToProvider');
 
 Route::get('login/{provider}/callback','Auth\LoginController@handleProviderCallback');
 
-Route::group(['middleware'=>'auth'],function(){
-    Route::group(['prefix'=>'reviews/{id}'],function(){
+Route::group(['prefix'=>'reviews/{id}','middleware'=>'auth'],function(){
        Route::post('favorite','FavoriteController@store')->name('favorites.favorite');
        Route::delete('unfavorite','FavoriteController@destroy')->name('favorites.unfavorite');
-    });
 });
