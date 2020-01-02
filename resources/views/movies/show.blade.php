@@ -29,13 +29,7 @@
                 </div>
 
                 <div class="my-5 avg-ovral-rtng">
-                    <h3>みんなの評価</h3>
-                    <p><strong> レーティング : </strong><i class="fas fa-star"></i>
-                        {{ $movie->reviews->avg('star')}}
-                    {{-- @foreach($movie_reviews as $review)
-                    {{ $review-> }}
-                    @endforeach --}}
-                    </p>
+                    <h3>みんなの評価 : <i class="fas fa-star"></i> {{ $movie->reviews->avg('star')}}</h3>
                 </div>
 
                 @if(Auth::check())

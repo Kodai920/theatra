@@ -45,17 +45,6 @@
                                     </ul>
                                 @endif
 
-
-                                {{-- <form action="{{ route('movies.movie') }}" method="POST">
-                                        {{ csrf_field() }}
-                                        <div class="rating">
-                                            <input id="input-1" name="rate" class="rating rating-loading" data-min="0" data-max="5" data-step="1" value="{{ $movie->userAverageRating }}" data-size="xs">
-                                            <input type="hidden" name="id" required="" value="{{ $movie->id }}">
-                                            <br>
-                                            <button class="btn btn-success">Submit Review</button>
-                                        </div>
-                                </form> --}}
-
                                 <form action="{{route('review.store',['id'=>$movie->id])}}" method="post" enctype="multipart/form-data">
                                     @csrf
                                     @method('GET')

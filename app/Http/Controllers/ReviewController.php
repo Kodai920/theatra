@@ -53,18 +53,12 @@ class ReviewController extends Controller
         ]);
 
         $movie = Movie::find($id);
-        //$user =  User::find(Auth::id());
         $review = new Review;
         $review->impression = $request->impression;
         $review->star = $request->star;
         $review->movie_id = $movie->id;
         $review->user_id = Auth::id();
         $review->save();
-
-        // $movie->reviews->save($review);
-        // $user->reviews->save($review);
-
-
 
         Session::flash('success','投稿完了');
         return redirect()->route('movies.index');
