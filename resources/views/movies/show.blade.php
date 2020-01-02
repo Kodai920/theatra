@@ -30,7 +30,7 @@
 
                 <div class="my-5 avg-ovral-rtng">
                     <h3>みんなの評価</h3>
-                    <input id="avg-ovral-field" value="0" type="number" class="rating" min=0 max=5.0 step=0.1 data-size="xs" data-stars="5" data-show-clear="false" data-show-caption="false">
+                    <p><strong> 星 : </strong><i class="fas fa-star"></i></p>
                 </div>
 
                 @if(Auth::check())

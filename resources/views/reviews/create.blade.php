@@ -55,6 +55,7 @@
                                             <button class="btn btn-success">Submit Review</button>
                                         </div>
                                 </form> --}}
+
                                 <form action="{{route('review.store',['id'=>$movie->id])}}" method="post" enctype="multipart/form-data">
                                     @csrf
                                     @method('GET')
