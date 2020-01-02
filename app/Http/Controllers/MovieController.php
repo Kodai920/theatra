@@ -96,11 +96,12 @@ class MovieController extends Controller
         $movie_reviews = Movie::find($movie->id)->reviews;
        // $review = Review::where('movie_id','==',$movie->id)->get();
        $review = Review::all();
-       $count_favorite_users = $review->favorite_users()->count();
+       //いいね機能
+    //    $count_favorite_users = $review->favorite_users()->count();
 
-       $data=[
-               'count_favorite_users'=>$count_favorite_users,
-           ];
+    //    $data=[
+    //            'count_favorite_users'=>$count_favorite_users,
+    //        ];
 
         return view('movies.show')->with('movie',$movie)
                                   ->with('category',$category)
@@ -108,7 +109,7 @@ class MovieController extends Controller
                                   ->with('user_reviews',$user_reviews)
                                   ->with('movie_reviews',$movie_reviews)
                                   ->with('user',$user)
-                                  ->with('movies.show',$data);
+                                //   ->with('movies.show',$data);
     }
 
     /**
