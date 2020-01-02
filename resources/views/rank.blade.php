@@ -18,22 +18,22 @@
             <div class="cp_tabpanel card pt-0">
                 <h4 class="card-header">投稿数ランキング</h4>
                 <div class="card-body">
-                    <table class="rank-color mr-0">
-                        <tr class="rank-header row">
-                            <th class="row-2">No.</th>
-                            <th class="row-3"></th>
-                            <th class="row-5">タイトル</th>
-                            <th class="row-2">投稿数</th>
+                    <table class="rank-color mx-auto">
+                        <tr class="rank-header">
+                            <th>No.</th>
+                            <th></th>
+                            <th>タイトル</th>
+                            <th>投稿数</th>
                         </tr>
                         @foreach($movies->sortBy('') as $movie)
-                        <tr class="row">
-                            <td class="col-2">
+                        <tr>
+                            <td>
                             </td>
-                            <td class="col-3">
+                            <td>
                             <img src="{{asset("uploads/movies/".$movie->image)}}" height="100px" width="75px" alt="{{$movie->title}}">
                             </td>
-                            <td class="col-5">{{$movie->title}}</td>
-                            <td class="col-2">{{$movie->reviews->count()}}</td>
+                            <td>{{$movie->title}}</td>
+                            <td>{{$movie->reviews->count()}}</td>
                         </tr>
                         @endforeach
                     </table>
