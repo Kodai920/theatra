@@ -16,9 +16,11 @@
                             <th>タイトル</th>
                             <th>みんなの評価</th>
                         </tr>
+                        <?php $i=1; ?>
                         @foreach($movies as $movie)
+                        <?php $++; ?>
                         <tr>
-                            <td></td>
+                            <td>{{$i}}</td>
                             <td>
                             <img src="{{asset("uploads/movies/".$movie->image)}}" height="100px" width="75px" alt="{{$movie->title}}">
                             </td>
