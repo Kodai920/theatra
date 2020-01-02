@@ -12,9 +12,18 @@
                         <tr>
                             <th>No.</th> <th></th> <th>タイトル</th> <th>投稿数</th>
                         </tr>
+                        @foreach($movies as $movie)
                         <tr>
-                            <td></td> <td></td> <td></td> <td></td>
+                            <td>
+                                @for($i=1; $i<=10; $i++)
+                                {{$i}}
+                                @endfor
+                            </td>
+                            <td>{{$movie->image}}</td>
+                            <td>{{$movie->title}}</td>
+                            <td>{{$movie->reviews->count()}}</td>
                         </tr>
+                        @endforeach
                     </table>
                 </div>
             </div>
