@@ -25,23 +25,12 @@
                 <p>{{$movie->about}}</p>
                 </div>
 
-                {{-- <div class="my-5">
+                <div class="my-5">
                     <h3>みんなの評価</h3>
-                    <input name="star" id="star-rating-demo" value="
-                    {{$star = avg('star',['id'=>$movie->id])}}
-                    " type="number" class="rating" min=0 max=5.0 step=0.1 data-size="lg">
-                </div> --}}
+                    <input name="star" id="star-rating-demo" value="{{avg($review->star)}}" type="number" class="rating" min=0 max=5.0 step=0.1 data-size="lg">
+                </div>
 
                 @if(Auth::check())
-                {{-- @foreach($reviews as $review) --}}
-                    {{-- <a href="{{isset($user_reviews)?
-                    @foreach($movie_reviews as $review)
-                        @foreach($user_reviews as $u_review)
-                            @if($review->id == $u_review->id)
-                                route('reviews.edit',['id' => $review_id])
-                            @endif
-                        @endforeach
-                    @endforeach --}}
                     <a href="{{route('review.create',['id' => $movie->id])}}"
                     class="btn btn-success btn-block btn-lg">レビューを書く</a>
                 @endif
