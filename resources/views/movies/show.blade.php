@@ -32,7 +32,7 @@
                     <h3>みんなの評価</h3>
                     <p><strong> レーティング : </strong><i class="fas fa-star"></i>
                     @foreach($movie_reviews as $review)
-                    {{ $review }}
+                    {{ $review->star->get() }}
                     @endforeach
                     </p>
                 </div>
