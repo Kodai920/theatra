@@ -31,9 +31,10 @@
                 <div class="my-5 avg-ovral-rtng">
                     <h3>みんなの評価</h3>
                     <p><strong> レーティング : </strong><i class="fas fa-star"></i>
-                    @foreach($movie_reviews as $review)
-                    {{ $review->star->get() }}
-                    @endforeach
+                        {{ $movie->ratings->avg('star')}}
+                    {{-- @foreach($movie_reviews as $review)
+                    {{ $review-> }}
+                    @endforeach --}}
                     </p>
                 </div>
 
