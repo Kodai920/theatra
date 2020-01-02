@@ -25,10 +25,9 @@
                 <p>{{$movie->about}}</p>
                 </div>
 
-                <div class="my-5">
+                <div class="my-5 avg-ovral-rtng">
                     <h3>みんなの評価</h3>
                     <input id="avg-ovral-field" value="0" type="number" class="rating" min=0 max=5.0 step=0.1 data-size="xs" data-stars="5" data-show-clear="false" data-show-caption="false">
-                    {{-- <input name="star" id="star-rating-demo" value="{{$review->star}}" type="number" class="rating" min=0 max=5.0 step=0.1 data-size="lg"> --}}
                 </div>
 
                 @if(Auth::check())
@@ -78,9 +77,6 @@
             <strong>投稿日 : </strong>{{$review->created_at->format('Y年m月d日')}}<br>
             <strong>評価 : </strong><i class="fas fa-star"></i> {{$review->star}}
             <div>
-                {{-- <div class="text-right mb-2">いいね！
-                    <span class="badge badge-pill badge-success">{{ $count_favorite_users }}</span>
-                </div> --}}
                 @if (Auth::user()->is_favorite($review->id))
                     <form action="{{route('favorites.unfavorite', ['id' => $review->id])}}" method="post">
                         @csrf

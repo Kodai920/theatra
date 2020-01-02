@@ -40,7 +40,7 @@
     </div>
     @include('inc.footer')
     </div>
-    
+
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
     <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-star-rating/4.0.6/js/star-rating.min.js" type="text/javascript"></script>
@@ -52,6 +52,5 @@
         @if(Session::has('info'))
         toastr.info(" {{Session::get('info')}} ")
         @endif
-  
 </body>
 </html>
