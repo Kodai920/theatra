@@ -14,7 +14,7 @@ class RankController extends Controller
         $movies = Movie::all();
         $reviews = Review::all();
 
-        return view('rank')->with('movie',$movie)
+        return view('rank')->with('movies',$movies)
                            ->with('reviews',$reviews);
     }
 }
