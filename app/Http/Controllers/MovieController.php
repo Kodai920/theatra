@@ -90,20 +90,12 @@ class MovieController extends Controller
         $category = Category::all();
         $country = Country::all();
         $user = Auth::user();
-        //$review_id = $movie->review->id;
-        //dd($review_id);
         $user_reviews = User::find($user->id)->reviews;
         $movie_reviews = Movie::find($movie->id)->reviews;
-       // $review = Review::where('movie_id','==',$movie->id)->get();
        $review = Review::all();
-       //いいね機能
-    //    $count_favorite_users = $review->favorite_users()->count();
 
-    //    $data=[
-    //            'count_favorite_users'=>$count_favorite_users,
-    //        ];
         $movie_country = Movie::find($movie->id)->country;
-        
+
         return view('movies.show')->with('movie',$movie)
                                   ->with('category',$category)
                                   ->with('country',$country)
@@ -111,7 +103,6 @@ class MovieController extends Controller
                                   ->with('movie_reviews',$movie_reviews)
                                   ->with('movie_country',$movie_country)
                                   ->with('user',$user);
-                                //   ->with('movies.show',$data);
     }
 
     /**
