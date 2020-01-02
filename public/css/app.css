@@ -11693,10 +11693,10 @@ h2{
 	margin-left: -100%;
 }
 
-.rank-color tr:nth-child(even) {
-  background: #F9F9F9;
-  }
+/* .rank-color tr:nth-child(even) {
+  ba
+  } */
 
 .rank-color tr:nth-child(odd) {
-  background: #F0FAE2;
+  background: #F2F2F2;
   }

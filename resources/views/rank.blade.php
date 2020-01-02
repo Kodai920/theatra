@@ -19,7 +19,7 @@
                 <h4 class="card-header">投稿数ランキング</h4>
                 <div class="card-body">
                     <table class="rank-color">
-                        <tr>
+                        <tr class="rank-header">
                             <th>No.</th> <th></th> <th>タイトル</th> <th>投稿数</th>
                         </tr>
                         @foreach($movies->sortBy('') as $movie)
