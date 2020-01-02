@@ -23,4 +23,10 @@ class Movie extends Model
     public function reviews(){
         return $this->hasMany('App\Review');
     }
+
+    public function favorite_users()
+    {
+        return $this->belongsToMany(User::class,'favorites','review_id','user_id')->withTimestamps();
+    }
+
 }

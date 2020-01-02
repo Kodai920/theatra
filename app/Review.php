@@ -22,6 +22,6 @@ class Review extends Model
 
     public function favorite_users()
     {
-            return $this->belongsToMany(User::class,'favorites','review_id','user_id')->withTimestamps();
+        return $this->belongsToMany(User::class,'favorites','review_id','user_id')->withTimestamps();
     }
 }
