@@ -18,7 +18,7 @@
                         </tr>
                         <?php $i=1; ?>
                         @foreach($movies as $movie)
-                        <?php $++; ?>
+                        <?php $i++; ?>
                         <tr>
                             <td>{{$i}}</td>
                             <td>
