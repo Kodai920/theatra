@@ -18,7 +18,7 @@
             <div class="cp_tabpanel card pt-0">
                 <h4 class="card-header">投稿数ランキング</h4>
                 <div class="card-body">
-                    <table border="1" rules="rows" class="rank-color mx-auto" width="80%">
+                    <table class="rank-color mx-auto" width="100%">
                         <tr class="rank-header">
                             <th>No.</th>
                             <th></th>
