@@ -14,7 +14,7 @@
                             <th>No.</th>
                             <th></th>
                             <th>タイトル</th>
-                            <th>投稿数</th>
+                            <th>みんなの評価</th>
                         </tr>
                         @foreach($movies as $movie)
                         <tr>
