@@ -11445,6 +11445,7 @@ transition: all 250ms ease-in-out 0s;
   padding-bottom: 120px;/*←footerの高さ*/
   box-sizing: border-box;/*←全て含めてmin-height:100vhに*/
   display: flex;
+  flex: 1;
 }
 
 footer{
@@ -11452,7 +11453,6 @@ footer{
   height: 120px;
   padding: 30px 0;
   bottom: 0; /*下に固定*/
-  flex: 1;
   position: absolute;
 }
 
