@@ -11444,6 +11444,7 @@ transition: all 250ms ease-in-out 0s;
   position: relative;/*←相対位置*/
   padding-bottom: 120px;/*←footerの高さ*/
   box-sizing: border-box;/*←全て含めてmin-height:100vhに*/
+  display: flex;
 }
 
 footer{
@@ -11452,7 +11453,7 @@ footer{
   padding: 30px 0;
   bottom: 0; /*下に固定*/
   flex: 1;
-  /* position: absolute; */
+  position: absolute;
 }
 
 .para{
