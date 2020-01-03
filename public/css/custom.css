@@ -18,18 +18,3 @@ starrating > input {display: none;}  /* Remove radio buttons */
 
 .starrating > input:hover ~ label
 { color: #ffca08 ;  } /* Set yellow color when star hover */
-
-footer{
-  width: 100%;
-  padding: 30px 0 0;
-  bottom: 0; /*下に固定*/
-  flex: 1;
-  position: fixed;
-}
-
-.app{
-  min-height: 100vh;
-  position: relative;/*←相対位置*/
-  padding-bottom: 120px;/*←footerの高さ*/
-  box-sizing: border-box;/*←全て含めてmin-height:100vhに*/
-}

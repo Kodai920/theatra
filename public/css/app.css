@@ -11451,8 +11451,7 @@ footer{
   padding: 30px 0 0;
   bottom: 0; /*下に固定*/
   flex: 1;
-  position: fixed;
-  bottom: 0;
+  /* position: fixed; */
 }
 
 .para{
