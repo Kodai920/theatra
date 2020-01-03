@@ -17,7 +17,7 @@
                             <th>みんなの評価</th>
                         </tr>
                         <?php $i=0; ?>
-                        @foreach($movies as $movie)
+                        @foreach($movies_by_rating as $movie)
                         <?php $i++; ?>
                         <tr>
                             <td class="text-center"><strong>{{$i}}</strong></td>
@@ -46,7 +46,7 @@
                             <th>投稿数</th>
                         </tr>
                         <?php $i=0; ?>
-                        @foreach($movies as $movie)
+                        @foreach($movies_by_review as $movie)
                         <?php $i++; ?>
                         <tr>
                             <td class="text-center"><strong>{{$i}}</strong></td>
