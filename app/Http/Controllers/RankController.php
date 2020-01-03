@@ -11,8 +11,8 @@ class RankController extends Controller
 
     public function index(){
 
-        $revies_count = $movies->reviews->count();
-        $movies = Movie::orderBy($revies_count,'desc')->get();
+        $reviews_count = $movie->reviews->count();
+        $movies = Movie::orderBy($reviews_count,'desc')->get();
         $reviews = Review::all();
 
         return view('rank')->with('movies',$movies)
