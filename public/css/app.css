@@ -11446,15 +11446,6 @@ transition: all 250ms ease-in-out 0s;
   box-sizing: border-box;/*←全て含めてmin-height:100vhに*/
 }
 
-footer{
-  width: 100%;
-  padding: 30px 0 0;
-  bottom: 0; /*下に固定*/
-  flex: 1;
-  position: fixed;
-  bottom: 0;
-}
-
 .para{
   color: #E5E5E5;
 }
