@@ -19,10 +19,11 @@ class RankController extends Controller
         $movies_by_rating = Movie::with('reviews')->get()->sortBy(function($movie){
             return $movie->reviews->avg('star');
         },SORT_REGULAR,true);
+
         $reviews = Review::all();
 
-        return view('rank')->with('movies',$movies_by_review)
-                           ->with('movies',$movies_by_rating)
+        return view('rank')->with('movies_by_review',$movies_by_review)
+                           ->with('movies_by_rating',$movies_by_rating)
                            ->with('reviews',$reviews);
     }
 }
