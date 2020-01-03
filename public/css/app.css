@@ -11449,10 +11449,10 @@ transition: all 250ms ease-in-out 0s;
 footer{
   width: 100%;
   height: 120px;
-  padding: 30px 0 0;
+  padding: 30px 0;
   bottom: 0; /*下に固定*/
-  flex: 1;
-  position: fixed;
+  /* flex: 1; */
+  position: absolute;
 }
 
 .para{
