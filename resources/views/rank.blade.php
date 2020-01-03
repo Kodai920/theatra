@@ -25,7 +25,7 @@
                             <img class="d-block mx-auto" src="{{asset("uploads/movies/".$movie->image)}}" height="100px" width="75px" alt="{{$movie->title}}">
                             </td>
                             <td>{{$movie->title}}</td>
-                            <td>{{ $movie->reviews->avg('star')}}</td>
+                            <td>{{ round($movie->reviews->avg('star'),2)}}</td>
                         </tr>
                         @endforeach
                     </table>
