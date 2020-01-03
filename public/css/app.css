@@ -11441,17 +11441,18 @@ transition: all 250ms ease-in-out 0s;
 
 .app{
   min-height: 100vh;
-  position: relative;
+  position: relative;/*←相対位置*/
   padding-bottom: 120px;/*←footerの高さ*/
   box-sizing: border-box;/*←全て含めてmin-height:100vhに*/
 }
 
 footer{
   width: 100%;
-  padding: 30px 0;
+  padding: 30px 0 0;
   bottom: 0; /*下に固定*/
-  position: absolute;
   flex: 1;
+  position: fixed;
+  bottom: 0;
 }
 
 .para{
