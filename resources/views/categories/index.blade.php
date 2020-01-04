@@ -4,7 +4,9 @@
 
 <div class="card">
     <div class="card-header">カテゴリ一覧
+        @if(Auth::user()->admin)
         <a class="btn btn-info float-right" href="{{route('categories.create')}}">新規カテゴリ</a>
+        @endif
     </div>
     <div class="card-body">
         <table class="table table-striped">
@@ -22,7 +24,8 @@
                     </a>
                     <p class="float-right">({{$category->movies->count()}})</p>
                 </td>
-                {{-- <td>
+                @if(Auth::user()->admin)
+                <td>
                     <a href=" {{route('categories.edit',[$category->id])}} " class="btn btn-info">Edit</a>
                 </td>
                 <td>
@@ -31,7 +34,8 @@
                     @method('DELETE')
                     <button type="submit" class="btn btn-sm btn-danger">Delete</button>
                     </form>
-                </td> --}}
+                </td>
+                @endif
                 </tr>
                 @endforeach
                 @else
