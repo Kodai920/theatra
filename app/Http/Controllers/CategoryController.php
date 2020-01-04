@@ -49,7 +49,7 @@ class CategoryController extends Controller
         $category->save();
 
         Session::flash('success','カテゴリ作成完了');
-        return redirect()->route('categories.index');
+        return redirect()->route('categories.create');
     }
 
     /**
