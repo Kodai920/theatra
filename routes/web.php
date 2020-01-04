@@ -28,15 +28,13 @@ Route::resource('posts','PostController');
 
 Route::resource('reviews','ReviewController');
 
+Route::resource('movies','MovieController');
+
+Route::resource('categories','CategoryController');
+
+Route::resource('countries','CountryController');
+
 Route::group(['middleware' => 'auth'],function(){
-
-    Route::resource('movies','MovieController');
-
-    Route::post('movies/movie', 'MovieController@movieMovie')->name('movies.movie');
-
-    Route::resource('categories','CategoryController');
-
-    Route::resource('countries','CountryController');
 
     Route::resource('profiles','ProfileController');
 
