@@ -22,7 +22,7 @@
                     <a href="{{route('categories.show',[$category->id])}}">
                         {{$category->name}}
                     </a>
-                    <p class="float-right">({{$category->movies->count()}})</p>
+                    <p class="float-right">( {{$category->movies->count()}} )</p>
                 </td>
                 @if(Auth::user()->admin)
                 <td>
