@@ -24,7 +24,7 @@
                         </li>
                     @if(Auth::check())
                         <li class="nav-item">
-                            <a class="nav-link" href="{{route('rank')}}">マイページ</a>
+                            <a class="nav-link" href="{{route('rank')}}">ランキング</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="{{route('reviews.index')}}">マイページ</a>
