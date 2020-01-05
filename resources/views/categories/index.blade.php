@@ -24,7 +24,7 @@
                     </a>
                     <p class="float-right">( {{$category->movies->count()}} )</p>
                 </td>
-                @if(Auth::user()->admin)
+                {{-- @if(Auth::user()->admin)
                 <td>
                     <a href=" {{route('categories.edit',[$category->id])}} " class="btn btn-info">Edit</a>
                 </td>
@@ -35,7 +35,7 @@
                     <button type="submit" class="btn btn-sm btn-danger">Delete</button>
                     </form>
                 </td>
-                @endif
+                @endif --}}
                 </tr>
                 @endforeach
                 @else
