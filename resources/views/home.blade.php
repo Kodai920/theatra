@@ -32,7 +32,7 @@
     @include('inc.search')
     <div class="wrapper">
         <div class="home-image">
-            <h1 class="home-text">Yogee New Waves</h1>
+            <h1 class="home-text">人生を変える映画に出会おう</h1>
         </div>
         <div class="container">
 
