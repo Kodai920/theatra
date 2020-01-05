@@ -54,7 +54,7 @@
         @endif
 
         <div class="mt-5 overflow-auto text-center">
-        <h2 class="text-center">{{$movies->count()}}本の映画から自由に検索！</h2><br>
+        <h2 class="text-center">最新作から名作まで{{$movies->count()}}作品</h2><br>
             @foreach($movies->sortByDesc('year') as $movie)
             @if($loop->index <= 4)
                 <div id="movie-image">
