@@ -21,25 +21,25 @@
         <h5 class="widget-title">Quick Links<span></span></h5>
         <ul class="thumbnail-widget">
         <li>
-        <div class="thumb-content"><a href="#.">ホーム</a></div>
+        <div class="thumb-content"><a href="{{route('home')}}">ホーム</a></div>
         </li>
         <li>
-        <div class="thumb-content"><a href="#.">タイムライン</a></div>
+        <div class="thumb-content"><a href="#">タイムライン</a></div>
         </li>
         <li>
-        <div class="thumb-content"><a href="#.">カテゴリ一覧</a></div>
+        <div class="thumb-content"><a href="{{route('categories.index')}}">カテゴリ一覧</a></div>
         </li>
         <li>
-        <div class="thumb-content"><a href="#.">記事一覧</a></div>
+        <div class="thumb-content"><a href="{{route('countries.index')}}">製作国一覧</a></div>
         </li>
         <li>
-        <div class="thumb-content"><a href="#.">マイページ</a></div>
+        <div class="thumb-content"><a href="{{route('reviews.index')}}">マイページ</a></div>
         </li>
         <li>
         <div class="thumb-content"><a href="{{route('question')}}">よくある質問</a></div>
         </li>
         <li>
-        <div class="thumb-content"><a href="#.">お問い合わせ</a></div>
+        <div class="thumb-content"><a href="{{route('contacts.index')}}">お問い合わせ</a></div>
         </li>
         </ul>
         </div>
