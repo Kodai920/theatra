@@ -11440,21 +11440,12 @@ transition: all 250ms ease-in-out 0s;
 }
 
 .app{
-  /* min-height: 100vh;
-  position: relative;
-  padding-bottom: 120px;
-  box-sizing: border-box; */
   display: flex;
   flex-direction: column;
   min-height: 100vh;
 }
 
 footer{
-  /* width: 100%;
-  padding: 30px 0 0;
-  bottom: 0;
-  flex: 1;
-  position: absolute; */
   margin-top: auto;
 }
 
@@ -11532,7 +11523,7 @@ h2{
 }
 
 #movie-image img:hover{
-    opacity: 0.6;	/* 小さくするほど暗くなる*/
+    opacity: 0.6;
 }
 
 .movie-detail-info{
