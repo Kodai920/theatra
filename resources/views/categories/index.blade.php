@@ -4,9 +4,9 @@
 
 <div class="card">
     <div class="card-header">カテゴリ一覧
-        @if(Auth::user()->admin)
+        {{-- @if(Auth::user()->admin)
         <a class="btn btn-info float-right" href="{{route('categories.create')}}">新規カテゴリ</a>
-        @endif
+        @endif --}}
     </div>
     <div class="card-body">
         <table class="table table-striped">
