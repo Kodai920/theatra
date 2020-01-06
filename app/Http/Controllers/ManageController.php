@@ -7,6 +7,7 @@ use App\Movie;
 use App\Post;
 use App\Review;
 use App\User;
+use Auth;
 
 class ManageController extends Controller
 {
