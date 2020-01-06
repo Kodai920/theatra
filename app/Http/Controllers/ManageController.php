@@ -8,17 +8,17 @@ use App\Post;
 use App\Review;
 use App\User;
 
-class AdminController extends Controller
+class ManageController extends Controller
 {
-    // /**
-    //  * Create a new controller instance.
-    //  *
-    //  * @return void
-    //  */
-    // public function __construct()
-    // {
-    //     $this->middleware('admin')->except(['index']);
-    // }
+    /**
+     * Create a new controller instance.
+     *
+     * @return void
+     */
+    public function __construct()
+    {
+        $this->middleware('manage')->except(['index']);
+    }
 
     /**
      * Show the application dashboard.
@@ -31,7 +31,7 @@ class AdminController extends Controller
         $movies = Movie::all();
         $reviews = Review::all();
         $posts = Post::all();
-        return view('admin')
+        return view('manage')
                            ->with('movies',$movies)
                            ->with('user',$user)
                            ->with('post',$post)

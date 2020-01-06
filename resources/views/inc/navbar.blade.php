@@ -37,7 +37,7 @@
                 <!-- Authentication Links -->
                 @if(Auth::user()->admin)
                 <li class="nav-item">
-                    <a class="nav-link" href="{{route('admin')}}">管理画面</a>
+                    <a class="nav-link" href="{{route('manage')}}">管理画面</a>
                 </li>
                 @endif
                 @guest
