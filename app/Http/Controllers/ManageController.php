@@ -35,7 +35,7 @@ class ManageController extends Controller
         return view('manage')
                            ->with('movies',$movies)
                            ->with('user',$user)
-                           ->with('post',$post)
+                           ->with('posts',$posts)
                            ->with('reviews',$reviews);
     }
 }
