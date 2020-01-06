@@ -24,6 +24,8 @@ Route::get('/question', 'QuestionController@index')->name('question');
 
 Route::get('/rank', 'RankController@index')->name('rank');
 
+Route::get('/admin', 'AdminController@index')->name('admin');
+
 Route::resource('posts','PostController');
 
 Route::resource('reviews','ReviewController');
