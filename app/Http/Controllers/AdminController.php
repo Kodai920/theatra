@@ -27,13 +27,14 @@ class AdminController extends Controller
      */
     public function index()
     {
-        $user = Auth::user();
-        $movies = Movie::all();
-        $reviews = Review::all();
-        $posts = Post::all();
-        return view('admin')->with('movies',$movies)
-                           ->with('user',$user)
-                           ->with('post',$post)
-                           ->with('reviews',$reviews);
+        // $user = Auth::user();
+        // $movies = Movie::all();
+        // $reviews = Review::all();
+        // $posts = Post::all();
+        return view('admin');
+                        //    ->with('movies',$movies)
+                        //    ->with('user',$user)
+                        //    ->with('post',$post)
+                        //    ->with('reviews',$reviews);
     }
 }
