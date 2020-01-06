@@ -18,7 +18,7 @@ class ManageController extends Controller
      */
     public function __construct()
     {
-        $this->middleware('manage')->except(['index']);
+        $this->middleware('admin')->except(['index']);
     }
 
     /**
