@@ -10,15 +10,15 @@ use App\User;
 
 class AdminController extends Controller
 {
-    /**
-     * Create a new controller instance.
-     *
-     * @return void
-     */
-    public function __construct()
-    {
-        $this->middleware('admin')->except(['index']);
-    }
+    // /**
+    //  * Create a new controller instance.
+    //  *
+    //  * @return void
+    //  */
+    // public function __construct()
+    // {
+    //     $this->middleware('admin')->except(['index']);
+    // }
 
     /**
      * Show the application dashboard.
@@ -27,14 +27,14 @@ class AdminController extends Controller
      */
     public function index()
     {
-        // $user = Auth::user();
-        // $movies = Movie::all();
-        // $reviews = Review::all();
-        // $posts = Post::all();
-        return view('admin');
-                        //    ->with('movies',$movies)
-                        //    ->with('user',$user)
-                        //    ->with('post',$post)
-                        //    ->with('reviews',$reviews);
+        $user = Auth::user();
+        $movies = Movie::all();
+        $reviews = Review::all();
+        $posts = Post::all();
+        return view('admin')
+                           ->with('movies',$movies)
+                           ->with('user',$user)
+                           ->with('post',$post)
+                           ->with('reviews',$reviews);
     }
 }
