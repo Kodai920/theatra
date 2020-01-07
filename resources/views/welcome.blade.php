@@ -39,7 +39,6 @@
             <p class="text-center my-5 function">NETFLIXに特化したレビュー投稿サイトです。<br>NETFLIXの映画やドラマを検索したり、記録したりできます。</p>
         </div>
         <hr width="75%" color="#131313">
-     <div style="background-color:gray;">
         <div class="container my-5">
             <h2 class="text-center my-3">THEATRAにできること</h2>
             <div class="row my-5">
@@ -57,7 +56,6 @@
                 </div>
             </div>
         </div>
-    </div>
         <hr width="75%" color="#131313">
 
         <div class="container my-5">
