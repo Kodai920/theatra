@@ -35,8 +35,7 @@
             <a href="{{ route('register') }}" class="btn btn-lg btn-register">いますぐ始める <i class="fas fa-sign-out-alt"></i></a>
         </div>
 
-        <div class="mt-5 overflow-auto text-center">
-            <h2 class="text-center">最新作から名作まで{{$movies->count()}}作品</h2><br>
+        <div class="container mt-5 overflow-auto text-center">
                 @foreach($movies->sortByDesc('year') as $movie)
                 @if($loop->index <= 4)
                     <div id="movie-image">
