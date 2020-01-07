@@ -48,7 +48,7 @@
                 </div>
                 <div class="col-md-4 text-center icons">
                     <img src="記事アイコン1 (1).png" alt="">
-                    <p class="function my-3">あなたの感想・評価を記録できる</p>
+                    <p class="function my-3">あなたの感想・評価を記録</p>
                 </div>
                 <div class="col-md-4 text-center icons">
                     <img src="お金を握り締める手のアイコン.png" alt="">
@@ -63,7 +63,7 @@
             <div class="row my-5">
                 <div class="col-md-4 text-center icons">
                     <img src="PCでのNETFLIX 無料アイコン素材 3.png" alt="">
-                    <p class="function my-3">Netflix専用のレビューサイト</p>
+                    <p class="function my-3">Netflix専門のレビューサイト</p>
                 </div>
                 <div class="col-md-4 text-center icons">
                     <img src="本棚アイコン (1).png" alt="">
