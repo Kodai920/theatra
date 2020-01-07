@@ -36,7 +36,7 @@
         </div>
         <div class="my-5">
             <h2 class="text-center">THEATRAとは</h2>
-            <p class="text-center my-5 function">NETFLIXに特化したレビュー投稿サイトです。<br>NETFLIXの映画やドラマを検索したり、記録したりできます。</p>
+            <p class="text-center my-5 function">NETFLIXに特化したレビュー投稿サイトです。<br>NETFLIXで配信されている映画の検索・感想の投稿が可能です。</p>
         </div>
         <hr width="75%" color="#131313">
         <div class="container my-5">
