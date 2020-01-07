@@ -35,16 +35,16 @@
             <a href="{{ route('register') }}" class="btn btn-lg btn-register">いますぐ始める <i class="fas fa-sign-out-alt"></i></a>
         </div>
 
-        <div class="container mt-5 overflow-auto text-center">
-                @foreach($movies->sortByDesc('year') as $movie)
-                @if($loop->index <= 4)
-                    <div id="movie-image">
-                        <a href="{{route('movies.show',[$movie->id])}}" class="float-left m-3">
-                        <img src="{{asset("uploads/movies/".$movie->image)}}" width="190px" height="285px" alt="{{$movie->title}}">
-                        </a>
-                    </div>
-                @endif
-                @endforeach
+        <div class="mt-5 overflow-auto text-center">
+            @foreach($movies->sortByDesc('year') as $movie)
+            @if($loop->index <= 6)
+                <div id="movie-image">
+                    <a href="{{route('movies.show',[$movie->id])}}" class="float-left m-3">
+                    <img src="{{asset("uploads/movies/".$movie->image)}}" width="190px" height="285px" alt="{{$movie->title}}">
+                    </a>
+                </div>
+            @endif
+            @endforeach
         </div>
 
         <div class="my-5">
