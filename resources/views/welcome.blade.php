@@ -40,7 +40,7 @@
             @if($loop->index <= 8)
                 <div id="movie-image">
                     <a href="{{route('movies.show',[$movie->id])}}" class="float-left m-3">
-                    <img src="{{asset("uploads/movies/".$movie->image)}}" width="180vw" height="290vw" alt="{{$movie->title}}">
+                    <img src="{{asset("uploads/movies/".$movie->image)}}" width="180rem" height="290rem" alt="{{$movie->title}}">
                     </a>
                 </div>
             @endif
