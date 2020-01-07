@@ -4848,7 +4848,6 @@ input[type=button].btn-block {
   content: "";
   background: no-repeat center center;
   background-size: 100% 100%;
-  color:#E5E5E5 !important;
 }
 
 @media (max-width: 575.98px) {
@@ -11479,7 +11478,7 @@ footer h5{
   font-weight: bold;
   font-family: 'Bebas Neue', cursive;
   color: #131313;
-  padding: 9vw ;
+  padding: 7vw ;
 }
 
 .home-image{
