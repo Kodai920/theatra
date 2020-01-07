@@ -46,8 +46,7 @@
                     </div>
                 @endif
                 @endforeach
-            </div><br>
-            <a href="{{route('movies.index')}}" class="btn btn-block btn-outline-dark mb-2" style="background-color:#131313; color:#E5E5E5;">すべての映画を見る</a><br>
+        </div>
 
         <div class="my-5">
             <h2 class="text-center">THEATRAとは</h2>
