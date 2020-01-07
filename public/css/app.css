@@ -11509,7 +11509,12 @@ footer h5{
 }
 
 .function{
-  font-size: 2vw;
+  font-size: 4vw;
+}
+
+.welcome-movie{
+  height: 15vw;
+  width: 10vw;
 }
 
 h2{
