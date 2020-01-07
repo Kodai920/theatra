@@ -40,7 +40,7 @@
         </div>
         <hr width="75%" color="#131313">
 
-        <div class="container my-5">
+        <div class="container my-5" style="background-color:#131313;">
             <h2 class="text-center my-3">THEATRAにできること</h2>
             <div class="row my-5">
                 <div class="col-4 text-center icons">
