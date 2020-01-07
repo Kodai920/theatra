@@ -35,11 +35,11 @@
             <a href="{{ route('register') }}" class="btn btn-lg btn-register">いますぐ始める <i class="fas fa-sign-out-alt"></i></a>
         </div>
 
-        <div class="mt-5 justify-content-center overflow-auto text-left" width="90%" >
+        <div class="mt-5 justify-content-center overflow-auto text-center" width="90%" >
             @foreach($movies->sortByDesc('year') as $movie)
             @if($loop->index <= 8)
                 <div id="movie-image">
-                    <a href="{{route('movies.show',[$movie->id])}}" class="float-center m-3">
+                    <a href="{{route('movies.show',[$movie->id])}}" class="float-left m-3">
                     <img src="{{asset("uploads/movies/".$movie->image)}}" width="180vw" height="290vw" alt="{{$movie->title}}">
                     </a>
                 </div>
