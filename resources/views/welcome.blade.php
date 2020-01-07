@@ -34,6 +34,21 @@
             <h1 class="welcome-text">さあ、最高のNETFLIXライフを。</h1>
             <a href="{{ route('register') }}" class="btn btn-lg btn-register">いますぐ始める <i class="fas fa-sign-out-alt"></i></a>
         </div>
+
+        <div class="mt-5 overflow-auto text-center">
+            <h2 class="text-center">最新作から名作まで{{$movies->count()}}作品</h2><br>
+                @foreach($movies->sortByDesc('year') as $movie)
+                @if($loop->index <= 4)
+                    <div id="movie-image">
+                        <a href="{{route('movies.show',[$movie->id])}}" class="float-left m-3">
+                        <img src="{{asset("uploads/movies/".$movie->image)}}" width="190px" height="285px" alt="{{$movie->title}}">
+                        </a>
+                    </div>
+                @endif
+                @endforeach
+            </div><br>
+            <a href="{{route('movies.index')}}" class="btn btn-block btn-outline-dark mb-2" style="background-color:#131313; color:#E5E5E5;">すべての映画を見る</a><br>
+
         <div class="my-5">
             <h2 class="text-center">THEATRAとは</h2>
             <p class="text-center my-5 function">NETFLIXに特化したレビュー投稿サイトです。<br>NETFLIXで配信されている映画の検索・感想の投稿が可能です。</p>
