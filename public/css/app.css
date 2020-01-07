@@ -4833,6 +4833,7 @@ input[type=button].btn-block {
   background-color: transparent;
   border: 1px solid transparent;
   border-radius: 0.25rem;
+  color: #e5e5e5;
 }
 
 .navbar-toggler:hover,
@@ -4848,7 +4849,6 @@ input[type=button].btn-block {
   content: "";
   background: no-repeat center center;
   background-size: 100% 100%;
-  color: #e5e5e5;
 }
 
 @media (max-width: 575.98px) {
