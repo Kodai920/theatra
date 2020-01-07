@@ -35,7 +35,7 @@
             <a href="{{ route('register') }}" class="btn btn-lg btn-register">いますぐ始める <i class="fas fa-sign-out-alt"></i></a>
         </div>
 
-        <div class="mt-5 justify-content-center overflow-auto text-center" width="90%" >
+        <div class="mt-5 justify-content-center overflow-auto text-left" width="90%" >
             @foreach($movies->sortByDesc('year') as $movie)
             @if($loop->index <= 8)
                 <div id="movie-image">
