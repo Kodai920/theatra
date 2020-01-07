@@ -39,7 +39,7 @@
             @foreach($movies->sortByDesc('year') as $movie)
             @if($loop->index <= 8)
                 <div id="movie-image">
-                    <a href="{{route('movies.show',[$movie->id])}}" class="float-left m-3">
+                    <a href="{{route('movies.show',[$movie->id])}}" class="float-left m-2">
                     <img src="{{asset("uploads/movies/".$movie->image)}}" class="welcome-movie" alt="{{$movie->title}}">
                     </a>
                 </div>
