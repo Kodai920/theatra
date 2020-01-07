@@ -40,7 +40,7 @@
                     <li class="list-group-item">
                         <a href="#">会員情報</a>
                     </li>
-                    <li class="list-group-item">
+                    <li class="list-group-item"></li>
                         <a href="#">映画情報</a>
                     </li>
                     <li class="list-group-item">
