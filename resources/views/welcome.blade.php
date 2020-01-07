@@ -42,15 +42,15 @@
         <div class="container my-5">
             <h2 class="text-center my-3">THEATRAにできること</h2>
             <div class="row my-5">
-                <div class="col-4 text-center icons">
+                <div class="col-md-4 text-center icons">
                     <img src="サーチアイコン (2).png" alt="">
                     <p class="function my-3">好きな作品が見つかる検索機能</p>
                 </div>
-                <div class="col-4 text-center icons">
+                <div class="col-md-4 text-center icons">
                     <img src="記事アイコン1 (1).png" alt="">
                     <p class="function my-3">あなたの感想・評価を記録できる</p>
                 </div>
-                <div class="col-4 text-center icons">
+                <div class="col-md-4 text-center icons">
                     <img src="お金を握り締める手のアイコン.png" alt="">
                     <p class="function my-3">どれだけ投稿しても完全無料</p>
                 </div>
@@ -61,15 +61,15 @@
         <div class="container my-5">
             <h2 class="text-center my-3">THEATRAの特徴</h2>
             <div class="row my-5">
-                <div class="col-4 text-center icons">
+                <div class="col-md-4 text-center icons">
                     <img src="PCでのNETFLIX 無料アイコン素材 3.png" alt="">
                     <p class="function my-3">Netflix専用のレビューサイト</p>
                 </div>
-                <div class="col-4 text-center icons">
+                <div class="col-md-4 text-center icons">
                     <img src="本棚アイコン (1).png" alt="">
                     <p class="function my-3">多彩なカテゴリから検索</p>
                 </div>
-                <div class="col-4 text-center icons">
+                <div class="col-md-4 text-center icons">
                     <img src="ゴージャスな王冠の無料アイコン.png" alt="">
                     <p class="function my-3">ここだけの人気作品ランキング</p>
                 </div>
@@ -80,11 +80,11 @@
         <div class="container my-5">
             <h2 class="text-center my-3">充実の情報量</h2>
             <div class="row my-5">
-                <div class="col-6 text-center icons">
+                <div class="col-md-6 text-center icons">
                     <img src="BLOGアイコン.png" alt="">
                     <p class="function my-3">Netflix関連の記事更新中</p>
                 </div>
-                <div class="col-6 text-center icons">
+                <div class="col-md-6 text-center icons">
                     <img src="twitterのフリーアイコン素材.png" alt="">
                     <p class="function my-3">各種SNSでも情報発信</p>
                 </div>
