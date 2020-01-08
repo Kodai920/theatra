@@ -59,8 +59,8 @@
             </div>
             <div class="col-md-9 mb-3">
                     <div class="card">
-                            <div class="card-header">New Category</div>
-                        
+                            <div class="card-header">カテゴリを作る</div>
+
                             <div class="card-body">
                                 @if(count($errors) > 0)
                                 <ul class="list-group">
@@ -76,7 +76,7 @@
                                       @method('PUT')
                                     @endif
                                     <div class="form-group">
-                                        <label for="title">Category Name</label>
+                                        <label for="title">カテゴリ名</label>
                                         <input type="text" name="name" class="form-control">
                                     </div>
                                     <div class="form-group">
