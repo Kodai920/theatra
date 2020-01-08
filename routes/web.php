@@ -28,6 +28,10 @@ Route::get('/rank', 'RankController@index')->name('rank');
 
 Route::get('/manage', 'ManageController@index')->name('manage');
 
+Route::get('/info', 'InfoController@index')->name('info');
+
+Route::get('/member', 'MemberController@index')->name('member');
+
 Route::resource('posts','PostController');
 
 Route::resource('reviews','ReviewController');
