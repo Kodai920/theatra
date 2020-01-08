@@ -30,9 +30,9 @@
     <div id="app">
     @include('inc.navbar')
     @include('inc.search')
-    <div class="container py-4">
+    <div class="container py-5">
         <div class="row justify-content-center">
-            <div class="col-md-3 mb-3">
+            <div class="col-md-3 mb-5">
                 <ul class="list-group">
                     <li class="list-group-item">
                         <a href="{{route('manage')}}">ダッシュボード</a>
