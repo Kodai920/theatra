@@ -34,6 +34,7 @@
         <div class="row justify-content-center">
             <div class="col-md-3 mb-3">
                 <ul class="list-group">
+                    <h4>管理画面</h4>
                     <li class="list-group-item">
                         <a href="{{route('manage')}}">ダッシュボード</a>
                     </li>
