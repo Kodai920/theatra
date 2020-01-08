@@ -29,6 +29,7 @@
                     </tr>
                     @endforeach
                 </table>
+                    {{$movies->links()}}
             </div>
         </div>
 
