@@ -50,10 +50,10 @@
                         <a href="#">ブログ投稿</a>
                     </li>
                     <li class="list-group-item">
-                        <a href="#">カテゴリ追加</a>
+                        <a href="{{route('categories.create')}}">カテゴリ追加</a>
                     </li>
                     <li class="list-group-item">
-                        <a href="#">製作国追加</a>
+                        <a href="{{route('countries.create')}}">製作国追加</a>
                     </li>
                 </ul>
             </div>
