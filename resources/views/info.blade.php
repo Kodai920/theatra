@@ -30,7 +30,7 @@
                     @endforeach
                 </table>
             </div>
-            <div class="text-center mt-2">{{$movies->links()}}</div>
+            <div class="mx-auto">{{$movies->links()}}</div>
         </div>
 
 
