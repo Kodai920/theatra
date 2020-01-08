@@ -38,10 +38,10 @@
                         <a href="{{route('manage')}}">ダッシュボード</a>
                     </li>
                     <li class="list-group-item">
-                        <a href="#">会員情報</a>
+                        <a href="{{route('member')}}">会員情報</a>
                     </li>
                     <li class="list-group-item">
-                        <a href="#">映画情報</a>
+                        <a href="{{route('info')}}">映画情報</a>
                     </li>
                     <li class="list-group-item">
                         <a href="{{route('movies.create')}}">映画追加</a>
