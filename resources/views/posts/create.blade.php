@@ -23,7 +23,7 @@
         <div class="form-group">
             <label for="about">記事</label>
             <br>
-            <textarea name="about" class="form-control" rows="5"></textarea>
+            <textarea name="about" class="form-control" rows="30"></textarea>
         </div>
 
         <div class="form-group">
