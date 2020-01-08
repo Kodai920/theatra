@@ -44,10 +44,10 @@
                         <a href="#">映画情報</a>
                     </li>
                     <li class="list-group-item">
-                        <a href="{{ route('movies.create') }}">映画追加</a>
+                        <a href="{{route('movies.create')}}">映画追加</a>
                     </li>
                     <li class="list-group-item">
-                        <a href="#">ブログ投稿</a>
+                        <a href="{{route('posts.create')}}">ブログ投稿</a>
                     </li>
                     <li class="list-group-item">
                         <a href="{{route('categories.create')}}">カテゴリ追加</a>

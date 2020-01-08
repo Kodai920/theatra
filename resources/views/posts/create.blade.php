@@ -1,8 +1,8 @@
-@extends('layouts.app')
-@section('content')
+@extends('layouts.page')
+@section('page')
 
 <div class="card">
-<div class="card-header">新しい投稿</div>
+<div class="card-header">記事作成</div>
 
 <div class="card-body">
     @if(count($errors) > 0)
@@ -21,13 +21,13 @@
         </div>
 
         <div class="form-group">
-            <label for="about">感想</label>
+            <label for="about">記事</label>
             <br>
             <textarea name="about" class="form-control" rows="5"></textarea>
         </div>
 
         <div class="form-group">
-            <label for="about">画像</label>
+            <label for="about">アイキャッチ</label>
             <input type="file" name="featured" class="form-control-file">
         </div>
 
