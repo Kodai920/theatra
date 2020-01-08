@@ -17,7 +17,7 @@
             @foreach($user as $member)
             <?php $i++; ?>
             <tr>
-                <td class="text-center"><strong>{{$i}}</strong></td>
+                <td><strong>{{$i}}</strong></td>
                 <td>
                     {{$member->name}}
                 </td>
