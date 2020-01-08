@@ -23,6 +23,33 @@ class CountryController extends Controller
     }
 
         /**
+     * Show the form for creating a new resource.
+     *
+     * @return \Illuminate\Http\Response
+     */
+    public function create()
+    {
+        return view('countries.create');
+    }
+
+    /**
+     * Store a newly created resource in storage.
+     *
+     * @param  \Illuminate\Http\Request  $request
+     * @return \Illuminate\Http\Response
+     */
+    public function store(CreateCountryRequest $request)
+    {
+        $country = new Country;
+        $country->name = $request->name;
+        $country->save();
+
+        Session::flash('success','製作国作成完了');
+        return redirect()->route('countries.create');
+    }
+
+
+        /**
      * Display the specified resource.
      *
      * @param  int  $id
