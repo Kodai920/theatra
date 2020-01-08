@@ -11,9 +11,9 @@ use App\Review;
 class MemberController extends Controller
 {
     public function index(){
-        $users = Auth::user();
+        $user = Auth::user();
         $reviews = Review::all();
-        return view('member')->with('users',$users)
+        return view('member')->with('user',$user)
                              ->with('reviews',$reviews);
     }
 }

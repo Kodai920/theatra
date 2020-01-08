@@ -14,15 +14,16 @@
                 <th></th>
             </tr>
             <?php $i=0; ?>
-            @foreach($users as $user)
+            @foreach($user as $member)
             <?php $i++; ?>
             <tr>
                 <td class="text-center"><strong>{{$i}}</strong></td>
                 <td>
-                    {{$user->name}}
+                    {{$member->name}}
                 </td>
-                <td>{{$user->email}}</td>
-                <td>{{$user->reviews->count()}}</td>
+                <td>{{$member->email}}</td>
+                <td>{{$member->reviews->count()}}</td>
+                <td></td>
             </tr>
             @endforeach
         </table>
