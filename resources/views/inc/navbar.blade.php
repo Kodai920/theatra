@@ -73,11 +73,6 @@
                             <a class="dropdown-item" href="{{ route('contacts.index') }}">
                                 お問い合わせ
                             </a>
-                            @if(Auth::user()->admin)
-                            <a class="dropdown-item" href="{{ route('movies.create') }}">
-                                映画登録
-                            </a>
-                            @endif
                             @endif
                             <a class="dropdown-item" href="{{ route('logout') }}"
                                onclick="event.preventDefault();

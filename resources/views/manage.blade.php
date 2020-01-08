@@ -32,7 +32,7 @@
     @include('inc.search')
     <div class="container py-4">
         <div class="row justify-content-center">
-            <div class="col-md-4 mb-3">
+            <div class="col-md-3 mb-3">
                 <ul class="list-group">
                     <li class="list-group-item">
                         <a href="{{route('manage')}}">ダッシュボード</a>
@@ -44,7 +44,7 @@
                         <a href="#">映画情報</a>
                     </li>
                     <li class="list-group-item">
-                        <a href="#">映画追加</a>
+                        <a href="{{ route('movies.create') }}">映画追加</a>
                     </li>
                     <li class="list-group-item">
                         <a href="#">ブログ投稿</a>
@@ -57,7 +57,7 @@
                     </li>
                 </ul>
             </div>
-            <div class="col-md-8 mb-3">
+            <div class="col-md-9 mb-3">
             </div>
         </div>
     </div>
