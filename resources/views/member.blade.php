@@ -5,13 +5,13 @@
     <div class="card-header">会員情報</div>
 
     <div class="card-body">
-        <table class="rank-color mx-auto" width="90%">
+        <table class="rank-color mx-auto" width="100%">
             <tr class="rank-header">
                 <th>No.</th>
                 <th>ユーザ名</th>
                 <th>メールアドレス</th>
                 <th>投稿数</th>
-                <th></th>
+                <th>削除</th>
             </tr>
             <?php $i=0; ?>
             @foreach($user as $member)
@@ -23,7 +23,7 @@
                 </td>
                 <td>{{$member->email}}</td>
                 <td>{{$member->reviews->count()}}</td>
-                <td></td>
+                <td>削除</td>
             </tr>
             @endforeach
         </table>
