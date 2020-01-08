@@ -10,7 +10,7 @@ use App\Country;
 class InfoController extends Controller
 {
     public function index(){
-        $movies = Movie::all();
+        $movies = Movie::paginate(50);
         $reviews = Review::all();
         $country = Country::all();
         return view('info')->with('movies',$movies)
