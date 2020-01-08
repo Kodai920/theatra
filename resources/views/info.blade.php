@@ -20,7 +20,7 @@
                     <tr>
                         <td><strong>{{$i}}</strong></td>
                         <td>
-                            {{$info->name}}
+                            {{$info->title}}
                         </td>
                         <td>{{$info->year}}年</td>
                         <td>{{$info->country->name}}</td>
