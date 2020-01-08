@@ -13,7 +13,7 @@ class MemberController extends Controller
     public function index(){
         $users = Auth::user();
         $reviews = Review::all();
-        return view('member')->with('user',$user)
+        return view('member')->with('users',$users)
                              ->with('reviews',$reviews);
     }
 }
