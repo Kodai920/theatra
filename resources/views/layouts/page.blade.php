@@ -31,7 +31,7 @@
     @include('inc.navbar')
     @include('inc.search')
     <div class="container py-4">
-        <h2 class="text-center">管理画面</h2>
+        <h3 class="text-center">管理画面</h3>
         <div class="row justify-content-center">
             <div class="col-md-3 mb-3">
                 <ul class="list-group">
