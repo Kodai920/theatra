@@ -49603,8 +49603,8 @@ module.exports = __webpack_require__(/*! /Users/okabekodai/Desktop/theatra/resou
 $(function() {
   $('.question_txt').on("click", function() {
       var id = $(this).data('hoge');
-      $("#toggle_" + id).slideToggle(); 
-      $("#toggle_" + id).toggleClass("active"); 
+      $("#toggle_" + id).slideToggle();
+      $("#toggle_" + id).toggleClass("active");
       if($(this).next('.show_button').hasClass("closebutton")){
          $(this).next('.show_button').removeClass("closebutton");
       }else{
