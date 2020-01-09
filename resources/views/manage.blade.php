@@ -6,9 +6,9 @@
 
         <div class="card-body">
                 <div class="row">
-                <div class="col-md-4 text-center border border-dark rounded py-5 m-1">会員数 : {{$user->count()}}</div>
-                <div class="col-md-4 text-center border border-dark rounded py-5 m-1">投稿数 : {{$reviews->count()}}</div>
-                <div class="col-md-4 text-center border border-dark rounded py-5 m-1">映画数 : {{$movies->count()}}</div>
+                <div class="col-md-4 text-center border border-dark rounded py-5 px-3 m-2">会員数 : {{$user->count()}}</div>
+                <div class="col-md-4 text-center border border-dark rounded py-5 px-3 m-2">投稿数 : {{$reviews->count()}}</div>
+                <div class="col-md-4 text-center border border-dark rounded py-5 px-3 m-2">映画数 : {{$movies->count()}}</div>
                 </div>
         </div>
 </div>
