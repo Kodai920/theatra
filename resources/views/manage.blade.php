@@ -6,9 +6,9 @@
 
         <div class="card-body">
           <div class="row">
-            <div class="col-md-4">会員数 : {{$user->count()}}</div>
-            <div class="col-md-4">投稿数 : {{$reviews->count()}}</div>
-            <div class="col-md-4">映画数 : {{$movies->count()}}</div>
+            <div class="col-md-4 text-center">会員数 : {{$user->count()}}</div>
+            <div class="col-md-4 text-center">投稿数 : {{$reviews->count()}}</div>
+            <div class="col-md-4 text-center">映画数 : {{$movies->count()}}</div>
           </div>
         </div>
 </div>
