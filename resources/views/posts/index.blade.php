@@ -1,6 +1,7 @@
 @extends('layouts.app')
 @section('content')
 
+<h1 class="text-center">BLOG</h1>
 @foreach($posts as $post)
 <div class="row m-3">
 <div class="card col-md-5">
