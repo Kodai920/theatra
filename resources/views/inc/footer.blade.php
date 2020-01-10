@@ -11,7 +11,7 @@
         </p>
         <p class="para">
             NETFLIXに関する記事も更新<br>しております。<br>
-            <a class="btn my-3 text-center" href="#">記事一覧</a>
+            <a class="btn my-3 text-center" href="{{route('posts.index')}}">記事一覧</a>
         </p>
         </div>
         </div>
