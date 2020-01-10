@@ -2,9 +2,10 @@
 @section('content')
 
 <h1 class="text-center">BLOG</h1>
-@foreach($posts as $post)
 <div class="row m-3">
-<div class="card col-md-5">
+<div class="col-md-12">
+@foreach($posts as $post)
+<div class="card">
     <div class="card-body">
         <div class="text-center" style="color:gray;">
           {{$post->created_at->format('Y/m/d')}}
