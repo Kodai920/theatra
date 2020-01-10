@@ -11,8 +11,8 @@
         <div class="text-center">
           <h3>{{$post->title}}</h3>
         </div>
-        <div width="100%">
-          <img src="{{asset("uploads/posts/".$post->featured_img)}}" width="80px" height="80px"></td>
+        <div style="width:100%; height:120px;">
+          <img src="{{asset("uploads/posts/".$post->featured_img)}}">
         </div>
         <div>
           {{$post->about}}
