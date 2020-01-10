@@ -3,7 +3,7 @@
 
 @foreach($posts as $post)
 <div class="row">
-<div class="card col-md-4">
+<div class="card col-md-6">
     <div class="card-body">
         <div class="text-center" style="color:#131313;">
           {{$post->created_at->format('Y/m/d')}}
