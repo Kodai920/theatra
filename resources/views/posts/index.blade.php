@@ -17,7 +17,7 @@
         <div>
             {{$post->excerpt}}
         </div>
-        <div class="text-center">
+        <div class="text-center m-2">
           <a href="#" class="btn btn-secondary text-center">Read More</a>
         </div>
     </div>
