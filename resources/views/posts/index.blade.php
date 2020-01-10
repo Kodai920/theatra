@@ -5,13 +5,13 @@
 <div class="row">
 <div class="card col-md-4">
     <div class="card-body">
-        <div>
+        <div class="text-center">
           {{$post->created_at->format('Y/m/d')}}
         </div>
-        <div>
-          {{$post->title}}
+        <div class="text-center">
+          <h3>{{$post->title}}</h3>
         </div>
-        <div>
+        <div width="100%">
           <img src="{{asset("uploads/posts/".$post->featured_img)}}" width="80px" height="80px"></td>
         </div>
         <div>
