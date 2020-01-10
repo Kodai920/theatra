@@ -4,7 +4,7 @@
 <div class="card">
     <div class="card-body">
         <div class="text-center">
-            <a href="{{route('posts.index')}}" class="mr-auto btn btn-lg btn-light text-center border border-dark">Back</a>
+            <a href="{{route('posts.index')}}" class="mr-auto btn btn-light text-center border border-dark">Back</a>
             {{$post->created_at->format('Y/m/d')}}
         </div>
         <div class="text-center my-3">
