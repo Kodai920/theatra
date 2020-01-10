@@ -10,7 +10,7 @@
             <h2>{{$post->title}}</h2>
         </div>
         <div class="my-4">
-            <img src="{{asset("uploads/posts/".$post->featured_img)}}" width="100%" height="300px">
+            <img src="{{asset("uploads/posts/".$post->featured_img)}}" width="100%" height="400px">
         </div>
         <div>
             {{$post->about}}
