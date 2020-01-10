@@ -7,8 +7,7 @@
             {{$post->created_at->format(yyyy/mm/dd)}}
             {{$post->title}}
             <img src="{{asset("uploads/posts/".$post->featured_img)}}" width="80px" height="80px"></td>
-
-            {{$post->title}}
+            {{$post->about}}
     </div>
 </div>
 @endforeach
