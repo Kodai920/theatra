@@ -10,7 +10,7 @@
         <div class="text-center">
             {{$post->created_at->format('Y/m/d')}}
         </div>
-        <div class="text-center mt-4">
+        <div class="text-center mt-3">
             <h2>{{$post->title}}</h2>
         </div>
         <div class="my-5">
