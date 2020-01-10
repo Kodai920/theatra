@@ -4,12 +4,12 @@
 <h2 class="text-center">BLOG</h2>
 <div class="row">
 @foreach($posts as $post)
-<div class="card col-md-6 m-2">
+<div class="card col-md-5.5 m-2">
     <div class="card-body">
         <div class="text-center" style="color:gray;">
           {{$post->created_at->format('Y/m/d')}}
         </div>
-        <div class="text-center">
+        <div class="text-center my-3">
           <h3>{{$post->title}}</h3>
         </div>
         <div class="my-2">
