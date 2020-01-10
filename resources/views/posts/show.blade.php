@@ -1,7 +1,7 @@
 @extends('layouts.app')
 @section('content')
 
-<a href="{{route('posts.index')}}" class="float-left btn btn-light text-center border border-dark">Back</a>
+<a href="{{route('posts.index')}}" class="my-1 float-left btn btn-light text-center border border-dark">Back</a><br>
 <div class="card">
     <div class="card-body">
         <div class="text-center">
