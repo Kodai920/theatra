@@ -4,7 +4,7 @@
 <h2 class="text-center">BLOG</h2>
 <div class="row">
 @foreach($posts as $post)
-<div class="card col-md-5 m-5">
+<div class="card col-md-5 mx-4 my-3">
     <div class="card-body">
         <div class="text-center" style="color:gray;">
           {{$post->created_at->format('Y/m/d')}}
