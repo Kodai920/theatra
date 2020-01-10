@@ -2,7 +2,7 @@
 @section('content')
 
 <div class="my-1">
-<a href="{{route('posts.index')}}" class="float-left btn btn-light text-center border border-dark">Back</a>
+<a href="{{route('posts.index')}}" class="btn btn-light text-center border border-dark">Back</a>
 </div>
 
 <div class="card">
