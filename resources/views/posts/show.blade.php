@@ -4,7 +4,7 @@
 <div class="card">
     <div class="card-body">
         <div class="text-center">
-            {{$post->created_at('Y/m/d')}}
+            {{$post->created_at->format('Y/m/d')}}
         </div>
         <div class="textcenter">
             {{$post->title}}
