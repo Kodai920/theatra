@@ -23,8 +23,8 @@
           <a href="#" class="btn btn-secondary text-center">Read More</a>
         </div>
     </div>
-</div>
-</div>
 @endforeach
+</div>
+</div>
 
 @endsection
