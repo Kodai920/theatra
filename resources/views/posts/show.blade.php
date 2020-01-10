@@ -6,11 +6,11 @@
         <div class="text-center">
             {{$post->created_at->format('Y/m/d')}}
         </div>
-        <div class="textcenter">
-            {{$post->title}}
+        <div class="text-center">
+            <h2>{{$post->title}}</h2>
         </div>
-        <div class="">
-            <img src="{{asset("uploads/posts/".$post->featured_img)}}" width="100%" height="150px">
+        <div class="my-4">
+            <img src="{{asset("uploads/posts/".$post->featured_img)}}" width="100%" height="300px">
         </div>
         <div>
             {{$post->about}}
