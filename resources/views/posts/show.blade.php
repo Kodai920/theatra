@@ -9,10 +9,10 @@
         <div class="text-center my-3">
             <h2>{{$post->title}}</h2>
         </div>
-        <div class="my-4">
+        <div class="my-5">
             <img src="{{asset("uploads/posts/".$post->featured_img)}}" width="100%" height="400px">
         </div>
-        <div>
+        <div class="my-5">
             {{$post->about}}
         </div>
     </div>
