@@ -19,7 +19,7 @@
             {{$post->excerpt}}
         </div>
         <div class="text-center my-2">
-          <a href="{{route('movies.show',[$post->id])}}" class="btn btn-light text-center border border-dark">Read More</a>
+          <a href="{{route('posts.show',[$post->id])}}" class="btn btn-light text-center border border-dark">Read More</a>
         </div>
     </div>
 </div>
