@@ -2,8 +2,8 @@
 @section('content')
 
 @foreach($posts as $post)
-<div class="row m-2">
-<div class="card col-md-6">
+<div class="row m-3">
+<div class="card col-md-5">
     <div class="card-body">
         <div class="text-center" style="color:gray;">
           {{$post->created_at->format('Y/m/d')}}
