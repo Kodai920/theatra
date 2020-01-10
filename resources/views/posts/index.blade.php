@@ -13,12 +13,12 @@
         </div>
         <div style="width:100%; height:100px;">
           <img src="{{asset("uploads/posts/".$post->featured_img)}}">
-        </div>
+        </div><br>
         <div>
             {{$post->excerpt}}
         </div>
         <div>
-            <a href="" class="btn btn-light text-center mx-auto">Read More</a>
+          <a href="" class="btn btn-light text-center mx-auto">Read More</a>
         </div>
     </div>
 </div>
