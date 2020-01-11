@@ -2,7 +2,7 @@
 @section('page')
 
 <div class="card">
-    <div class="card-header">会員情報</div>
+    <div class="card-header">ブログ一覧</div>
 
     <div class="card-body">
         <table class="rank-color mx-auto" width="100%">
@@ -22,8 +22,16 @@
                     {{$post->title}}
                 </td>
                 <td>{{$post->created_at->format('Y/m/d')}}</td>
-                <td>編集</td>
-                <td>削除</td>
+                <td>
+                    <a class="btn btn-sm btn-success" href="{{route('posts.edit'),[$post->id]}}"></a>
+                </td>
+                <td>
+                    <form action="{{route('posts.destroy',[$post->id])}}" method="POST">
+                            @csrf
+                            @method('DELETE')
+                            <button type="submit" class="btn btn-sm btn-danger" onclick="return confirm('本当に削除しますか？')"><i class="fas fa-trash-alt"></i></button>
+                    </form>
+                </td>
             </tr>
             @endforeach
         </table>

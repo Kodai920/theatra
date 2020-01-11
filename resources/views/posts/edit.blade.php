@@ -22,13 +22,19 @@
         </div>
 
         <div class="form-group">
-            <label for="about">感想</label>
+            <label for="excerpt">抜粋</label>
             <br>
-            <textarea name="about" class="form-control" rows="5">{{$post->about}}</textarea>
+            <textarea name="excerpt" class="form-control" rows="5">{{$post->excerpt}}</textarea>
         </div>
 
         <div class="form-group">
-            <label for="about">画像</label>
+            <label for="about">記事</label>
+            <br>
+            <textarea name="about" class="form-control" rows="30">{{$post->about}}</textarea>
+        </div>
+
+        <div class="form-group">
+            <label for="about">アイキャッチ</label>
             <input type="file" name="featured" class="form-control-file">
         </div>
 

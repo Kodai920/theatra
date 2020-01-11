@@ -97,6 +97,7 @@ class PostController extends Controller
         //validation
         $this->validate($request,[
             'title' => 'required',
+            'excerpt' => 'required',
             'about' => 'required',
             'featured' => 'nullable|image'
         ]);
@@ -109,11 +110,12 @@ class PostController extends Controller
         }
 
         $post->title = $request->title;
+        $post->excerpt = $request->excerpt;
         $post->about = $request->about;
         $post->save();
 
         Session::flash('success','Post Update Successfully');
-        return redirect()->route('posts.index');
+        return redirect()->route('blog');
     }
 
     /**
@@ -126,6 +128,6 @@ class PostController extends Controller
     {
         $post->delete();
         Session::flash('success','post deleted successfully');
-        return redirect()->route('posts.index');
+        return redirect()->route('blog');
     }
 }
