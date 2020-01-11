@@ -31,10 +31,10 @@
     <div id="app">
     @include('inc.navbar')
     @include('inc.search')
+    <div class="admin-image">
+        <h1 class="admin-text">管理画面</h1>
+    </div>
     <div class="container py-4">
-        <div class="admin-image">
-            <h1 class="admin-text">管理画面</h1>
-        </div>
         <div class="row justify-content-center">
             <div class="col-md-3 mb-3">
                 <ul class="list-group">
