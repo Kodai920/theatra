@@ -7,3 +7,18 @@
     font-size: 20px;
     font-family: 'Kosugi Maru', sans-serif;
 }
+
+.admin-image{
+    background-image: url(admin.jpg);
+    background-size: cover;
+    filter: opacity(0.8)
+  }
+
+.admin-text{
+    text-align: center;
+    font-size: 5vw;
+    font-weight: bold;
+    font-family: 'Sawarabi Mincho', sans-serif;
+    color: #E5E5E5;
+    padding: 9vw;
+}
