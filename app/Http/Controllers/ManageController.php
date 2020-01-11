@@ -34,8 +34,8 @@ class ManageController extends Controller
         $movies = Movie::all();
         $reviews = Review::all();
         $posts = Post::all();
-        $category = Post::all();
-        $country = Post::all();
+        $category = Category::all();
+        $country = Country::all();
         return view('manage')
                            ->with('movies',$movies)
                            ->with('country',$country)
