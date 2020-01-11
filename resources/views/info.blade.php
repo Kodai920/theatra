@@ -29,7 +29,7 @@
                             <form action="{{route('movies.destroy',[$info->id])}}" method="POST">
                                 @csrf
                                 @method('DELETE')
-                                <button type="submit" class="btn btn-sm btn-danger" onclick="return confirm('本当に削除しますか？')"><i class="fas fa-trash-alt"></i></button>
+                                <button type="submit" class="btn btn-sm" onclick="return confirm('本当に削除しますか？')"><i class="fas fa-trash-alt"></i></button>
                             </form>
                         </td>
                     </tr>
