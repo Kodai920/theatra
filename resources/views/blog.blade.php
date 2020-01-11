@@ -21,7 +21,7 @@
                 <td>
                     {{$post->title}}
                 </td>
-                <td>{{$post->created_at}}</td>
+                <td>{{$post->created_at->format('Y/m/d')}}</td>
                 <td>編集</td>
                 <td>削除</td>
             </tr>
