@@ -23,7 +23,7 @@
                     {{$member->name}}
                 </td>
                 <td>{{$member->email}}</td>
-                <td>{{$member->reviews->count()}}</td>
+                <td class="text-center">{{$member->reviews->count()}}</td>
                 <td>{{$member->created_at->format('Y/m/d')}}</td>
                 <td>
                     <form action="{{route('register.destroy',[$member->id])}}" method="POST">
