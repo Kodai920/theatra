@@ -55,6 +55,7 @@ class PostController extends Controller
             'excerpt' => $request->excerpt,
             'about' => $request->about,
             'featured_img' => asset('uploads/posts/'.$featured_new_name),
+            'user_id' => Auth::id()
         ]);
 
         $post->save();
