@@ -39,22 +39,22 @@
                         <a href="{{route('manage')}}">ダッシュボード</a>
                     </li>
                     <li class="list-group-item">
-                        <a href="{{route('member')}}"><i class="far fa-user"></i> 会員情報</a>
+                        <a href="{{route('member')}}">会員情報</a>
                     </li>
                     <li class="list-group-item">
-                        <a href="{{route('info')}}"><i class="far fa-camera-movie"></i> 映画情報</a>
+                        <a href="{{route('info')}}">映画情報</a>
                     </li>
                     <li class="list-group-item">
-                        <a href="{{route('movies.create')}}"><i class="far fa-plus-circle"></i> 映画追加</a>
+                        <a href="{{route('movies.create')}}">映画追加</a>
                     </li>
                     <li class="list-group-item">
-                        <a href="{{route('posts.create')}}"><i class="far fa-money-check-edit"></i> ブログ投稿</a>
+                        <a href="{{route('posts.create')}}">ブログ投稿</a>
                     </li>
                     <li class="list-group-item">
-                        <a href="{{route('categories.create')}}"> カテゴリ追加</a>
+                        <a href="{{route('categories.create')}}">カテゴリ追加</a>
                     </li>
                     <li class="list-group-item">
-                        <a href="{{route('countries.create')}}"> 製作国追加</a>
+                        <a href="{{route('countries.create')}}">製作国追加</a>
                     </li>
                 </ul>
             </div>
