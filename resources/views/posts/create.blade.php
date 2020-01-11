@@ -21,6 +21,12 @@
         </div>
 
         <div class="form-group">
+            <label for="excerpt">抜粋</label>
+            <br>
+            <textarea name="excerpt" class="form-control" rows="5"></textarea>
+        </div>
+
+        <div class="form-group">
             <label for="about">記事</label>
             <br>
             <textarea name="about" class="form-control" rows="30"></textarea>

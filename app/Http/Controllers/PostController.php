@@ -40,6 +40,7 @@ class PostController extends Controller
     {
         $this->validate($request,[
             'title' => 'required',
+            'excerpt' => 'required',
             'about' => 'required',
             'featured' => 'required|image'
         ]);
@@ -51,15 +52,14 @@ class PostController extends Controller
         //mass assignment
         $post = Post::create([
             'title' => $request->title,
+            'excerpt' => $request->excerpt,
             'about' => $request->about,
             'featured_img' => asset('uploads/posts/'.$featured_new_name),
-            'user_id' => Auth::id()
         ]);
 
         $post->save();
         Session::flash('success','post created successfully');
-        return redirect()->
-        route('posts.index');
+        return redirect()->route('posts.index');
     }
 
     /**
