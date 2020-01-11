@@ -9,7 +9,7 @@ class BlogController extends Controller
 {
     public function index(){
 
-        $posts = Review::all();
+        $posts = Post::all();
         return view('blog')->with('posts',$posts);
     }
 }
