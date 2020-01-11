@@ -9,8 +9,8 @@
                 <div class="col-md-3 dash-count">会員数 : {{$user->count()}}</div>
                 <div class="col-md-3 dash-count">投稿数 : {{$reviews->count()}}</div>
                 <div class="col-md-3 dash-count">映画数 : {{$movies->count()}}</div>
-                <div class="col-md-3 dash-count">カテゴリ数 : {{$categories->count()}}</div>
-                <div class="col-md-3 dash-count">製作国数 : {{$countries->count()}}</div>
+                <div class="col-md-3 dash-count">カテゴリ数 : {{$category->count()}}</div>
+                <div class="col-md-3 dash-count">製作国数 : {{$country->count()}}</div>
                 </div>
         </div>
 </div>
