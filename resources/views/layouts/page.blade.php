@@ -33,7 +33,7 @@
     @include('inc.search')
     <div class="container py-4">
         <div class="admin-image">
-        <h3 class="admin-text">管理画面</h3>
+            <h1 class="admin-text">管理画面</h1>
         </div>
         <div class="row justify-content-center">
             <div class="col-md-3 mb-3">
