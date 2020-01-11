@@ -24,7 +24,7 @@
                 <td>{{$member->email}}</td>
                 <td>{{$member->reviews->count()}}</td>
                 <td>
-                    <form action="{{route('user.destroy',[$user->id])}}" method="POST">
+                    <form action="{{route('user.destroy',[$member->id])}}" method="POST">
                         @csrf
                         @method('DELETE')
                         <button type="submit" class="btn btn-sm btn-danger" onclick="return confirm('本当に削除しますか？')"><i class="fas fa-trash-alt"></i></button>
