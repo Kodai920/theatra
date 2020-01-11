@@ -5,6 +5,8 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\Movie;
 use App\Post;
+use App\Category;
+use App\Country;
 use App\Review;
 use App\User;
 use Auth;
