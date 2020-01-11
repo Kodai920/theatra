@@ -11,6 +11,7 @@
                 <div class="col-md-3 dash-count">映画数 : {{$movies->count()}}</div>
                 <div class="col-md-3 dash-count">カテゴリ数 : {{$category->count()}}</div>
                 <div class="col-md-3 dash-count">製作国数 : {{$country->count()}}</div>
+                <div class="col-md-3 dash-count">記事数 : {{$posts->count()}}</div>
                 </div>
         </div>
 </div>
