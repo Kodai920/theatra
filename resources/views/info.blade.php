@@ -24,7 +24,7 @@
                         </td>
                         <td>{{$info->year}}年</td>
                         <td>{{$info->country->name}}</td>
-                        <td>{{$info->reviews->count()}}</td>
+                        <td class="text-center">{{$info->reviews->count()}}</td>
                         <td>
                             <form action="{{route('movies.destroy',[$info->id])}}" method="POST">
                                 @csrf
