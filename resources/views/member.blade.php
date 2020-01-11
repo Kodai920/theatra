@@ -12,7 +12,7 @@
                 <th>メールアドレス</th>
                 <th>投稿数</th>
                 <th>登録日</th>
-                <th>削除</th>
+                {{-- <th>削除</th> --}}
             </tr>
             <?php $i=0; ?>
             @foreach($user as $member)
@@ -25,13 +25,13 @@
                 <td>{{$member->email}}</td>
                 <td class="text-center">{{$member->reviews->count()}}</td>
                 <td>{{$member->created_at->format('Y/m/d')}}</td>
-                <td>
+                {{-- <td>
                     <form action="{{route('register.destroy',[$member->id])}}" method="POST">
                         @csrf
                         @method('DELETE')
                         <button type="submit" class="btn btn-sm btn-danger" onclick="return confirm('本当に削除しますか？')"><i class="fas fa-trash-alt"></i></button>
                     </form>
-                </td>
+                </td> --}}
             </tr>
             @endforeach
         </table>
