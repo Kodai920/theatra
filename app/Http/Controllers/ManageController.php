@@ -38,7 +38,7 @@ class ManageController extends Controller
         $countries = Post::all();
         return view('manage')
                            ->with('movies',$movies)
-                           ->with('countries',$countires)
+                           ->with('countries',$countries)
                            ->with('categories',$categories)
                            ->with('user',$user)
                            ->with('posts',$posts)
