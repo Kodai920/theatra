@@ -77,4 +77,8 @@ class RegisterController extends Controller
 
         return $user;
     }
+
+    public function destroy(){
+        //
+    }
 }
