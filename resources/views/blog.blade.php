@@ -23,13 +23,13 @@
                 </td>
                 <td>{{$post->created_at->format('Y/m/d')}}</td>
                 <td>
-                    <a class="btn btn-sm btn-success" href="{{route('posts.edit',[$post->id])}}"><i class="fas fa-edit"></i></a>
+                    <a class="btn btn-sm" href="{{route('posts.edit',[$post->id])}}"><i class="fas fa-edit"></i></a>
                 </td>
                 <td>
                     <form action="{{route('posts.destroy',[$post->id])}}" method="POST">
                         @csrf
                         @method('DELETE')
-                        <button type="submit" class="btn btn-sm btn-danger" onclick="return confirm('本当に削除しますか？')"><i class="fas fa-trash-alt"></i></button>
+                        <button type="submit" class="btn btn-sm" onclick="return confirm('本当に削除しますか？')"><i class="fas fa-trash-alt"></i></button>
                     </form>
                 </td>
             </tr>
