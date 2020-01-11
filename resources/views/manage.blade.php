@@ -48,12 +48,12 @@
 </div>
 
 
-<div class="card m-3">
-                <div class="card-header">お問い合わせ</div>
+<div class="card mb-3">
+        <div class="card-header">お問い合わせ</div>
 
-                <div class="card-body">
-                </div>
+        <div class="card-body">
         </div>
+</div>
 
 
 
