@@ -11,11 +11,6 @@
 |
 */
 
-// Route::get('/', function () {
-//     return view('welcome');
-// });
-
-
 Auth::routes();
 
 Route::get('/', 'WelcomeController@index')->name('welcome');
@@ -31,6 +26,8 @@ Route::get('/manage', 'ManageController@index')->name('manage');
 Route::get('/info', 'InfoController@index')->name('info');
 
 Route::get('/member', 'MemberController@index')->name('member');
+
+Route::get('/blog', 'BlogController@index')->name('blog');
 
 Route::resource('posts','PostController');
 
