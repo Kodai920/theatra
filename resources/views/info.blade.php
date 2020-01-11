@@ -25,7 +25,13 @@
                         <td>{{$info->year}}年</td>
                         <td>{{$info->country->name}}</td>
                         <td>{{$info->reviews->count()}}</td>
-                        <td>削除</td>
+                        <td>
+                            <form action="{{route('movies.destroy',[$movie->id])}}" method="POST">
+                                @csrf
+                                @method('DELETE')
+                                <button type="submit" class="btn btn-sm btn-danger" onclick="return confirm('本当に削除しますか？')"><i class="fas fa-trash-alt"></i></button>
+                            </form>
+                        </td>
                     </tr>
                     @endforeach
                 </table>

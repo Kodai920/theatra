@@ -143,8 +143,10 @@ class MovieController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function destroy($id)
+    public function destroy(Movie $movie)
     {
-        //
+        $movie->delete();
+        Session::flash('success','post deleted successfully');
+        return redirect()->route('info');
     }
 }
