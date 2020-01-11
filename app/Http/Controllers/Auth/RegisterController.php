@@ -78,7 +78,9 @@ class RegisterController extends Controller
         return $user;
     }
 
-    public function destroy(){
-        //
+    public function destroy(User $user){
+        $user->delete();
+        Session::flash('success','post deleted successfully');
+        return redirect()->route('member');
     }
 }
