@@ -23,7 +23,7 @@
                 </td>
                 <td>{{$post->created_at->format('Y/m/d')}}</td>
                 <td>
-                    <a class="btn btn-sm btn-success" href="{{route('posts.edit'),[$post->id]}}"><i class="fas fa-edit"></i></a>
+                    <a class="btn btn-sm btn-success" href="{{route('posts.edit',[$post->id])}}"><i class="fas fa-edit"></i></a>
                 </td>
                 <td>
                     <form action="{{route('posts.destroy',[$post->id])}}" method="POST">
