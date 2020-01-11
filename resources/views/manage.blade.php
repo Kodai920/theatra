@@ -1,7 +1,7 @@
 @extends('layouts.page')
 @section('page')
 
-<div class="card my-3">
+<div class="card mb-3">
         <div class="card-header">ダッシュボード</div>
 
         <div class="card-body">
@@ -16,7 +16,7 @@
         </div>
 </div>
 
-<div class="card">
+<div class="card mb-3">
         <div class="card-header">最近の投稿</div>
         <div class="card-body">
                 <div class="row">
@@ -46,6 +46,15 @@
                 </div>
         </div>
 </div>
+
+
+<div class="card m-3">
+                <div class="card-header">お問い合わせ</div>
+
+                <div class="card-body">
+                </div>
+        </div>
+
 
 
 
