@@ -11474,7 +11474,7 @@ footer h5{
 
 .welcome-text{
   text-align: center;
-  font-size: 6vw;
+  font-size: 5vw;
   font-weight: bold;
   font-family: 'Sawarabi Mincho', sans-serif;
   color: #131313;
@@ -11498,7 +11498,7 @@ footer h5{
 
 .btn-register{
   background-color:#E40914;
-  color:#E5E5E5;
+  color:#131313;
   margin:5vw 42vw;
   font-size: 1.7vw;
   font-weight: bold;
