@@ -118,10 +118,10 @@
                         <p class="function">＊Netflix関連の記事更新中</p>
                     </div>
                     <div class="icons">
-                        <p class="function">＊新作や配信終了間際の作品のお知らせも</p>
+                        <p class="function">＊各種SNSでも情報発信</p>
                     </div>
                     <div class="icons">
-                        <p class="function">＊各種SNSでも情報発信</p>
+                        <p class="function">＊新作や配信終了間際の作品のお知らせも</p>
                     </div>
                     <a href="{{ route('blog') }}" class="btn btn-lg btn-block btn-welcome">公式ブログへ <i class="fas fa-sign-out-alt"></i></a>
                     <a href="#" class="btn btn-lg btn-block btn-welcome" target="_blank">公式Twitterへ <i class="fas fa-sign-out-alt"></i></a>
