@@ -78,7 +78,7 @@
                     <div class="icons">
                         <p class="function my-3">＊どれだけ投稿しても完全無料</p>
                     </div>
-                    <a href="{{ route('movies.index') }}" class="btn btn-lg btn-register">映画一覧へ<i class="fas fa-sign-out-alt"></i></a>
+                    <a href="{{ route('movies.index') }}" class="btn btn-block btn-register">映画一覧へ<i class="fas fa-sign-out-alt"></i></a>
                 </div>
                 <div class="col-md-6">
                     <img class="welcome-photos" src="uploads/welcomes/cuttool.jpg" alt="">
@@ -102,8 +102,8 @@
                     <div class="icons">
                         <p class="function my-3">＊ここだけの人気作品ランキング</p>
                     </div>
-                    <a href="https://www.netflix.com/browse" class="btn btn-lg btn-register">NETFLIXへ<i class="fas fa-sign-out-alt"></i></a>
-                    <a href="{{ route('categories.index') }}" class="btn btn-lg btn-register">カテゴリ一覧へ<i class="fas fa-sign-out-alt"></i></a>
+                    <a href="https://www.netflix.com/browse" class="btn btn-block btn-register">NETFLIXへ<i class="fas fa-sign-out-alt"></i></a>
+                    <a href="{{ route('categories.index') }}" class="btn btn-block btn-register">カテゴリ一覧へ<i class="fas fa-sign-out-alt"></i></a>
                 </div>
             </div>
         </div>
@@ -118,7 +118,7 @@
                     <div class="icons">
                         <p class="function">＊各種SNSでも情報発信</p>
                     </div>
-                    <a href="{{ route('blog') }}" class="btn btn-lg btn-register">ブログへ<i class="fas fa-sign-out-alt"></i></a>
+                    <a href="{{ route('blog') }}" class="btn btn-block btn-register">ブログへ<i class="fas fa-sign-out-alt"></i></a>
                 </div>
                 <div class="col-md-6">
                     <img class="welcome-photos" src="uploads/welcomes/snstwitter.jpg" alt="">
