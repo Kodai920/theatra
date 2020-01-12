@@ -49,26 +49,24 @@
             @endforeach
         </div> --}}
 
-        <div>
-            <div class="container">
-                <h2 class="welcome-title">THEATRAとは</h2>
-                <div class="row">
-                    <div class="col-md-6">
-                        <img class="welcome-photos" src="uploads/welcomes/netflixwel.jpg" alt="">
-                    </div>
-                    <div class="col-md-6">
-                        <p class="function">NETFLIXに特化した、
-                            レビュー投稿サイトです。<br>
-                            NETFLIXで配信されている映画の検索・感想の投稿が可能です。
-                        </p>
-                        <a href="{{ route('login') }}" class="btn btn-lg btn-block btn-welcome">ログインへ <i class="fas fa-sign-out-alt"></i></a>
-                        <a href="{{ route('register') }}" class="btn btn-lg btn-block btn-welcome">新規登録へ <i class="fas fa-sign-out-alt"></i></a>
-                    </div>
+        <div class="container my-5">
+            <h2 class="welcome-title">THEATRAとは</h2>
+            <div class="row">
+                <div class="col-md-6">
+                    <img class="welcome-photos" src="uploads/welcomes/netflixwel.jpg" alt="">
+                </div>
+                <div class="col-md-6">
+                    <p class="function">NETFLIXに特化した、
+                        レビュー投稿サイトです。<br>
+                        NETFLIXで配信されている映画の検索・感想の投稿が可能です。
+                    </p>
+                    <a href="{{ route('login') }}" class="btn btn-lg btn-block btn-welcome">ログインへ <i class="fas fa-sign-out-alt"></i></a>
+                    <a href="{{ route('register') }}" class="btn btn-lg btn-block btn-welcome">新規登録へ <i class="fas fa-sign-out-alt"></i></a>
                 </div>
             </div>
         </div>
 
-        <div class="container">
+        <div class="container my-5">
             <h2 class="welcome-title">THEATRAにできること</h2>
             <div class="row">
                 <div class="col-md-6">
@@ -90,7 +88,7 @@
             </div>
         </div>
 
-        <div class="container">
+        <div class="container my-5">
             <h2 class="welcome-title">THEATRAの特徴</h2>
             <div class="row">
                 <div class="col-md-6">
