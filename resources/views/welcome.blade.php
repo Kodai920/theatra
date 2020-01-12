@@ -122,9 +122,9 @@
                         <p class="function">各種SNSでも情報発信</p>
                     </div>
                 </div>
-            </div>
-            <div class="col-md-6">
-                <img class="welcome-photos" src="uploads/welcomes/snstwitter.jpg" alt="">
+                <div class="col-md-6">
+                    <img class="welcome-photos" src="uploads/welcomes/snstwitter.jpg" alt="">
+                </div>
             </div>
         </div>
     </div>
