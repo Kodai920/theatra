@@ -5,6 +5,7 @@
     width: 50%;
     text-align: center;
     margin: 5% auto;
+    filter: drop-shadow(10px 10px 10px rgba(0,0,0,0.6));
 }
 
 .icons{
