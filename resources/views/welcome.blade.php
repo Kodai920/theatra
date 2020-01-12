@@ -133,7 +133,6 @@
 
         <div class="container my-5">
             <h2 class="welcome-title">お問い合わせ</h2>
-            <div class="card-body">
                     {{-- エラーの表示 --}}
                     @if ($errors->any())
                         <div class="alert alert-danger">
@@ -147,7 +146,7 @@
 
                     {!! Form::open(['url' => 'contact/confirm',
                                 'class' => 'form-horizontal']) !!}
- 
+
                     <div class="form-group{{ $errors->has('type') ? ' has-error' : '' }}">
                         {!! Form::label('type', 'お問い合わせ種類:', ['class' => 'col-sm-2 control-label']) !!}
                         <div class="col-sm-10">
@@ -164,7 +163,7 @@
                             @endif
                         </div>
                     </div>
- 
+
                     <div class="form-group{{ $errors->has('name') ? ' has-error' : '' }}">
                         {!! Form::label('name', 'お名前:', ['class' => 'col-sm-2 control-label']) !!}
                         <div class="col-sm-10">
@@ -177,7 +176,7 @@
                             @endif
                         </div>
                     </div>
- 
+
                     <div class="form-group{{ $errors->has('email') ? ' has-error' : '' }}">
                         {!! Form::label('email', 'メールアドレス:', ['class' => 'col-sm-2 control-label']) !!}
                         <div class="col-sm-10">
@@ -206,7 +205,7 @@
                             @endif
                         </div>
                     </div>
- 
+
                     <div class="form-group{{ $errors->has('body') ? ' has-error' : '' }}">
                         {!! Form::label('body', '内容:', ['class' => 'col-sm-2 control-label']) !!}
                         <div class="col-sm-10">
@@ -227,8 +226,6 @@
 
                     {!! Form::close() !!}
                 </div>
-
-        </div>
 
     </div>
     @include('inc.footer')
