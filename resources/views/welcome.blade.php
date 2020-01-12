@@ -48,24 +48,27 @@
             @endforeach
         </div>
 
-        <div class="container my-5">
-            <div class="my-5">
-                <h2 class="text-center welcome-title">THEATRAとは</h2>
-                <p class="text-center my-5 function">NETFLIXに特化したレビュー投稿サイトです。<br>NETFLIXで配信されている映画の検索・感想の投稿が可能です。</p>
+        <div>
+            <div class="">
+                <h2 class="welcome-title">THEATRAとは</h2>
+                <p class="function">NETFLIXに特化したレビュー投稿サイトです。<br>NETFLIXで配信されている映画の検索・感想の投稿が可能です。</p>
             </div>
-                <hr width="75%" color="#131313">
+        </div>
+        <hr width="75%" color="#131313">
 
-            <h2 class="text-center my-3 welcome-title">THEATRAにできること</h2>
-            <div class="row my-5">
-                <div class="col-md-4 text-center icons">
+
+        <div class="container">
+            <h2 class="welcome-title">THEATRAにできること</h2>
+            <div class="row">
+                <div class="col-md-4 icons">
                     <img src="サーチアイコン (2).png" alt="">
-                    <p class="function my-3">好きな作品が見つかる検索機能</p>
+                    <p class="function">好きな作品が見つかる検索機能</p>
                 </div>
-                <div class="col-md-4 text-center icons">
+                <div class="col-md-4 icons">
                     <img src="記事アイコン1 (1).png" alt="">
                     <p class="function my-3">あなたの感想・評価を記録</p>
                 </div>
-                <div class="col-md-4 text-center icons">
+                <div class="col-md-4 icons">
                     <img src="お金を握り締める手のアイコン.png" alt="">
                     <p class="function my-3">どれだけ投稿しても完全無料</p>
                 </div>
@@ -73,18 +76,18 @@
         </div>
         <hr width="75%" color="#131313">
 
-        <div class="container my-5">
-            <h2 class="text-center my-3 welcome-title">THEATRAの特徴</h2>
-            <div class="row my-5">
-                <div class="col-md-4 text-center icons">
+        <div class="container">
+            <h2 class="welcome-title">THEATRAの特徴</h2>
+            <div class="row">
+                <div class="col-md-4 icons">
                     <img src="PCでのNETFLIX 無料アイコン素材 3.png" alt="">
                     <p class="function my-3">Netflix専門のレビューサイト</p>
                 </div>
-                <div class="col-md-4 text-center icons">
+                <div class="col-md-4 icons">
                     <img src="本棚アイコン (1).png" alt="">
                     <p class="function my-3">多彩なカテゴリから検索</p>
                 </div>
-                <div class="col-md-4 text-center icons">
+                <div class="col-md-4 icons">
                     <img src="ゴージャスな王冠の無料アイコン.png" alt="">
                     <p class="function my-3">ここだけの人気作品ランキング</p>
                 </div>
@@ -93,15 +96,15 @@
         <hr width="75%" color="#131313">
 
         <div class="container my-5">
-            <h2 class="text-center my-3 welcome-title">充実の情報量</h2>
-            <div class="row my-5">
-                <div class="col-md-6 text-center icons">
+            <h2 class="welcome-title">充実の情報量</h2>
+            <div class="row">
+                <div class="col-md-6 icons">
                     <img src="BLOGアイコン.png" alt="">
-                    <p class="function my-3">Netflix関連の記事更新中</p>
+                    <p class="function">Netflix関連の記事更新中</p>
                 </div>
-                <div class="col-md-6 text-center icons">
+                <div class="col-md-6 icons">
                     <img src="twitterのフリーアイコン素材.png" alt="">
-                    <p class="function my-3">各種SNSでも情報発信</p>
+                    <p class="function">各種SNSでも情報発信</p>
                 </div>
             </div>
         </div>

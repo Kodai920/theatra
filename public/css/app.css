@@ -11466,21 +11466,6 @@ footer h5{
   background-color: #131313;
 }
 
-.welcome-image{
-  background-image: url(theater.jpg);
-  background-size: cover;
-  filter: opacity(0.8)
-}
-
-.welcome-text{
-  text-align: center;
-  font-size: 5vw;
-  font-weight: bold;
-  font-family: 'Sawarabi Mincho', sans-serif;
-  color: #E5E5E5;
-  padding: 9vw ;
-}
-
 .home-image{
   background-image: url(home.jpeg);
   background-size: cover;
@@ -11496,32 +11481,10 @@ footer h5{
   padding: 9vw;
 }
 
-.btn-register{
-  background-color:#131313;
-  color:#E5E5E5;
-  margin:5vw 42vw;
-  font-size: 1.7vw;
-  font-weight: bold;
-}
-
-.icons{
-  background-color:#E5E5E5;
-}
-
-.function{
-  font-size: 3vw;
-}
-
-.welcome-movie{
-  height: 15vw;
-  width: 10vw;
-}
-
 h2{
   font-size: 50px;
   font-family: 'Bebas Neue', cursive;
 }
-
 
 #movie-image{
   filter: drop-shadow(10px 10px 10px rgba(0,0,0,0.6));
