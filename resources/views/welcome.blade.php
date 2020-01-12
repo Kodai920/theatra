@@ -64,7 +64,6 @@
         <div class="container">
             <h2 class="welcome-title">THEATRAにできること</h2>
             <div class="row">
-                <div class="col-md-6"></div>
                 <div class="col-md-6">
                     <div class="icons">
                         <img src="サーチアイコン (2).png" alt="">
@@ -79,6 +78,7 @@
                         <p class="function my-3">どれだけ投稿しても完全無料</p>
                     </div>
                 </div>
+                <div class="col-md-6"></div>
             </div>
         </div>
 
@@ -106,7 +106,6 @@
         <div class="container my-5">
             <h2 class="welcome-title">充実の情報量</h2>
             <div class="row">
-                <div class="col-md-6"></div>
                 <div class="col-md-6">
                     <div class="icons">
                         <img src="BLOGアイコン.png" alt="">
@@ -118,6 +117,7 @@
                     </div>
                 </div>
             </div>
+            <div class="col-md-6"></div>
         </div>
     </div>
     @include('inc.footer')
