@@ -54,7 +54,7 @@
                 <h2 class="welcome-title">THEATRAとは</h2>
                 <div class="row">
                     <div class="col-md-6">
-                        <img src="uploads/welcomes/netflixwel.jpg" alt="">
+                        <img class="welcome-photos" src="uploads/welcomes/netflixwel.jpg" alt="">
                     </div>
                     <div class="col-md-6">
                         <p class="function">NETFLIXに特化したレビュー投稿サイトです。<br>NETFLIXで配信されている映画の検索・感想の投稿が可能です。</p>
@@ -81,7 +81,7 @@
                     </div>
                 </div>
                 <div class="col-md-6">
-                    <img src="uploads/welcomes/cuttool.jpg" alt="">
+                    <img class="welcome-photos" src="uploads/welcomes/cuttool.jpg" alt="">
                 </div>
             </div>
         </div>
@@ -90,7 +90,7 @@
             <h2 class="welcome-title">THEATRAの特徴</h2>
             <div class="row">
                 <div class="col-md-6">
-                    <img src="uploads/welcomes/filmtwo.jpg" alt="">
+                    <img class="welcome-photos" src="uploads/welcomes/filmtwo.jpg" alt="">
                 </div>
                 <div class="col-md-6">
                     <div class="icons">
@@ -124,7 +124,7 @@
                 </div>
             </div>
             <div class="col-md-6">
-                <img src="uploads/welcomes/snstwitter.jpg" alt="">
+                <img class="welcome-photos" src="uploads/welcomes/snstwitter.jpg" alt="">
             </div>
         </div>
     </div>
