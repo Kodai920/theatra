@@ -26,6 +26,11 @@
     font-weight: bold;
   }
 
+  .btn-welcome{
+    background-color:#131313;
+    color:#E5E5E5;
+  }
+
   .welcome-image{
     background-image: url(theater.jpg);
     background-size: cover;
