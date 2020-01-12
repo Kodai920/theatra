@@ -70,13 +70,13 @@
             <div class="row">
                 <div class="col-md-6">
                     <div class="icons">
-                        <p class="function">好きな作品が見つかる検索機能</p>
+                        <p class="function">＊好きな作品が見つかる検索機能</p>
                     </div>
                     <div class="icons">
-                        <p class="function my-3">あなたの感想・評価を記録</p>
+                        <p class="function my-3">＊あなたの感想・評価を記録</p>
                     </div>
                     <div class="icons">
-                        <p class="function my-3">どれだけ投稿しても完全無料</p>
+                        <p class="function my-3">＊どれだけ投稿しても完全無料</p>
                     </div>
                 </div>
                 <div class="col-md-6">
@@ -93,13 +93,13 @@
                 </div>
                 <div class="col-md-6">
                     <div class="icons">
-                        <p class="function my-3">Netflix専門のレビューサイト</p>
+                        <p class="function my-3">＊Netflix専門のレビューサイト</p>
                     </div>
                     <div class="icons">
-                        <p class="function my-3">多彩なカテゴリから検索</p>
+                        <p class="function my-3">＊多彩なカテゴリから検索</p>
                     </div>
                     <div class="icons">
-                        <p class="function my-3">ここだけの人気作品ランキング</p>
+                        <p class="function my-3">＊ここだけの人気作品ランキング</p>
                     </div>
                 </div>
             </div>
@@ -110,10 +110,10 @@
             <div class="row">
                 <div class="col-md-6">
                     <div class="icons">
-                        <p class="function">Netflix関連の記事更新中</p>
+                        <p class="function">＊Netflix関連の記事更新中</p>
                     </div>
                     <div class="icons">
-                        <p class="function">各種SNSでも情報発信</p>
+                        <p class="function">＊各種SNSでも情報発信</p>
                     </div>
                 </div>
                 <div class="col-md-6">
