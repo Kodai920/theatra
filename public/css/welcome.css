@@ -1,12 +1,12 @@
 .welcome-title{
-    color: #E40914;
+    color: #E5E5E5;
     background-color: #131313;
     font-family: 'Sawarabi Gothic', sans-serif;
     width: 50%;
     text-align: center;
     margin: 5% auto;
     filter: drop-shadow(10px 10px 10px rgba(0,0,0,0.6));
-    text-shadow: 1px 2px 3px #E5E5E5;
+    text-shadow: 1px 2px 3px #E40914;
 }
 
 .icons{
