@@ -49,7 +49,7 @@
         </div>
 
         <div>
-            <div class="">
+            <div class="container">
                 <h2 class="welcome-title">THEATRAとは</h2>
                 <p class="function">NETFLIXに特化したレビュー投稿サイトです。<br>NETFLIXで配信されている映画の検索・感想の投稿が可能です。</p>
             </div>
