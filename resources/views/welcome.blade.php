@@ -49,7 +49,7 @@
             @endforeach
         </div> --}}
 
-        <div class="container my-5">
+        <div class="container mb-5">
             <h2 class="welcome-title">THEATRAとは</h2>
             <div class="row">
                 <div class="col-md-6">
