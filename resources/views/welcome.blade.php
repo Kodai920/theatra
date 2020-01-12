@@ -57,10 +57,9 @@
                         <img class="welcome-photos" src="uploads/welcomes/netflixwel.jpg" alt="">
                     </div>
                     <div class="col-md-6">
-                        <p class="function">NETFLIXに特化した、<br>
+                        <p class="function">NETFLIXに特化した、
                             レビュー投稿サイトです。<br>
-                            NETFLIXで配信されている<br>
-                            映画の検索・感想の投稿が可能です。</p>
+                            NETFLIXで配信されている映画の検索・感想の投稿が可能です。</p>
                     </div>
                 </div>
             </div>
