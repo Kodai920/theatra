@@ -48,12 +48,13 @@
             @endforeach
         </div>
 
-        <div class="my-5">
-            <h2 class="text-center welcome-title">THEATRAとは</h2>
-            <p class="text-center my-5 function">NETFLIXに特化したレビュー投稿サイトです。<br>NETFLIXで配信されている映画の検索・感想の投稿が可能です。</p>
-        </div>
-        <hr width="75%" color="#131313">
         <div class="container my-5">
+            <div class="my-5">
+                <h2 class="text-center welcome-title">THEATRAとは</h2>
+                <p class="text-center my-5 function">NETFLIXに特化したレビュー投稿サイトです。<br>NETFLIXで配信されている映画の検索・感想の投稿が可能です。</p>
+            </div>
+                <hr width="75%" color="#131313">
+
             <h2 class="text-center my-3 welcome-title">THEATRAにできること</h2>
             <div class="row my-5">
                 <div class="col-md-4 text-center icons">
