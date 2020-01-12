@@ -14,7 +14,7 @@
   }
 
   .function{
-    font-size: 20px;
+    font-size: 30px;
   }
 
   .btn-register{
@@ -46,7 +46,7 @@
   }
 
   .welcome-photos{
-    width: 150px;
-    height: 150px;
+    width: 400px;
+    height: 400px;
     border-radius: 10%;
   }
