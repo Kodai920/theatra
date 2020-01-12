@@ -54,8 +54,6 @@
                 <p class="function">NETFLIXに特化したレビュー投稿サイトです。<br>NETFLIXで配信されている映画の検索・感想の投稿が可能です。</p>
             </div>
         </div>
-        <hr width="75%" color="#131313">
-
 
         <div class="container">
             <h2 class="welcome-title">THEATRAにできること</h2>
@@ -74,7 +72,6 @@
                 </div>
             </div>
         </div>
-        <hr width="75%" color="#131313">
 
         <div class="container">
             <h2 class="welcome-title">THEATRAの特徴</h2>
@@ -93,7 +90,6 @@
                 </div>
             </div>
         </div>
-        <hr width="75%" color="#131313">
 
         <div class="container my-5">
             <h2 class="welcome-title">充実の情報量</h2>
@@ -108,7 +104,6 @@
                 </div>
             </div>
         </div>
-        <hr width="75%" color="#131313">
     </div>
     @include('inc.footer')
     </div>
