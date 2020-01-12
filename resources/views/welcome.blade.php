@@ -68,15 +68,12 @@
             <div class="row">
                 <div class="col-md-6">
                     <div class="icons">
-                        <img src="サーチアイコン (2).png" alt="">
                         <p class="function">好きな作品が見つかる検索機能</p>
                     </div>
                     <div class="icons">
-                        <img src="記事アイコン1 (1).png" alt="">
                         <p class="function my-3">あなたの感想・評価を記録</p>
                     </div>
                     <div class="icons">
-                        <img src="お金を握り締める手のアイコン.png" alt="">
                         <p class="function my-3">どれだけ投稿しても完全無料</p>
                     </div>
                 </div>
@@ -94,15 +91,12 @@
                 </div>
                 <div class="col-md-6">
                     <div class="icons">
-                        <img src="PCでのNETFLIX 無料アイコン素材 3.png" alt="">
                         <p class="function my-3">Netflix専門のレビューサイト</p>
                     </div>
                     <div class="icons">
-                        <img src="本棚アイコン (1).png" alt="">
                         <p class="function my-3">多彩なカテゴリから検索</p>
                     </div>
                     <div class="icons">
-                        <img src="ゴージャスな王冠の無料アイコン.png" alt="">
                         <p class="function my-3">ここだけの人気作品ランキング</p>
                     </div>
                 </div>
@@ -114,11 +108,9 @@
             <div class="row">
                 <div class="col-md-6">
                     <div class="icons">
-                        <img src="BLOGアイコン.png" alt="">
                         <p class="function">Netflix関連の記事更新中</p>
                     </div>
                     <div class="icons">
-                        <img src="twitterのフリーアイコン素材.png" alt="">
                         <p class="function">各種SNSでも情報発信</p>
                     </div>
                 </div>
