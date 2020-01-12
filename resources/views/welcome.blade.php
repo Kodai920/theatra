@@ -130,6 +130,12 @@
                 </div>
             </div>
         </div>
+
+        <div class="container my-5">
+            <h2 class="welcome-title">お問い合わせ</h2>
+            
+        </div>
+
     </div>
     @include('inc.footer')
     </div>
