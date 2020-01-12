@@ -37,7 +37,7 @@
             <a href="{{ route('register') }}" class="btn btn-lg btn-register">いますぐ始める <i class="fas fa-sign-out-alt"></i></a>
         </div>
 
-        <div class="mt-5 justify-content-center overflow-auto text-center" width="90%" >
+        {{-- <div class="mt-5 justify-content-center overflow-auto text-center" width="90%" >
             @foreach($movies->sortByDesc('year') as $movie)
             @if($loop->index <= 8)
                 <div id="movie-image">
@@ -47,13 +47,15 @@
                 </div>
             @endif
             @endforeach
-        </div>
+        </div> --}}
 
         <div>
             <div class="container">
                 <h2 class="welcome-title">THEATRAとは</h2>
                 <div class="row">
-                    <div class="col-md-6"></div>
+                    <div class="col-md-6">
+                        <img src="uploads/welcomes/netflixwel.jpg" alt="">
+                    </div>
                     <div class="col-md-6">
                         <p class="function">NETFLIXに特化したレビュー投稿サイトです。<br>NETFLIXで配信されている映画の検索・感想の投稿が可能です。</p>
                     </div>
@@ -78,14 +80,18 @@
                         <p class="function my-3">どれだけ投稿しても完全無料</p>
                     </div>
                 </div>
-                <div class="col-md-6"></div>
+                <div class="col-md-6">
+                    <img src="uploads/welcomes/cuttool.jpg" alt="">
+                </div>
             </div>
         </div>
 
         <div class="container">
             <h2 class="welcome-title">THEATRAの特徴</h2>
             <div class="row">
-                <div class="col-md-6"></div>
+                <div class="col-md-6">
+                    <img src="uploads/welcomes/filmtwo.jpg" alt="">
+                </div>
                 <div class="col-md-6">
                     <div class="icons">
                         <img src="PCでのNETFLIX 無料アイコン素材 3.png" alt="">
@@ -117,7 +123,9 @@
                     </div>
                 </div>
             </div>
-            <div class="col-md-6"></div>
+            <div class="col-md-6">
+                <img src="uploads/welcomes/snstwitter.jpg" alt="">
+            </div>
         </div>
     </div>
     @include('inc.footer')
