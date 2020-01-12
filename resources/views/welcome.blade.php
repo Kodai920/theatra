@@ -22,6 +22,7 @@
     <!-- Styles -->
     <link href="{{ secure_asset('css/custom.css') }}" rel="stylesheet">
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
+    <link href="{{ asset('css/welcome.css') }}" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.css">
 
 </head>
@@ -48,12 +49,12 @@
         </div>
 
         <div class="my-5">
-            <h2 class="text-center">THEATRAとは</h2>
+            <h2 class="text-center welcome-title">THEATRAとは</h2>
             <p class="text-center my-5 function">NETFLIXに特化したレビュー投稿サイトです。<br>NETFLIXで配信されている映画の検索・感想の投稿が可能です。</p>
         </div>
         <hr width="75%" color="#131313">
         <div class="container my-5">
-            <h2 class="text-center my-3">THEATRAにできること</h2>
+            <h2 class="text-center my-3 welcome-title">THEATRAにできること</h2>
             <div class="row my-5">
                 <div class="col-md-4 text-center icons">
                     <img src="サーチアイコン (2).png" alt="">
@@ -72,7 +73,7 @@
         <hr width="75%" color="#131313">
 
         <div class="container my-5">
-            <h2 class="text-center my-3">THEATRAの特徴</h2>
+            <h2 class="text-center my-3 welcome-title">THEATRAの特徴</h2>
             <div class="row my-5">
                 <div class="col-md-4 text-center icons">
                     <img src="PCでのNETFLIX 無料アイコン素材 3.png" alt="">
@@ -91,7 +92,7 @@
         <hr width="75%" color="#131313">
 
         <div class="container my-5">
-            <h2 class="text-center my-3">充実の情報量</h2>
+            <h2 class="text-center my-3 welcome-title">充実の情報量</h2>
             <div class="row my-5">
                 <div class="col-md-6 text-center icons">
                     <img src="BLOGアイコン.png" alt="">
