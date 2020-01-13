@@ -11663,3 +11663,18 @@ h2{
 .rank-color tr:nth-child(odd) {
   background: #F2F2F2;
   }
+
+  .ranking-image{
+    background-image: url(ranking.jpg);
+    background-size: cover;
+    filter: opacity(0.8)
+  }
+
+.ranking-text{
+    text-align: center;
+    font-size: 5vw;
+    font-weight: bold;
+    font-family: 'Sawarabi Mincho', sans-serif;
+    color: #E5E5E5;
+    padding: 9vw;
+}
