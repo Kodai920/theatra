@@ -4,6 +4,10 @@
 @endsection
 @section('content')
 
+<div class="my-1">
+    <a href="{{route('posts.index')}}" class="btn btn-light text-center"><i class="fas fa-arrow-left"></i> Back</a>
+</div>
+
 <div class="card mb-3">
     <div class="card-header">{{$movie->title}}({{$movie->year}}年)</div>
     <div class="card-body">
@@ -33,7 +37,7 @@
                         @if($movie->reviews->count() > 0)
                         {{ round($movie->reviews->avg('star'),2)}}
                         @else
-                        　ー
+                        ー
                         @endif
                     </h3>
                 </div>
