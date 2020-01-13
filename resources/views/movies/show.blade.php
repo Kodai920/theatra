@@ -4,10 +4,9 @@
 @endsection
 @section('content')
 
-<div class="my-1">
+{{-- <div class="my-1">
     <a href="{{route('posts.index')}}" class="btn btn-light text-center"><i class="fas fa-arrow-left"></i> Back</a>
-</div>
-
+</div> --}}
 <div class="card mb-3">
     <div class="card-header">{{$movie->title}}({{$movie->year}}年)</div>
     <div class="card-body">
