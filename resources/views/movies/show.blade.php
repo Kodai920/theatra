@@ -29,7 +29,13 @@
                 </div>
 
                 <div class="my-5 avg-ovral-rtng">
-                    <h3>みんなの評価 : <i class="fas fa-star"></i> {{ round($movie->reviews->avg('star'),2)}}</h3>
+                    <h3>みんなの評価 : <i class="fas fa-star"></i>
+                        @if($movie->reviews->count() > 0)
+                        {{ round($movie->reviews->avg('star'),2)}}
+                        @else
+                        　ー
+                        @endif
+                    </h3>
                 </div>
 
                 @if(Auth::check())
