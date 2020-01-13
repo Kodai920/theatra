@@ -5139,7 +5139,7 @@ input[type=button].btn-block {
 .navbar-light .navbar-nav .nav-link {
   color: #E5E5E5;
   margin: 0 2px;
-  border-radius: 10%;
+  border-radius: 5%;
 }
 
 .navbar-light .navbar-nav .nav-link:hover,
