@@ -35,7 +35,7 @@
 <div class="ranking-image">
     <h1 class="ranking-text">RANKING</h1>
 </div>
-
+<div class="container">
     <div class="cp_tab">
             <div class="cp_tabpanels">
                 <label for="tab5_1">Theatraで評価が高い作品</label>
@@ -96,6 +96,7 @@
                 </div>
             </div>
         </div>
+    </div>
 
     @include('inc.footer')
     </div>
