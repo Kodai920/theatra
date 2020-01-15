@@ -67,9 +67,6 @@
                             <a class="dropdown-item" href="{{ route('profiles.index') }}">
                                 プロフィール編集
                             </a><hr>
-                            {{-- <a class="dropdown-item" href="#">
-                                アカウント情報
-                            </a> --}}
                             <a class="dropdown-item" href="{{ route('contacts.index') }}">
                                 お問い合わせ
                             </a>
