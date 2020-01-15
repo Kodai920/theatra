@@ -21,8 +21,6 @@ Route::get('/question', 'QuestionController@index')->name('question');
 
 Route::get('/rank', 'RankController@index')->name('rank');
 
-Route::get('/manage', 'ManageController@index')->name('manage');
-
 Route::get('/info', 'InfoController@index')->name('info');
 
 Route::get('/member', 'MemberController@index')->name('member');
@@ -54,6 +52,12 @@ Route::group(['middleware' => 'auth'],function(){
     Route::post('contact/confirm','ContactsController@confirm');
 
     Route::post('contact/complete','ContactsController@complete');
+
+});
+
+Route::group(['middleware' => 'admin'],function(){
+
+    Route::get('/manage', 'ManageController@index')->name('manage');
 
 });
 
