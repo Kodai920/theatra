@@ -9,6 +9,11 @@ use App\Http\Requests\UpdateProfileRequest;
 
 class ProfileController extends Controller
 {
+    public function __construct()
+    {
+        $this->middleware('auth');
+    }
+
     public function index(){
         return view('profiles.index')->with('user',Auth::user());
     }

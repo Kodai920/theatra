@@ -11690,9 +11690,3 @@ h2{
     background-size: cover;
     filter: opacity(0.8)
   }
-
-  .mypage-image{
-    background-image: url(mypage.jpeg);
-    background-size: cover;
-    filter: opacity(0.8)
-  }

@@ -51,9 +51,9 @@ Route::group(['middleware' => 'auth'],function(){
 
     Route::get('contact','ContactsController@index')->name('contacts.index');
 
-Route::post('contact/confirm','ContactsController@confirm');
+    Route::post('contact/confirm','ContactsController@confirm');
 
-Route::post('contact/complete','ContactsController@complete');
+    Route::post('contact/complete','ContactsController@complete');
 
 });
 
