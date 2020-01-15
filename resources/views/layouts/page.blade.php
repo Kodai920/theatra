@@ -41,7 +41,7 @@
                     <li class="list-group-item admin-title">
                         <h3>管理画面</h3>
                     </li>
-                    <li class="list-group-item admin-item">
+                    <li class="admin-item">
                         <a href="{{route('manage')}}">ダッシュボード</a>
                     </li>
                     <li class="list-group-item admin-item">
