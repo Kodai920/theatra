@@ -21,7 +21,7 @@ class ManageController extends Controller
      */
     public function __construct()
     {
-        $this->middleware('admin')->except(['index']);
+        $this->middleware('admin');
     }
 
     /**
@@ -31,7 +31,6 @@ class ManageController extends Controller
      */
     public function index()
     {
-        $profile = Profile::all();
         $user = User::all();
         $movies = Movie::all();
         $reviews = Review::all();
@@ -40,7 +39,6 @@ class ManageController extends Controller
         $country = Country::all();
         return view('manage')
                            ->with('movies',$movies)
-                           ->with('profile',$profile)
                            ->with('country',$country)
                            ->with('category',$category)
                            ->with('user',$user)
