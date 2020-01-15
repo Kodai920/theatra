@@ -31,7 +31,7 @@ class ManageController extends Controller
      */
     public function index()
     {
-        $profile = Prifile::all();
+        $profile = Profile::all();
         $user = User::all();
         $movies = Movie::all();
         $reviews = Review::all();
