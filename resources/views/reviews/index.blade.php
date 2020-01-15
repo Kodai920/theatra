@@ -2,6 +2,7 @@
 @section('image')
 
 <div class="maypage-image mb-5">
+<div class="contaier">
 <div class="card">
     <div class="card-header">マイページ</div>
     <div class="card-body">
@@ -29,6 +30,7 @@
         </div>
     </div>
     </div>
+</div>
 </div>
 </div>
 
