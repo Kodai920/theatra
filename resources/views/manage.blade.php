@@ -6,12 +6,12 @@
 
         <div class="card-body">
                 <div class="row">
-                <div class="col-md-3 dash-count"><i class="fas fa-user-friends"></i>会員数 : {{$user->count()}}</div>
-                <div class="col-md-3 dash-count"><i class="fas fa-edit"></i>投稿数 : {{$reviews->count()}}</div>
-                <div class="col-md-3 dash-count"><i class="fas fa-video"></i>映画数 : {{$movies->count()}}</div>
-                <div class="col-md-3 dash-count"><i class="fas fa-bookmark"></i>カテゴリ : {{$category->count()}}</div>
-                <div class="col-md-3 dash-count"><i class="fas fa-globe-asia"></i>製作国 : {{$country->count()}}</div>
-                <div class="col-md-3 dash-count"><i class="far fa-newspaper"></i>記事数 : {{$posts->count()}}</div>
+                <div class="col-md-3 dash-count"><i class="fas fa-user-friends"></i> 会員数 : {{$user->count()}}</div>
+                <div class="col-md-3 dash-count"><i class="fas fa-edit"></i> 投稿数 : {{$reviews->count()}}</div>
+                <div class="col-md-3 dash-count"><i class="fas fa-video"></i> 映画数 : {{$movies->count()}}</div>
+                <div class="col-md-3 dash-count"><i class="fas fa-bookmark"></i> カテゴリ : {{$category->count()}}</div>
+                <div class="col-md-3 dash-count"><i class="fas fa-globe-asia"></i> 製作国 : {{$country->count()}}</div>
+                <div class="col-md-3 dash-count"><i class="far fa-newspaper"></i> 記事数 : {{$posts->count()}}</div>
                 </div>
         </div>
 </div>
