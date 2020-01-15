@@ -28,12 +28,12 @@
     font-family: 'Sawarabi Mincho', sans-serif;
     color: #E5E5E5;
     font-weight: bold;
-    background-color: #131313;
+    background-color: #131313 !important;
 }
 
 .admin-item{
     text-align: center;
-    color: #E5E5E5;
-    background-color: gray;
+    color: #E5E5E5 !important;
+    background-color: gray !important;
     font-weight: bold;
 }
