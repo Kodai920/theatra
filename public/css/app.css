@@ -11678,8 +11678,15 @@ h2{
     color: #E5E5E5;
     padding: 9vw;
 }
+
   .country-image{
     background-image: url(country.jpg);
+    background-size: cover;
+    filter: opacity(0.8)
+  }
+
+  .category-image{
+    background-image: url(category.jpeg);
     background-size: cover;
     filter: opacity(0.8)
   }

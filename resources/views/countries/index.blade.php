@@ -5,7 +5,7 @@
     <h1 class="ranking-text">製作国</h1>
 </div>
 
-<div class="container">
+<div class="container mb-5">
         <div class="card">
                 <div class="card-header">製作国一覧</div>
                 <div class="card-body">
