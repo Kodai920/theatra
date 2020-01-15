@@ -1,11 +1,9 @@
-@extends('layouts.image')
-@section('image')
+@extends('layouts.app')
+@section('content')
 
-<div class="mypage-image mb-5">
-<div class="container m-5">
-<div class="card">
-    <div class="card-header">マイページ</div>
-    <div class="card-body">
+<div class="card mb-3">
+<div class="card-header">マイページ</div>
+<div class="card-body">
 
     <div class="wrapper">
         <div class="row">
@@ -28,13 +26,10 @@
                 </div>
             </div>
         </div>
-    </div>
-    </div>
 </div>
 </div>
 </div>
 
-<div class="container">
 <div>
     @if($user->reviews->count() > 0)
     @foreach($user->reviews->sortByDesc('created_at') as $review)
@@ -80,7 +75,6 @@
         </div>
     @endif
     </div>
-</div>
 </div>
 
 @endsection
