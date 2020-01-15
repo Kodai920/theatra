@@ -11,7 +11,6 @@ class AppController extends Controller
 {
     public function search(Request $request){
 
-       // $query = $request->get('query');
         $select = $request->get('searchby');
 
         if($select == 'movie'){

@@ -17,11 +17,9 @@ class Admin
      */
     public function handle($request, Closure $next)
     {
-        if(!Auth::user()->admin){
-            Session::flash('info','You do not have permission to preform this action');
-            return redirect()->back();
+        if(\Auth::user()->role == 'admin'){
+            return $next($request);
         }
-
-        return $next($request);
+        return redirect('home');
     }
 }
