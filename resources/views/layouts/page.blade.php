@@ -37,7 +37,7 @@
     <div class="container py-4">
         <div class="row justify-content-center">
             <div class="col-md-3 mb-3">
-                <ul class="list-group">
+                <ul class="list-group border border-secondary">
                     <li class="list-group-item admin-title">
                         <h3>管理画面</h3>
                     </li>
