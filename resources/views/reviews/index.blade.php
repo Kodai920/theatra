@@ -50,7 +50,7 @@
             </div>
             <div class="card-body pt-0">
                 <div class="row mt-2">
-                <div class="col-3 mx-2" id="movie-imag ">
+                <div class="col-3 mx-2" id="movie-image">
                     <a href="{{route('movies.show',[$review->movie->id])}}">
                     <img src="{{asset("uploads/movies/".$review->movie->image)}}" class="d-block mx-auto" width="105px" height="150px" alt="{{$review->movie->title}}">
                     </a>
