@@ -52,7 +52,7 @@
                 <div class="row mt-2">
                 <div class="col-md-3 " id="movie-image">
                     <a href="{{route('movies.show',[$review->movie->id])}}">
-                    <img src="{{asset("uploads/movies/".$review->movie->image)}}" class="d-block mx-auto" width="105px" height="150px" alt="{{$review->movie->title}}">
+                    <img src="{{asset("uploads/movies/".$review->movie->image)}}" class="d-block mx-auto my-auto" width="105px" height="150px" alt="{{$review->movie->title}}">
                     </a>
                 </div>
                 <div class="col-md-9">
