@@ -10,7 +10,7 @@
             <div class="col-md-6 row">
                 <div class="float-left col-3"><img src="{{$user->profile->avator}}" alt="" style="height:80px; width:80px;"></div>
                 <div class="mx-3 col-6">
-                    <div style="font-size:30px;">{{$user->name}}</div>
+                    <div style="font-size:30px; font-weight:bold;">{{$user->name}}</div>
                     <div>登録日 : {{$user->created_at->format('Y年m月d日')}}</div>
                     <div>投稿数 : {{$user->reviews->count()}}</div>
                 </div>
