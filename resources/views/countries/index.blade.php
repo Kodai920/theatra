@@ -33,8 +33,8 @@
     @include('inc.navbar')
     @include('inc.search')
 
-<div class="ranking-image">
-    <h1 class="ranking-text">RANKING</h1>
+<div class="country-image">
+    <h1 class="ranking-text">製作国</h1>
 </div>
 
 <div class="container">
