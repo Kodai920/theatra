@@ -32,6 +32,7 @@ class ManageController extends Controller
     public function index()
     {
         $user = Auth::user();
+        $user = User::all();
         $movies = Movie::all();
         $reviews = Review::all();
         $posts = Post::all();
