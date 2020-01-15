@@ -12,13 +12,13 @@ class RankController extends Controller
     public function index(){
 
 
-        $movies_by_review = Movie::with('reviews')->take(20)->get()->sortBy(function($movie){
+        $movies_by_review = Movie::with('reviews')->sortBy(function($movie){
             return $movie->reviews->count();
-        },SORT_REGULAR,true);
+        },SORT_REGULAR,true)->take(20)->get();
 
-        $movies_by_rating = Movie::with('reviews')->take(20)->get()->sortBy(function($movie){
+        $movies_by_rating = Movie::with('reviews')->sortBy(function($movie){
             return $movie->reviews->avg('star');
-        },SORT_REGULAR,true);
+        },SORT_REGULAR,true)->take(20)->get();
 
         $reviews = Review::all();
 
