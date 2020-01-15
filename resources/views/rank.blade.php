@@ -35,6 +35,7 @@
 <div class="ranking-image">
     <h1 class="ranking-text">RANKING</h1>
 </div>
+
 <div class="container">
     <div class="cp_tab">
             <div class="cp_tabpanels">
