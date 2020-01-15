@@ -13,15 +13,15 @@ use Auth;
 
 class ManageController extends Controller
 {
-    // /**
-    //  * Create a new controller instance.
-    //  *
-    //  * @return void
-    //  */
-    // public function __construct()
-    // {
-    //     $this->middleware('admin');
-    // }
+    /**
+     * Create a new controller instance.
+     *
+     * @return void
+     */
+    public function __construct()
+    {
+        $this->middleware('admin')->except(['index']);
+    }
 
     /**
      * Show the application dashboard.
