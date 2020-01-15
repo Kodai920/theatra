@@ -10,6 +10,7 @@ use App\Country;
 use App\Review;
 use App\User;
 use Auth;
+use App\Profile;
 
 class ManageController extends Controller
 {
@@ -30,6 +31,7 @@ class ManageController extends Controller
      */
     public function index()
     {
+        $profile = Prifile::all();
         $user = User::all();
         $movies = Movie::all();
         $reviews = Review::all();
@@ -38,6 +40,7 @@ class ManageController extends Controller
         $country = Country::all();
         return view('manage')
                            ->with('movies',$movies)
+                           ->with('profile',$profile)
                            ->with('country',$country)
                            ->with('category',$category)
                            ->with('user',$user)
