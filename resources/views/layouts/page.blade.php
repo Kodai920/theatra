@@ -38,31 +38,31 @@
         <div class="row justify-content-center">
             <div class="col-md-3 mb-3">
                 <ul class="list-group">
-                    <li class="list-group-item">
+                    <li class="list-group-item admin-title">
                         <h3>管理画面</h3>
                     </li>
-                    <li class="list-group-item">
+                    <li class="list-group-item admin-item">
                         <a href="{{route('manage')}}">ダッシュボード</a>
                     </li>
-                    <li class="list-group-item">
+                    <li class="list-group-item admin-item">
                         <a href="{{route('member')}}">会員情報</a>
                     </li>
-                    <li class="list-group-item">
+                    <li class="list-group-item admin-item">
                         <a href="{{route('info')}}">映画情報</a>
                     </li>
-                    <li class="list-group-item">
+                    <li class="list-group-item admin-item">
                         <a href="{{route('movies.create')}}">映画追加</a>
                     </li>
-                    <li class="list-group-item">
+                    <li class="list-group-item admin-item">
                         <a href="{{route('blog')}}">ブログ一覧</a>
                     </li>
-                    <li class="list-group-item">
+                    <li class="list-group-item admin-item">
                         <a href="{{route('posts.create')}}">ブログ投稿</a>
                     </li>
-                    <li class="list-group-item">
+                    <li class="list-group-item admin-item">
                         <a href="{{route('categories.create')}}">カテゴリ追加</a>
                     </li>
-                    <li class="list-group-item">
+                    <li class="list-group-item admin-item">
                         <a href="{{route('countries.create')}}">製作国追加</a>
                     </li>
                 </ul>

@@ -22,3 +22,18 @@
     color: #E5E5E5;
     padding: 9vw;
 }
+
+.admin-title{
+    text-align: center;
+    font-family: 'Sawarabi Mincho', sans-serif;
+    color: #E5E5E5;
+    font-weight: bold;
+    background-color: #131313;
+}
+
+.admin-item{
+    text-align: center;
+    color: #E5E5E5;
+    background-color: gray;
+    font-weight: bold;
+}
