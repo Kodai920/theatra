@@ -61,8 +61,6 @@ Route::group(['middleware' => 'admin'],function(){
 
 });
 
-
-
 Route::get('/results',[
     'uses' => 'AppController@search',
     'as' => 'search.results'
