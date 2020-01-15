@@ -39,6 +39,9 @@
             <div class="col-md-3 mb-3">
                 <ul class="list-group">
                     <li class="list-group-item">
+                        <h3>管理画面</h3>
+                    </li>
+                    <li class="list-group-item">
                         <a href="{{route('manage')}}">ダッシュボード</a>
                     </li>
                     <li class="list-group-item">
