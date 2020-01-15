@@ -2,10 +2,10 @@
 @section('image')
 
 <div class="ranking-image">
-        <h1 class="ranking-text">RANKING</h1>
-    </div>
-    
-    <div class="container">
+    <h1 class="ranking-text">RANKING</h1>
+</div>
+
+    <div class="container mb-5">
         <div class="cp_tab">
                 <div class="cp_tabpanels">
                     <label for="tab5_1">Theatraで評価が高い作品</label>

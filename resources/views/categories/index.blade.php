@@ -5,8 +5,7 @@
     <h1 class="ranking-text">カテゴリ</h1>
 </div>
 
-<div class="container">
-
+<div class="container mb-5">
         <div class="card">
                 <div class="card-header">カテゴリ一覧
                 </div>
