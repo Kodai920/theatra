@@ -38,7 +38,7 @@
             <ul class="navbar-nav ml-auto">
                 <!-- Authentication Links -->
                 @if(Auth::check())
-                    @if(Auth::user()->admin)
+                    @if(Auth::user(1))
                         <li class="nav-item mt-2">
                             <a class="nav-link" href="{{route('manage')}}">管理画面</a>
                         </li>
