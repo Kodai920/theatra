@@ -37,11 +37,6 @@
             <!-- Right Side Of Navbar -->
             <ul class="navbar-nav ml-auto">
                 <!-- Authentication Links -->
-                @if(Auth::user()->admin)
-                    <li class="nav-item mt-2">
-                        <a class="nav-link" href="{{route('manage')}}">管理画面</a>
-                    </li>
-                @endif
                 @guest
                     <li class="nav-item">
                         <a class="nav-link" href="{{ route('login') }}">{{ __('ログイン') }}</a>
@@ -65,6 +60,11 @@
                             <a class="dropdown-item" href="{{ route('profiles.index') }}">
                                 プロフィール編集
                             </a><hr>
+                            @if(Auth::user()->admin)
+                            <a class="dropdown-item" href="{{ route('manage') }}">
+                                管理画面
+                            </a>
+                            @endif
                             <a class="dropdown-item" href="{{ route('contacts.index') }}">
                                 お問い合わせ
                             </a>
