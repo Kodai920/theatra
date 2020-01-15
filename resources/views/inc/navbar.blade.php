@@ -37,12 +37,10 @@
             <!-- Right Side Of Navbar -->
             <ul class="navbar-nav ml-auto">
                 <!-- Authentication Links -->
-                @if(Auth::user(1))
-                    @if(Auth::check(1))
-                        <li class="nav-item mt-2">
-                            <a class="nav-link" href="{{route('manage')}}">管理画面</a>
-                        </li>
-                    @endif
+                @if(Auth::user()->admin)
+                    <li class="nav-item mt-2">
+                        <a class="nav-link" href="{{route('manage')}}">管理画面</a>
+                    </li>
                 @endif
                 @guest
                     <li class="nav-item">
