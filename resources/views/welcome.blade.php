@@ -40,7 +40,7 @@
         <div class="container mb-5">
             <h2 class="welcome-title">THEATRAとは</h2>
             <div class="row">
-                <div class="col-md-6">
+                <div class="col-md-6 photo-div">
                     <img class="welcome-photos" src="uploads/welcomes/netflixwel.jpg" alt="">
                 </div>
                 <div class="col-md-6">
@@ -57,7 +57,7 @@
         <div class="container my-5">
             <h2 class="welcome-title">THEATRAにできること</h2>
             <div class="row">
-                    <div class="col-md-6 order-md-2">
+                    <div class="col-md-6 order-md-2 photo-div">
                         <img class="welcome-photos" src="uploads/welcomes/cuttool.jpg" alt="">
                     </div>
                 <div class="col-md-6 order-md-1">
@@ -79,7 +79,7 @@
         <div class="container my-5">
             <h2 class="welcome-title">THEATRAの特徴</h2>
             <div class="row">
-                <div class="col-md-6">
+                <div class="col-md-6 photo-div">
                     <img class="welcome-photos" src="uploads/welcomes/filmtwo.jpg" alt="">
                 </div>
                 <div class="col-md-6">
@@ -101,7 +101,7 @@
         <div class="container my-5">
             <h2 class="welcome-title">充実の情報量</h2>
             <div class="row">
-                    <div class="col-md-6 order-md-2">
+                    <div class="col-md-6 order-md-2 photo-div">
                         <img class="welcome-photos" src="uploads/welcomes/snstwitter.jpg" alt="">
                     </div>
                 <div class="col-md-6 order-md-1">
