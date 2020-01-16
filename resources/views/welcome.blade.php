@@ -57,7 +57,7 @@
         <div class="container my-5">
             <h2 class="welcome-title">THEATRAにできること</h2>
             <div class="row">
-                    <div class="col-md-6 order-md-0">
+                    <div class="col-md-6 order-md-2">
                         <img class="welcome-photos" src="uploads/welcomes/cuttool.jpg" alt="">
                     </div>
                 <div class="col-md-6 order-md-1">
@@ -101,7 +101,7 @@
         <div class="container my-5">
             <h2 class="welcome-title">充実の情報量</h2>
             <div class="row">
-                    <div class="col-md-6 order-md-0">
+                    <div class="col-md-6 order-md-2">
                         <img class="welcome-photos" src="uploads/welcomes/snstwitter.jpg" alt="">
                     </div>
                 <div class="col-md-6 order-md-1">
