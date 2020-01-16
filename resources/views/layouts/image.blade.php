@@ -23,7 +23,6 @@
     <!-- Styles -->
     <link href="{{ secure_asset('css/app.css') }}" rel="stylesheet">
     <link href="{{ asset('css/welcome.css') }}" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.css">
     {{-- Insert below other link, style and script tags --}}
 
    @yield('styles')
@@ -41,13 +40,5 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
     <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 @yield('scripts')
-     <script>
-        @if(Session::has('success'))
-        toastr.success(" {{Session::get('success')}} ")
-        @endif
-        @if(Session::has('info'))
-        toastr.info(" {{Session::get('info')}} ")
-        @endif
-    </script>
 </body>
 </html>
