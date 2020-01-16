@@ -87,4 +87,9 @@
       border-bottom: solid 3px #131313;/*下線*/
       font-size: 30px;
   }
+
+  .photo-div{
+    width: 100%;
+    height: 50%;
+  }
 }
