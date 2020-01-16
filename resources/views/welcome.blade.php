@@ -40,7 +40,9 @@
         <div class="container mb-5">
             <h2 class="welcome-title">THEATRAとは</h2>
             <div class="row">
-                <img class="welcome-photos col-md-6" src="uploads/welcomes/netflixwel.jpg" alt="">
+                <div class="col-md-6 photo-div">
+                    <img class="welcome-photos" src="uploads/welcomes/netflixwel.jpg" alt="">
+                </div>
                 <div class="col-md-6">
                     <p class="function">NETFLIXに特化した、
                         レビュー投稿サイトです。<br>
