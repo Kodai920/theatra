@@ -96,4 +96,13 @@
     width: 40%;
   }
 
+  .welcome-text{
+    text-align: center;
+    font-size: 5vw;
+    font-weight: bold;
+    font-family: 'Sawarabi Mincho', sans-serif;
+    color: #E5E5E5;
+    padding: 11vw ;
+  }
+
 }
