@@ -11690,27 +11690,3 @@ h2{
     background-size: cover;
     filter: opacity(0.8)
   }
-
-  @media screen and (max-width:767px){
-    footer{
-      padding: 20px 0;
-      background: #131313;
-      text-align: center;
-    }
-
-    .widget-title{
-      background: #839FAD none repeat scroll 0 0;
-      display: block;
-      height: 1px;
-      margin-top: 25px;
-      position: relative;
-      width: 20%;
-      margin-left: auto;
-      margin-right: auto;
-    }
-
-    .social-footer2{
-      margin-left: auto;
-      margin-right: auto;
-    }
-  }
