@@ -83,13 +83,13 @@
   .welcome-photos{
     width: 100%;
     height: 50%;
-    display: block;
+    /* display: block; */
     border-radius: 0%;
     margin: auto auto;
   }
 
   .photo-div{
-    display: none;
+    /* display: none; */
   }
 
 }
