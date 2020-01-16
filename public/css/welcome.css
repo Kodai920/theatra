@@ -89,7 +89,7 @@
   }
 
   .photo-div{
-    display: flex;
+    display: none;
   }
 
 }
