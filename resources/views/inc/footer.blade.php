@@ -52,7 +52,7 @@
         <a class="btn" href="https://www.netflix.com/" target="_blank">NETFLIX</a>
         </div>
         </div>
-
+ 
         <div class="col-xs-12 col-sm-6 col-md-3">
 
         <div class="widget no-box">
