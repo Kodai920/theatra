@@ -1,11 +1,11 @@
 starrating > input {display: none;}  /* Remove radio buttons */
 
-.starrating > label:before { 
+.starrating > label:before {
   content: "\f005"; /* Star */
   margin: 2px;
   font-size: 8em;
   font-family: FontAwesome;
-  display: inline-block; 
+  display: inline-block;
 }
 
 .starrating > label

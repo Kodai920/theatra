@@ -21,7 +21,6 @@
     <link href="https://fonts.googleapis.com/css?family=Kosugi+Maru&display=swap" rel="stylesheet">
 
     <!-- Styles -->
-    {{-- <link href="{{ secure_asset('css/custom.css') }}" rel="stylesheet"> --}}
     <link href="{{ secure_asset('css/manage.css') }}" rel="stylesheet">
     <link href="{{ secure_asset('css/app.css') }}" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.css">
