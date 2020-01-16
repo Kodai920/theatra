@@ -87,4 +87,13 @@
     margin: auto auto 20px auto;
   }
 
+  .btn-register{
+    background-color:#131313;
+    color:#E5E5E5;
+    margin:auto;
+    font-weight: bold;
+    display: block;
+    width: 40%;
+  }
+
 }
