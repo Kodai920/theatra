@@ -28,9 +28,6 @@
                         <li class="nav-item">
                             <a class="nav-link" href="{{route('rank')}}">ランキング</a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="{{route('reviews.index')}}">マイページ</a>
-                        </li>
                     @endif
             </ul>
 
@@ -57,9 +54,13 @@
 
                         <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
                             @if(Auth::check())
+                            <a class="dropdown-item" href="{{route('reviews.index')}}">
+                                マイページ
+                            </a>
+                            <hr>
                             <a class="dropdown-item" href="{{ route('profiles.index') }}">
                                 プロフィール編集
-                            </a><hr>
+                            </a>
                             @if(Auth::user()->admin)
                             <a class="dropdown-item" href="{{ route('manage') }}">
                                 管理画面
