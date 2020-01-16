@@ -57,6 +57,9 @@
         <div class="container my-5">
             <h2 class="welcome-title">THEATRAにできること</h2>
             <div class="row">
+                    <div class="col-md-6 order-md-0">
+                        <img class="welcome-photos" src="uploads/welcomes/cuttool.jpg" alt="">
+                    </div>
                 <div class="col-md-6 order-md-1">
                     <div class="icons">
                         <p class="function">＊好きな作品が見つかる検索機能</p>
@@ -69,9 +72,6 @@
                     </div>
                     <a href="https://www.netflix.com/browse" class="btn btn-lg btn-block btn-welcome" target="_blank">NETFLIXへ <i class="fas fa-sign-out-alt"></i></a>
                     <a href="{{ route('movies.index') }}" class="btn btn-lg btn-block btn-welcome">映画一覧へ <i class="fas fa-sign-out-alt"></i></a>
-                </div>
-                <div class="col-md-6 order-md-0">
-                    <img class="welcome-photos" src="uploads/welcomes/cuttool.jpg" alt="">
                 </div>
             </div>
         </div>
@@ -101,6 +101,9 @@
         <div class="container my-5">
             <h2 class="welcome-title">充実の情報量</h2>
             <div class="row">
+                    <div class="col-md-6 order-md-0">
+                        <img class="welcome-photos" src="uploads/welcomes/snstwitter.jpg" alt="">
+                    </div>
                 <div class="col-md-6 order-md-1">
                     <div class="icons">
                         <p class="function">＊Netflix関連の記事更新中</p>
@@ -113,9 +116,6 @@
                     </div>
                     <a href="{{ route('blog') }}" class="btn btn-lg btn-block btn-welcome">公式ブログへ <i class="fas fa-sign-out-alt"></i></a>
                     <a href="#" class="btn btn-lg btn-block btn-welcome" target="_blank">公式Twitterへ <i class="fas fa-sign-out-alt"></i></a>
-                </div>
-                <div class="col-md-6 order-md-0">
-                    <img class="welcome-photos" src="uploads/welcomes/snstwitter.jpg" alt="">
                 </div>
             </div>
         </div>
