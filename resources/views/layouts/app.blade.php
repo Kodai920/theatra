@@ -7,7 +7,7 @@
     <!-- CSRF Token -->
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
-    <title>{{ config('最高のNETFLIXライフを。', '| Theatra') }}</title>
+    <title>{{ config('最高のNETFLIXライフを。| Theatra') }}</title>
 
     <!-- Scripts -->
     <script src="{{ secure_asset('js/app.js')}}"></script>
