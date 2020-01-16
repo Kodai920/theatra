@@ -79,8 +79,8 @@
     .welcome-title{
       color: #131313;
       font-family: 'Sawarabi Gothic', sans-serif;
-      width: 100%;
-      height: 50%;
+      /* width: 100%;
+      height: 50%; */
       text-align: center;
       margin: 5% auto;
       padding: 0.5em 0;/*上下の余白*/
