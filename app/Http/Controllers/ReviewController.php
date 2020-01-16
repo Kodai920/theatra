@@ -61,7 +61,7 @@ class ReviewController extends Controller
         $review->save();
 
         Session::flash('success','投稿完了');
-        return redirect()->route('movies.index');
+        return redirect()->route('movies.show');
     }
 
     /**
