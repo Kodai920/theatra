@@ -12,6 +12,18 @@
     <!-- Scripts -->
     <script src="{{ secure_asset('js/app.js')}}"></script>
 
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    @if(env('APP_ENV') == 'development')
+        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-156411610-1"></script>
+        <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'UA-156411610-1');
+        </script>
+    @endif
+
     <!-- Fonts -->
     <link rel="dns-prefetch" href="//fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
