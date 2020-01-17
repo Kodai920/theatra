@@ -13,7 +13,7 @@
     <script src="{{ secure_asset('js/app.js')}}"></script>
 
     <!-- Global site tag (gtag.js) - Google Analytics -->
-    @if(env('APP_ENV') == 'development')
+    @if(env('APP_ENV') == 'production')
         <script async src="https://www.googletagmanager.com/gtag/js?id=UA-156411610-1"></script>
         <script>
         window.dataLayer = window.dataLayer || [];
