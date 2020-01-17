@@ -60,11 +60,11 @@
                                 お問い合わせ
                             </a>
                             @endif
-                            @if(Auth::user()->admin)
+                            {{-- @if(Auth::user()->admin) --}}
                             <a class="dropdown-item" href="{{ route('manage') }}">
                                 管理画面
                             </a>
-                            @endif
+                            {{-- @endif --}}
                             <a class="dropdown-item" href="{{ route('logout') }}"
                                onclick="event.preventDefault();
                                              document.getElementById('logout-form').submit();">
