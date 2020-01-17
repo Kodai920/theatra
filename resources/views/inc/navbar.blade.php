@@ -48,11 +48,6 @@
                         </a>
 
                         <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
-                            @if(Auth::user()->admin)
-                            <a class="dropdown-item" href="{{ route('manage') }}">
-                                管理画面
-                            </a>
-                            @endif
                             @if(Auth::check())
                             <a class="dropdown-item" href="{{route('reviews.index')}}">
                                 マイページ
@@ -63,6 +58,11 @@
                             </a>
                             <a class="dropdown-item" href="{{ route('contacts.index') }}">
                                 お問い合わせ
+                            </a>
+                            @endif
+                            @if(Auth::user()->admin)
+                            <a class="dropdown-item" href="{{ route('manage') }}">
+                                管理画面
                             </a>
                             @endif
                             <a class="dropdown-item" href="{{ route('logout') }}"
