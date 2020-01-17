@@ -28,7 +28,7 @@
                                     <td>
                                     <img class="d-block mx-auto" src="{{asset("uploads/movies/".$movie->image)}}" height="100px" width="75px" alt="{{$movie->title}}">
                                     </td>
-                                    <td>{{$movie->title}}</td>
+                                    <td><a href="{{route('movies.show',[$movie->id])}}">{{$movie->title}}</a></td>
                                     <td>{{ round($movie->reviews->avg('star'),2)}}</td>
                                 </tr>
                                 @endforeach
@@ -57,7 +57,7 @@
                                     <td>
                                     <img class="d-block mx-auto" src="{{asset("uploads/movies/".$movie->image)}}" height="100px" width="75px" alt="{{$movie->title}}">
                                     </td>
-                                    <td>{{$movie->title}}</td>
+                                    <td><a href="{{route('movies.show',[$movie->id])}}">{{$movie->title}}</a></td>
                                     <td>{{$movie->reviews->count()}}</td>
                                 </tr>
                                 @endforeach

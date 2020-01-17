@@ -71,4 +71,10 @@ Route::group(['prefix'=>'reviews/{id}','middleware'=>'auth'],function(){
        Route::delete('unfavorite','FavoriteController@destroy')->name('favorites.unfavorite');
 });
 
-
+// Route::get('/.well-known/acme-challenge/{id}', function ($id) {
+//     if ($id == env('LETSENCRYPT_REQUEST')) {
+//         return env('LETSENCRYPT_RESPONSE');
+//     } else {
+//         abort(404);
+//     }
+// });
