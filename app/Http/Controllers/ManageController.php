@@ -10,6 +10,8 @@ use App\Country;
 use App\Review;
 use App\User;
 use Auth;
+use App\profile;
+
 
 class ManageController extends Controller
 {
