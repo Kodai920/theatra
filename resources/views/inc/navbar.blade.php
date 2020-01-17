@@ -10,25 +10,20 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <!-- Left Side Of Navbar -->
             <ul class="navbar-nav mr-auto">
-                    {{-- @if(Auth::check())
-                        <li class="nav-item">
-                            <a class="nav-link" href="{{route('home')}}">ホーム</a>
-                        </li>
-                    @endif --}}
-                        <li class="nav-item float-left">
-                            <a class="nav-link" href="{{route('movies.index')}}">映画</a>
-                        </li>
-                        <li class="nav-item float-left">
-                            <a class="nav-link" href="{{route('categories.index')}}">カテゴリ</a>
-                        </li>
-                        <li class="nav-item float-left">
-                            <a class="nav-link" href="{{route('countries.index')}}">製作国</a>
-                        </li>
-                    @if(Auth::check())
-                        <li class="nav-item">
-                            <a class="nav-link" href="{{route('rank')}}">ランキング</a>
-                        </li>
-                    @endif
+                    <li class="nav-item float-left">
+                        <a class="nav-link" href="{{route('movies.index')}}">映画</a>
+                    </li>
+                    <li class="nav-item float-left">
+                        <a class="nav-link" href="{{route('categories.index')}}">カテゴリ</a>
+                    </li>
+                    <li class="nav-item float-left">
+                        <a class="nav-link" href="{{route('countries.index')}}">製作国</a>
+                    </li>
+                @if(Auth::check())
+                    <li class="nav-item">
+                        <a class="nav-link" href="{{route('rank')}}">ランキング</a>
+                    </li>
+                @endif
             </ul>
 
             <!-- Right Side Of Navbar -->
@@ -53,6 +48,11 @@
                         </a>
 
                         <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
+                            @if(Auth::user()->admin)
+                            <a class="dropdown-item" href="{{ route('manage') }}">
+                                管理画面
+                            </a>
+                            @endif
                             @if(Auth::check())
                             <a class="dropdown-item" href="{{route('reviews.index')}}">
                                 マイページ
@@ -61,11 +61,6 @@
                             <a class="dropdown-item" href="{{ route('profiles.index') }}">
                                 プロフィール編集
                             </a>
-                            @if(Auth::user()->admin)
-                            <a class="dropdown-item" href="{{ route('manage') }}">
-                                管理画面
-                            </a>
-                            @endif
                             <a class="dropdown-item" href="{{ route('contacts.index') }}">
                                 お問い合わせ
                             </a>
