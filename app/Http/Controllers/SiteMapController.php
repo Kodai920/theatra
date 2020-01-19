@@ -2,28 +2,25 @@
 
 namespace App\Http\Controllers;
 
-use Illuminate\Http\Request;
-use Roumen\Sitemap\SitemapServiceProvider;
+use App\Model\Photo;
+use Illuminate\Support\Facades\App;
+use Illuminate\Support\Facades\URL;
 use Carbon\Carbon;
-
 
 class siteMapController extends Controller
 {
+    public function sitemap(){
+        $sitemap = App::make("sitemap");
+        $now = Carbon::now();
+        $sitemap->add(URL::to('/'), $now, '1.0', 'always');
+        $sitemap->add(URL::to('/photos/create'), '2018-10-28', '1.0', 'monthly');
 
-  public function sitemap(){
-    // create new sitemap object
-    $sitemap = \App::make("sitemap");
-    $now = Carbon::now();
-    // add items to the sitemap (url, date, priority, freq)
-    $sitemap->add(\URL::to('/home'), $now, '1.0', 'daily');
-    // \URL::to('/home')はweb.phpでトップページに指定したURL　＋ α　をaddメソッドで指定している。
+        $photos = Photo::orderBy('updated_at', 'desc')->get();
+        foreach ($photos as $photo)
+        {
+            $sitemap->add(URL::to('/photos/' . $photo->id), $photo->updated_at, '0.8', 'yearly');
+        }
 
-    $sitemap->add(URL::to('/home/event'), $now, '0.9', 'weekly');
-
-    // generate your sitemap (format, filename)
-    $sitemap->store('xml', 'sitemap');
-    // this will generate file mysitemap.xml to your public folder
-    // return $sitemap->render('xml');ならばhttps://トップページ/sitemapにアクセスすれば
-    // サイトマップページに飛ぶことが出来る。
-  }
+        return $sitemap->render('xml');
+    }
 }
