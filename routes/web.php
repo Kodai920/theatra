@@ -71,4 +71,7 @@ Route::group(['prefix'=>'reviews/{id}','middleware'=>'auth'],function(){
        Route::delete('unfavorite','FavoriteController@destroy')->name('favorites.unfavorite');
 });
 
-Route::get('/sitemap','SiteMapController@sitemap');
+// HTML画面表示用
+Route::get('sitemap', 'SitemapController@html')->name('sitemap');
+// sitemap.xml用
+Route::get('sitemap.xml', 'SitemapController@xml')->name('sitemap.xml');
