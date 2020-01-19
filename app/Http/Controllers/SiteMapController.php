@@ -9,20 +9,13 @@ use Carbon\Carbon;
 class SiteMapController extends Controller
 {
     // sitemap.xmlの生成と表示
-    // public function xml()
-    // {
-    //     $sitemap = \App::make("sitemap");
-    //     $now = Carbon::now();
-    //     $sitemap->add(url('/'), $now, '1.0', 'daily');
-    //     $sitemap->store('xml', 'sitemap');
+    public function xml()
+    {
+        $sitemap = \App::make("sitemap");
+        $now = Carbon::now();
+        $sitemap->add(url('/'), $now, '1.0', 'daily');
+        $sitemap->store('xml', 'sitemap');
 
-    //     return $sitemap->render('xml');
-    // }
-
-    public function sitemap()
-   {
-    $posts = Post::orderBy('updated_at', 'DESC')->get();
-
-    return response()->view('sitemap', compact('posts'))->header('Content-Type', 'text/xml');
-   }
+        return $sitemap->render('xml');
+    }
 }
