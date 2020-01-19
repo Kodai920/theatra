@@ -53,16 +53,16 @@
                                 マイページ
                             </a>
                             <hr>
-                            {{-- @if(Auth::user()->admin) --}}
-                            <a class="dropdown-item" href="{{route('manage')}}">
-                                管理画面
-                            </a>
-                            {{-- @endif --}}
                             <a class="dropdown-item" href="{{ route('profiles.index') }}">
                                 プロフィール編集
                             </a>
                             <a class="dropdown-item" href="{{ route('contacts.index') }}">
                                 お問い合わせ
+                            </a>
+                            @endif
+                            @if(Auth::user()->admin)
+                            <a class="dropdown-item" href="{{route('manage')}}">
+                                管理画面
                             </a>
                             @endif
                             <a class="dropdown-item" href="{{ route('logout') }}"
