@@ -25,7 +25,7 @@
             </div>
             <div class="form-group">
                 <label for="password">パスワード</label>
-                <input type="password" name="password" class="form-control" value="{{Auth::user()->password}}">
+                <input type="password" name="password" class="form-control">
             </div>
             <div class="form-group">
                 <label for="avator">アイコン画像</label>
