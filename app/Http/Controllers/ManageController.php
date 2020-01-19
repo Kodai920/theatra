@@ -15,16 +15,9 @@ use App\profile;
 
 class ManageController extends Controller
 {
-    /**
-     * Create a new controller instance.
-     *
-     * @return void
-     */
     public function __construct()
     {
-        $this->middleware('admin')
-        ->except(['index'])
-        ;
+        $this->middleware('admin')->except(['index']);
     }
 
     /**
