@@ -72,8 +72,4 @@ Route::group(['prefix'=>'reviews/{id}','middleware'=>'auth'],function(){
 });
 
 // sitemap.xml用
-// Route::get('sitemap.xml', 'SiteMapController@xml')->name('sitemap.xml');
-
-Route::get('sitemap', function () {
-    return view('sitemap');
-});
+Route::get('sitemap.xml', 'SiteMapController@xml')->name('sitemap.xml');
