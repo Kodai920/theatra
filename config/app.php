@@ -164,6 +164,7 @@ return [
         Illuminate\View\ViewServiceProvider::class,
         Laravel\Socialite\SocialiteServiceProvider::class,
         willvincent\Rateable\RateableServiceProvider::class,
+        Roumen\Sitemap\SitemapServiceProvider::class,
 
         /*
          * Package Service Providers...
