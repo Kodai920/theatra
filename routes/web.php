@@ -72,6 +72,6 @@ Route::group(['prefix'=>'reviews/{id}','middleware'=>'auth'],function(){
 });
 
 // HTML画面表示用
-Route::get('sitemap', 'SitemapController@html')->name('sitemap');
+Route::get('/sitemap', 'SitemapController@html')->name('sitemap');
 // sitemap.xml用
-Route::get('sitemap.xml', 'SitemapController@xml')->name('sitemap.xml');
+Route::get('/sitemap.xml', 'SitemapController@xml')->name('sitemap.xml');
