@@ -27,6 +27,8 @@ Route::get('/member', 'MemberController@index')->name('member');
 
 Route::get('/blog', 'BlogController@index')->name('blog');
 
+Route::get('/manage', 'ManageController@index')->name('manage');
+
 Route::resource('posts','PostController');
 
 Route::resource('reviews','ReviewController');
@@ -54,8 +56,6 @@ Route::group(['middleware' => 'auth'],function(){
     Route::post('contact/complete','ContactsController@complete');
 
 });
-
-Route::get('/manage', 'ManageController@index')->name('manage');
 
 Route::get('/results',[
     'uses' => 'AppController@search',
