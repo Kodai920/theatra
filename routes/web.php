@@ -55,7 +55,12 @@ Route::group(['middleware' => 'auth'],function(){
 
 });
 
-Route::get('/manage', 'ManageController@index')->name('manage');
+Route::group(['middleware' => 'admin'],function(){
+
+    Route::get('/manage', 'ManageController@index')->name('manage');
+
+});
+
 
 Route::get('/results',[
     'uses' => 'AppController@search',
