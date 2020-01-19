@@ -2,7 +2,7 @@
 
 namespace App\Http\Controllers;
 
-use App\Http\Controllers\Phot;
+use App\Http\Controllers\Photo;
 use Illuminate\Support\Facades\App;
 use Illuminate\Support\Facades\URL;
 use Carbon\Carbon;
