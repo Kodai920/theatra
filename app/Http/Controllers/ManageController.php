@@ -13,10 +13,10 @@ use Auth;
 
 class ManageController extends Controller
 {
-    public function __construct()
-    {
-        $this->middleware('admin');
-    }
+    // public function __construct()
+    // {
+    //     $this->middleware('admin');
+    // }
 
     /**
      * Show the application dashboard.
