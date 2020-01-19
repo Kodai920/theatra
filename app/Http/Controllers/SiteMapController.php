@@ -6,14 +6,8 @@ use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 use Carbon\Carbon;
 
-class SitemapController extends Controller
+class SiteMapController extends Controller
 {
-    // 画面表示
-    public function html()
-    {
-        return view('sitemap');
-    }
-
     // sitemap.xmlの生成と表示
     public function xml()
     {
