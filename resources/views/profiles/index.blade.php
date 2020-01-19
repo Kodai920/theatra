@@ -24,8 +24,8 @@
                 <input type="email" name="email" value="{{Auth::user()->email}}" class="form-control">
             </div>
             <div class="form-group">
-                <label for="password">新しいパスワード</label>
-                <input type="password" name="password" class="form-control">
+                <label for="password">パスワード</label>
+                <input type="password" name="password" class="form-control" value="{{Auth::user()->password}}">
             </div>
             <div class="form-group">
                 <label for="avator">アイコン画像</label>
