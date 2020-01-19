@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use Illuminate\Http\Request;
 use App\Model\Photo;
 use Illuminate\Support\Facades\App;
 use Illuminate\Support\Facades\URL;
@@ -18,7 +19,7 @@ class SiteMapController extends Controller
         $photos = Photo::orderBy('updated_at', 'desc')->get();
         foreach ($photos as $photo)
         {
-            $sitemap->add(URL::to('photos'.$photo->id), $photo->updated_at, '0.8', 'yearly');
+            $sitemap->add(URL::to('/photos/' . $photo->id), $photo->updated_at, '0.8', 'yearly');
         }
 
         return $sitemap->render('xml');
