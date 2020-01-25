@@ -37,3 +37,4 @@ class HomeController extends Controller
                            ->with('reviews',$reviews);
     }
 }
+

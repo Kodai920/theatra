@@ -67,9 +67,15 @@ Route::get('login/{provider}', 'Auth\LoginController@redirectToProvider');
 Route::get('login/{provider}/callback','Auth\LoginController@handleProviderCallback');
 
 Route::group(['prefix'=>'reviews/{id}','middleware'=>'auth'],function(){
-       Route::post('favorite','FavoriteController@store')->name('favorites.favorite');
-       Route::delete('unfavorite','FavoriteController@destroy')->name('favorites.unfavorite');
+
+    Route::post('favorite','FavoriteController@store')->name('favorites.favorite');
+
+    Route::delete('unfavorite','FavoriteController@destroy')->name('favorites.unfavorite');
+
 });
 
 // sitemap.xml用
 Route::get('sitemap.xml', 'SiteMapController@xml')->name('sitemap.xml');
+
+//mail
+Route::get('/mail','MailSendController');
